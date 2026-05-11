@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="26" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2970,6 +2970,130 @@ Warhorses only.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mechanical suit" hidden="false" id="2f3a-faba-a17e-2d1e">
+      <costs>
+        <cost name="pts" typeId="points" value="225"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Rarity" id="3509-b90d-b70c-89ae" hidden="false">
+          <description>Rarity 14</description>
+        </rule>
+        <rule name="Spellcasters" id="a38c-4eba-4080-ffc3" hidden="false">
+          <description>Chaos Armor does not hinder its wearer from casting spells or rituals.
+It can be worn by spellcasters but they cannot combine it with a shield or buckler without appropriate skills.</description>
+        </rule>
+        <rule name="Chaos Armor" id="f87c-2538-82d5-9ff9" hidden="false">
+          <description>A Mechanical suit counts as Chaos armor and rules that would affect Chaos armor affect the suit as well.</description>
+        </rule>
+        <rule name="Gift of Chaos" id="8612-e9f8-4bb0-6914" hidden="false">
+          <description>Chaos Armor is a gift from the Dark Gods to the worthy warrior.
+A Hero who has successfully purchased a suit of Chaos Armor will never give it away to another warband member but put it on himself immediately.
+
+
+Chaos Armor becomes fused to the body of its wearer.
+It can never be removed.</description>
+        </rule>
+        <rule name="Suited and Booted" id="300a-c4bb-cf8b-fc38" hidden="false">
+          <description>A Sorcerer equipped with a Mechanical suit receives +3 to Movement.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Mechanical suit" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="3529-a1fc-b6cc-4f2d">
+          <characteristics>
+            <characteristic name="Armor Save" id="b98d-4fe8-4863-7f5f" hidden="false" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
+            <characteristic name="Special" id="d04c-245a-9785-3383" hidden="false" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mechanical suit, Discount" hidden="false" id="d5e3-6f2e-4b60-1766">
+      <costs>
+        <cost name="pts" typeId="points" value="112.5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Rarity" id="619d-dd19-3a85-4982" hidden="false">
+          <description>Rarity 14</description>
+        </rule>
+        <rule name="Spellcasters" id="7793-13ea-51b0-7369" hidden="false">
+          <description>Chaos Armor does not hinder its wearer from casting spells or rituals.
+It can be worn by spellcasters but they cannot combine it with a shield or buckler without appropriate skills.</description>
+        </rule>
+        <rule name="Chaos Armor" id="85da-c7b9-54f5-332b" hidden="false">
+          <description>A Mechanical suit counts as Chaos armor and rules that would affect Chaos armor affect the suit as well.</description>
+        </rule>
+        <rule name="Gift of Chaos" id="7511-9c56-25eb-0050" hidden="false">
+          <description>Chaos Armor is a gift from the Dark Gods to the worthy warrior.
+A Hero who has successfully purchased a suit of Chaos Armor will never give it away to another warband member but put it on himself immediately.
+
+
+Chaos Armor becomes fused to the body of its wearer.
+It can never be removed.</description>
+        </rule>
+        <rule name="Suited and Booted" id="283b-3d86-7004-faeb" hidden="false">
+          <description>A Sorcerer equipped with a Mechanical suit receives +3 to Movement.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Mechanical suit" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="5ead-6ef7-723c-99ed">
+          <characteristics>
+            <characteristic name="Armor Save" id="a33a-9cd5-ed70-6b42" hidden="false" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
+            <characteristic name="Special" id="d156-5c01-20fd-48ae" hidden="false" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5bf4-bbc9-deda-4c68" name="Warhorse, Discount" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2767-250d-a1d9-8cca" name="Warhorse" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2937-a274-8a75-3a50" name="Warhorse" page="0" hidden="false">
+          <description>Only Humans can buy or use warhorses 
+You may mount one of your Heroes on a warhorse in the coming battles. Warhorses can only be used if you are back of the book.</description>
+        </rule>
+        <rule id="1940-180d-95a7-4c73" name="Rarity" hidden="false">
+          <description>Rarity 11
+
+Only available to Humans.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="40"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Steel Whip (Sister of Sigmar)" hidden="false" id="6a3c-71a3-1aec-9a14">
+      <profiles>
+        <profile name="Steel Whip (Sister of Sigmar)" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="7384-a184-85bc-1e38">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cannot Be Parried, Whip Crack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Whip Crack" id="1300-b9fb-b6a0-7ff5" hidden="false" type="rule" targetId="7cd8-463b-1ea0-732e"/>
+        <infoLink name="Cannot Be Parried" id="58d5-26ef-5035-19af" hidden="false" type="rule" targetId="08b7-8107-edae-ce86"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -4697,11 +4821,9 @@ Warriors without Ride may not use this skill.</description>
       <entryLinks>
         <entryLink import="true" name="Shield, Discount" hidden="false" id="855f-3186-76d3-2da3" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
         <entryLink import="true" name="Helmet, Discount" hidden="false" id="f833-5c33-3366-6105" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Gromril Armour, Discount" hidden="false" id="219c-8229-c458-8496" type="selectionEntry" targetId="bbdb-668c-447f-4f04"/>
         <entryLink import="true" name="Light Armor, Discount" hidden="false" id="f63e-cc74-e767-5b15" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
         <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="48bf-44ed-428a-1c60" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
         <entryLink import="true" name="Buckler, Discount" hidden="false" id="de1f-f3f7-9e94-a0ae" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Ithilmar Armour, Discount" hidden="false" id="e4d8-e189-8d41-006a" type="selectionEntry" targetId="a2d3-8e0e-6262-31ff"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Dwarf Discount" id="5787-938c-4e02-14b6" hidden="false">
@@ -4723,6 +4845,123 @@ Warriors without Ride may not use this skill.</description>
         <entryLink import="true" name="Buckler, Discount" hidden="false" id="705d-e462-5805-6bf4" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
         <entryLink import="true" name="Ithilmar Armour, Elven Discount" hidden="false" id="25af-5151-fcdf-bb5f" type="selectionEntry" targetId="64cf-6510-b794-b312"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armor, Chaos Dwarves Discount" id="4dad-b017-16e1-132b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="6c99-c421-d359-9889" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="fcb9-186c-241e-4bfd" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="88d2-367e-133f-d36f" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="e0e4-e458-24d3-418a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, Discount" hidden="false" id="b39c-ee56-5da6-44a3" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mechanical suit, Discount" hidden="false" id="d9c1-e151-e99a-c24c">
+          <costs>
+            <cost name="pts" typeId="points" value="112.5"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Rarity" id="951b-6a30-38b3-cbd8" hidden="false">
+              <description>Rarity 14</description>
+            </rule>
+            <rule name="Spellcasters" id="f47d-cf80-bcf9-ea2e" hidden="false">
+              <description>Chaos Armor does not hinder its wearer from casting spells or rituals.
+It can be worn by spellcasters but they cannot combine it with a shield or buckler without appropriate skills.</description>
+            </rule>
+            <rule name="Chaos Armor" id="dfa4-265d-cc06-a428" hidden="false">
+              <description>A Mechanical suit counts as Chaos armor and rules that would affect Chaos armor affect the suit as well.</description>
+            </rule>
+            <rule name="Gift of Chaos" id="d568-0574-ca60-c37b" hidden="false">
+              <description>Chaos Armor is a gift from the Dark Gods to the worthy warrior.
+A Hero who has successfully purchased a suit of Chaos Armor will never give it away to another warband member but put it on himself immediately.
+
+
+Chaos Armor becomes fused to the body of its wearer.
+It can never be removed.</description>
+            </rule>
+            <rule name="Suited and Booted" id="a736-02d3-8527-bc6e" hidden="false">
+              <description>A Sorcerer equipped with a Mechanical suit receives +3 to Movement.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Mechanical suit" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="6792-7fe6-bde9-fc03">
+              <characteristics>
+                <characteristic name="Armor Save" id="e351-c442-92b5-d5d6" hidden="false" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
+                <characteristic name="Special" id="9f30-9840-b3b6-beb2" hidden="false" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armor, Bretonnia Discount" id="e3da-829f-ee59-5304" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="5f9d-16bd-1792-8505" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="e132-d077-6208-03ea" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="aa4a-2b86-77a0-86b5" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="146f-c635-2826-0944" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, Discount" hidden="false" id="3408-ad63-bab0-686c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Warhorse, Discount" hidden="false" id="dc72-e403-69f7-f0cc" page="0" collective="false">
+          <profiles>
+            <profile name="Warhorse" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="508d-311c-07aa-21e2" page="0">
+              <characteristics>
+                <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+                <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+                <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+                <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+                <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+                <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+                <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+                <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+                <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Warhorse" id="1f49-11c6-3114-15cd" hidden="false" page="0">
+              <description>Only Humans can buy or use warhorses 
+You may mount one of your Heroes on a warhorse in the coming battles. Warhorses can only be used if you are back of the book.</description>
+            </rule>
+            <rule name="Rarity" id="fb4e-4d58-7118-bb08" hidden="false">
+              <description>Rarity 11
+
+Only available to Humans.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Barding, Discount" hidden="false" id="f18b-9e92-519c-98d7" page="0" collective="false">
+          <profiles>
+            <profile name="Barding" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="0866-5b33-2555-4c9b" page="0">
+              <characteristics>
+                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+1</characteristic>
+                <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">+1 Armor save, Warhorse Only</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Rarity" id="14d3-cf69-4c31-65e1" hidden="false">
+              <description>Rarity 11</description>
+            </rule>
+            <rule name="Barding" id="542f-a2b3-1280-8db3" hidden="false">
+              <description>Barding is armor for a horse in the same way that light and heavy armor is for a human.
+It covers the mount’s hide and in some cases the head.
+A model mounted on barded horse receives an additional +1 Armor save (+2 instead of +1 for being mounted).
+In addition, a mount wearing barding will only be killed on a D6 roll of a 1 if the model is taken out of action.
+Warhorses only.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -4951,6 +5190,12 @@ If the extra move takes the Orc or Goblin warrior within charge reach of an enem
     </rule>
     <rule name="Armour Piercing" id="2bd9-b453-a223-5126" hidden="false" page="0">
       <description>This weapon confers an extra -1 to enemy armor save at short range</description>
+    </rule>
+    <rule name="Cannot Be Parried" id="08b7-8107-edae-ce86" hidden="false">
+      <description>Attacks from this weapon cannot be parried.</description>
+    </rule>
+    <rule name="Whip Crack" id="7cd8-463b-1ea0-732e" hidden="false">
+      <description>When the wielder charges they gain +1A for that turn. This bonus attack is added after any other modifications. When the wielder is charged they gain +1A that they may only use against the charger. This additional attack will ‘strike first’. If the wielder is simultaneously charged by two or more opponents they will still only receive a total of +1A. If the wielder is using two whips at the same time then they get +1A for the additional hand weapon, but only the first whip gets the whipcrack +1A.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

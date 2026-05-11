@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2085-9795-666b-65cf" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -55,6 +55,10 @@
             <entryLink import="true" name="Shield" hidden="false" id="430b-dd28-4f1e-7ba7" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="1627-bb9a-f46a-89a5" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Heavy Armor" hidden="false" id="a9ed-305b-94b2-c8c2" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Shield, Discount" hidden="false" id="017c-63fa-07ef-ac51" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="218b-fb58-566f-fb2a" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="6793-8964-75af-00c0" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+            <entryLink import="true" name="Helmet, Discount" hidden="false" id="5671-37e8-5714-b685" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Miscellaneous Equipment" id="a7b8-2cc1-8ba6-47df" hidden="true">

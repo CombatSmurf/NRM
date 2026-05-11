@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Black Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Black Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="a72c-9e0b-9f94-25a4" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -261,7 +261,33 @@ They may never hire Elves of any sort!</description>
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Helmet, Discount" hidden="false" id="2475-dd62-caf8-f62e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="c2b9-6cdb-42cd-6701" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="681c-f015-a9c0-7e17" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, Discount" hidden="false" id="c305-58d1-bbc2-4834" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Mechanical suit, Discount" hidden="true" id="e04f-ab42-ca42-0e29" type="selectionEntry" targetId="d5e3-6f2e-4b60-1766">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9d1-252f-62d8-adca" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armor, Discount" id="fc06-b53d-85e9-78fe" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Shield, Discount" hidden="false" id="f84f-be13-b2c8-68b6" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+                <entryLink import="true" name="Helmet, Discount" hidden="false" id="e8fa-265f-b888-6654" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+                <entryLink import="true" name="Gromril Armour, Discount" hidden="false" id="458b-6ce4-30c5-b2f3" type="selectionEntry" targetId="bbdb-668c-447f-4f04"/>
+                <entryLink import="true" name="Light Armor, Discount" hidden="false" id="5b27-6ec4-e83b-cebe" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+                <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="2631-d767-4a87-d8cd" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+                <entryLink import="true" name="Buckler, Discount" hidden="false" id="8f7c-580a-4d44-aa7a" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+                <entryLink import="true" name="Ithilmar Armour, Discount" hidden="false" id="a24d-21c4-1a0a-7d96" type="selectionEntry" targetId="a2d3-8e0e-6262-31ff"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -308,6 +334,9 @@ They may never hire Elves of any sort!</description>
             <entryLink import="true" name="Light Armor" hidden="false" id="dde4-aef2-a012-792c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="f51f-8dd1-73aa-1eff" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2"/>
             <entryLink import="true" name="Helmet" hidden="false" id="36f5-67f2-1409-8c77" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="3"/>
+            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="656c-697c-985a-c522" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Helmet, Discount" hidden="false" id="ec45-3cf9-7570-1a86" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Shield, Discount" hidden="false" id="aa13-6292-aaac-a739" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

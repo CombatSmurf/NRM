@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -1611,6 +1611,10 @@ See Mutants section on special rules.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f4-98ec-6087-ab07" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="97d7-b68d-be04-e502" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="4483-f448-5c6f-5afa" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="7597-92c8-3cc0-4bf9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="c122-95ef-e32d-45a1" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d4f7-044f-41ce-5aec" name="Ungor Equipment" hidden="false" collective="false" import="true">
@@ -1653,6 +1657,7 @@ See Mutants section on special rules.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a633-731f-33ec-340c" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="de16-717d-f1d0-5869" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3908-23d7-43dc-e401" name="Skills" hidden="false" collective="false" import="true">

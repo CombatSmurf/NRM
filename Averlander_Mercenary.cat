@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49df-928f-1fa4-ff5b" name="Averlanders (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="49df-928f-1fa4-ff5b" name="Averlanders (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="692a-ce2e-7624-f850" name="Averlander Mercenary Rules" shortName="Averlander Mercenary Rules" publisher="https://broheim.net/downloads/warbands/official/Averland%20Mercenaries.pdf" publisherUrl="https://broheim.net"/>
   </publications>
@@ -1232,6 +1232,9 @@ Halflings are not known for their great strength!</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8d0-2a43-6bde-849f" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="0111-cacb-de4f-f4a1" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="5a2c-16b9-3f7b-8686" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Buckler, Discount" hidden="false" id="2176-9b55-fd63-b026" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7ed1-17bd-1eab-1707" name="Miscellaneous" hidden="false" collective="false" import="true">
@@ -1492,6 +1495,11 @@ Halflings are not known for their great strength!</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98de-63b6-c83a-35b5" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Buckler, Discount" hidden="false" id="4168-3149-3ed5-ef3a" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="8525-3e98-e3ad-39d4" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="155b-eed4-9b93-1c0a" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="82fd-437a-5ba4-2afe" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="cf18-82e0-e45f-3ca5" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="65bb-0120-37b0-8752" name="Halfling Skills" hidden="false" collective="false" import="true">

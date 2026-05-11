@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="a8de-6c73-092a-998b" name="Carnival Master" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1140,6 +1140,10 @@ The Plague Cart automatically passes any Leadership-based test it is required to
         <entryLink id="ec29-eda3-60f0-bdce" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
         <entryLink id="19a7-4889-c964-19a7" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
         <entryLink id="a845-b216-c1d0-43b1" name="Shield" hidden="false" collective="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
+        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="d9ed-eeb9-034b-065c" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="495f-5ba0-593b-810c" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="1dbd-f450-ef8b-f059" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="34a7-0733-f338-49fe" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3044-119e-70f0-5302" name="Brute equipment" hidden="false" collective="false" import="true">

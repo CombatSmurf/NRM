@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="15c7-6ea-37ea-739d" name="Arabian Tomb Raiders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="15c7-6ea-37ea-739d" name="Arabian Tomb Raiders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="b80c-d8ab-a18d-bc37" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -1192,6 +1192,10 @@ Note that you only get +1 even if you have two Bedouins.</description>
         <entryLink import="true" name="Buckler" hidden="false" type="selectionEntry" id="6583-1dd0-8ad6-cedb" targetId="0871-44c2-f0f0-c27a"/>
         <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="c301-1f58-6b8-ba22" targetId="d0e5-ca89-5f0d-f5d2"/>
         <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="1747-fa9c-f53a-bcfa" targetId="3d2a-426a-c350-2a03"/>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="107b-50af-71ee-3a7d" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="3f15-41ce-3288-4c03" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, Discount" hidden="false" id="68d6-d4c7-31b9-fc1c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Buckler, Discount" hidden="false" id="7c10-95bf-4f05-e9b2" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Slave Equipment" hidden="false" id="d761-2c37-952a-2f3e">
@@ -1227,6 +1231,7 @@ Note that you only get +1 even if you have two Bedouins.</description>
     <selectionEntryGroup name="Armor" hidden="false" id="ad1a-6157-1966-b40a">
       <entryLinks>
         <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="7b30-5eeb-c7b1-bcaa" targetId="74fb-cc90-1361-df26"/>
+        <entryLink import="true" name="Shield, Discount" hidden="false" id="f827-8342-2a27-676e" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Special Skills (Arabian Tomb Raiders)" hidden="false" id="b244-7d26-c9e8-3164">
