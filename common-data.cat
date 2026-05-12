@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="28" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -4274,7 +4274,7 @@ must retire from the warband.</description>
         <entryLink import="true" name="Blessed Stag Hide" hidden="false" type="selectionEntry" id="c882-93a3-281a-f6e6" targetId="aed9-7c38-1939-dd4d"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment - All" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851e-4289-371c-f05c" type="min"/>
       </constraints>
@@ -4287,6 +4287,7 @@ must retire from the warband.</description>
           </entryLinks>
         </entryLink>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Armor, Discount" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true">
