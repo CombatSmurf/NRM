@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="29" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="30" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -5548,7 +5548,7 @@ must retire from the warband.</description>
           </entryLinks>
         </entryLink>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment - All" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink import="true" name="Armor, Discount" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0"/>
+        <entryLink import="true" name="Armor, %" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true">
@@ -6081,40 +6081,40 @@ Warriors without Ride may not use this skill.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, %" id="82d9-2ec1-0dae-09e0" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="855f-3186-76d3-2da3" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="f833-5c33-3366-6105" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="f63e-cc74-e767-5b15" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="48bf-44ed-428a-1c60" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="de1f-f3f7-9e94-a0ae" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="855f-3186-76d3-2da3" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="f833-5c33-3366-6105" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="f63e-cc74-e767-5b15" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="48bf-44ed-428a-1c60" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="de1f-f3f7-9e94-a0ae" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Dwarf %" id="5787-938c-4e02-14b6" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="04fd-02fc-e7c4-92ca" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="173a-af22-db32-b9d4" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="65ea-7a1e-4da0-801c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="ea85-d684-6f56-2071" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Gromril Armour, Dwarf Discount" hidden="false" id="370c-b183-cc6e-4699" type="selectionEntry" targetId="30cb-8b83-2a13-8d32"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="32b8-6111-be8c-d0c1" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="04fd-02fc-e7c4-92ca" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="173a-af22-db32-b9d4" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="65ea-7a1e-4da0-801c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="ea85-d684-6f56-2071" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Gromril Armour, Dwarf %" hidden="false" id="370c-b183-cc6e-4699" type="selectionEntry" targetId="30cb-8b83-2a13-8d32"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="32b8-6111-be8c-d0c1" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Elven %" id="684e-188b-107f-76a1" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="1e60-b087-ac4b-9c54" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="ae96-9bdd-da1a-cd9f" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="e395-ab05-0c83-dcb9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="1737-bdb3-3148-07d6" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="705d-e462-5805-6bf4" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Ithilmar Armour, Elven Discount" hidden="false" id="25af-5151-fcdf-bb5f" type="selectionEntry" targetId="64cf-6510-b794-b312"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="1e60-b087-ac4b-9c54" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="ae96-9bdd-da1a-cd9f" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="e395-ab05-0c83-dcb9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="1737-bdb3-3148-07d6" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="705d-e462-5805-6bf4" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Ithilmar Armour, Elven %" hidden="false" id="25af-5151-fcdf-bb5f" type="selectionEntry" targetId="64cf-6510-b794-b312"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Chaos Dwarves %" id="4dad-b017-16e1-132b" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="6c99-c421-d359-9889" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="fcb9-186c-241e-4bfd" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="88d2-367e-133f-d36f" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="e0e4-e458-24d3-418a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="b39c-ee56-5da6-44a3" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="6c99-c421-d359-9889" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="fcb9-186c-241e-4bfd" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="88d2-367e-133f-d36f" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="e0e4-e458-24d3-418a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="b39c-ee56-5da6-44a3" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mechanical suit, Discount" hidden="false" id="d9c1-e151-e99a-c24c">
@@ -6158,11 +6158,11 @@ It can never be removed.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Bretonnia %" id="e3da-829f-ee59-5304" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="5f9d-16bd-1792-8505" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="e132-d077-6208-03ea" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="5f9d-16bd-1792-8505" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="e132-d077-6208-03ea" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
         <entryLink import="true" name="Light Armor, %" hidden="false" id="aa4a-2b86-77a0-86b5" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="146f-c635-2826-0944" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="3408-ad63-bab0-686c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="146f-c635-2826-0944" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="3408-ad63-bab0-686c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
         <entryLink import="true" name="Barding, %" hidden="false" id="da12-0b72-06b0-e9ad" type="selectionEntry" targetId="18cc-7c29-7f0c-f572"/>
       </entryLinks>
       <selectionEntries>
@@ -6419,6 +6419,134 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prayers of Sigmar" id="b0cd-811c-3ab0-b085" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="49b1-dcb4-0b0e-9492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="91dc-cecb-e255-388d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d388-e859-320b-1957" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d589-5f0f-7a39-6d0a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="89bf-b0a6-ffe7-467d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cdec-d4b6-c739-44cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="abcd-e2cc-9c50-295d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="0ac5-2cff-89f8-aa2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1 The Hammer Of Sigmar" hidden="false" id="7cab-5c71-7133-20b4" page="0" collective="false">
+          <profiles>
+            <profile name="1 The Hammer Of Sigmar" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="e9f3-e627-62dd-c618">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This weapon of the faithful glows with a golden light, imbued as it is with the righteous power of Sigmar.
+The wielder gains +2 Strength in hand-to-hand combat and all hits he inflicts cause double damage (eg, 2 wounds instead of 1).
+The Priest must test each shooting phase he wants to use the Hammer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Hearts of Steel" hidden="false" id="cbf7-3af9-9e62-56eb" page="0" collective="false">
+          <profiles>
+            <profile name="Hearts of Steel" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="1a9d-58f3-fafc-74c0">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">As the three words of power are spoken, waves of glory surround the servant of Sigmar.
+The faithful are heartened by the warrior god’s presence.
+
+Any allied warriors within 8&quot; of the warrior become immune to Fear and All Alone tests.
+In addition, the whole warband gains +1 to any Rout tests they hav e to make.
+The effects of this spell last until the caster is knocked down, stunned or put out of action.
+If cast again the effects are not cumulative, ie, the maximum bonus to Rout tests remains +1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 SoulFire" hidden="false" id="9b66-5b33-4bc6-04c6" page="0" collective="false">
+          <profiles>
+            <profile name="SoulFire" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="f4eb-6297-9a57-ca30">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wrath of Sigmar comes to earth.
+Purifying flames surround the Priest and wipe out those who resist the righteous fury of the God-Emperor!
+
+All enemy models within 4&quot; of the servant of Sigmar suffer a Strength 3 hit.
+No armour saves are allowed.
+
+The servants of darkness and Chaos are especially susceptible to Sigmar’s holy power.
+Undead and Possessed models in range suffer a Strength 5 hit instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 Shield of Faith" hidden="false" id="28c9-3b07-e437-2438" page="0" collective="false">
+          <profiles>
+            <profile name="Shield of Faith" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="c4e4-0dba-025a-7ce1">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">A shield of pure white light appears in front of the Priest.
+As long as his faith remains strong the shield will protect him.
+
+The Priest is immune to all spells.
+Roll at the beginning of each turn in the recovery phase.
+On a roll of 1 or 2 the shield disappears.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 Healing Hand" hidden="false" id="71c4-3eb7-1106-96d1" page="0" collective="false">
+          <profiles>
+            <profile name="Healing Hand" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="c56f-7f5d-3cdf-a929">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Laying hands upon a wounded comrade, the servant of Sigmar calls upon his Lord to heal the warrior’s wounds.
+
+Any one model within 2&quot; of the Priest (including himself) may be healed.
+The warrior is restored to his full quota of Wounds.
+
+In addition, if any friendly models within 2&quot; are stunned or knocked down, they immediately come to their senses, stand up, and continue fighting as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 Armour of Righteousness" hidden="false" id="baaa-799d-4450-7e3f" page="0" collective="false">
+          <profiles>
+            <profile name="6 Armour of Righteousness" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="7ae6-6811-01fa-094d">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above his head.
+
+The Priest has an armour save of 2+ which replaces his normal armour save.
+In addition, he causes fear in his enemies and is therefore immune to fear himself.
+
+The power of the Armour of Righteousness lasts until the beginning of the Priest’s next Shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
