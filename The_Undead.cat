@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -76,20 +76,25 @@
         <categoryLink id="888b0a33-7922-685c-49fc-591b3fb26358-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Equipment" hidden="false" id="ce82-b295-f8a4-3e4c" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="ce82-b295-f8a4-3e4c" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead"/>
         <entryLink import="true" name="Skills" hidden="false" id="bdde-63c0-92ca-e438" type="selectionEntryGroup" targetId="70b9-9a07-4088-7598" collapsible="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="8714-0d98-9062-64c2" type="selectionEntryGroup" targetId="7879-46ac-5598-aa00" collapsible="true">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="f27f-d12c-6c7b-2d48" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="af4e-ed50-4bb4-5804" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1ce5-4908-c890-a610" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="6ce9-c2ff-051a-104c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="1237-f120-06cc-d798" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f56e-3d91-cb09-40d3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="points" scope="parent" shared="false" id="c008-3af5-20e2-e4bd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="f597-bb96-8021-0d77" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Characteristic Increases" hidden="false" id="abe8-72f0-04a8-c8ae">
-          <entryLinks>
-            <entryLink import="true" name="Characteristic Increases" hidden="false" id="8714-0d98-9062-64c2" type="selectionEntryGroup" targetId="7879-46ac-5598-aa00"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Dire Wolves" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -337,33 +342,20 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="93700e68-f80c-ad1c-b5cd-06fd3c7e7537-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="04fe2754-4270-2490-96f1-ab3b718bec62" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+        <selectionEntry id="04fe2754-4270-2490-96f1-ab3b718bec62" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="63cd0cac-bdf3-54cc-7b1f-9346ca7ac777" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
+            <entryLink id="63cd0cac-bdf3-54cc-7b1f-9346ca7ac777" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" name="Serious Injuries" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6874fd6e-a707-b236-686b-975e3425b3f2" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9531e450-451a-d77b-e6c2-7a391c8049ab" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" name="Characteristic Increases"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e486a1eb-1be8-c547-e111-cf507ef97a76" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+        <selectionEntry id="e486a1eb-1be8-c547-e111-cf507ef97a76" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -379,8 +371,9 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="42132d31-b7fe-788f-ab94-390f6e406693" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry" collapsible="true"/>
-        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="81ae-0c88-b19e-d5e2" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a"/>
+        <entryLink id="42132d31-b7fe-788f-ab94-390f6e406693" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true" sortIndex="4"/>
+        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="81ae-0c88-b19e-d5e2" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a" sortIndex="1" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="bb36-09b4-b752-6068" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="5" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -502,20 +495,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ffab3949-b7e7-0463-5c47-b05ae207fdbd" name=" Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="95dc4d07-7bf0-82ff-00a2-18a4c7c6aa7a" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9a736f7c-0a1a-2561-68bc-36da58b28c84" name="Serious Injuries" page="0" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9a736f7c-0a1a-2561-68bc-36da58b28c84" name="Serious Injuries" page="0" hidden="true" collective="false" import="true" type="upgrade" sortIndex="2" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -528,14 +508,14 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c015fc99-0af0-e3a8-7f2a-85178866327b" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
+            <entryLink id="c015fc99-0af0-e3a8-7f2a-85178866327b" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" name="Serious Injuries" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="63218ed0-c131-966a-df37-be55d3e983cf" name="Skills" page="0" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="63218ed0-c131-966a-df37-be55d3e983cf" name="Skills" page="0" hidden="true" collective="false" import="true" type="upgrade" sortIndex="1" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -548,7 +528,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7dbab9e0-3266-e802-a15e-9cd768e147de" name="Skills" hidden="false" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup"/>
+            <entryLink id="7dbab9e0-3266-e802-a15e-9cd768e147de" name="Skills" hidden="false" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -557,8 +537,9 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="68dfc5ad-72e4-3e81-2e9e-f6abd37596a9" name="Promoted" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry"/>
-        <entryLink id="2c761416-6f59-1a4f-2742-25e90f596c03" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
+        <entryLink id="68dfc5ad-72e4-3e81-2e9e-f6abd37596a9" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" sortIndex="4" collapsible="true"/>
+        <entryLink id="2c761416-6f59-1a4f-2742-25e90f596c03" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="f79c-b569-bc82-c457" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="5" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40"/>
@@ -680,57 +661,27 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a1391776-47ea-0568-037f-ec8f44d71045" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="eb542e2f-5c07-65f8-8d74-a73a4bae85a0" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ab0d5c14-996b-9379-7070-817be5b9161a" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="44fd38ee-cf49-6b20-69b1-014f6828bab0" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" name="Characteristic Increases">
-              <modifiers>
-                <modifier type="increment" field="minSelections" value="0"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9f7d41cd-13db-b929-0b5e-8b2cfbe8ca02" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+        <selectionEntry id="9f7d41cd-13db-b929-0b5e-8b2cfbe8ca02" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
+            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f7f71508-28ee-8e1f-42ab-621f4f639311" name="Magic" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Serious Injuries" hidden="false" id="1cd4-baae-992e-c62b" page="0" collective="false" collapsible="true" sortIndex="4">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="f73c-ded6-e1db-06fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d546-9bd3-3d95-8891" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink id="87b05dcd-7c4f-4b48-215e-226c08d46e8d" hidden="false" collective="false" import="true" targetId="5b051df2-86a2-4480-25d1-a99dcbed79b0" type="selectionEntryGroup" name="Necromancy"/>
+            <entryLink import="true" name="Serious Injuries" hidden="false" id="a585-7eea-8337-2d6c" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -739,12 +690,10 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a7d4eb84-400b-29e8-339c-fceebcba1553" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d4-ea22-1149-d2cb" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="3b60-35a4-f625-3ffe" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a" flatten="true"/>
+        <entryLink import="true" name="Experience" hidden="false" id="5456-4828-3d7b-c8d1" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true" sortIndex="5"/>
+        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="fa7c-23f7-3509-b031" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a" sortIndex="1" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="b656-18f4-e80a-d82d" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="6" collapsible="true"/>
+        <entryLink import="true" name="Necromancy" hidden="false" id="b6fc-7839-95ef-b16f" type="selectionEntryGroup" targetId="5b051df2-86a2-4480-25d1-a99dcbed79b0" sortIndex="2" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35"/>
@@ -768,8 +717,8 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
-        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -899,33 +848,20 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="83acbe09-ec66-c45c-0f5b-1a9e0017016e-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="56248f6d-5ee0-e166-254d-f40501f26f09" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="56248f6d-5ee0-e166-254d-f40501f26f09" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4da70b4b-2903-8bb7-49aa-a8226f14561b" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="4da70b4b-2903-8bb7-49aa-a8226f14561b" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a9874b15-5410-29f0-f05c-e629500fc5f5" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4e184abe-fdce-287e-ab88-b98585f03810" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" name="Characteristic Increases"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5d5c6559-2773-1cc5-3835-0eb5869758f2" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+        <selectionEntry id="5d5c6559-2773-1cc5-3835-0eb5869758f2" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -944,16 +880,13 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry">
+        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e674-1a3a-6be5-c1b0" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="d864-3d31-d096-b92d" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a">
-          <categoryLinks>
-            <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="cb55-a8ac-8c3a-31d6" primary="true" name="Heroes"/>
-          </categoryLinks>
-        </entryLink>
+        <entryLink import="true" name="Equipment (Undead 1a)" hidden="false" id="02b8-c6b1-95e0-e521" type="selectionEntryGroup" targetId="e584-2fa3-4591-889a" sortIndex="1" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4416-7a40-f2cd-813a" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="5"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="110"/>
@@ -996,154 +929,8 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
   <infoLinks>
     <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" name="EXP advancement" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
   </infoLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7e03b263-c206-09f3-f9d3-47c0c9294235" name="+1 BS" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0cbce569-483e-fc61-9a46-75bb7f52573a" name="+1 I" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e6a2720c-06c4-d495-d8e5-0eeb2009570a" name="+1 LD" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="492ef626-87b8-7b39-378d-38fbd1ffb131" name="+1 M" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="62be0dba-2c77-76b0-3da3-48c05611f170" name="+1 S" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" name="+1 T" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a3c87526-fae5-8945-97c3-057d97df69e7" name="+1 W" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" name="+1 WS" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="06c6e571-9da5-51a2-4053-aeca9035e1a2" name="-1 A" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a93c5e1e-9169-8d09-5cba-5aa094184fe1" name="-1 BS" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" name="-1 I" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="043d62b3-76f8-822e-3d67-9c3806889918" name="-1 LD" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bf7c1f26-0442-54db-cacc-44dc499dcebc" name="-1 M" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" name="-1 S" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" name="-1 T" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bbd9ff4c-4aa7-432d-a143-b786400cef79" name="-1 W" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="abc4f440-9124-351f-831d-aaf5be4d3ae4" name="-1 WS" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f0fc009a-7990-32ef-b84b-b631058620e2" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="1"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b39ee84c-3f79-227e-4b39-8469fb19d56a" name="Gold" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="1"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0f2c78d6-e019-6b88-136a-9e00031645e5" name="Promoted" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="f42ac18f-5b17-105f-54fa-9b8a3c426954" name="Characteristic Decreases" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="f42ac18f-5b17-105f-54fa-9b8a3c426954" name="Characteristic Decreases" hidden="false" collective="false" import="true" collapsible="true" sortIndex="5">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1155,18 +942,18 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="5f33b879-84c4-0192-3962-e5f1510f30b8" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry" name="-1 I"/>
-        <entryLink id="90e572b8-8f37-3902-7e4d-0d519d3320e9" hidden="false" collective="false" import="true" targetId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" type="selectionEntry" name="-1 S"/>
-        <entryLink id="e57c34e4-cb6c-ca8c-a3b8-5ab15cc7a293" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry" name="-1 WS"/>
-        <entryLink id="e6f2ef6e-e9c6-5c03-e5df-4f750f71eec1" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry" name="-1 BS"/>
-        <entryLink id="a1eb369a-7395-62c1-8569-e298d930a5b6" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry" name="-1 T"/>
-        <entryLink id="b799bf73-d1a2-3643-6c91-e2e61027dac7" hidden="false" collective="false" import="true" targetId="06c6e571-9da5-51a2-4053-aeca9035e1a2" type="selectionEntry" name="-1 A"/>
-        <entryLink id="acaee1cb-5fb9-77c7-b151-fe3877681535" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry" name="-1 M"/>
-        <entryLink id="f53d9f32-0d34-4ee1-7489-edaaa6b9c60b" hidden="false" collective="false" import="true" targetId="043d62b3-76f8-822e-3d67-9c3806889918" type="selectionEntry" name="-1 LD"/>
-        <entryLink id="3dacaef2-0a84-fb18-9e2d-46da1f65b2f1" hidden="false" collective="false" import="true" targetId="bbd9ff4c-4aa7-432d-a143-b786400cef79" type="selectionEntry" name="-1 W"/>
+        <entryLink id="5f33b879-84c4-0192-3962-e5f1510f30b8" hidden="false" collective="false" import="true" targetId="7531-eebe-fabf-7cf5" type="selectionEntry" name="-1 I" sortIndex="7"/>
+        <entryLink id="90e572b8-8f37-3902-7e4d-0d519d3320e9" hidden="false" collective="false" import="true" targetId="8e57-5d0b-5279-b4ab" type="selectionEntry" name="-1 S" sortIndex="4"/>
+        <entryLink id="e57c34e4-cb6c-ca8c-a3b8-5ab15cc7a293" hidden="false" collective="false" import="true" targetId="ae44-58f4-4440-5777" type="selectionEntry" name="-1 WS" sortIndex="2"/>
+        <entryLink id="e6f2ef6e-e9c6-5c03-e5df-4f750f71eec1" hidden="false" collective="false" import="true" targetId="0e79-80b9-77e3-fcc9" type="selectionEntry" name="-1 BS" sortIndex="3"/>
+        <entryLink id="a1eb369a-7395-62c1-8569-e298d930a5b6" hidden="false" collective="false" import="true" targetId="ca62-64c2-488a-f17c" type="selectionEntry" name="-1 T" sortIndex="5"/>
+        <entryLink id="b799bf73-d1a2-3643-6c91-e2e61027dac7" hidden="false" collective="false" import="true" targetId="9faf-d3bf-a2ba-411e" type="selectionEntry" name="-1 A" sortIndex="8"/>
+        <entryLink id="acaee1cb-5fb9-77c7-b151-fe3877681535" hidden="false" collective="false" import="true" targetId="7dee-74f8-7707-ce64" type="selectionEntry" name="-1 M" sortIndex="1"/>
+        <entryLink id="f53d9f32-0d34-4ee1-7489-edaaa6b9c60b" hidden="false" collective="false" import="true" targetId="a519-13dc-1b04-e39e" type="selectionEntry" name="-1 LD" sortIndex="9"/>
+        <entryLink id="3dacaef2-0a84-fb18-9e2d-46da1f65b2f1" hidden="false" collective="false" import="true" targetId="9209-0067-18d2-b78c" type="selectionEntry" name="-1 W" sortIndex="6"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="36e117d8-419f-59b9-e337-512db3c6c990" name="Characteristic Increases" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="36e117d8-419f-59b9-e337-512db3c6c990" name="Characteristic Increases" hidden="false" collective="false" import="true" collapsible="true" sortIndex="4">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1178,20 +965,20 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="91ba12d9-83b5-9996-bf4d-36d7f3ccacfd" hidden="false" collective="false" import="true" targetId="0cbce569-483e-fc61-9a46-75bb7f52573a" type="selectionEntry" name="+1 I"/>
-        <entryLink id="b3bcb90d-dc4a-d879-079a-892e6dc4cd37" hidden="false" collective="false" import="true" targetId="62be0dba-2c77-76b0-3da3-48c05611f170" type="selectionEntry" name="+1 S"/>
-        <entryLink id="05840d87-e7fc-9f6e-b4be-d98f6ef21d1d" hidden="false" collective="false" import="true" targetId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" type="selectionEntry" name="+1 WS"/>
-        <entryLink id="0a43461b-4860-a310-ca97-3639cc453a82" hidden="false" collective="false" import="true" targetId="7e03b263-c206-09f3-f9d3-47c0c9294235" type="selectionEntry" name="+1 BS"/>
-        <entryLink id="d5c24639-3822-d97d-cc82-6d5e18b39062" hidden="false" collective="false" import="true" targetId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" type="selectionEntry" name="+1 T"/>
-        <entryLink id="ab62eab6-d82b-714b-7a9b-4135b49e7a12" hidden="false" collective="false" import="true" targetId="8acf5ee1-3430-be22-ec94-15b12e15e497" type="selectionEntry" name="+1 A"/>
-        <entryLink id="461ea6a4-b5be-2975-5802-0d0f3634e774" hidden="false" collective="false" import="true" targetId="492ef626-87b8-7b39-378d-38fbd1ffb131" type="selectionEntry" name="+1 M"/>
-        <entryLink id="498df122-099e-8a4f-7a1c-5b63aad30226" hidden="false" collective="false" import="true" targetId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" type="selectionEntry" name="+1 LD"/>
-        <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="a3c87526-fae5-8945-97c3-057d97df69e7" type="selectionEntry" name="+1 W"/>
+        <entryLink id="91ba12d9-83b5-9996-bf4d-36d7f3ccacfd" hidden="false" collective="false" import="true" targetId="da26-8381-781a-6149" type="selectionEntry" name="+1 I" sortIndex="7"/>
+        <entryLink id="b3bcb90d-dc4a-d879-079a-892e6dc4cd37" hidden="false" collective="false" import="true" targetId="9368-3616-516f-5178" type="selectionEntry" name="+1 S" sortIndex="4"/>
+        <entryLink id="05840d87-e7fc-9f6e-b4be-d98f6ef21d1d" hidden="false" collective="false" import="true" targetId="7418-394e-fe13-2a96" type="selectionEntry" name="+1 WS" sortIndex="2"/>
+        <entryLink id="0a43461b-4860-a310-ca97-3639cc453a82" hidden="false" collective="false" import="true" targetId="5a83-274a-bba8-f498" type="selectionEntry" name="+1 BS" sortIndex="3"/>
+        <entryLink id="d5c24639-3822-d97d-cc82-6d5e18b39062" hidden="false" collective="false" import="true" targetId="6fe1-7bba-3ca0-06b7" type="selectionEntry" name="+1 T" sortIndex="5"/>
+        <entryLink id="ab62eab6-d82b-714b-7a9b-4135b49e7a12" hidden="false" collective="false" import="true" targetId="37c4-dcb1-8949-d4eb" type="selectionEntry" name="+1 A" sortIndex="8"/>
+        <entryLink id="461ea6a4-b5be-2975-5802-0d0f3634e774" hidden="false" collective="false" import="true" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry" name="+1 M" sortIndex="1"/>
+        <entryLink id="498df122-099e-8a4f-7a1c-5b63aad30226" hidden="false" collective="false" import="true" targetId="27d8-c790-a4c1-b9cc" type="selectionEntry" name="+1 LD" sortIndex="9"/>
+        <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="7918-b440-5d63-bd5e" type="selectionEntry" name="+1 W" sortIndex="6"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5b051df2-86a2-4480-25d1-a99dcbed79b0" name="Necromancy" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5b051df2-86a2-4480-25d1-a99dcbed79b0" name="Necromancy" hidden="false" collective="false" import="true" sortIndex="2" flatten="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
@@ -1297,199 +1084,7 @@ He is a normal zombie in all other respects.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2ace8f8f-6f26-2b7f-5407-332ed11d0355" name="Serious Injuries" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="78aa00f9-ee2f-2482-1090-4d1ca59a8169" name="Leg Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="bdb45ddd-9c7f-f948-a352-fc8b312386ff" name="Leg Wound" page="0" hidden="false">
-              <description>The warrior’s leg is broken. He suffers a -1 Movement characteristic penalty from now on.</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink id="f0bf7b17-b2a9-e6b0-ce05-d19f0700aedb" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry" name="-1 M">
-              <modifiers>
-                <modifier type="set" field="minSelections" value="1"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="235f320e-f3a2-d485-4769-0b8a2a88fcf7" name="Severe Arm Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="3c16c046-1533-e807-2947-3c4df51e284c" name="Severe Arm Wound" page="0" hidden="false">
-              <description>Severe arm wound. The arm must be amputated. The warrior may only use a single onehanded weapon from now on</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d7277e6e-49d8-50cb-988c-84bb7240da31" name="Maddness: Stupidity" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="03ca68f4-c714-1811-6183-179c17af9aa9" hidden="false" targetId="20f0-4428-0681-c9f9" type="rule" name="Stupidity"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="abc70d10-8ad7-23a1-6eb0-e05474350e3f" name="Madness: Frenzy" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="2405cb62-5f89-ae77-e992-d849386a7dae" hidden="false" targetId="ce28-23a1-7b2a-7e6c" type="rule" name="Frenzy"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8902fa66-7b19-ed57-c029-35c34cd7efe2" name="Chest Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="033c9c03-9ee3-ed99-6488-6d5c93c2ff81" name="Chest Wound" page="0" hidden="false">
-              <description>The warrior has been badly wounded in the chest. He recovers but is weakened by the injury so his Toughness is reduced by 1</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink id="a998bfe9-42c1-0763-0747-e1c851080e15" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry" name="-1 T">
-              <modifiers>
-                <modifier type="set" field="minSelections" value="1"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dbccc133-7061-c16e-eb8b-ab7a378c418c" name="Blind In one Eye" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="92491f8f-6fd1-7980-0b28-9af1d8911cb8" name="Blind In one Eye" page="0" hidden="false">
-              <description>A character that loses an eye has his Ballistic Skill reduced by -1. If the warrior is subsequently blinded in his remaining good eye he
-must retire from the warband.</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink id="30324a76-6c80-b2e4-7879-3f9fbddefe9f" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry" name="-1 BS">
-              <modifiers>
-                <modifier type="set" field="minSelections" value="1"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="213d3373-4b14-d558-fe3d-370cd420bb47" name="Old Battle Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="0467fe09-34bd-0018-1e63-d4da3eaba5c1" name="Old Battle Wound" page="0" hidden="false">
-              <description>The warrior survives, but his wound will prevent him from fighting if you roll a 1 on a D6 at the start of any battle. Roll at the start of each battle from now on.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="569e02f1-7179-556f-8824-1219b3c42902" name="Nervous Condition" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="aa4cfe71-840d-685e-9e06-42a5f421e9fe" name="Nervous Condition" page="0" hidden="false">
-              <description>The warrior’s nervous system has been damaged. His Initiative is permanently reduced by -1.</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink id="d7d5e798-2fbc-8704-e69c-61113a0c1bb2" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry" name="-1 I">
-              <modifiers>
-                <modifier type="set" field="minSelections" value="1"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fe54554d-0e2c-9a33-6a50-a38ce16ea71c" name="Hand Injury" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="8828420d-09dd-fdaf-5dee-4448151ee8d7" name="Hand Injury" page="0" hidden="false">
-              <description>The warrior’s hand is badly injured. His Weapon Skill is permanently reduced by -1.</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink id="0ed1495c-3cd6-e312-8087-84a1945b4a56" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry" name="-1 WS">
-              <modifiers>
-                <modifier type="set" field="minSelections" value="1"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="862a6b8f-fd65-9fec-da82-a1791ff77f8f" name="Bitter Emity" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="db34d0f4-595e-d735-557c-d7c3e64aae97" name="Bitter Emity" page="0" hidden="false">
-              <description>Warrior Hates Somone/Group</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4dab123f-803f-dc5f-ea99-5ea87ae20681" name="Hardened" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="f43fefae-57d3-fe93-17ba-4124b92dc44e" name="Hardened" page="0" hidden="false">
-              <description>The warrior survives and becomes inured to the horrors of Mordheim. From now on he is immune to fear.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cf7e9bf2-6643-1719-c87b-61b79f7ae434" name="Horrible Scars" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="4066ccc8-119a-8879-fb9a-1dc7db70a4c5" name="Horrible Scars" page="0" hidden="false">
-              <description>The warrior causes fear from now on.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="1a02c0ba-c1e9-bfb6-c550-bb4f5146c775" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule" name="Fear"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="732f7f66-fdb2-5421-a06e-a18e90e6d9b8" name="Smashed Leg" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="d1bf90eb-11da-405c-8676-ec0cb85b2432" name="Smashed Leg" page="0" hidden="false">
-              <description>The warrior may not run any more but he may still charge.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="39deaab7-93cc-922b-d866-f7368e56495a" name="Skills" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="39deaab7-93cc-922b-d866-f7368e56495a" name="Skills" hidden="false" collective="false" import="true" collapsible="true" sortIndex="3">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1621,7 +1216,7 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Equipment (Undead 1a)" id="e584-2fa3-4591-889a" hidden="false" collective="false" import="true">
+    <selectionEntryGroup name="Equipment (Undead 1a)" id="e584-2fa3-4591-889a" hidden="false" collective="false" import="true" sortIndex="1">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="9547-cfa7-da7b-36e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="7fdf-b5da-0721-399e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1633,27 +1228,386 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
         <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="b953-1dd1-0504-79ed" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Hand to Hand Weapons" hidden="false" id="f1fc-1ba0-65c1-1418" collective="false" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup" flatten="true">
-          <categoryLinks>
-            <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="24de-a584-60ee-6cbe" primary="false" name="Heroes"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Free Dagger" hidden="false" id="99e4-3a76-cf76-2f5c" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Missile Weapons" hidden="false" id="a94e-63e1-d044-349b" collective="false" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup" flatten="true">
-          <categoryLinks>
-            <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="1ebb-8fdb-293e-b856" primary="false" name="Heroes"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="28ab-2334-b42d-e4f2" collective="false" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink import="true" name="Armor" hidden="false" id="4355-56a0-1bfd-a002" collective="false" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup" flatten="true">
-          <categoryLinks>
-            <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="5fea-3995-af3a-5e66" primary="false" name="Heroes"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink import="true" name="Armor, Discount" hidden="false" id="6aa2-4a21-a1ce-d521" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" collapsible="true"/>
+        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="28ab-2334-b42d-e4f2" collective="false" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
+        <entryLink import="true" name="Armor" hidden="false" id="4355-56a0-1bfd-a002" collective="false" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup" flatten="true" sortIndex="3"/>
+        <entryLink import="true" name="Armor, Discount" hidden="false" id="6aa2-4a21-a1ce-d521" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="2" flatten="true"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Undead - Weapons" id="3a2a-c593-0665-301d" hidden="false" sortIndex="1" flatten="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Undead - HtH" id="20ea-1c23-a333-a9cc" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Sword" hidden="false" id="ece3-193c-5e3b-707d" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
+                <entryLink import="true" name="Axe" hidden="false" id="2c17-c932-c96c-6b50" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Cutting edge" id="98a6-39e7-4ace-d936" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+                  </infoLinks>
+                </entryLink>
+                <entryLink import="true" name="Dagger" hidden="false" id="7276-9711-be86-9b88" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
+                <entryLink import="true" name="Halberd" hidden="false" id="c528-3641-2db4-8fb2" collective="false" targetId="3c52-9e92-25ec-1939" type="selectionEntry"/>
+                <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="55a8-b9c2-e20a-d275" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Spear" hidden="false" id="6d94-d3ef-f188-fa68" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="0b83-e099-c763-3808" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="0616-698e-4e51-c3e2">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="329b-45d0-db08-03b9" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6b1f-620b-6429-38e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="f774-6e4d-5713-485e" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="c673-b1c3-688c-7d3a" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4074-74bd-106d-04c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="255d-f1c1-8a30-8fd6" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Strike Last" id="dae2-c331-43af-7a08" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
+                    <infoLink name="Two Handed" id="37fa-b0e1-8282-d2da" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+                    <infoLink name="Cutting edge" id="6b3b-74ae-74d5-5bae" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="7258-4ca9-5c2f-8bf4">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="e53f-7e69-068e-f180">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="70e4-be6b-1484-aadc" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b1c-a2b5-d5b8-ee89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="2867-97a6-70de-edf8" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="d4a2-a7e7-4e4b-2256" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="56dd-5e93-7017-a8d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="63e6-6ea7-0801-64e6" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <infoLinks>
+                    <infoLink name="Strike Last" id="c2a2-8598-2226-1bb5" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
+                    <infoLink name="Two Handed" id="57e7-78cb-7747-af2c" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+                    <infoLink name="Concussion" id="e758-8fd9-c9f0-b372" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="ab09-41e7-9679-0a9b">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="ce05-dab3-7ebe-c9d2">
+                  <infoLinks>
+                    <infoLink name="Parry" id="a217-0724-6257-ed2a" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+                    <infoLink name="Two Handed" id="d4db-2d74-ea5c-30f9" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
+                    <infoLink name="Strike Last" id="2610-8c29-6e60-2dd3" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="07cd-12eb-a4fb-09b7" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e1ec-6a86-ced2-18cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="69c7-6e3a-e78e-7fa1" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="198c-2488-3f03-1ff8" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd0f-f1f6-e617-1116" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="0b7f-35ed-145f-a59a" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="f01c-41cf-579b-95ad">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="9987-9cd6-6f24-c6f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="2fda-84ef-4dc5-7dfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Undead - Missile Weapons" id="c31b-2446-3391-256a" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bow" hidden="false" id="6271-e90a-af95-982e" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
+                <entryLink import="true" name="Shortbow" hidden="false" id="0ecd-0d10-66af-45ae" type="selectionEntry" targetId="3706-6421-53b4-940d"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Undead - Weapons - Alternate" id="3b2a-64fe-c936-4f95" hidden="true" sortIndex="9">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Undead - HtH" id="3376-767c-d8f2-bf43" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Sword" hidden="false" id="eda0-e412-edca-8dda" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
+                <entryLink import="true" name="Axe" hidden="false" id="6164-91aa-9749-3e10" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Cutting edge" id="fa5c-d89c-f897-ac23" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+                  </infoLinks>
+                </entryLink>
+                <entryLink import="true" name="Dagger" hidden="false" id="57d8-93ef-2875-4c6c" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
+                <entryLink import="true" name="Halberd" hidden="false" id="6e4d-edd5-5973-d9af" collective="false" targetId="3c52-9e92-25ec-1939" type="selectionEntry"/>
+                <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="4ade-2ba6-a014-a042" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Spear" hidden="false" id="63e2-5181-6c7c-2976" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="ec5b-a600-f7db-49a1">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="719a-5e28-1218-aec9" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9553-2d63-6c58-1e89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="77e3-7e07-0e2b-a465" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="ceab-edee-d84a-7e6d" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7e98-212e-32d9-390a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="c991-bbf1-6e11-6198" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Strike Last" id="1c0c-5fe3-4395-4d47" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
+                    <infoLink name="Two Handed" id="5fb1-99be-7e95-0a7d" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+                    <infoLink name="Cutting edge" id="4833-86c2-68d6-9853" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="5adc-c490-458a-cc91">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="fe94-3be7-dbde-1f43">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="dca7-2477-fa28-9eaf" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e925-34c6-24f5-072e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="87a3-8c62-cd09-125d" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="1f44-f820-a080-c559" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b22b-0263-2ffa-eb51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="2b13-fdb6-0620-0033" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <infoLinks>
+                    <infoLink name="Strike Last" id="224b-45fb-a693-def1" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
+                    <infoLink name="Two Handed" id="2e13-54c5-312d-f862" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+                    <infoLink name="Concussion" id="ff95-dc86-0aec-3aa3" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="e948-631a-9f90-8374">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="20ad-c52f-0a3e-3995">
+                  <infoLinks>
+                    <infoLink name="Parry" id="e9d5-bcb6-5dbd-26e2" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+                    <infoLink name="Two Handed" id="c7f7-b591-ab5f-9376" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
+                    <infoLink name="Strike Last" id="b2ac-0573-6fcc-d67d" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="e38e-101d-ee34-dab3" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="30" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f66f-e625-94de-3552" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Ithilmar weapon" id="c8af-5292-d0b8-36bb" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="10b6-562a-0612-904d" page="0" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="45" field="points"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6e2-baa1-b732-ff18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Gromril weapon" id="ca35-6721-c612-e1da" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="add9-8f12-5056-1256">
+                      <characteristics>
+                        <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+                        <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="adae-9e9a-4ea8-595b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Undead - Missile Weapons" id="4dad-9b53-a9db-a758" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bow" hidden="false" id="94db-7e06-3024-6c12" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
+                <entryLink import="true" name="Shortbow" hidden="false" id="3b99-052c-75b4-75ee" type="selectionEntry" targetId="3706-6421-53b4-940d"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
