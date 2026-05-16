@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9fda-1198-8b84-972e" name="Gunnery School Of Nuln (1b)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9fda-1198-8b84-972e" name="Gunnery School of Nuln (1b)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>The province of Nuln is respected across the Empire as the home to the finest handguns and war machines, save for those constructed by the Dwarfs.
 This makes them a desired commodity for any Imperial army using cannonry and as such graduates from the Imperial Gunnery School are highly prized for their skills in training artillery on vulnerable targets with unerring accuracy and maintaining the war machines.
 Perhaps the most surprising fact is that the Imperial Gunnery School does not create new weapons of war.
@@ -1705,11 +1705,11 @@ When using pistols in close combat, they may re-roll any missed to-hit rolls wit
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="2c3f-3ea8-a5df-d617" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="c66e-5e49-7fbb-e73c" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="5c54-ceb2-1881-8c3e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="949e-5242-2b4f-20aa" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="96ae-eeff-0489-5fa1" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="2c3f-3ea8-a5df-d617" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="c66e-5e49-7fbb-e73c" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="5c54-ceb2-1881-8c3e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="949e-5242-2b4f-20aa" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="96ae-eeff-0489-5fa1" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a631-8ebd-b27b-bdb2" name="Ranged" publicationId="79c4-b7d0-8643-3ab1" page="2" hidden="false" collective="false" import="true">
@@ -2128,9 +2128,9 @@ When using pistols in close combat, they may re-roll any missed to-hit rolls wit
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="e8ea-0f93-2630-a3e3" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="bdb5-8122-835f-dea2" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="1a49-6943-aea1-56e9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="e8ea-0f93-2630-a3e3" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="bdb5-8122-835f-dea2" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="1a49-6943-aea1-56e9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="60d6-da0f-48db-d2ca" name="Miscellaneous" hidden="false" collective="false" import="true">

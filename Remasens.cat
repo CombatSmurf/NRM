@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ad3d-5780-c6dc-852" name="Tileans - Remasens (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ad3d-5780-c6dc-852" name="Tileans - Remasens (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="d0a6-e11-f742-4f0a" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -10,7 +10,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="b173-90e1-97c9-ff88" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="21ac-e2db-cf8f-a0fd" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="9556-3ebf-f9b7-cdb4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="9556-3ebf-f9b7-cdb4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -22,13 +22,13 @@
             </entryLink>
             <entryLink import="true" name="Sword" hidden="false" id="731b-2a86-50a1-4a3b" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Spear" hidden="false" id="ea1e-b4c5-dd74-2b5a" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
-            <entryLink import="true" name="Double Handed Sword" hidden="false" id="1ee5-2044-fbe2-bd56" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="1ee5-2044-fbe2-bd56" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
             <entryLink import="true" name="Halberd" hidden="false" id="eb0e-f1ad-eaf7-a3ff" type="selectionEntry" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Pike" hidden="false" id="9a0a-6a08-876e-5a19" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
             <entryLink import="true" name="Morning Star" hidden="false" id="bd8f-682d-d154-6fa5" type="selectionEntry" targetId="d5f3-1906-da91-4e8f"/>
             <entryLink import="true" name="Rapier" hidden="false" id="96d3-1640-3d16-12ba" type="selectionEntry" targetId="1cad-3ea5-f379-1040"/>
-            <entryLink import="true" name="Double Handed Axe" hidden="false" id="4b95-1e2a-7934-1c88" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-            <entryLink import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="0144-e794-01b6-7ad3" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="4b95-1e2a-7934-1c88" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="0144-e794-01b6-7ad3" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="65c4-673e-64f8-402a"/>
@@ -51,6 +51,12 @@
             </entryLink>
             <entryLink import="true" name="Bow" hidden="false" id="0afb-8f6b-2559-dd55" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="cb41-c6a2-c3c7-af83" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
+            <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="177d-dfe0-e495-cf59" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604">
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pistols - Brace" hidden="false" id="1531-7df7-9d95-81d4" type="selectionEntry" targetId="eda4-7746-2e0d-a342"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="52a9-74ce-bffb-f8d0"/>
@@ -66,7 +72,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Armor, Discount" hidden="false" id="38d0-1ffc-a89a-092b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0"/>
+        <entryLink import="true" name="Armor, %" hidden="false" id="38d0-1ffc-a89a-092b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Tilean Marksman Equipment" id="8404-6441-af23-7342" hidden="false">
@@ -75,7 +81,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="160d-d204-5054-33f7" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="1e4e-d796-e8d3-a9ca" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="6ed1-73c3-31ef-b009" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="6ed1-73c3-31ef-b009" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -110,6 +116,12 @@
             <entryLink import="true" name="Crossbow" hidden="false" id="ef41-425d-5815-a22b" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Handgun" hidden="false" id="b9d2-0db0-35df-29e9" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
             <entryLink import="true" name="Hochland Long Rifle" hidden="false" id="34f9-73fa-5a51-d2d1" type="selectionEntry" targetId="51ed-e371-76d2-d46b"/>
+            <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="2ab4-2269-4926-56ae" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604">
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pistols - Brace" hidden="false" id="cfee-ed38-c646-7933" type="selectionEntry" targetId="eda4-7746-2e0d-a342"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88a7-93fe-3574-4500"/>
@@ -123,7 +135,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Armor, Discount" hidden="false" id="07a3-2555-afe8-4eb0" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0"/>
+        <entryLink import="true" name="Armor, %" hidden="false" id="07a3-2555-afe8-4eb0" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -288,7 +300,7 @@ This can bring the total leadership above the normal maximum for a regular human
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b98-db31-f7fc-1550" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="36d0-006b-d804-e3d2" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="36d0-006b-d804-e3d2" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="3f0e-2585-a70c-4364" typeId="points" value="0"/>
@@ -587,7 +599,7 @@ This can bring the total leadership above the normal maximum for a regular human
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d63-0706-dadc-ba90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="37b2-d734-8c12-7d78" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="37b2-d734-8c12-7d78" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="7bb7-09b8-640b-de65" typeId="points" value="0"/>
@@ -921,7 +933,7 @@ This can bring the total leadership above the normal maximum for a regular human
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f25-92c0-ce1f-c9d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3e3d-f2a6-d095-db51" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3e3d-f2a6-d095-db51" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="0497-532f-d8bc-f5de" typeId="points" value="0"/>
@@ -1359,7 +1371,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0411-9fd7-c489-6465" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="f1f1-53e4-e073-f3ea" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="f1f1-53e4-e073-f3ea" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="42a7-0a26-d399-e2d0" typeId="points" value="0"/>
@@ -1679,7 +1691,7 @@ The Duellist counts as using a shield in close combat.</description>
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="4b68-dd07-81fc-6fdf" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="0777-26e1-ad93-f9bc" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="3a78-b95f-fe62-b9a5" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="3a78-b95f-fe62-b9a5" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" hidden="false" id="06c0-ae9c-3069-37aa" typeId="points" value="0"/>
@@ -1807,7 +1819,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e63-8345-05be-7411" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="a731-3f56-160b-87da" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="a731-3f56-160b-87da" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="e9ad-6cd3-a3e0-b9fe" typeId="points" value="0"/>
@@ -2237,7 +2249,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7475-0ca7-9daa-10ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="aa78-6b66-7d83-fe91" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="aa78-6b66-7d83-fe91" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="58c7-8dab-e2ec-14fe" typeId="points" value="0"/>
