@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="950e-3bb9-3296-b6c4" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Hero Equipment" hidden="false" id="e434-139e-28e6-49e1">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="ef2-6d61-a0be-ba46" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="ef2-6d61-a0be-ba46" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="8cae-f894-2959-5b14" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="b611-c00e-b099-8301" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="688c-a1cc-62e7-9dbe" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="688c-a1cc-62e7-9dbe" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Axe" hidden="false" id="ad69-5a52-2cb5-3d1" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="Battle Axe" field="name"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Axe" hidden="false" id="ad69-5a52-2cb5-3d1" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="39bb-55e-d2aa-919c" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Flail" hidden="false" id="10c3-d05b-d95b-aa55" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry"/>
           </entryLinks>
@@ -189,7 +185,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" hidden="false" id="1ff6-88bd-d3f6-d736" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" hidden="false" id="1ff6-88bd-d3f6-d736" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="b7a0-613a-a155-538d" type="selectionEntry" targetId="23f5-19c3-5a6c-a8fb">
               <modifiers>
@@ -201,7 +197,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ec97-a1f5-d750-e6bf"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="fd39-6530-b6f-7934" collective="false" import="true">
+        <selectionEntryGroup name="Armor" hidden="false" id="fd39-6530-b6f-7934" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" id="b44a-b983-ee7d-6833" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="d650-96fc-7be8-fa10" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
@@ -211,28 +207,32 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a5d-2c45-48e8-2c53" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c4e7-788a-44fa-6c48" shared="true" childName="Wulfen"/>
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="d54c-40bc-223a-f120" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="41ce-95f0-05e2-1eb2" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="36b3-fd31-85f4-8288" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="2dee-353a-b2b6-9701" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Hunter Equipment" hidden="false" id="48b4-d4b8-2d71-24dc">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="c734-5a34-6f95-9e85" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="c734-5a34-6f95-9e85" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="5e94-c694-d378-4640" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="12a4-99df-dc0-65f1" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="9f24-682b-8c92-1fed" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="9f24-682b-8c92-1fed" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Axe" hidden="false" id="eedf-9961-3923-dca9" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="Battle Axe" field="name"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Axe" hidden="false" id="eedf-9961-3923-dca9" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="96e-76f1-8b0f-7c41" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Spear" hidden="false" id="2da6-4ec6-c2c3-95dc" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
           </entryLinks>
@@ -402,7 +402,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" hidden="false" id="313-6da6-2ba0-5d3a" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" hidden="false" id="313-6da6-2ba0-5d3a" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Bow" hidden="false" id="d009-5503-a5a9-bf8b" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
             <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="5c2a-60bc-8663-fe4a" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc">
@@ -415,30 +415,32 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5fa0-8a00-e2f3-373e"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="4b48-a36c-d2e7-8366" collective="false" import="true">
+        <selectionEntryGroup name="Armor" hidden="false" id="4b48-a36c-d2e7-8366" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Shield" hidden="false" id="591c-d901-3327-72ae" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="7af2-26ea-6285-2f78" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="f783-c487-b8b7-59de" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="bc15-31c0-8a7e-4bdf" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="c426-6dba-9fbf-16ee" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Henchman Equipment" hidden="false" id="5f97-4cb5-5f38-88f0">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="4341-725-d3d1-7dea" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="4341-725-d3d1-7dea" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="fc7a-2f47-b11f-800d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="da98-d3b0-76c6-ccd2" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="208-42ad-aa91-1ad2" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="208-42ad-aa91-1ad2" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Axe" hidden="false" id="4dad-1fdb-1699-4529" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="Battle Axe" field="name"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Axe" hidden="false" id="4dad-1fdb-1699-4529" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="2ceb-8e55-1028-104a" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Spear" hidden="false" id="21fe-98ba-f899-7d7e" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
           </entryLinks>
@@ -608,7 +610,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" hidden="false" id="8bad-6e30-84fd-966e" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" hidden="false" id="8bad-6e30-84fd-966e" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="104f-48ee-7200-bc71" type="selectionEntry" targetId="23f5-19c3-5a6c-a8fb">
               <modifiers>
@@ -620,11 +622,18 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="264d-d5d9-bea-82c6"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="d882-5406-800f-a443" collective="false" import="true">
+        <selectionEntryGroup name="Armor" hidden="false" id="d882-5406-800f-a443" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" id="9dbb-f5-e811-5881" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="26d8-986c-a983-7dac" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="4f29-6096-fc37-25da" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="0386-9755-af42-43be" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="aced-c4c9-0d3b-fb80" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="1c3b-a2f4-45cf-32ea" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="3128-5b9b-ee94-d1f4" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -904,20 +913,20 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         <categoryLink name="Heroes" hidden="false" id="a30f-7f91-b62a-8d94" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="fb0a-53ae-5c8d-a1af" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="fb0a-53ae-5c8d-a1af" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9f8a-3359-63c9-c774" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="961c-ef8c-b495-2f75" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="4a14-9970-c17a-5fd9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="4a14-9970-c17a-5fd9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4a60-571a-530c-85e" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="ef7d-5f89-6d72-37d5" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="1cdf-6681-9322-addc" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="1cdf-6681-9322-addc" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd29-81d6-51e6-29e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9df7-9fce-b4d3-496a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -935,15 +944,15 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="246e-50c2-4127-d05" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="246e-50c2-4127-d05" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="9a35-623-a8f6-2d1b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Hero Equipment" hidden="false" id="2fb8-c56f-5fc3-b456" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="5061-724-c2ff-3442" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="f28a-19b4-6aaa-474a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="23af-91b8-2ba5-83cf" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Hero Equipment" hidden="false" id="2fb8-c56f-5fc3-b456" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="5061-724-c2ff-3442" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="f28a-19b4-6aaa-474a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="23af-91b8-2ba5-83cf" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1203,20 +1212,20 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         <categoryLink name="Heroes" hidden="false" id="a4a8-c1b6-6a85-c2fe" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="445d-6b18-3acc-b95c" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="445d-6b18-3acc-b95c" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7745-bdf2-838b-e187" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eb7-2bc6-897-6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="40b2-af04-484f-4afc" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="40b2-af04-484f-4afc" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="49b2-2eb0-f8a6-8b9a" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="df4c-d6f7-1148-dde2" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="f9d2-9ab4-8070-6196" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="f9d2-9ab4-8070-6196" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9b-e83e-86d1-7406" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9daa-3236-b040-2822" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1234,14 +1243,14 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="9af8-5ac2-c2c2-73e8" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="9af8-5ac2-c2c2-73e8" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="11" field="selections" scope="parent" shared="true" id="29ba-3042-258a-dbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="fb40-8624-af02-7665" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="4b37-1726-f929-14d6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1f7c-1393-8b91-434c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="fb40-8624-af02-7665" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="4b37-1726-f929-14d6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1f7c-1393-8b91-434c" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1555,14 +1564,14 @@ too feral and uncontrolled to become the leader of the warband.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f7-d1e-c1c2-74be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3762-2768-76a4-8615" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3762-2768-76a4-8615" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4e23-4b51-ef87-3d7b" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="77c5-3033-f0a9-fd00" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="c10-c98e-51cb-d84f" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="c10-c98e-51cb-d84f" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fae-2165-4809-e3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fbf-6430-924e-7686" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1580,11 +1589,11 @@ too feral and uncontrolled to become the leader of the warband.</description>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="949d-4571-c835-1a68" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Hero Equipment" hidden="false" id="cd03-690d-ac5a-7fa6" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="181e-fdc2-50ce-372b" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="f59d-dff0-62e-f87a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="838a-bdb5-4d66-962" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Experience" hidden="false" id="949d-4571-c835-1a68" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Hero Equipment" hidden="false" id="cd03-690d-ac5a-7fa6" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="181e-fdc2-50ce-372b" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="f59d-dff0-62e-f87a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="838a-bdb5-4d66-962" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1924,28 +1933,28 @@ too feral and uncontrolled to become the leader of the warband.</description>
         <categoryLink name="Heroes" hidden="false" id="569-3301-419-13e7" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="2840-6741-4b5d-f6b8" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="2840-6741-4b5d-f6b8" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ceb-e618-cbaf-1175" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9cc-cf14-3241-f9a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="e03b-9954-5110-5a13" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="e03b-9954-5110-5a13" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="b4a9-b33c-f50e-c3f4" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="66bb-a54f-d09b-5196" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="4c53-a744-2495-7d96" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="4c53-a744-2495-7d96" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e84-7981-f796-8c89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c465-42b4-5aad-aa74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Combat Skills" hidden="false" id="3262-640d-ee83-9c56" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="6626-d8bb-82da-eaa6" collective="false" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Special Skills (Norse Explorers)" hidden="false" id="3472-212a-2943-239e" collective="false" targetId="a294-5dc0-d08-7d5f" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Combat Skills" hidden="false" id="3262-640d-ee83-9c56" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="6626-d8bb-82da-eaa6" collective="false" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink import="true" name="Special Skills (Norse Explorers)" hidden="false" id="3472-212a-2943-239e" collective="false" targetId="a294-5dc0-d08-7d5f" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="cf81-c241-8fc4-99d9" typeId="points" value="0"/>
@@ -1954,15 +1963,15 @@ too feral and uncontrolled to become the leader of the warband.</description>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="edf8-d101-72d8-c7da" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="edf8-d101-72d8-c7da" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="11" field="selections" scope="parent" shared="true" id="6eef-41c6-80ba-df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Hero Equipment" hidden="false" id="5bac-7794-3a55-3e68" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4737-e807-c82a-57fa" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="bfb1-6e9c-94b8-b2d3" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="a49-ff2e-4e4f-125f" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Hero Equipment" hidden="false" id="5bac-7794-3a55-3e68" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup" sortIndex="1" flatten="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4737-e807-c82a-57fa" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="bfb1-6e9c-94b8-b2d3" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="a49-ff2e-4e4f-125f" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2253,20 +2262,20 @@ too feral and uncontrolled to become the leader of the warband.</description>
         <categoryLink name="Heroes" hidden="false" id="5f4b-e54d-2ce3-126e" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="e674-1e25-e09b-972f" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="e674-1e25-e09b-972f" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6680-c504-6f7b-7f78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5fe-7c87-aef9-c7c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d97e-fadb-5996-755d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="d97e-fadb-5996-755d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="78df-8396-4043-c611" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="6ccb-9151-69f1-8f4d" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="5cf9-1eb8-62a7-972a" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="5cf9-1eb8-62a7-972a" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f330-f70d-2706-78be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfc0-fd7c-9b1-c06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2284,14 +2293,14 @@ too feral and uncontrolled to become the leader of the warband.</description>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="d999-cf1a-4005-29d2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="d999-cf1a-4005-29d2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="11" field="selections" scope="parent" shared="true" id="9885-4fde-6e8e-f157" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4837-ef70-13b4-3ccb" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="ec21-68b5-4b26-b3e4" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1c14-3f1a-7d89-b504" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4837-ef70-13b4-3ccb" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="ec21-68b5-4b26-b3e4" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1c14-3f1a-7d89-b504" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2602,14 +2611,14 @@ too feral and uncontrolled to become the leader of the warband.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7fa-efe7-fcd6-6173" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d95f-66f7-cf85-5404" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="d95f-66f7-cf85-5404" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="d389-126d-8bcf-9522" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="e1aa-5f56-dc18-1f81" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="8a30-3192-445-5ec2">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="8a30-3192-445-5ec2" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -2623,10 +2632,10 @@ too feral and uncontrolled to become the leader of the warband.</description>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="f03f-5848-5254-9e95" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Promoted" hidden="false" id="88e5-33e5-44b4-7c21" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="632b-36a2-751f-bf99" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="true" id="7b56-a4de-b1c-13f8" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink import="true" name="Experience" hidden="false" id="f03f-5848-5254-9e95" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Promoted" hidden="false" id="88e5-33e5-44b4-7c21" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="632b-36a2-751f-bf99" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="true" id="7b56-a4de-b1c-13f8" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2635,7 +2644,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Skills" hidden="true" id="12c-6a7e-62ec-bfc1" collective="false" targetId="7dfd-50d2-3601-18ec" type="selectionEntryGroup">
+        <entryLink import="true" name="Skills" hidden="true" id="12c-6a7e-62ec-bfc1" collective="false" targetId="7dfd-50d2-3601-18ec" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2644,8 +2653,8 @@ too feral and uncontrolled to become the leader of the warband.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Hunter Equipment" hidden="false" id="a2b-bf39-4f1c-e5ae" collective="false" targetId="48b4-d4b8-2d71-24dc" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="14b2-4013-7364-3d77" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Hunter Equipment" hidden="false" id="a2b-bf39-4f1c-e5ae" collective="false" targetId="48b4-d4b8-2d71-24dc" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="14b2-4013-7364-3d77" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2865,7 +2874,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="7f89-92a6-91ac-e461" type="selectionEntry" targetId="583e-a0c5-873-acdc">
+        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="7f89-92a6-91ac-e461" type="selectionEntry" targetId="583e-a0c5-873-acdc" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
               <conditions>
@@ -3195,20 +3204,20 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
         <categoryLink name="Henchmen" hidden="false" id="dfd9-6efe-ea4d-fa3c" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="cc13-eee-d410-a0d7" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="cc13-eee-d410-a0d7" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da05-80ac-e034-be18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b453-dfb2-60ab-1b4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3267-b92c-e317-8c83" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3267-b92c-e317-8c83" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4609-1fd8-66ec-439b" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="280-9707-6b3f-b6ba" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="e5c-12d8-f331-65fc">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="e5c-12d8-f331-65fc" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -3222,10 +3231,10 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="55b3-5d2a-83c5-fbb2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Promoted" hidden="false" id="92f8-f92e-8021-7dac" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="df3b-84d0-24f6-5dab" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="true" id="2187-1465-5065-b2e1" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink import="true" name="Experience" hidden="false" id="55b3-5d2a-83c5-fbb2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Promoted" hidden="false" id="92f8-f92e-8021-7dac" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="df3b-84d0-24f6-5dab" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="true" id="2187-1465-5065-b2e1" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -3234,7 +3243,7 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Skills" hidden="true" id="1314-e6e1-df91-9ed4" collective="false" targetId="7dfd-50d2-3601-18ec" type="selectionEntryGroup">
+        <entryLink import="true" name="Skills" hidden="true" id="1314-e6e1-df91-9ed4" collective="false" targetId="7dfd-50d2-3601-18ec" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -3243,8 +3252,8 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Henchman Equipment" hidden="false" id="bc49-2c1a-7dc5-14f7" collective="false" targetId="5f97-4cb5-5f38-88f0" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="a2e4-24a0-a7a4-9265" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Henchman Equipment" hidden="false" id="bc49-2c1a-7dc5-14f7" collective="false" targetId="5f97-4cb5-5f38-88f0" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="a2e4-24a0-a7a4-9265" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -3464,7 +3473,7 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="69ca-8fa0-99db-95b9" type="selectionEntry" targetId="583e-a0c5-873-acdc">
+        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="69ca-8fa0-99db-95b9" type="selectionEntry" targetId="583e-a0c5-873-acdc" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
               <conditions>
@@ -3518,6 +3527,11 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
         <cost name="pts" hidden="false" id="d7b7-e56f-34d5-4ca" typeId="points" value="25"/>
         <cost name="Warband Rating" hidden="false" id="f2e9-c9af-b372-bf49" typeId="wb-rating" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="2e49-6b07-0a14-2941">
+      <entryLinks>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="fd30-5510-0d27-0cf5" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
