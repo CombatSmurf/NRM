@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2916-c073-fa3f-e13e" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -136,13 +136,17 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Hero Equipment" hidden="false" id="aa8c-67af-c03a-75c6">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="c291-5cc6-a28-1b10">
+        <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="c291-5cc6-a28-1b10" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="1959-95da-232a-a6d4" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="b40c-222f-a22f-b6ef" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="27dd-8c75-4a17-a5d7" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="fc5e-b330-4a6d-693a" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="005e-e397-8108-f198">
+              <modifiers>
+                <modifier type="set" value="5" field="points"/>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="cc27-9822-af4e-cb57" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Boss Pole" hidden="false" type="selectionEntry" id="88a-7402-f87f-e7f5" targetId="9510-d071-4cce-6d20"/>
           </entryLinks>
@@ -312,16 +316,22 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile weapons" hidden="false" id="f6a1-73fc-5627-f400">
+        <selectionEntryGroup name="Missile weapons" hidden="false" id="f6a1-73fc-5627-f400" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Shortbow" hidden="false" type="selectionEntry" id="5d6b-8a63-f6f2-c4da" targetId="3706-6421-53b4-940d"/>
             <entryLink import="true" name="Blowpipe" hidden="false" type="selectionEntry" id="2489-b181-8c56-80b0" targetId="b6b-2ea5-1f65-a84b"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="34b8-cf53-f8a-2978">
+        <selectionEntryGroup name="Armor" hidden="false" id="34b8-cf53-f8a-2978" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="f1a2-1d90-5b79-c26b" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="e2bc-35ab-9c1b-45e9" targetId="74fb-cc90-1361-df26"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="c5b5-456c-b798-6d9a" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Shield, %" hidden="false" id="51c7-5c32-5b15-337a" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="197e-9f37-0690-b3b2" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -333,7 +343,11 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="c9d6-406d-67c7-d6ca" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="c922-50a8-8da3-24b5" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ad83-f7c4-6621-6012" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198">
+              <modifiers>
+                <modifier type="set" value="5" field="points"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ab6-22f5-a49a-13b2" includeChildSelections="false"/>
@@ -356,6 +370,11 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
         <selectionEntryGroup name="Armor" hidden="false" id="50d1-1dfa-e9e7-a682">
           <entryLinks>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="96a2-b8cc-55b8-9595" targetId="74fb-cc90-1361-df26"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="bfe6-e38e-5b9d-a610" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shield, %" hidden="false" id="7ab8-ceb8-efa9-e072" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -575,13 +594,13 @@ The effects last until the Shaman takes a wound.</characteristic>
         <categoryLink id="4b13-db19-e4cc-c13c" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="aae6-594b-8ccb-9e22" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="aae6-594b-8ccb-9e22" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9a-25ec-9ad7-1d3f" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39e3-d477-4c56-fadf" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="e7fd-fa56-e98e-f15d" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="e7fd-fa56-e98e-f15d" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
             <entryLink import="true" name="Giant Spider" hidden="false" type="selectionEntry" id="7c71-b870-63b6-a854" targetId="3ff2-9ede-8d6-e4a8"/>
           </entryLinks>
           <costs>
@@ -589,7 +608,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7c79-49a8-95b1-52a2" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7c79-49a8-95b1-52a2" name="Skills" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9379-5db7-9ff6-711" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19c1-8bae-9645-cec5" type="max"/>
@@ -607,14 +626,14 @@ The effects last until the Shaman takes a wound.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="1737-e7a7-6c4e-c81c" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="1737-e7a7-6c4e-c81c" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="17" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee3-a3df-3a10-f271" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1987-3e0b-3287-f1a2" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="93d1-c155-7a48-fe8b" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="4c81-fe1b-207-103f" targetId="aa8c-67af-c03a-75c6"/>
+        <entryLink id="1987-3e0b-3287-f1a2" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="93d1-c155-7a48-fe8b" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="4c81-fe1b-207-103f" targetId="aa8c-67af-c03a-75c6" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50"/>
@@ -744,13 +763,13 @@ The effects last until the Shaman takes a wound.</characteristic>
         <categoryLink id="2ace-ab-cd50-cd47" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="10-5099-2ce6-cae4" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="10-5099-2ce6-cae4" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a0-1ac4-a42c-cec" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d6-4c74-ca7e-12a0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3530-f003-8453-888a" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="3530-f003-8453-888a" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
             <entryLink import="true" name="Giant Spider" hidden="false" type="selectionEntry" id="54b4-8b2f-8a89-1e37" targetId="3ff2-9ede-8d6-e4a8"/>
           </entryLinks>
           <costs>
@@ -758,7 +777,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3715-7939-8987-d110" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3715-7939-8987-d110" name="Skills" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0ca-436d-643c-e989" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c024-537a-224f-a79a" type="max"/>
@@ -774,14 +793,14 @@ The effects last until the Shaman takes a wound.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="dab7-bc19-9dea-b75" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="dab7-bc19-9dea-b75" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe0-17e4-344f-f57e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="37c1-7d35-9502-e0e4" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="a1f-98b2-4503-acc1" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="2afb-555a-3637-a2d8" targetId="aa8c-67af-c03a-75c6"/>
+        <entryLink id="37c1-7d35-9502-e0e4" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="a1f-98b2-4503-acc1" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="2afb-555a-3637-a2d8" targetId="aa8c-67af-c03a-75c6" flatten="true"/>
         <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="7838-3741-ff08-2f06" targetId="b21c-8103-66f7-21af"/>
       </entryLinks>
       <costs>
@@ -913,21 +932,21 @@ The effects last until the Shaman takes a wound.</characteristic>
         <categoryLink id="35d7-a014-6e1b-5bb" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="229-bcb5-3ddf-d279" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="229-bcb5-3ddf-d279" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8fc-dc30-fe33-d393" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d4d-e91d-50ae-6bdb" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="54b-7163-1d27-7a04" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
             <entryLink import="true" name="Giant Spider" hidden="false" type="selectionEntry" id="3beb-ca47-802b-4c1a" targetId="3ff2-9ede-8d6-e4a8"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="80b0-a4f0-08a4-067a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5707-ccce-cfc0-4ac5" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5707-ccce-cfc0-4ac5" name="Skills" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6357-fd98-cb4d-13d1" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c96-57e0-18f2-2391" type="max"/>
@@ -956,15 +975,15 @@ The effects last until the Shaman takes a wound.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="1420-40ff-4a75-ad84" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="1420-40ff-4a75-ad84" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5973-b2ad-297a-1e7e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="aec3-7d75-fd20-f1f7" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink id="aec3-7d75-fd20-f1f7" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="1eb3-4e2-f633-dd77" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="3763-ad0b-38c7-d4fb" targetId="aa8c-67af-c03a-75c6"/>
-        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="5a7a-f924-60a8-b7b9" targetId="b21c-8103-66f7-21af"/>
+        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="5a7a-f924-60a8-b7b9" targetId="b21c-8103-66f7-21af" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -1087,13 +1106,13 @@ The effects last until the Shaman takes a wound.</characteristic>
         <categoryLink id="96e4-2a67-cf96-d697" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1a2a-7d9d-c3ed-59a1" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1a2a-7d9d-c3ed-59a1" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="719-b8f6-c689-48df" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fa-f996-5e6b-e261" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="863b-9dcc-fd1f-f40e" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="863b-9dcc-fd1f-f40e" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1102,10 +1121,10 @@ The effects last until the Shaman takes a wound.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="ab4-8a57-5edf-80f8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink id="a493-4417-3f57-577d" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink id="f7dc-a422-590d-a3f5" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="8abe-f18d-7d4-739" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
+        <entryLink id="ab4-8a57-5edf-80f8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink id="a493-4417-3f57-577d" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
+        <entryLink id="f7dc-a422-590d-a3f5" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="8abe-f18d-7d4-739" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1114,7 +1133,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="22b7-fb65-ed0-c847" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink id="22b7-fb65-ed0-c847" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1123,7 +1142,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="d095-6947-fe10-8d35" name="Henchmen Equipment" hidden="false" collective="false" import="true" targetId="7ceb-1f27-4cb5-4ab5" type="selectionEntryGroup"/>
+        <entryLink id="d095-6947-fe10-8d35" name="Henchmen Equipment" hidden="false" collective="false" import="true" targetId="7ceb-1f27-4cb5-4ab5" type="selectionEntryGroup" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="15"/>
@@ -1247,13 +1266,13 @@ The effects last until the Shaman takes a wound.</characteristic>
         <categoryLink id="a17b-4974-4cfc-448e" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c20a-7795-d762-4439" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c20a-7795-d762-4439" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97-716f-ed0d-c4f6" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b40-5125-82a1-81c0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a70e-cb48-5443-c51f" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="a70e-cb48-5443-c51f" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1262,10 +1281,10 @@ The effects last until the Shaman takes a wound.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="cd53-767f-2b3e-2c07" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink id="ba99-b384-3117-82ef" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink id="56a2-d534-5100-f17d" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="111c-354f-fbd0-5a3d" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
+        <entryLink id="cd53-767f-2b3e-2c07" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink id="ba99-b384-3117-82ef" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
+        <entryLink id="56a2-d534-5100-f17d" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="111c-354f-fbd0-5a3d" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1274,7 +1293,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="7853-70bb-96fe-4697" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink id="7853-70bb-96fe-4697" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1283,7 +1302,7 @@ The effects last until the Shaman takes a wound.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="d082-e01e-330-d11e" name="Henchmen Equipment" hidden="false" collective="false" import="true" targetId="7ceb-1f27-4cb5-4ab5" type="selectionEntryGroup"/>
+        <entryLink id="d082-e01e-330-d11e" name="Henchmen Equipment" hidden="false" collective="false" import="true" targetId="7ceb-1f27-4cb5-4ab5" type="selectionEntryGroup" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25"/>
@@ -1427,7 +1446,7 @@ In addition, if they begin their turn within charge range of an enemy, they ar
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f26-ca3-48eb-92ed" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="e06b-722a-c58f-e611" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="e06b-722a-c58f-e611" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1438,7 +1457,7 @@ In addition, if they begin their turn within charge range of an enemy, they ar
       <entryLinks>
         <entryLink id="e60c-aebb-32ec-e3b8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink id="8e15-2650-a218-ed22" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink id="5ca-ed36-5280-b89e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink id="5ca-ed36-5280-b89e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="7f7-ad56-f914-4bda" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -1448,7 +1467,7 @@ In addition, if they begin their turn within charge range of an enemy, they ar
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="df41-3d30-f2f7-8b4d" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink id="df41-3d30-f2f7-8b4d" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1571,15 +1590,15 @@ This may not be combined with Quick Shot if they should be promoted to hero st
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">5</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">5</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">3</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">2</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1593,7 +1612,7 @@ This may not be combined with Quick Shot if they should be promoted to hero st
         <categoryLink id="19de-811e-9a5-2bb3" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="20"/>
+        <cost name="pts" typeId="points" value="200"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <constraints>

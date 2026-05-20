@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="31" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="32" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1876,7 +1876,7 @@ Only Matriarchs and Sister Superiors may carry two Sigmarite  warhammers.</descr
         <profile id="500a-be39-3a90-f03b" name="Cathayan Longsword" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry Cutting Edge, Mastercrafted</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry, Cutting Edge, Mastercrafted</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3893,7 +3893,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0ef4-8a31-6678-bf10" name="Sprint." page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0ef4-8a31-6678-bf10" name="Sprint" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb96-702e-ca6b-71a6" type="max"/>
           </constraints>
@@ -4071,7 +4071,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Dwarf Axe" hidden="false" id="33d6-ae87-7f7a-83b0" type="selectionEntry" targetId="5208-f70c-664-e36e"/>
         <entryLink import="true" name="Dragon Sword (Katana)" hidden="false" id="8d4b-bd7b-270a-abd2" type="selectionEntry" targetId="b6d9-7260-674e-ec68"/>
         <entryLink import="true" name="DH Axe" hidden="false" id="4c68-94a7-fa30-6b99" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-        <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="5fb0-a266-dbd4-5a6f" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+        <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="5fb0-a266-dbd4-5a6f" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
         <entryLink import="true" name="Claw of the Old Ones" hidden="false" id="71e0-60ba-bd06-18c6" type="selectionEntry" targetId="993b-b4c4-118f-3ce3"/>
         <entryLink import="true" name="DH Sword" hidden="false" id="a3c7-7e64-8f5d-b7f5" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
         <entryLink import="true" name="Dagger" hidden="false" id="1ce3-7341-3f27-c92a" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
@@ -4393,10 +4393,10 @@ must retire from the warband.</description>
         <entryLink id="060d-5d54-a6fb-d1d3" name="Mandrake Root" hidden="false" collective="false" import="true" targetId="4af0-ecfc-76c7-e9a7" type="selectionEntry"/>
         <entryLink id="29ce-b039-8a29-11f1" name="Mordhiem Map" hidden="false" collective="false" import="true" targetId="0c8b-eb7d-31d8-2a33" type="selectionEntry"/>
         <entryLink id="6a65-fd4d-7edc-fb57" name="Net" hidden="false" collective="false" import="true" targetId="10cd-d2e1-7961-1ace" type="selectionEntry"/>
-        <entryLink id="41f8-6e7a-8118-34be" name="Rope And Hook" hidden="false" collective="false" import="true" targetId="0728-80a6-e76e-6b79" type="selectionEntry"/>
+        <entryLink id="41f8-6e7a-8118-34be" name="Rope and Hook" hidden="false" collective="false" import="true" targetId="0728-80a6-e76e-6b79" type="selectionEntry"/>
         <entryLink id="e762-22e4-f37e-6e4f" name="Superior Black Powder" hidden="false" collective="false" import="true" targetId="332b-3337-b827-2014" type="selectionEntry"/>
         <entryLink id="7985-bf3a-97c9-bc9a" name="Tears of Shallaya" hidden="false" collective="false" import="true" targetId="3600-0df6-b0d0-8014" type="selectionEntry"/>
-        <entryLink id="72df-d764-ec5c-122e" name="Tome Of Magic" hidden="false" collective="false" import="true" targetId="a93e-d30c-ea44-4cc5" type="selectionEntry"/>
+        <entryLink id="72df-d764-ec5c-122e" name="Tome of Magic" hidden="false" collective="false" import="true" targetId="a93e-d30c-ea44-4cc5" type="selectionEntry"/>
         <entryLink id="8f22-c52a-52af-4d00" name="Wardog" hidden="false" collective="false" import="true" targetId="72d2-7ef9-066c-12e7" type="selectionEntry"/>
         <entryLink id="284f-49fe-9a67-0203" name="Warhorse" hidden="false" collective="false" import="true" targetId="7863-e620-5c6e-7eee" type="selectionEntry"/>
         <entryLink id="d800-8e58-281e-c0f3" name="Amulet of the Moon" hidden="false" collective="false" import="true" targetId="d737-92c2-4586-5b26" type="selectionEntry"/>
@@ -4411,13 +4411,12 @@ must retire from the warband.</description>
         <entryLink id="5ba4-c93b-a512-6afa" name="Armor - All" hidden="false" collective="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup" flatten="true"/>
         <entryLink id="7364-e39a-1a0b-a869" name="Hand to Hand Weapons - All" hidden="false" collective="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup" flatten="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="bf01-b599-71e1-13e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="bdba-5e5e-ea11-ab49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="af8a-aa1a-1e8f-8701" name="Missile Weapons - All" hidden="false" collective="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup" flatten="true"/>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment - All" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink import="true" name="Armor, %" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0"/>
+        <entryLink import="true" name="Armor, %" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0" flatten="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true">
@@ -5697,7 +5696,7 @@ normal or charge their original target. When making a compelled charge, the Kni
       <description>May not take a Lance.</description>
     </rule>
     <rule name="Brace" id="664c-2f9b-9ab6-f159" hidden="false">
-      <description> If you have a brace of pistols (ie, two) you may fire every turn.</description>
+      <description>If you have a brace of pistols (ie, two) you may fire every turn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

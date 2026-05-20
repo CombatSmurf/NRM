@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6805-ff0e-9061-8cb6" name="Tileans - Miragleans (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6805-ff0e-9061-8cb6" name="Tileans - Miragleans (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="e87b-f686-aa1d-8236" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -2461,18 +2461,12 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="25" field="points"/>
-              </modifiers>
             </entryLink>
             <entryLink import="true" name="Longbow" hidden="false" id="a642-52c0-4f09-5446" type="selectionEntry" targetId="afa2-2d5c-54dd-d435"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="4f22-0e2a-6bf4-b68f" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Handgun" hidden="false" id="c239-82c8-8b47-e673" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
             <entryLink import="true" name="Hochland Long Rifle" hidden="false" id="d81b-8f6f-68c4-0800" type="selectionEntry" targetId="51ed-e371-76d2-d46b"/>
             <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="7010-0f6b-1752-d52f" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604">
-              <modifiers>
-                <modifier type="set" value="50" field="points"/>
-              </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="50"/>
               </costs>
