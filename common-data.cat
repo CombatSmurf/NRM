@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="32" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="33" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -4405,7 +4405,7 @@ must retire from the warband.</description>
     </selectionEntryGroup>
     <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment - All" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851e-4289-371c-f05c" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851e-4289-371c-f05c" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="5ba4-c93b-a512-6afa" name="Armor - All" hidden="false" collective="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup" flatten="true"/>
