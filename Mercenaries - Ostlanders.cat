@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05ad-b0d8-77a8-2572" name="Mercenaries - Ostlanders (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="42ce-e25d-7713-b46b" name="Ostlanders Rules" shortName="Ostlanders" publisher="https://broheim.net/downloads/warbands/official/Ostlanders.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Ostlanders.pdf"/>
   </publications>
@@ -130,7 +130,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e2-2b3e-a1dc-814f" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4310-7440-32a9-b2c4" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="4310-7440-32a9-b2c4" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -295,7 +295,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e798-aa7f-b347-d3d4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7b40-2a54-7ecc-a0a2" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="7b40-2a54-7ecc-a0a2" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -465,7 +465,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aad-fec3-4d00-0a92" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c542-cc89-45e8-249d" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c542-cc89-45e8-249d" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -627,7 +627,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df6d-8a02-1b5d-6346" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c7b6-6bbc-fb55-262a" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c7b6-6bbc-fb55-262a" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -788,7 +788,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725c-6e4b-3941-113e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f6bd-8807-0e69-9a98" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="f6bd-8807-0e69-9a98" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -959,7 +959,7 @@ As such, they automatically pass all Leadership based tests they are required to
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea46-bb2e-f9e6-7d1b" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="62fe-3e45-9cb9-66f1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="62fe-3e45-9cb9-66f1" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1129,7 +1129,7 @@ Ogres only gain advances at half the rate of everyone else (ie, they must accrue
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a5-ed28-802c-e755" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d5e7-d011-da1b-c770" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="d5e7-d011-da1b-c770" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1204,7 +1204,7 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
       <entryLinks>
         <entryLink id="aa00-9cfa-9fb5-95d7" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
         <entryLink id="14f4-71a8-ac8d-6c63" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink id="4d27-3a21-b41b-cc80" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="4d27-3a21-b41b-cc80" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Mace, Hammer"/>
           </modifiers>
@@ -1383,7 +1383,7 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
       <entryLinks>
         <entryLink id="7cd3-43ad-60a5-c0f4" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
         <entryLink id="d461-4d64-8498-4cb9" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink id="458b-e211-02e2-76b6" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="458b-e211-02e2-76b6" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Mace, Hammer"/>
           </modifiers>
@@ -1578,7 +1578,7 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
     </selectionEntryGroup>
     <selectionEntryGroup id="6a4a-1653-4f2b-e25d" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="bcd0-135f-12c7-67a1" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="bcd0-135f-12c7-67a1" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>

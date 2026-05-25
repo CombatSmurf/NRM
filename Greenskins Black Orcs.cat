@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a831-b626-c36f-258b" name="Black Orcs (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a831-b626-c36f-258b" name="Greenskins - Black Orcs (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="5ad9-1a6a-43ce-64a8" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -149,7 +149,7 @@ The replacement will automatically acquire the &quot;Oi Behave!&quot; skill.</d
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f56-b582-a9a0-a86" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="e258-641b-8b33-6e19" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="e258-641b-8b33-6e19" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -331,7 +331,7 @@ If the slap fails to Knock Down, Stun or Out of Action the Henchman, then he a
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad-6743-4769-5222" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4d5f-3bb7-cd96-3e52" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="4d5f-3bb7-cd96-3e52" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -495,7 +495,7 @@ If the slap fails to Knock Down, Stun or Out of Action the Henchman, then he a
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e82-cf90-3179-a974" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7529-c74d-db89-cbf8" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="7529-c74d-db89-cbf8" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -697,7 +697,7 @@ This upgrade allows him to take the ‘Proven Warrior’ skill upgrade, thus mak
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8764-717f-b23b-8ba8" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9813-f3f2-6ad9-bb21" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="9813-f3f2-6ad9-bb21" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -855,7 +855,7 @@ This upgrade allows him to take the ‘Proven Warrior’ skill upgrade, thus mak
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee87-cc3-8873-6bfe" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1fb1-805-bb1c-7780" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="1fb1-805-bb1c-7780" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1048,7 +1048,7 @@ Nuttaz are also too unstable for other Boyz and can never have the Leader abil
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4227-ae66-234-4c6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="47bc-a1f9-a1d6-f871" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="47bc-a1f9-a1d6-f871" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1551,11 +1551,11 @@ Any knocked down results which the Orc causes in hand-to-hand count as stunned
         <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="c158-70a0-9dcf-ad5f" targetId="d0e5-ca89-5f0d-f5d2"/>
         <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="c75d-cbeb-8399-bea" targetId="3d2a-426a-c350-2a03"/>
         <entryLink import="true" name="Heavy Armor" hidden="false" type="selectionEntry" id="784c-9c6b-606c-bb52" targetId="4e34-bbc5-c7ef-6bd6"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="e3ab-d790-985e-5aaf" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="e9a9-991c-6671-2966" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="38ae-e327-a048-f922" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="b2d8-97ea-c77b-794d" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="ff35-c72e-d822-56d7" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="e3ab-d790-985e-5aaf" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="e9a9-991c-6671-2966" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="38ae-e327-a048-f922" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="b2d8-97ea-c77b-794d" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="ff35-c72e-d822-56d7" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d581-6e93-5202-a0cc" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
@@ -1793,9 +1793,9 @@ Any knocked down results which the Orc causes in hand-to-hand count as stunned
         <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="a558-e6cd-1e6f-fc22" targetId="74fb-cc90-1361-df26"/>
         <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="c87c-a5b2-8efa-6217" targetId="d0e5-ca89-5f0d-f5d2"/>
         <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="734a-4180-b898-403b" targetId="3d2a-426a-c350-2a03"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="fd08-93a6-dafc-0f75" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="f578-9245-9e76-f4b2" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="b772-3420-c119-6379" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="fd08-93a6-dafc-0f75" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="f578-9245-9e76-f4b2" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="b772-3420-c119-6379" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4614-5b52-1b9a-2818" name="Skills" hidden="false" collective="false" import="true">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="34" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="35" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -3354,9 +3354,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c69-fc2a-5033-ebcf" type="min"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="16fb-4c1b-9994-5db5" name="Sorcery" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3603,6 +3600,9 @@ In addition, stubborn animals with a handler in base contact, ignore the effects
 This counts as an academic skill.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6cf9-f674-5197-b0f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -3832,9 +3832,6 @@ with a bow or crossbow (but not a crossbow pistol).</description>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e134-0fdf-67a2-4684" name="Speed Skills" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef7-5338-d8ef-cad0" type="min"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="a222-24de-c97b-05e5" name="Scale Sheer Surfaces" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4692,6 +4689,9 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95d1-450b-36b2-6118"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="48b4-aef6-4b92-e732" name="2 - Blessed Ale" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -4711,6 +4711,9 @@ In addition, any living enemy models (not Undead or Possessed) within 2&quot; of
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d21-5ee9-1d7e-62e0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="d889-26f1-804b-7596" name="3 - Bear&apos;s Paw" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -4729,6 +4732,9 @@ The target receives a bonus of +2 to his Strength until the Priest&apos;s next t
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8695-8416-933e-cd41"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="e0d3-91a4-fb69-cb3b" name="4 - Earthshudder" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -4748,6 +4754,9 @@ In addition, the building will collapse and any models on it will count as havin
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecd1-11a8-6461-b561"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="9263-eeac-5e84-de62" name="5 - Tanglefoot" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -4767,6 +4776,9 @@ All models (friend as well as foe) with the exception of Ostlander Jaeger within
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b096-f89b-b258-7675"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="727f-887a-bbf1-6b62" name="6 - Summon Squirrels" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -4787,8 +4799,14 @@ No armour saves allowed.</characteristic>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa2-cc17-ae4d-8861"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d51-a82d-487e-5420"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Cavalry Skills" hidden="false" id="9614-2638-4e92-128d">
       <selectionEntries>
@@ -5255,7 +5273,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
     </selectionEntryGroup>
     <selectionEntryGroup name="The Lady&apos;s Prayers" id="99c0-f4a2-47ef-3b6f" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name=" Elixir of Life" hidden="false" id="8e14-1670-c045-fd84">
+        <selectionEntry type="upgrade" import="true" name=" 5 - Elixir of Life" hidden="false" id="8e14-1670-c045-fd84">
           <profiles>
             <profile name=" Elixir of Life" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="1271-33ef-1142-d9d3">
               <characteristics>
@@ -5264,8 +5282,11 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e856-0346-84bd-5517"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name=" Lady’s Scorn" hidden="false" id="43c0-fe94-71e6-753c">
+        <selectionEntry type="upgrade" import="true" name=" 4 - Lady’s Scorn" hidden="false" id="43c0-fe94-71e6-753c">
           <profiles>
             <profile name=" Lady’s Scorn" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="59ae-b66c-92ab-a823">
               <characteristics>
@@ -5274,8 +5295,12 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69de-5aa4-f558-070c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6caf-60d1-1710-8a2a"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blessed Protection" hidden="false" id="a282-9a95-afca-48da">
+        <selectionEntry type="upgrade" import="true" name="2 - Blessed Protection" hidden="false" id="a282-9a95-afca-48da">
           <profiles>
             <profile name="Blessed Protection" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="52e8-5cc5-94e1-c6fc">
               <characteristics>
@@ -5284,8 +5309,11 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c1c-cdfd-f29c-53c5"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Guiding Vision" hidden="false" id="ba1e-a0dc-cee2-2610">
+        <selectionEntry type="upgrade" import="true" name="6 - Guiding Vision" hidden="false" id="ba1e-a0dc-cee2-2610">
           <profiles>
             <profile name="Guiding Vision" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="90d5-836c-3fc4-fedb">
               <characteristics>
@@ -5294,8 +5322,11 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="190a-ff68-4046-2abd"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lady’s Favors" hidden="false" id="cc53-5db6-2e5c-21ae">
+        <selectionEntry type="upgrade" import="true" name="1 - Lady’s Favors" hidden="false" id="cc53-5db6-2e5c-21ae">
           <profiles>
             <profile name="Lady’s Favors" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="ff14-5a55-244f-a169">
               <characteristics>
@@ -5304,8 +5335,11 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f765-8fbc-ad8e-feba"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Swiftstride" hidden="false" id="6e5b-44ee-78a5-d0c7">
+        <selectionEntry type="upgrade" import="true" name="3 - Swiftstride" hidden="false" id="6e5b-44ee-78a5-d0c7">
           <profiles>
             <profile name="Swiftstride" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="afc5-5ebb-44ce-a4c6">
               <characteristics>
@@ -5314,19 +5348,18 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2556-fb0b-1281-f34c"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d78c-82ec-d848-850f"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Prayers of Sigmar" id="b0cd-811c-3ab0-b085" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="49b1-dcb4-0b0e-9492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="91dc-cecb-e255-388d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d388-e859-320b-1957" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d589-5f0f-7a39-6d0a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="89bf-b0a6-ffe7-467d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cdec-d4b6-c739-44cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="abcd-e2cc-9c50-295d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="0ac5-2cff-89f8-aa2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="49b1-dcb4-0b0e-9492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="1 The Hammer Of Sigmar" hidden="false" id="7cab-5c71-7133-20b4" page="0" collective="false">
@@ -5344,6 +5377,9 @@ The Priest must test each shooting phase he wants to use the Hammer.</characteri
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae3-28cd-778a-c63e"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2 Hearts of Steel" hidden="false" id="cbf7-3af9-9e62-56eb" page="0" collective="false">
           <profiles>
@@ -5364,6 +5400,9 @@ If cast again the effects are not cumulative, ie, the maximum bonus to Rout test
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3f-5cd1-1d1e-b0bc"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3 SoulFire" hidden="false" id="9b66-5b33-4bc6-04c6" page="0" collective="false">
           <profiles>
@@ -5385,6 +5424,9 @@ Undead and Possessed models in range suffer a Strength 5 hit instead.</character
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5a-3780-c6d3-60b9"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="4 Shield of Faith" hidden="false" id="28c9-3b07-e437-2438" page="0" collective="false">
           <profiles>
@@ -5404,6 +5446,9 @@ On a roll of 1 or 2 the shield disappears.</characteristic>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfb5-5dd9-dce1-b365"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="5 Healing Hand" hidden="false" id="71c4-3eb7-1106-96d1" page="0" collective="false">
           <profiles>
@@ -5423,6 +5468,9 @@ In addition, if any friendly models within 2&quot; are stunned or knocked down, 
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dceb-76ac-3ca7-d5a4"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="6 Armour of Righteousness" hidden="false" id="baaa-799d-4450-7e3f" page="0" collective="false">
           <profiles>
@@ -5442,8 +5490,204 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53ef-d7d2-01fa-eaf7"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Funerary Rites" id="b730-8274-0015-35b8" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df06-3bca-c6df-5b98"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1 - Morr’s Protection" hidden="false" id="a556-6c42-1c75-dea4">
+          <profiles>
+            <profile name="1 - Morr’s Protection" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="4295-a301-e9ed-1391">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Priest of Morr calls out to his god when confronted by an abomination and asks that he be shielded from the corrupted magic of the tainted. Any Magical attacks made by Necromancer, a Magister or Daemons, whicha would be considered a direct attack on the priest, will be negated if this rite is successful.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f672-8ceb-7768-9ee2"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 - Death Holds No Fear" hidden="false" id="5c9f-36c8-1e0a-14aa">
+          <profiles>
+            <profile name="2 - Death Holds No Fear" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="5b74-57cc-9bd0-1a2d">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Priests of Morr must be steadfast in their resolution and as such must , above all else, have no fear of death. The priest of Morr is now Fearless for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3532-8350-de92-0bd0"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 - Sanctity of the Fallen" hidden="false" id="cdd8-c7ad-aad4-689a">
+          <profiles>
+            <profile name="3 - Sanctity of the Fallen" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="af60-2f18-cca0-e768">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Those who fall shall be sanctified and their soul freed, in the name of Morr, god of death*. The priest of Morr may attempt to perform the Rite of Sanctity on a model (friend or foe) who has been taken Out of Action. The priest of Morr must be within 6” of the model in question. If successful, the model may not be raised up by a Necromancer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51df-3b48-2258-9bd4"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 - Hand of Morr" hidden="false" id="19b0-bdad-bac5-b85e">
+          <profiles>
+            <profile name="4 - Hand of Morr" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="15d3-c66c-1154-10a2">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">&apos;By his the hand of Morr, the l Jndead shall become as dust and ashes&apos; . The priest of Morr must be in base-to-base contact with an Undead model. Before Hand-fo-Hand combat occurs, the priest of Morr may attempt to use the Hand of Morr rite. If successful the foe immediately goes out of action (this affects Zombies, Dire Wolves and Vampires). Ghouls and Possessed affected by this rite will immediately flee their full Move away from the priest of Morr.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec1d-ca4f-3147-143a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 - Do you know who I am?" hidden="false" id="7487-5512-3592-0991">
+          <profiles>
+            <profile name="5 - Do you know who I am?" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="dd39-7896-43c3-03b1">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">‘Gaze upon me, abomination, for I am a priest of Morr &apos;. This rite has a range of 6” and must be directed at the closest Undead model first, or if no Undead are w ithin range, at the next closest human servant of the Undead (Dregs, Ghouls, Necromancers), or finally at any model. If successful, that model is immediately Stunned. If the model cannot lx * Stunned, then it is Knocked Down instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0be4-ab5d-21c0-45df"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 - I am death!" hidden="false" id="01be-066b-e4ad-d473">
+          <profiles>
+            <profile name="6 - I am death!" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="d2ca-08c9-aa5b-8b96">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">7am a priest of Morr, god of death!&apos; It is a well- known fact that the priests of Morr are not martially inclined. Their divine duties involved the dead, not the taking of life. However, there are times when a priest of Morr will he called to engage in combat and who would be more feared than a representative of the god of Death? This spell gives the priest of Morr a 6+ armour save and increases their WS by either +1 or makes it 4, whichever is greater.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae53-283c-58fd-4f68"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prayers of Ulric" id="0372-1590-8541-6222" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1 - Snow Squall" hidden="false" id="27d5-ab5b-cf48-a03f">
+          <profiles>
+            <profile name="1 - Snow Squall" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="712a-f2e0-1d0d-d055">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Ulric extends his protection to the Wolf Priest in the form of a localised snow squall that engulfs the model. All enemy models in litll combat with the priest are at -1 to hit due to the swirling snow and winds. The spell lasts for the duration of the HtH combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ec-6fe1-edbf-387a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 - Bloodlust" hidden="false" id="6585-fa9c-30b7-fba6">
+          <profiles>
+            <profile name="3 - Bloodlust" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="80b7-5354-fc8f-4de2">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Wolf Priest is infused with a lust for battle and attacks wildly. All attacks are at S + 2, and he scores a critical hit on a 5-6. The Wolf Priest must test, by rolling the prayers difficulty or greater on 2d6, each turn to see if the prayer remains in effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ed-23bf-d173-e770"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 - Wolf&apos;s Hunger" hidden="false" id="b2be-7158-b042-f498">
+          <profiles>
+            <profile name="4 - Wolf&apos;s Hunger" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="e7bd-15ee-5edf-0589">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">One member of the warband (priest s choice) is thrown into a Frenzy. (See page 39 of the Mordheim rulebook for details.)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f613-aebe-fc9e-b64f"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 - Ulric&apos;s Howl" hidden="false" id="323a-6b24-25c6-72ff">
+          <profiles>
+            <profile name="5 - Ulric&apos;s Howl" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="51d4-f82e-d461-1bd7">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Wolf Priests prayer is answered as an ear-shattering inhuman howl roars from his throat. For the duration of the battle, all members of (he priest&apos;s warband are immune to Fear, Terror or All Alone tests as they feel the presence of their god . Additionally, all Rout tests are at +1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3de3-9edb-fe6e-3ac9"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 - Call of Ulric" hidden="false" id="c485-5daa-2dd7-bf6a">
+          <profiles>
+            <profile name="6 - Call of Ulric" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="d004-7d37-014e-29da">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Wolf Priest lets out a cry of agony as his body re-shapes itself into that of a huge, slavering wolf with the following profile:
+
+M     6
+WS  4
+BS   0
+S      4
+T      4
+W     1
+I       5
+A      2
+LD    6
+
+During the time that the priest is in the form of a wolf, he may do nothing but attack as a wolf: no spell-casting or weapons use. He still hates Sigmars minions, however. In each shooting phase, the priest may choose to make a LD test (using the Wolfs LD 6) to regain his human form. If he is still in wolf form at the end of the battle, he gets one last chance to return to human form. If he does not, then he remains a wolf forever! He is still a hero, and thus entitled to XP gains and attribute increases. He may only choose skills from the Speed Table, with the exception of Scale Sheer Surfaces. The max attributes for a wolf are;
+
+M     7
+WS  6
+BS   0
+S      4
+T      4
+W     3
+I       7
+A      3
+LD    7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d49f-ade0-24f5-be5c"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 - Hammerschlag" hidden="false" id="42b3-b9f4-010f-73dc">
+          <profiles>
+            <profile name="2 - Hammerschlag" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="7c82-45fe-bc9d-e285">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Wolf Priest calls down a hammer blow from Ulric on any model within 6&quot;. That model suffers a S4 hit from an enormous ethereal hammer, including the concussion special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02ef-57ad-1132-fea4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e720-54bd-575b-7973"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5d2-0680-7cf7-0faf"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Marienburgers (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Mercenaries - Marienburgers (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1447,11 +1447,11 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         <entryLink import="true" name="Helmet" hidden="false" id="4313-c6b7-44a4-275c" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
         <entryLink import="true" name="Shield" hidden="false" id="b9be-21f6-a8c1-c0da" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
         <entryLink import="true" name="Buckler" hidden="false" id="ebe1-0a77-1118-0089" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="217a-488b-c0dc-04a0" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="a216-9b0b-f317-48ee" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="a498-d992-faa8-e4a1" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="150a-41cc-d55c-3a36" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="a8e6-9c55-d601-24c0" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="217a-488b-c0dc-04a0" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="a216-9b0b-f317-48ee" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="a498-d992-faa8-e4a1" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="150a-41cc-d55c-3a36" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="a8e6-9c55-d601-24c0" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f42ac18f-5b17-105f-54fa-9b8a3c426954" name="Characteristic Decreases" hidden="false" collective="false" import="true">

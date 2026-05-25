@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Middenheimers (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Mercenaries - Middenheimers (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Marksmen" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -816,7 +816,7 @@
     <selectionEntry type="upgrade" import="true" name="Wolf Priest of Ulric" hidden="false" id="6ef5-63c5-036d-b22f">
       <costs>
         <cost name="pts" typeId="points" value="60"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="3ac2-dc62-a40b-11ae" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
@@ -847,6 +847,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="5a0e-0999-fe8f-5718" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Prayers of Ulric" hidden="false" id="49e1-4a0e-7f07-a15d" type="selectionEntryGroup" targetId="0372-1590-8541-6222" flatten="true"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f8-afd3-2b37-ff36"/>
@@ -1065,12 +1066,12 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="4707-11a1-415e-d2a9" page="0" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2719-cc34-eec3-9b73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b95f-49cc-52f8-970c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4b12-ed98-decc-ad6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f9ec-20d8-78d6-57d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Academic Skills" hidden="false" id="d4fa-1fee-72dd-7964" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="04c2-dde8-408f-ee7f" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Academic Skills" hidden="false" id="d4fa-1fee-72dd-7964" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="04c2-dde8-408f-ee7f" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1090,6 +1091,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="bef7-8542-06ce-6b79" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Funerary Rites" hidden="false" id="a439-d448-cbcc-aaa9" type="selectionEntryGroup" targetId="b730-8274-0015-35b8" flatten="true"/>
       </entryLinks>
       <profiles>
         <profile name="Priest of Morr" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="b2b6-96e0-dc37-121b">
@@ -1128,6 +1130,52 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wolf Companion" hidden="true" id="5f50-aa55-f22e-0f80">
+      <profiles>
+        <profile name="Wolf Companion" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="dbba-950f-9425-09d0">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">2</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Thick Coat of Fur" id="9740-110d-ab00-49a2" hidden="false">
+          <description>Their thick coat of fur counts as a wolf cloak for protection: 6+ save.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Animals" id="e009-2286-56dd-8f32" hidden="false" type="rule" targetId="daaa-38f1-8c4c-3140"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b2-7ab3-14f8-5fd9"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ef5-63c5-036d-b22f" shared="true" includeChildSelections="true" childName="Wolf Priest of Ulric"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="7a05-821a-2471-e05d" primary="true" name="Henchmen"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
