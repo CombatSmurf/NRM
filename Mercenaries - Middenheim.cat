@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Mercenaries - Middenheimers (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Mercenaries - Middenheimers (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Marksmen" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -765,7 +765,7 @@
         <categoryLink name="Heroes" hidden="false" id="9a71-5473-f0e0-7a1d" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="cf1a-3f52-8534-1747" page="0" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="cf1a-3f52-8534-1747" page="0" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c3dc-20b3-4a10-43d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="27f0-801f-2ccd-d58a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -788,11 +788,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Merc Equipment" hidden="false" id="ad8d-5d17-fde3-f157" collective="false" targetId="13ec-6eaa-5a64-9153" type="selectionEntryGroup" flatten="true"/>
-        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="b750-d921-497b-1141" collective="false" targetId="9378-9a17-787d-31d1" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="increment" value="0" field="e821-3543-3a5e-49a4"/>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="b750-d921-497b-1141" collective="false" targetId="9378-9a17-787d-31d1" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="f4a2-d364-2d8c-8af8" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
       </entryLinks>
       <costs>
@@ -900,6 +896,18 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <rules>
+        <rule name="Hatred" id="ae32-b30b-8948-1cd6" hidden="false">
+          <description>Wolf Priests see Witch Hunters (Templars of Sigmar), Warrior-Priests, Sigmarite Matriarchs and Sisters Superior as agents of an opposing cult, and thus they HATE these models. That hatred does not extend to other models in those warbands, as the Wolf Priests see them simply as misguided followers of an errant cult.
+</description>
+        </rule>
+        <rule name="Wolf Companion" id="5f2b-514b-6214-2d4d" hidden="false">
+          <description>Wolf Priests may
+be accompanied by a huge wolf. (See
+Wolf Companion entry following
+Wolf Priest rules.)</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Youngblood" hidden="false" id="fe60-816c-2cc0-75fe" page="0" collective="false">
       <constraints>
@@ -1134,6 +1142,23 @@
         <cost name="pts" typeId="points" value="35"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
+      <rules>
+        <rule name="Loner" id="7952-57f5-dacd-171c" hidden="false">
+          <description>Few people care to spend any length of time in the company of a priest of Morr - even when it is their duty to do so.
+
+
+As such, a priest of Morr is used to being alone and probably prefers it that way. 
+
+
+Priests of Morr do not suffer from the All Alone rules.</description>
+        </rule>
+        <rule name="Funerary Rites" id="1f9d-ee13-b61a-c99d" hidden="false">
+          <description>Priests of Morr are not wizards by any means, however, they do have numerous Funerary Rites, which they may perform.
+
+
+As such, priests of Morr may choose a Funerary Rite listed below, using the rules for Magic on page 56 of the Mordheim hook.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wolf Companion" hidden="true" id="5f50-aa55-f22e-0f80">
       <profiles>
@@ -1328,23 +1353,21 @@ To represent their advantage in size and bulk, the Champions and Captains of a M
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Skills" id="87ec-2b0e-6038-ff51" hidden="false" collapsible="true">
-      <entryLinks>
-        <entryLink import="true" name="Skills" hidden="false" id="d809-e611-ba4b-bca8" type="selectionEntryGroup" targetId="70b9-9a07-4088-7598"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Serious Injuries" id="f6ac-aa4b-ff89-9d46" hidden="false" collapsible="true">
-      <entryLinks>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="25c1-3a47-63fe-e69c" type="selectionEntryGroup" targetId="313b-a816-0a89-926c"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Merc Equipment" id="13ec-6eaa-5a64-9153" hidden="false" flatten="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Merc Missile Weapons" id="203a-69d9-f593-2e80" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="2d49-137a-a519-2110" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604"/>
+            <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="2d49-137a-a519-2110" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604">
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Pistols - Brace" hidden="false" id="0bf1-3ec2-7204-5b39" type="selectionEntry" targetId="eda4-7746-2e0d-a342"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="37d9-139b-0d61-5aa8" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Dueling Pistol" hidden="false" id="37d9-139b-0d61-5aa8" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Pistol" hidden="false" id="4ccb-597d-c3cc-518b" type="selectionEntry" targetId="67e9-a4f5-8f76-168c"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="9d3e-17ac-046c-cf31" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Bow" hidden="false" id="071e-43cb-a2b5-8ffc" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>

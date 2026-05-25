@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ebaf-f5a8-cac6-bd65" name="Pit Fighter (1a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -5618,7 +5618,7 @@ As such, priests of Morr may choose a Funerary Rite listed below, using the rul
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49d3-a0f9-851e-64b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Dagger" hidden="false" id="b1e6-3147-8d77-860b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
+            <entryLink import="true" name="Free Dagger" hidden="false" id="b1e6-3147-8d77-860b" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="0" field="points"/>
               </modifiers>
@@ -5649,7 +5649,7 @@ As such, priests of Morr may choose a Funerary Rite listed below, using the rul
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="b591-49b6-3a8b-16d9" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="b591-49b6-3a8b-16d9" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="ce93-9111-10bc-8129" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">

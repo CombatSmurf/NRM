@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="35" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="36" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -362,7 +362,7 @@ ignores the special rules for Animosity.</description>
         <profile id="f2a6-ed25-f24d-bddb" name="Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy armor save</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 Enemy armor save</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -482,7 +482,7 @@ ignores the special rules for Animosity.</description>
         <profile id="425b-6472-8e74-fb9b" name="Free Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemey save</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 Enemy armor save</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5614,7 +5614,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
             <profile name="4 - Wolf&apos;s Hunger" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="e7bd-15ee-5edf-0589">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">One member of the warband (priest s choice) is thrown into a Frenzy. (See page 39 of the Mordheim rulebook for details.)</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">One member of the warband (priests choice) is thrown into a Frenzy. (See page 39 of the Mordheim rulebook for details.)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5688,6 +5688,12 @@ LD    7</characteristic>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5d2-0680-7cf7-0faf"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Charactaristics +/-" id="7dfe-3e9e-2eb6-f2de" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="16fa-3088-81a5-a2b3" type="selectionEntryGroup" targetId="7879-46ac-5598-aa00" collapsible="true"/>
+        <entryLink import="true" name="Characteristic Decreases" hidden="false" id="d99e-3a62-ed03-46bd" type="selectionEntryGroup" targetId="9d72-8c8f-1eba-38dc" collapsible="true"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
