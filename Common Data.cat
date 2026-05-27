@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="37" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="38" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -3348,6 +3348,74 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <infoLink name="Thick Hide" id="5e58-4a60-0e58-2426" hidden="false" type="rule" targetId="14cf-bba9-3c30-f038"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trick Shooter" hidden="false" id="a191-1d2b-adb7-2743" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1a54-c70a-e076-23e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Trick Shooter" id="7417-4c29-ab1d-7fad" hidden="false" page="0">
+          <description>He ignores all modifiers for cover when using missile weapons.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Quick Shot" hidden="false" id="3075-2abd-a4c5-b38f" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="276f-7a79-ded5-672d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Quick Shot" id="133d-87a3-3e7d-868f" hidden="false" page="0">
+          <description>The warrior may shoot twice per turn with a bow or crossbow (but not a crossbow pistol).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eagle Eyes" hidden="false" id="d76d-d842-ad50-3a20" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aebf-d777-fb2a-3e86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Eagle Eyes" id="27fe-cb2a-ce22-36ec" hidden="false" page="0">
+          <description>He adds +6&quot; to the range of any missile weapon he is using.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dark Elf Blade" hidden="false" id="f009-768d-cd97-e4d6">
+      <profiles>
+        <profile name="Dark Elf Blade" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="4080-4d17-b7a6-71ce">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As User</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Dark Elf Blades are forged in the city of Hag  Graef, the Dark Crag. They are fashioned from combat. Blacksteel, a rare form of steel found deep within the mountains around the city. Dark Elf Blades have wicked protrusions and serrated, which inflict serious damage on an opponent. Any Dark Elf can upgrade a sword or dagger to a Dark Elf blade by paying an additional 20 gc at the time of purchase. Weapons upgraded to a Dark Elf Blade retain  all of their abilities (ie. swords can parry, daggers grant an armour save of 6+).
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Critical Damage" id="95c3-472a-31b6-3443" hidden="false">
+          <description>Dark Elf blades inflict serious damage on their opponents, when rolling on the critical hit chart a Dark Elf blade will add +1 to the result. </description>
+        </rule>
+        <rule name="Wicked Edge" id="6626-b073-f29f-7159" hidden="false">
+          <description>Dark Elf blades are set with sharp protrusions and serrated edges which inflict serious damage on an opponent, a roll of 2-4 on the injury table is a Stunned result. </description>
+        </rule>
+        <rule name="Rarity" id="1328-38d5-b960-7103" hidden="false">
+          <description>Rarity 9</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -3889,7 +3957,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="79ab-1054-a643-db72" name="Acrobat." page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="79ab-1054-a643-db72" name="Acrobat" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac7d-2728-0fcf-8d44" type="max"/>
           </constraints>
@@ -5816,6 +5884,61 @@ If the test fails, the sword disappears.</characteristic>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5d2b-29d7-adfd-af43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dark Elf Special Skills" id="854e-a887-8123-443d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fury of Khaine" hidden="false" id="afe4-25ae-b093-73d9">
+          <rules>
+            <rule name="Fury of Khaine" id="a919-a46c-0522-070e" hidden="false">
+              <description>The Dark Elf is infused with an intense raging thirst for blood and is a whirlwind in hand-to-hand combat, moving from opponent to opponent. The Dark Elf may make a 4&quot; follow up move if he takes all of his opponents out of action. If he comes into contact with another enemy this starts a new combat. This new combat takes place in the following turn and the model counts as charging. May not follow up in the opponent’s turn </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d9d4-db50-be98-55c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Powerful Build" hidden="false" id="989b-1366-d5d9-5b77">
+          <rules>
+            <rule name="Powerful Build" id="e141-3e0d-5a23-a408" hidden="false">
+              <description>The warrior is strongly built for an Elf and is capable of feats of strength. A warrior with this skill may choose skills from the Strength table. The Sorceress may never take this skill and no more than two warriors in the warband may take this skill at any one time. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="804c-2534-572e-8db2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fey Quickness" hidden="false" id="20da-a982-ed63-9ddb">
+          <rules>
+            <rule name="Fey Quickness" id="1560-2b74-1b9f-9695" hidden="false">
+              <description>Few can ever hope to match an Elf’s inhuman quickness and agility. An Elf with Fey Ouickness can avoid melee or missile attacks on a roll of 6. If the Elf also has Step Aside or Dodge this will increase to a 4+ in the relevant area. For example, an Elf with Fey Quickness and Step Aside avoids melee attacks on a 4+ and missile attacks on a 6.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8402-2052-2bf2-2ba9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infiltration" hidden="false" id="8f14-772b-6b99-6280">
+          <rules>
+            <rule name="Infiltration" id="b43d-45dc-d7fb-968b" hidden="false">
+              <description>The Dark Elf can infiltrate, this skill is exactly the same as the Skaven skill. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6e7d-c24a-d052-ec38" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master of Poisons" hidden="false" id="9d87-f9d6-4e89-4484">
+          <rules>
+            <rule name="Master of Poisons" id="b493-adf4-bba5-b040" hidden="false">
+              <description>The Dark Elf is proficient in concocting different poisons. If the Hero doesn’t search for rare items, he may make D3-1 doses of Dark Venom instead. There is a chance of getting none, as the hero doesn’t have access to a stable workplace. The poison must be used in the next battle and cannot be sold or traded to other warbands as the Dark Elves guard their secrets very carefully.
+</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d254-237d-9075-54a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>

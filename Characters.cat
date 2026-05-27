@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ebaf-f5a8-cac6-bd65" name="Pit Fighter (1a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -213,12 +213,12 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
         <cost name="Warband Rating" typeId="wb-rating" value="22"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c717-f695-29f9-6e61" name="Halfling Scout (1a)" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c717-f695-29f9-6e61" name="Human Scout (1b)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73c2-a0fc-5379-fc0b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1c8b-a2dc-fe56-180c" name="Halfling Scout" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+        <profile id="1c8b-a2dc-fe56-180c" name="Human Scout" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
@@ -313,30 +313,29 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">2</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">2</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
             <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="9b29-a5e0-e77b-ea41" name="Cook" hidden="false">
-          <description>Halflings are renowned for their cooking skills. A warband with a Halfling Scout may increase its maximum size by +1, as warriors from all around are attracted by the smell of great food!
-Note that this does not increase the maximum number of Heroes you may have.</description>
+        <rule id="9b29-a5e0-e77b-ea41" name="Not a Fighter" hidden="false">
+          <description>If a Human Scout is taken Out of Action during a game, he decides to leave on a 1-3, instead of the normal 1-2 when rolling for injury at the end of the game. </description>
         </rule>
-        <rule id="ff6e-310a-786b-1d92" name="Halfling Scout" hidden="false">
+        <rule id="ff6e-310a-786b-1d92" name="Human Scout" hidden="false">
           <description>Upkeep +5gc
-Rating +5pts (+1/exp)
-May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Halfling Scout.</description>
+Rating +9pts (+1/exp)
+May be Hired: Any warband except Orcs, Goblins, Beastmen or Possessed may hire the Human Scout. </description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="5d8c-26be-9255-f106" name="Halfling max" hidden="false" targetId="d117-3fc9-6dcf-59c0" type="profile"/>
+        <infoLink id="5d8c-26be-9255-f106" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="52b7-965f-3fd3-aab8" name="Hired Swords" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
@@ -363,10 +362,7 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </entryLink>
-            <entryLink id="6ba3-69ef-64f4-d382" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Cooking Pot"/>
-              </modifiers>
+            <entryLink id="6ba3-69ef-64f4-d382" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e4-efbe-a01b-9cb0" type="min"/>
               </constraints>
@@ -387,12 +383,50 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
           </constraints>
           <entryLinks>
             <entryLink id="08cc3960-62eb-bff3-603d-9ae0ae57056b" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-            <entryLink id="6625-7942-f8aa-e025" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+            <entryLink id="6625-7942-f8aa-e025" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Quick Shot" hidden="false" id="9c31-4c50-b201-fcd3" type="selectionEntry" targetId="3075-2abd-a4c5-b38f"/>
+            <entryLink import="true" name="Eagle Eyes" hidden="false" id="a09d-5d5f-545a-a59c" type="selectionEntry" targetId="d76d-d842-ad50-3a20"/>
+            <entryLink import="true" name="Trick Shooter" hidden="false" id="1c1e-b2a9-3687-06fb" type="selectionEntry" targetId="a191-1d2b-adb7-2743"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Expert Hunter" hidden="false" id="ddec-38c8-c1d5-f92a">
+              <rules>
+                <rule name="Expert Hunter" id="aa3e-68f9-ac07-4621" hidden="false">
+                  <description>A Human Scout that has been declared as Hidden may only be detected by models within half their Initiative value in inches, not their Initiative value as normal.
+In addition, a Human Scout may fire his Bow without giving away his position (he may fire and remain Hidden). </description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="221d-23bd-61d1-7065" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sit in Wait" hidden="false" id="e686-db56-a769-d464">
+              <rules>
+                <rule name="Sit in Wait" id="fff2-e85d-973c-e89b" hidden="false">
+                  <description> A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0401-8694-a40e-7abe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sit in Wait" hidden="false" id="e71c-3a09-8042-8e5a">
+                  <rules>
+                    <rule name="Sit in Wait" id="9200-da72-82a5-d1ec" hidden="false">
+                      <description> A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
+                    </rule>
+                  </rules>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="caaf-1b17-0751-4fe0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="115a-5e8e-8970-77b0" page="0" collective="false">
           <constraints>
@@ -412,8 +446,8 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
         <entryLink id="faa8d372-77d4-33a4-1a08-49fe27633c52" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="15"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fd5-ddfa-f4a1-717a" name="Ogre Bodyguard (1a)" page="0" hidden="false" collective="false" import="true" type="model">
@@ -1292,12 +1326,12 @@ May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a 
         <cost name="Warband Rating" typeId="wb-rating" value="16"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04e4-f438-67a8-0fb5" name="Elf Ranger (1a)" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="04e4-f438-67a8-0fb5" name="Dark Elf Assassin (2a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29a7-43da-783c-69b5" type="max"/>
       </constraints>
       <profiles>
-        <profile id="8b7d-0202-95d0-36a9" name="Elf Ranger" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+        <profile id="8b7d-0202-95d0-36a9" name="Dark Elf Assassin" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
@@ -1392,28 +1426,35 @@ May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a 
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">5</characteristic>
             <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">5</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
             <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">7</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="426d-1196-a630-8fac" name="Elf Ranger" hidden="false">
-          <description>Upkeep: 20gc
-Rating: +12pts (+1/exp)
-May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which include Dwarfs may hire Elf Rangers, but must pay 40 gold crowns after each battle instead of 20.</description>
+        <rule id="426d-1196-a630-8fac" name="Dark Elf Assassin" hidden="false">
+          <description>Upkeep: 25gc
+Rating: +25pts (+1/exp)
+May be hired: Any evil warband may hire a Dark Elf Assassin. 
+
+</description>
         </rule>
         <rule id="da4e-9fee-a275-c688" name="Excellent Sight" hidden="false">
-          <description>The Elf Ranger spots Hidden enemies from two times as far away as other warriors (ie, twice his Initiative value in inches).</description>
+          <description>The Elf spots Hidden enemies from two times as far away as other warriors (ie, twice his Initiative value in inches).</description>
         </rule>
-        <rule id="82cd-4a34-4d87-8733" name="Seeker" hidden="false">
-          <description>When rolling on the Exploration chart, the Elf Ranger allows you to modify one dice roll by -1/+1.</description>
+        <rule id="82cd-4a34-4d87-8733" name="Perfect Killer" hidden="false">
+          <description>All attacks made by the Assassin, whether in shooting or close combat, have an extra -1 save modifier to represent his skill in striking at unarmoured spots.</description>
+        </rule>
+        <rule id="13f5-5ff6-5db6-9c82" name="Kindred Hatred" hidden="false">
+          <description>The Dark Elves have been fighting the High Elves for many centuries. The wars between these two races have been very long and bloody affairs. Dark Elves Hate any High Elf warriors including High Elf Hired Swords. 
+
+</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1423,12 +1464,13 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
         <categoryLink id="8886-1966-8ea4-fc9f" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true" name="Hired Swords"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="927f-db66-14a6-9b40" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="927f-db66-14a6-9b40" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b580-28a9-9d5d-7e3d" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9933-d57b-3a49-3b15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7256-b197-7c7b-5c37" name="Elf Bow" hidden="false" collective="false" import="true" targetId="e2c2-751b-5384-ce1d" type="selectionEntry">
+            <entryLink id="7256-b197-7c7b-5c37" name="Repeater Crossbow" hidden="false" collective="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792c-9671-cf60-562f" type="min"/>
               </constraints>
@@ -1443,14 +1485,44 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="Dark Cloak" field="name"/>
+              </modifiers>
             </entryLink>
-            <entryLink id="30eb-5e21-0627-b791" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry">
+            <entryLink id="30eb-5e21-0627-b791" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f3-3715-51a7-2723" type="min"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Light Armor" hidden="false" id="0d69-17a8-7aa9-47bb" type="selectionEntry" targetId="3d2a-426a-c350-2a03">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e8ff-fb31-ff7b-3907" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dark Venom" hidden="false" id="59ae-baf4-a93e-4ce7" type="selectionEntry" targetId="443d-dade-6b72-a76d">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ac19-e538-a2e2-4c53" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dark Elf Blade" hidden="false" id="7890-b231-5170-aa73" type="selectionEntry" targetId="f009-768d-cd97-e4d6">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="Dark Elf Blade (Sword)" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="32bf-755c-5621-bede" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <costs>
@@ -1463,37 +1535,15 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afb3-147a-b157-b556" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="065a-76b6-ade2-7c6f" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b270-ca6d-875d-fcdf" name="Special" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="49e0-13dc-c969-42a6" name="Fey" hidden="false" collective="false" import="true" type="upgrade">
-                  <rules>
-                    <rule id="aea7-c3a7-8c18-09f6" name="Fey" hidden="false">
-                      <description>Hostile magic spells will not affect the Elf on a D6 roll of 4+.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b5ec-99f1-3fa3-ee15" name="Luck" hidden="false" collective="false" import="true" type="upgrade">
-                  <rules>
-                    <rule id="e9cf-396e-ae93-2d6f" name="Luck" hidden="false">
-                      <description>The Elf Ranger is blessed by Lileath, the Elven goddess of luck. Once per game he may re-roll any dice roll he makes (but not one made by other members of the warband).</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="841f-f5a1-7bb2-3948" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-            <entryLink id="54e4-0fb3-d7b4-2a00" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+            <entryLink id="841f-f5a1-7bb2-3948" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink id="54e4-0fb3-d7b4-2a00" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup" collapsible="true"/>
+            <entryLink import="true" name="Combat Skills" hidden="false" id="fd5e-8ad0-b298-fa0a" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb" collapsible="true"/>
+            <entryLink import="true" name="Dark Elf Special Skills" hidden="false" id="7bbe-1ed1-6f2f-de7a" type="selectionEntryGroup" targetId="854e-a887-8123-443d" collapsible="true">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="d4d7-8b54-4e75-7947" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1518,8 +1568,8 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
         <entryLink id="d868-f0f2-7403-e8fa" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="12"/>
+        <cost name="pts" typeId="points" value="70"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5a7d-3806-0782-7eaf" name="Merchant, The (1a)" hidden="false" collective="false" import="true" type="model">
@@ -5278,6 +5328,759 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d9-629b-d245-7ff2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry id="3f4c-65dd-5a10-ec1d" name="Halfling Scout (1a)" page="0" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed87-b8a8-f596-8ace" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6625-154a-b95e-eb0c" name="Halfling Scout" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="3f4c-65dd-5a10-ec1d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">2</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">2</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7a9b-6c5b-4c6a-6887" name="Cook" hidden="false">
+          <description>Halflings are renowned for their cooking skills. A warband with a Halfling Scout may increase its maximum size by +1, as warriors from all around are attracted by the smell of great food!
+Note that this does not increase the maximum number of Heroes you may have.</description>
+        </rule>
+        <rule id="c70f-7f36-56f0-01b8" name="Halfling Scout" hidden="false">
+          <description>Upkeep +5gc
+Rating +5pts (+1/exp)
+May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Halfling Scout.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f54e-323e-a23c-9eb8" name="Halfling max" hidden="false" targetId="d117-3fc9-6dcf-59c0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5125-18e8-7850-92a5" name="Hired Swords" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="49c8-8145-625e-1ec6" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4b2-0a41-23e0-d0f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="05a1-a44d-78b2-a603" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5b-2ef4-210e-59ec" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ec7d-19fb-ced4-3a5d" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b9-1dd0-035e-da2f" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="903d-d94d-2224-9350" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Cooking Pot"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0daf-948e-5634-52ff" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="760e-e27b-aed6-7524" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7b7-2119-7fc2-71b4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa39-23a3-a195-0a00" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="20c3-2afb-dd93-24c3" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+            <entryLink id="637d-3bfe-3184-8027" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="4d8d-4d28-5ac4-5bb3" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e45d-5cff-a545-19fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1159-1a37-a43d-b9bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charactaristics +/-" hidden="false" id="0b85-7a54-49fa-3607" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7afd-8fd4-0444-1155" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d42-5eee-a4e5-ac12" name="Cursed Hillman - Man (2a)" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa4a-6f31-50d6-2d45" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="913f-ed26-c9fb-d598" name="Cursed Hillman" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="5d42-5eee-a4e5-ac12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3(2)</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9f6d-0688-140b-3d8e" name="Cursed Hillman" hidden="false">
+          <description>Upkeep +25gc
+Rating +20pts (+1/exp)
+
+May be Hired: A Cursed Hillman can be hired by the Undead, Beastmen or Possessed warbands.
+</description>
+        </rule>
+        <rule id="fb27-dcff-58c6-360d" name="Lycanthrope" hidden="false">
+          <description>The Cursed Hillman is a werewolf. Any time he loses a wound, he must roll a D6. On a roll of 4+, the beast within escapes and he transforms into a werewolf. Ignore any injury table rolls. Should he not transform, roll on the injury table at -1 (thus knocked down is 2-3, stunned is 4-5, and OOA is on a 6 only). While in wolf-form, he has a bonus Bite attack. This is resolved at -1S.</description>
+        </rule>
+        <rule id="ef85-f466-308f-e84e" name="Hunter" hidden="false">
+          <description>The Cursed Hillman has had to learn to survive in the
+bleak wilderness of the Empire. As such, he is incredibly skilled
+with his bow. He may move at half-rate, and still fire his bow
+without penalty</description>
+        </rule>
+        <rule id="b549-89a9-45f8-58d9" name="Thin Flesh" hidden="false">
+          <description>Due to his constant changing into lupine form and
+back, his flesh has weakened to ease the transformation. As such,
+he counts as having -1T in hand to hand combat.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4387-de9b-4cf3-3ec7" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b1fa-5110-0333-7d01" name="Hired Swords" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3a01-ab55-bee2-fa47" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a527-5edd-11ee-e061" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f92f-5645-38a7-dfde" name="Axe" hidden="false" collective="false" import="true" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460c-2d41-4752-c064" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e960-ebfb-3a4e-620d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f7d8-05d9-0f94-7da4" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2365-c63f-dde8-fac4" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e4-9e6e-3567-e2db" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f9db-cd68-becc-0f64" name="Longbow" hidden="false" collective="false" import="true" targetId="afa2-2d5c-54dd-d435" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f651-4b25-79ba-0d93" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24bd-dfed-85ec-02cd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Fur Coat" hidden="false" id="4c15-0306-fcd5-d57b">
+              <profiles>
+                <profile name="Heavy Fur Coat" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="f47b-1c56-244b-9cc4">
+                  <characteristics>
+                    <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+/6+</characteristic>
+                    <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">5+ Armor Save vs Ranged, 6+ Armor Save vs Melee</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="514c-05fa-f112-8299" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry id="c057-7f62-861b-cd49" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3960-8925-1e25-4db9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ca9-5168-093d-f0db" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Special" id="8190-ad44-25c2-fac2" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rage" hidden="false" id="a326-1c66-1b6a-64d8">
+                  <rules>
+                    <rule name="Rage" id="4d21-8101-39bf-1a7f" hidden="false">
+                      <description>The Hillman calls upon his curse to imbue himself with supernatural powers. He gains +1WS, +1S, +1I and an extra attack as his off-hand has transformed into a claw. This skill can only be taken if the Control skill is already chosen.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Control" hidden="false" id="5c3b-4d9b-e3da-0e85">
+                  <rules>
+                    <rule name="Control" id="e21b-5f08-24aa-5695" hidden="false">
+                      <description>So long has he been cursed that the Hillman can attempt to call upon the beast within at will. The Hillman can transform into the Werewolf during the shooting phase on a D6 roll of 2+. Should this roll fail, the Hillman must remain static as the excruciating transformation takes longer than anticipated. He counts as being knocked down, and will be completely transformed by the beginning of his controllers next turn.
+
+</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Werewolf" hidden="false" id="6ef3-da47-5f49-4a56" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea9-fa99-703b-9cb5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Werewolf" id="19f7-8ede-4c32-b121" hidden="false">
+                      <description>When in wolf-form, all garments and weapons are discarded. These are collected after the battle. The werewolf uses only it&apos;s teeth and claws in close combat, and suffers no penalties for doing so.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Shooting Skills" hidden="false" id="9d86-75a4-6441-8130" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="0928-bd0e-5d04-4caa" type="selectionEntryGroup" targetId="e134-0fdf-67a2-4684"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="7c41-1bdf-15b1-7d89" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1986-c420-b393-8cd0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="616e-56e8-531a-692c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charactaristics +/-" hidden="false" id="e2c2-9919-a107-3327" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3aff-70ae-1d18-85e1" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="60"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7674-6548-9646-0525" name="Cursed Hillman - Werewolf (2a)" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ef3-da47-5f49-4a56" type="equalTo" childName="Werewolf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65f-188e-e694-6520" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8291-e8dc-a782-0f79" name="Werewolf" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">2</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">2(3)</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f9da-b538-2124-1e13" name="Bite" hidden="false">
+          <description>While in wolf-form, he has a bonus Bite attack. This is resolved at -1S.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ee87-febc-82b9-7461" name="Hired Swords" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="3b3a-087c-c150-fd62" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c2e7-c0ba-2ed3-31f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ed46-57f1-cbc0-c227" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charactaristics +/-" hidden="false" id="62f6-64a3-eb63-5e0e" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e56-af02-f465-84e7" name="Elf Ranger (1a)" page="0" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="265e-8730-40b5-533c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6917-33e0-6761-b26a" name="Elf Ranger" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e56-af02-f465-84e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">5</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e8fc-6919-1d08-1945" name="Elf Ranger" hidden="false">
+          <description>Upkeep: 20gc
+Rating: +12pts (+1/exp)
+May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which include Dwarfs may hire Elf Rangers, but must pay 40 gold crowns after each battle instead of 20.</description>
+        </rule>
+        <rule id="6de2-5c61-4e53-5fa7" name="Excellent Sight" hidden="false">
+          <description>The Elf Ranger spots Hidden enemies from two times as far away as other warriors (ie, twice his Initiative value in inches).</description>
+        </rule>
+        <rule id="58bf-a0ec-c5c1-100a" name="Seeker" hidden="false">
+          <description>When rolling on the Exploration chart, the Elf Ranger allows you to modify one dice roll by -1/+1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="021f-881d-de1b-ae4d" name="Elf max" hidden="false" targetId="2e71-7183-b262-5a4b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3bb9-7800-9429-a415" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true" name="Hired Swords"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6473-a7c5-98b9-1809" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3714-b6c1-8c7b-ff3d" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="747c-085e-e99c-f464" name="Elf Bow" hidden="false" collective="false" import="true" targetId="e2c2-751b-5384-ce1d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7972-ba31-8bfb-f027" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="250a-5653-be8b-94cf" name="Elven Cloak" hidden="false" collective="false" import="true" targetId="e151-07cd-a275-fd59" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a85-75eb-0c63-4ddb" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="30d9-0a08-c322-d966" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d503-6792-9e23-9931" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="15c1-c3a7-5792-b40b" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1686-34f7-deb8-9f79" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="937b-1a9f-212c-e053" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3035-7bf0-24df-3c0e" name="Special" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="0b33-f672-04a4-ebde" name="Fey" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="ba33-1f69-726b-9632" name="Fey" hidden="false">
+                      <description>Hostile magic spells will not affect the Elf on a D6 roll of 4+.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ff0e-c7a5-b930-93dd" name="Luck" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="b26f-f4f3-b5b0-d196" name="Luck" hidden="false">
+                      <description>The Elf Ranger is blessed by Lileath, the Elven goddess of luck. Once per game he may re-roll any dice roll he makes (but not one made by other members of the warband).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="1d90-929f-8096-4c18" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+            <entryLink id="dcb6-d2bc-69e5-e141" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="6462-d341-4ccd-c987" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fa25-0ffe-fb3d-b2ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7065-a42f-87d5-19a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charactaristics +/-" hidden="false" id="fccd-68d8-c1f8-d7cd" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6c5a-fec1-396a-72fc" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="12"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>
