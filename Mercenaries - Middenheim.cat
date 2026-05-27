@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Mercenaries - Middenheimers (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Mercenaries - Middenheimers (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Marksmen" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -898,8 +898,7 @@
       </selectionEntryGroups>
       <rules>
         <rule name="Hatred" id="ae32-b30b-8948-1cd6" hidden="false">
-          <description>Wolf Priests see Witch Hunters (Templars of Sigmar), Warrior-Priests, Sigmarite Matriarchs and Sisters Superior as agents of an opposing cult, and thus they HATE these models. That hatred does not extend to other models in those warbands, as the Wolf Priests see them simply as misguided followers of an errant cult.
-</description>
+          <description>Wolf Priests see Witch Hunters (Templars of Sigmar), Warrior-Priests, Sigmarite Matriarchs and Sisters Superior as agents of an opposing cult, and thus they HATE these models. That hatred does not extend to other models in those warbands, as the Wolf Priests see them simply as misguided followers of an errant cult.</description>
         </rule>
         <rule name="Wolf Companion" id="5f2b-514b-6214-2d4d" hidden="false">
           <description>Wolf Priests may
@@ -1559,6 +1558,7 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="8687-6783-1be7-6267" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="09aa-cb51-10cb-4ae4" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="cd99-3cc5-3183-b360" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

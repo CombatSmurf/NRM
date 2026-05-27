@@ -4233,4 +4233,8 @@ combat, roll a D6.
       <description>Rat Ogre is a large target for the purposes of targeting.</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Characters" id="5f49-5e43-31bb-2dc9" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="d740-4aa0-8972-00a5" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

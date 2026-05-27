@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Mercenaries - Reiklanders (1a)" revision="11" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Mercenaries - Reiklanders (1a)" revision="12" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Champion" hidden="false" id="27fe-783c-445d-2d4f" page="0" collective="false">
       <constraints>
@@ -1416,6 +1416,7 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="3811-3d0e-8c85-7126" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="7fb6-a462-e898-315c" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="b45e-ec45-4053-a2f7" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

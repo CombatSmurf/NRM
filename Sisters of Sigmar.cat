@@ -1212,11 +1212,11 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         <entryLink import="true" name="Shield" hidden="false" id="317d-c6d7-7b79-631c" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
         <entryLink import="true" name="Helmet" hidden="false" id="6c52-2b80-a4ab-d961" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
         <entryLink import="true" name="Buckler" hidden="false" id="a53f-c4fd-1bf3-d598" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="c3ce-2aa6-3017-c338" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="9dcc-035e-60b8-e406" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="ef34-0c36-cf7b-b08a" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="4a01-3043-6bf2-d82c" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="d067-f40d-f423-db1a" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="c3ce-2aa6-3017-c338" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="9dcc-035e-60b8-e406" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="ef34-0c36-cf7b-b08a" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="4a01-3043-6bf2-d82c" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="d067-f40d-f423-db1a" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f42ac18f-5b17-105f-54fa-9b8a3c426954" name="Characteristic Decreases" hidden="false" collective="false" import="true" collapsible="true">
@@ -1380,11 +1380,11 @@ only applies when they are armed with normal swords or weeping blades, and not w
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="b997-5887-2bdf-7636" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="1be5-44ab-f5ed-4b6c" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="0aa4-d31f-b6d2-9335" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="0aa4-d31f-b6d2-9335" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
             <entryLink import="true" name="Sigmarite Warhammer (Sisters only)" hidden="false" id="f200-c5f0-dd0e-5012" type="selectionEntry" targetId="1478-15cf-1d4e-3e13"/>
-            <entryLink import="true" name="Double Handed Axe" hidden="false" id="c0de-cecb-c27c-19e2" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-            <entryLink import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="49d7-7a93-45b7-c470" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
-            <entryLink import="true" name="Double Handed Sword" hidden="false" id="80fb-d8d8-2ff5-ed1d" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="c0de-cecb-c27c-19e2" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="49d7-7a93-45b7-c470" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="80fb-d8d8-2ff5-ed1d" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
             <entryLink import="true" name="Flail" hidden="false" id="e2b1-f904-36b7-1e88" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
             <entryLink import="true" name="Steel Whip (Sister of Sigmar)" hidden="false" id="af5b-aab6-0c4d-a4ae" type="selectionEntry" targetId="6a3c-71a3-1aec-9a14"/>
           </entryLinks>
@@ -2777,6 +2777,7 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="6630-e708-01d2-08cc" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="d879-e71a-8b3f-5422" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="ed03-0948-4502-ca7e" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="10" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="11" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -5118,9 +5118,9 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         </entryLink>
         <entryLink id="44e6-3d17-3b3f-6025" name="Light Armor" hidden="false" collective="false" import="true" targetId="0148-3bf7-797a-83fa" type="selectionEntry"/>
         <entryLink id="3389-baaa-73aa-6f89" name="Shield" hidden="false" collective="false" import="true" targetId="4638-1a61-6a70-f004" type="selectionEntry"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="e376-0d91-f2f3-e19e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="1a6a-1933-17b1-611f" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="0524-599e-995d-095b" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="e376-0d91-f2f3-e19e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="1a6a-1933-17b1-611f" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="0524-599e-995d-095b" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-430c-00c2-9adc" name="Skinks Equipment" hidden="false" collective="false" import="true">
@@ -5186,9 +5186,9 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         </entryLink>
         <entryLink id="3a4a-b8fd-6fd8-fc5a" name="Light Armor" hidden="false" collective="false" import="true" targetId="0148-3bf7-797a-83fa" type="selectionEntry"/>
         <entryLink id="78c0-a9da-3255-aab1" name="Buckler" hidden="false" collective="false" import="true" targetId="9275-557a-4ad3-5ffa" type="selectionEntry"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="ed5f-1e46-f201-bcbe" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="ed5f-1e46-f201-bcbe" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -5349,6 +5349,7 @@ combat, roll a D6.
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="b859-67b9-2bbe-aa87" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="5b93-ef46-ffa8-a19d" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="5a7a-5d3a-e176-db11" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

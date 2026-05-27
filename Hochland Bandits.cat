@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="3737-518b-3731-edba" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="03ca-7ac9-a251-b17a" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="b580-a1a0-45fd-29d6" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Bandit Prince" hidden="false" id="b6df-aed6-6107-96d1" collective="false">
@@ -130,7 +131,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80d2-cbc-4b53-583f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="9660-a7f0-76b2-6a4f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="9660-a7f0-76b2-6a4f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="99fa-d6b5-113d-e100" typeId="points" value="0"/>
@@ -443,7 +444,7 @@ Also, models halve their Initiative when checking the range to see if they can�
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e55-cdd1-ea39-2f3c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d849-64a9-31a2-6e16" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="d849-64a9-31a2-6e16" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="e910-2b29-1f27-384" typeId="points" value="0"/>
@@ -801,7 +802,7 @@ A Duelist may use any close combat or missile weapon that the warband members c
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4c1-2866-9688-6322" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="9332-fc1f-46bd-c2c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="9332-fc1f-46bd-c2c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="b1c8-fd3d-61c8-164c" typeId="points" value="0"/>
@@ -1146,7 +1147,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5de-ef1f-efe2-31bc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="c0a3-bd3d-3a7b-244d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="c0a3-bd3d-3a7b-244d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="dcf-edee-19e1-bd1b" typeId="points" value="0"/>
@@ -1481,7 +1482,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a05b-e44e-cd0e-6769" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="1279-1e9-429c-627a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="1279-1e9-429c-627a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="6d73-6770-f9c5-8449" typeId="points" value="0"/>
@@ -1908,7 +1909,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e40a-9862-d4cb-64e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="cc0-5de2-9af-9bde" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="cc0-5de2-9af-9bde" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4bda-e53c-9775-59cf" typeId="points" value="0"/>
@@ -2356,7 +2357,7 @@ Note also that warriors to be looted can be from any warband participating in 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="798d-77a7-a28c-db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="55b5-fd78-fc33-87f4" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="55b5-fd78-fc33-87f4" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="42d6-4032-97bf-7a1c" typeId="points" value="0"/>
@@ -2798,7 +2799,7 @@ often darned close!</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ca5-57b1-baac-a60" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="b0d4-d461-8d7e-d10" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="b0d4-d461-8d7e-d10" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="eb79-a0c8-839a-4a04" typeId="points" value="0"/>
@@ -3236,7 +3237,7 @@ Blackhearts are immune to Fear, and never have to take All-Alone tests (they pr
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9af3-ddce-b64b-d34a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="b704-396f-39d0-cc26" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="b704-396f-39d0-cc26" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4905-a087-2b94-e5da" typeId="points" value="0"/>
@@ -3274,7 +3275,7 @@ Gutterscum do not gain experience.</description>
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="cf30-b16c-1fc2-1c05" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="3202-ccd3-cd37-7ba7" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="3801-d53b-ebb9-a2e0" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="3801-d53b-ebb9-a2e0" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" hidden="false" id="791a-909d-67c8-ee5e" typeId="points" value="0"/>
@@ -3376,7 +3377,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="8488-c598-435d-811c" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="8201-82eb-953d-40e9" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="e664-2b40-3e2-ec4b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="e664-2b40-3e2-ec4b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -3582,7 +3583,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="b224-98d6-264e-e68a" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="6ace-f201-9c83-8021" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="9a0b-f275-8d55-f506" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="9a0b-f275-8d55-f506" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="The Undead (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="The Undead (1a)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -499,7 +499,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="889151de-4826-5f00-5dbb-fcf546ebedbb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="equalTo"/>
+                <condition field="selections" scope="889151de-4826-5f00-5dbb-fcf546ebedbb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo" childName="Promoted"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -519,7 +519,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="889151de-4826-5f00-5dbb-fcf546ebedbb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="atLeast"/>
+                <condition field="selections" scope="889151de-4826-5f00-5dbb-fcf546ebedbb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="atLeast" childName="Promoted"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1611,7 +1611,7 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="60df-71f6-1b40-b776" targetId="e020-c282-277b-b173" importRootEntries="false"/>
-    <catalogueLink type="catalogue" name="Characters" id="724b-4377-649b-97ef" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
+    <catalogueLink type="catalogue" name="Characters" id="1629-8024-5674-4aaf" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="ec79-58d6-8d6c-fc0d" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

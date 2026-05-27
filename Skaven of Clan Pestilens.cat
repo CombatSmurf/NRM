@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="6518-bc7b-3999-c73f" name="Skaven of Clan Pestilens (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="50b4-f76-b577-1f73" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="a51c-7bff-7225-0300" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="fc6c-f49e-edf0-5099" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Heroes Equipment" id="43a3-ee93-4d88-5310" hidden="false">
@@ -10,7 +11,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="f57e-8b7-5295-ccbf" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="8d83-3b79-93cd-8086" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="29da-d985-eef9-94b4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="29da-d985-eef9-94b4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Club" field="name"/>
               </modifiers>
@@ -60,7 +61,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="246d-317e-dd74-80af" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="f45-7ac4-5457-263c" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="38e0-7f79-de37-4665" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="38e0-7f79-de37-4665" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Club" field="name"/>
               </modifiers>
@@ -457,7 +458,7 @@ The Liber Bubonicus may be used a single time, and a warband cannot have and u
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Extra Gold" hidden="false" id="7a81-8145-6ae-4521" type="selectionEntry" targetId="deca-5737-6234-23a1">
+            <entryLink import="true" name="Gold" hidden="false" id="7a81-8145-6ae-4521" type="selectionEntry" targetId="deca-5737-6234-23a1">
               <constraints>
                 <constraint type="min" value="25" field="selections" scope="parent" shared="true" id="dcb2-7390-9469-c4c5" includeChildSelections="false"/>
                 <constraint type="max" value="150" field="selections" scope="parent" shared="true" id="e011-a583-1472-48a2" includeChildSelections="false"/>
@@ -777,7 +778,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4824-98ed-6a19-c64c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="a03c-5bc5-104a-70d8" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="a03c-5bc5-104a-70d8" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="a45d-5974-552c-b838" hidden="false" typeId="points" value="0"/>
@@ -1092,7 +1093,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9656-a8a5-89a0-8f5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="12fd-527d-cd28-5d56" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="12fd-527d-cd28-5d56" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="3d4b-4e80-d08f-f3b8" hidden="false" typeId="points" value="0"/>
@@ -1431,7 +1432,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f51f-6e61-fae0-f3dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="b702-11fe-71aa-238e" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="b702-11fe-71aa-238e" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="1774-de82-bc28-e847" hidden="false" typeId="points" value="0"/>
@@ -1807,7 +1808,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0dd-a871-3aea-f9d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="65b9-a7eb-146e-ca6d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="65b9-a7eb-146e-ca6d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="3450-1e0d-5f8e-753b" hidden="false" typeId="points" value="0"/>
@@ -2179,7 +2180,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="658f-f7c0-5184-175b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="74b3-c626-8ca2-8d29" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="74b3-c626-8ca2-8d29" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="d36c-2873-dd25-f825" hidden="false" typeId="points" value="0"/>

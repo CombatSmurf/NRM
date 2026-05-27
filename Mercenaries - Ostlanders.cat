@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05ad-b0d8-77a8-2572" name="Mercenaries - Ostlanders (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05ad-b0d8-77a8-2572" name="Mercenaries - Ostlanders (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="42ce-e25d-7713-b46b" name="Ostlanders Rules" shortName="Ostlanders" publisher="https://broheim.net/downloads/warbands/official/Ostlanders.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Ostlanders.pdf"/>
   </publications>
@@ -2166,6 +2166,7 @@ Only a warband&apos;s leader may have this skill, which allows him to re-roll a 
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="e998-0760-59b1-fd87" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="daba-b352-5675-6954" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="cf6e-84f4-a2ec-df80" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

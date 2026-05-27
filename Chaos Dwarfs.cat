@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Chaos Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Chaos Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="a72c-9e0b-9f94-25a4" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="533f-ddb8-b748-2529" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="852e-cd41-b7c0-a2d2" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
     <rule name="Hard to Kill" id="ea1f-4e3a-7a63-9e50" hidden="false">

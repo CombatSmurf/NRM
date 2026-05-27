@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="5d51-e8c-6ba4-d00" name="The Restless Dead (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="85b9-c5d9-9e8e-7d20" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="957d-6548-1bd4-e271" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="ffa4-28fb-7947-b076" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="719e-61a8-87cc-4c16" collective="false">
@@ -15,7 +16,7 @@
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="5547-b31a-c282-2950" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="fe6d-ccc5-4ce9-e26f" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="90e5-d76e-9268-1647" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="90e5-d76e-9268-1647" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" id="b239-67c6-6fb-1e9" hidden="false" typeId="points" value="0"/>
@@ -151,7 +152,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-cafa-ef4-9dce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="b7b0-d750-2809-b88a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="b7b0-d750-2809-b88a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="2f23-2639-a5f1-4873" hidden="false" typeId="points" value="0"/>
@@ -459,7 +460,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="c6a0-6d61-e686-3254" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Equipment" hidden="false" id="1a4c-d8be-a5d-726" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" sortIndex="1"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="1a4c-d8be-a5d-726" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -590,7 +591,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="615b-4dc4-4ba5-ae37" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="7c09-3bd3-f94a-bb3b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="7c09-3bd3-f94a-bb3b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="612f-929-176-9ad8" hidden="false" typeId="points" value="0"/>
@@ -956,7 +957,7 @@ When a Necromancer searches for rare items, they roll 3D6 and pick the two high
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a4-9a41-2411-3606" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="740b-aacf-e6ed-5f71" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="740b-aacf-e6ed-5f71" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="79f9-9f7-9be5-abd4" hidden="false" typeId="points" value="0"/>
@@ -1616,7 +1617,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa72-60d5-c475-db46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="2005-8a23-f311-3224" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="2005-8a23-f311-3224" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="3da2-2560-c15d-4f5b" hidden="false" typeId="points" value="0"/>
@@ -2193,7 +2194,7 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2e2a-60fc-c03-68ca" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="f71c-49f8-78a8-43e3" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="8923-4936-4d19-527a" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="8923-4936-4d19-527a" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>

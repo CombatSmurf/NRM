@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49df-928f-1fa4-ff5b" name="Mercenaries - Averlanders (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="49df-928f-1fa4-ff5b" name="Mercenaries - Averlanders (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="692a-ce2e-7624-f850" name="Averlander Mercenary Rules" shortName="Averlander Mercenary Rules" publisher="https://broheim.net/downloads/warbands/official/Averland%20Mercenaries.pdf" publisherUrl="https://broheim.net"/>
   </publications>
@@ -975,7 +975,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="87d8-4af8-826b-4791" name="Marksman Equipment" hidden="false" collective="false" import="true" targetId="4cf0-8b2f-cfc2-5222" type="selectionEntryGroup"/>
+        <entryLink id="87d8-4af8-826b-4791" name="Marksmen Equipment" hidden="false" collective="false" import="true" targetId="4cf0-8b2f-cfc2-5222" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
@@ -1674,6 +1674,7 @@ Priests of Morr do not suffer from the All Alone rules.</description>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="286e-63a8-7c65-016b" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="5fb9-60f9-88ae-dce7" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="3701-0733-73df-74ca" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

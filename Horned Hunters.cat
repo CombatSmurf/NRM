@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="c32b-f67-ea0b-c818" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="e51a-5629-e216-644a" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="7967-e3fc-376d-c824" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
     <rule name="Woodcraft" hidden="false" id="e6d8-853d-ef65-ea32">
@@ -130,7 +131,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <entryLinks>
             <entryLink id="7425-4e98-a617-4b31" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink id="8634-7dd0-3e82-80be" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink id="2db8-a90b-f150-e8f1" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink id="2db8-a90b-f150-e8f1" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Mace, Hammer"/>
               </modifiers>
@@ -347,7 +348,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <entryLinks>
             <entryLink id="50c5-8397-2ab3-6d28" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink id="61e8-4cf8-9227-272a" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink id="c0a7-99d8-f8a6-d250" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink id="c0a7-99d8-f8a6-d250" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Mace, Hammer"/>
               </modifiers>
@@ -676,7 +677,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="957d-5e9-fc73-9aaf" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ce12-3dcd-ef5f-60af" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="ce12-3dcd-ef5f-60af" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -844,7 +845,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2080-4c4e-3d75-5e55" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c78c-3999-6b62-189c" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c78c-3999-6b62-189c" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1010,7 +1011,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1394-64a0-e44e-6fa8" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c3fb-9fc5-fd6d-55a7" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c3fb-9fc5-fd6d-55a7" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1171,7 +1172,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e54-74f8-d686-4359" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9492-d505-6c26-1225" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="9492-d505-6c26-1225" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1339,7 +1340,7 @@ As such, they automatically pass all Leadership-based tests they are required 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a05-b438-5c83-e3c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="24f-df24-7eca-b27c" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="24f-df24-7eca-b27c" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1509,7 +1510,7 @@ As such, they automatically pass all Leadership-based tests they are required 
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="7194-29e1-8c0f-e4d9" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="4287-9391-6add-999e" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="24ae-4ab1-c22c-451a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="24ae-4ab1-c22c-451a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" hidden="false" id="f0fd-6f99-cdfa-9833" typeId="points" value="0"/>

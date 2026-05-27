@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="36" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="37" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1780,9 +1780,6 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
       </costs>
     </selectionEntry>
     <selectionEntry id="c9bb-a349-a1d0-79b7" name="Fighting Claws" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b4d-211d-09b6-62db" type="max"/>
-      </constraints>
       <profiles>
         <profile id="3527-2794-7012-9361" name="Fighting Claws" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
@@ -5694,6 +5691,134 @@ LD    7</characteristic>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="16fa-3088-81a5-a2b3" type="selectionEntryGroup" targetId="7879-46ac-5598-aa00" collapsible="true"/>
         <entryLink import="true" name="Characteristic Decreases" hidden="false" id="d99e-3a62-ed03-46bd" type="selectionEntryGroup" targetId="9d72-8c8f-1eba-38dc" collapsible="true"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Lesser Magic" id="c81b-0f96-fcce-222d" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="f4f3-c3a9-fc86-2d30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="1 Fires of U’Zhul" hidden="false" id="fda3-d330-0c43-de54" page="0" collective="false">
+          <profiles>
+            <profile name="Fires of U’Zhul" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="061a-119d-6df1-f023">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons a fiery ball of flames and hurls it upon his enemies.
+
+The fireball has a range of 18&quot; and causes one Strength 4 hit.
+It strikes the first model in its path.
+Armour saves are taken as normal (ie, with -1 modifier).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6a0a-d507-0205-8c8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Flight of Zimmeran" hidden="false" id="2785-a77b-1fd8-e56c" page="0" collective="false">
+          <profiles>
+            <profile name="Flight of Zimmeran" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="d704-1c12-6823-8ba3">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the power of the winds of magic, the wizard walks on air.
+The wizard may immediately move anywhere within 12&quot;, including into base contact with an enemy, in which case he counts as charging.
+If he engages a fleeing enemy in the close combat phase he will score 1 automatic hit and then his opponent will flee again (if he survives).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9a13-1321-260b-c84c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 Dread of Aramar" hidden="false" id="f129-f803-a6f1-68a1" page="0" collective="false">
+          <profiles>
+            <profile name="Dread of Aramar" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="99f0-be16-232d-32e9">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard places a sense of mind-numbing fear into the minds of his opponents.
+A single model within 12&quot; of the wizard must pass a Leadership test or flee 2D6&quot; directly away from him.
+If he flees, he must test at the start of each of his own movement phases and will continue to flee until he passes a test.
+Note that this spell does not affect Undead or any model immune to fear.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2dc9-a72c-b80c-fcdc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 Silver Arrows of Arha" hidden="false" id="94a3-6959-58af-29cd" page="0" collective="false">
+          <profiles>
+            <profile name="Silver Arrows of Arha" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="6db4-5773-ad34-0ffd">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Silvery arrows appear from thin air and circle around the wizard, shooting out to strike his foes.
+Unlike other spells, this cannot be cast whilst in hand-to-hand combat.
+The spell summons D6+2 arrows which the wizard can use to shoot against one enemy model.
+The arrows have a range of 24&quot;.
+Use the wizard’s own Ballistic Skill to determine whether he hits or not, but ignore movement, range and cover penalties.
+The arrows cause one S3 hit each.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3f0d-3589-d935-be6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 Luck of Shemtek" hidden="false" id="fd37-0fe3-58ed-100d" page="0" collective="false">
+          <profiles>
+            <profile name="Luck of Shemtek" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="4496-0249-3683-56b9">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons the fickle power of magic to manipulate chance.
+The wizard may re-roll all his failed dice rolls, though the second results stand.
+The effect lasts until the beginning of his own next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a444-7cba-b616-c07f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 Sword of Rezhebel" hidden="false" id="26c8-3f0c-789c-b1ea" page="0" collective="false">
+          <profiles>
+            <profile name="Sword of Rezhebel" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="e7b7-2ac2-3a43-b544">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">A flaming sword appears in the hand of the wizard, promising red ruin to all who stand in his way.
+The sword gives the wizard +1 Attack, +2 Strength and +2 Weapon Skill.
+Take a Leadership test at the beginning of each of the wizard’s own turns.
+If the test fails, the sword disappears.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5d2b-29d7-adfd-af43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

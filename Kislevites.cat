@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
@@ -1328,9 +1328,9 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="efac-5efe-2447-4450" name="Kislev Warrior Equipment" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="6fb1-5165-a9fa-9a34" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="e88d-c348-2cd4-bc56" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="6fb1-5165-a9fa-9a34" name="Kislev Warrior Missile Weapons" hidden="false" collective="false" import="true" targetId="e88d-c348-2cd4-bc56" type="selectionEntryGroup" flatten="true"/>
         <entryLink id="ecaf-789e-f9d2-9028" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" targetId="fc40-5a30-cb06-fc53" type="selectionEntryGroup" flatten="true"/>
-        <entryLink id="98a7-ee87-2bd8-13fb" name="Armor" hidden="false" collective="false" import="true" targetId="6b13-7b10-e009-f519" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="98a7-ee87-2bd8-13fb" name="Kislev Warrior Armor" hidden="false" collective="false" import="true" targetId="6b13-7b10-e009-f519" type="selectionEntryGroup" flatten="true"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Kislev Warrior Armor, %" id="1a87-2f9f-2f9b-1764" hidden="false" flatten="true">
@@ -1618,8 +1618,8 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
     <selectionEntryGroup id="8598-c498-a44e-764d" name="Streltsi Equipment" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="3dbc-138f-a9a1-8c75" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" targetId="fc40-5a30-cb06-fc53" type="selectionEntryGroup" flatten="true"/>
-        <entryLink id="bdc4-2f97-10da-e5a2" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="1b6d-5120-8820-21ce" type="selectionEntryGroup" flatten="true"/>
-        <entryLink id="0ac6-5c67-d8fa-aebf" name="Armor" hidden="false" collective="false" import="true" targetId="0227-d72d-958b-452e" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="bdc4-2f97-10da-e5a2" name="Streltsi Missile Weapons" hidden="false" collective="false" import="true" targetId="1b6d-5120-8820-21ce" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="0ac6-5c67-d8fa-aebf" name="Streltsi Armor" hidden="false" collective="false" import="true" targetId="0227-d72d-958b-452e" type="selectionEntryGroup" flatten="true"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Streltsi Armor, %" id="3e81-1ead-b610-5ea7" hidden="false" flatten="true">
@@ -1659,6 +1659,7 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="7622-df8b-4073-6862" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="582c-9cf5-7748-c8e9" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="e2c0-b207-95ac-18c5" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

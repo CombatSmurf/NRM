@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Brethren" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -987,10 +987,10 @@ They automatically pass any Leadership tests they are required to take.</descrip
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" name="Armor" hidden="false" collective="false" import="true" sortIndex="3">
       <entryLinks>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="5a36-ee48-e6a8-155e" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="885a-c6a1-6137-2a36" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="7913-5e5b-6314-833d" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="e7a7-10a7-0926-c8aa" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="5a36-ee48-e6a8-155e" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="885a-c6a1-6137-2a36" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="7913-5e5b-6314-833d" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="e7a7-10a7-0926-c8aa" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
         <entryLink import="true" name="Heavy Armor" hidden="false" id="ef0b-4ec6-111f-e92f" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
         <entryLink import="true" name="Light Armor" hidden="false" id="3918-d41e-c76f-8acc" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
         <entryLink import="true" name="Helmet" hidden="false" id="6146-ff10-8716-6908" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
@@ -1125,11 +1125,11 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
               <entryLinks>
                 <entryLink import="true" name="Axe" hidden="false" id="d78d-c100-345d-2097" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="fde1-b0f6-3293-73e2" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-                <entryLink import="true" name="Double Handed Axe" hidden="false" id="948e-2b95-3413-7649" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="e860-6bae-fcb1-997f" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
-                <entryLink import="true" name="Double Handed Sword" hidden="false" id="9a77-888a-ede2-e609" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+                <entryLink import="true" name="DH Axe" hidden="false" id="948e-2b95-3413-7649" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="e860-6bae-fcb1-997f" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Sword" hidden="false" id="9a77-888a-ede2-e609" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="7a73-66b9-3447-94c8" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
-                <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="e4bd-7f70-1ba5-49aa" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
+                <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="e4bd-7f70-1ba5-49aa" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
                 <entryLink import="true" name="Spear" hidden="false" id="be8a-3553-eb9a-d601" type="selectionEntry" targetId="005e-e397-8108-f198"/>
                 <entryLink import="true" name="Sword" hidden="false" id="75ce-06fe-2bcd-462e" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
               </entryLinks>
@@ -1676,7 +1676,7 @@ must retire from the warband.</description>
     </selectionEntryGroup>
     <selectionEntryGroup id="cd413ae9-4927-5bae-ff6e-93723ba44113" name="Miscellaneous Equipment" hidden="false" collective="false" import="true" sortIndex="5">
       <entryLinks>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="d43a-8b1b-c55a-3430" type="selectionEntryGroup" targetId="a2cf-6f28-f7c2-275d" collapsible="true"/>
+        <entryLink import="true" name="Miscellaneous Equipment - All" hidden="false" id="d43a-8b1b-c55a-3430" type="selectionEntryGroup" targetId="a2cf-6f28-f7c2-275d" collapsible="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="59f0-a782-1370-5450" name="Darksouls Equipment (Cult of the Possessed 1a)" hidden="false" collective="false" import="true" sortIndex="2">
@@ -1689,12 +1689,12 @@ must retire from the warband.</description>
           <entryLinks>
             <entryLink import="true" name="Axe" hidden="false" id="e41f-3337-cdd5-4cae" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Dagger" hidden="false" id="3da7-1add-0f34-4193" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Double Handed Axe" hidden="false" id="fbc5-aca0-aa36-38c9" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-            <entryLink import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="5ce2-6546-e515-4b71" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
-            <entryLink import="true" name="Double Handed Sword" hidden="false" id="e8ed-5cae-4feb-e46a" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="fbc5-aca0-aa36-38c9" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="5ce2-6546-e515-4b71" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="e8ed-5cae-4feb-e46a" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
             <entryLink import="true" name="Flail" hidden="false" id="b291-f97c-e504-31e8" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="d5f1-6125-9dab-3dff" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="4dbe-51f8-6c08-aa15" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="4dbe-51f8-6c08-aa15" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
             <entryLink import="true" name="Sword" hidden="false" id="1997-3ac3-f6da-d4a9" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
           </entryLinks>
           <constraints>
@@ -1723,6 +1723,7 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="e46b-7326-0cdd-1273" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="5412-0cd9-b867-d106" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="be50-6807-abf5-5167" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

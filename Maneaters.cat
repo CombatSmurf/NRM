@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4487-2770-d9cd-ea0b" name="Maneaters (1c)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4487-2770-d9cd-ea0b" name="Maneaters (1c)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ea05-7e6b-115f-542a" name="Captain" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -129,7 +129,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325b-17ed-63bc-daa6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c4bd-7949-1b59-1e59" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c4bd-7949-1b59-1e59" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -309,7 +309,7 @@ They are immune to All Alone tests and may never become the warband leader.</des
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bff-7bbd-3602-e3e2" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3537-4714-4ed4-5de4" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="3537-4714-4ed4-5de4" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -471,7 +471,7 @@ They are immune to All Alone tests and may never become the warband leader.</des
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2729-8924-78cc-ecbf" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1dc2-80a4-2663-cb12" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="1dc2-80a4-2663-cb12" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -627,7 +627,7 @@ They are immune to All Alone tests and may never become the warband leader.</des
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71cf-9332-79ce-fb3d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3699-1299-97ca-4339" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="3699-1299-97ca-4339" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -856,7 +856,7 @@ If successful the enemy model is automatically knocked down.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcf5-fc87-cb42-a4ab" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="06aa-b02d-7e1e-ef56" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="06aa-b02d-7e1e-ef56" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -904,7 +904,7 @@ If successful the enemy model is automatically knocked down.</description>
       <entryLinks>
         <entryLink id="45ab-498d-c7bb-49e6" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink id="df9f-b323-fc3b-4db7" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="3e01-b258-354f-70d5" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="3e01-b258-354f-70d5" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -1047,10 +1047,10 @@ Crushing Attack only applies if the Ogre uses the club with both hands.</descrip
       <infoLinks>
         <infoLink id="f701-e19c-acb8-1e0f" name="Scatter" hidden="false" targetId="0ebc-5e13-bdf5-8605" type="rule"/>
         <infoLink id="5e26-73d2-9c7e-ce17" name="Experimental" hidden="false" targetId="7c73-4655-4b8f-01ac" type="rule"/>
-        <infoLink id="7340-0154-5cd6-253b" name="Explosive Radius 1-½" hidden="false" targetId="2849-7263-7081-cb4e" type="rule"/>
+        <infoLink id="7340-0154-5cd6-253b" name="Explosive Radius 1 ½&quot;" hidden="false" targetId="2849-7263-7081-cb4e" type="rule"/>
         <infoLink id="644f-7fa1-c7ff-4b74" name="Move or fire" hidden="false" targetId="3984-543f-6873-12c0" type="rule"/>
         <infoLink id="4add-99b3-f6eb-b8c6" name="Prepare shot" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
-        <infoLink id="bbb6-28cf-9de1-d22a" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+        <infoLink id="bbb6-28cf-9de1-d22a" name="Firearm Save Modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="80"/>
@@ -1745,6 +1745,7 @@ This skill may be taken only once and may not be taken by the Guide.</descriptio
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="ea9e-3eea-9d16-0ae6" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="af40-699f-f49c-6d07" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="2f07-57e0-c0fc-14d0" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

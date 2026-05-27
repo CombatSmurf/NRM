@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4ffc-66b0-fbc6-5a24" name="Bretonnian Knights (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4ffc-66b0-fbc6-5a24" name="Bretonnian Knights (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="7d32-487d-bc16-1db1" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="50cf-9672-d3e1-ce76" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="43e2-4ab8-e495-a7f5" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
     <rule name="Blessing of the Lake" hidden="false" id="682d-5f0c-f096-10ed">
@@ -36,7 +37,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="4b9-fdf8-84dd-3113" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="fb63-22d7-1cc4-ff04" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="4cec-1af6-13a5-29e4" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" type="selectionEntry" id="4cec-1af6-13a5-29e4" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -227,11 +228,11 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="8760-518-7a4-a259" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Warhorse" hidden="false" type="selectionEntry" id="7fb2-14f7-7311-af1a" targetId="7863-e620-5c6e-7eee"/>
             <entryLink import="true" name="Barding" hidden="false" type="selectionEntry" id="3e3-782a-5986-807d" targetId="98cf-5b49-a433-c337"/>
-            <entryLink import="true" name="Buckler, Discount" hidden="false" id="7ec4-ebb3-4df5-2f44" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="b7e1-0e3b-7382-009a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-            <entryLink import="true" name="Helmet, Discount" hidden="false" id="0ac3-0d6a-a488-39f8" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="6fb3-ea49-9a1e-b4c7" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-            <entryLink import="true" name="Shield, Discount" hidden="false" id="5bfa-1a25-b2ee-1d66" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Buckler, %" hidden="false" id="7ec4-ebb3-4df5-2f44" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+            <entryLink import="true" name="Heavy Armour, %" hidden="false" id="b7e1-0e3b-7382-009a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="0ac3-0d6a-a488-39f8" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="6fb3-ea49-9a1e-b4c7" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="5bfa-1a25-b2ee-1d66" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Barding, Discount" hidden="false" id="60d6-6bce-49f9-5cd6" page="0" collective="false">
@@ -302,7 +303,7 @@ Only available to Humans.</description>
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="e17b-9488-4024-7444" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="697d-86eb-9722-e7f9" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="9ddd-ba89-2689-a837" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" type="selectionEntry" id="9ddd-ba89-2689-a837" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -345,7 +346,7 @@ Only available to Humans.</description>
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="e851-30c0-1e9c-52a2" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="fd6b-8542-1277-9f1a" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="a187-4524-eac0-d2b7" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" type="selectionEntry" id="a187-4524-eac0-d2b7" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -530,9 +531,9 @@ Only available to Humans.</description>
             <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="79e1-1efc-a1d9-fe55" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="22af-954e-9788-db32" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="f756-4768-63d2-c586" targetId="d0e5-ca89-5f0d-f5d2"/>
-            <entryLink import="true" name="Helmet, Discount" hidden="false" id="df08-1f7a-85ed-3fa7" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="0959-926e-acc9-1595" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-            <entryLink import="true" name="Shield, Discount" hidden="false" id="2f8e-93a5-a186-d3d8" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="df08-1f7a-85ed-3fa7" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="0959-926e-acc9-1595" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="2f8e-93a5-a186-d3d8" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -565,8 +566,8 @@ Only available to Humans.</description>
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="592b-f3ef-1a53-5e9c" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="fa12-5f5b-bab0-b88e" targetId="d0e5-ca89-5f0d-f5d2"/>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="7f03-c611-afbb-4ea6" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-            <entryLink import="true" name="Helmet, Discount" hidden="false" id="cb72-5fb3-bf92-8a51" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="7f03-c611-afbb-4ea6" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="cb72-5fb3-bf92-8a51" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="34ab-c171-27b3-8a4d">
@@ -865,7 +866,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c16b-aaf8-137a-3767" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7b61-4ab6-e353-3193" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="7b61-4ab6-e353-3193" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1034,7 +1035,7 @@ He will never panic and break from combat and so does not have to pass a Leade
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c50-2474-aa67-7a29" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6f28-b66f-91b5-ea54" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="6f28-b66f-91b5-ea54" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1205,7 +1206,7 @@ He will never panic and break from combat and so does not have to pass a Leade
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c79f-1c96-a696-acc5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1eb6-b6ee-de7d-8f57" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="1eb6-b6ee-de7d-8f57" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1370,7 +1371,7 @@ He will never panic and break from combat and so does not have to pass a Leade
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a539-bce7-18c1-d9a3" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9f49-a590-b0c8-d149" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="9f49-a590-b0c8-d149" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1528,7 +1529,7 @@ He will never panic and break from combat and so does not have to pass a Leade
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4f-233a-bc40-10a1" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2ab2-e9f8-410a-d263" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="2ab2-e9f8-410a-d263" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>

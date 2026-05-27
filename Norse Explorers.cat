@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="950e-3bb9-3296-b6c4" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="4b75-7c91-30b5-90ba" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="c50e-e122-825f-591e" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Hero Equipment" hidden="false" id="e434-139e-28e6-49e1">

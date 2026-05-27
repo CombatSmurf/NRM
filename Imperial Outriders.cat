@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="164f-72b5-751f-173c" name="Imperial Outriders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="164f-72b5-751f-173c" name="Imperial Outriders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="b628-2277-89a3-d4fd" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="171b-6232-065d-f60a" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="5e1b-1b09-dcd9-05de" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Knight" hidden="false" id="89f5-cda1-8f3e-60ac" collective="false">
@@ -130,7 +131,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="158d-5cd3-d5af-6fd1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="deea-4ccb-22b-7cd" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="deea-4ccb-22b-7cd" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="2dfc-ead6-3f1c-9d75" typeId="points" value="0"/>
@@ -181,7 +182,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
         <entryLink import="true" name="Knight Equipment" hidden="false" id="8936-3bf5-8ad8-4c57" collective="false" targetId="7b01-ce7a-a09e-974b" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="39f8-ab02-34a5-763" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="e2c6-5680-110a-db89" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8db7-c26-765f-62f7" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8db7-c26-765f-62f7" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -446,7 +447,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5185-3f8c-720f-f9e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="7dd9-519c-9c17-2ae" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="7dd9-519c-9c17-2ae" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="e22c-57b6-62f-e27" typeId="points" value="0"/>
@@ -495,7 +496,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
         <entryLink import="true" name="Outriders Equipment" hidden="false" id="eecd-1a85-70d1-4e3f" collective="false" targetId="ff87-f2c2-4125-db19" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="9a54-5293-70aa-e88c" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="9e8d-3b1b-5eb9-eecc" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8126-8f80-bd5f-7afe" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8126-8f80-bd5f-7afe" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -800,7 +801,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd4e-598b-e47e-6d81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="cd23-4fff-4d55-15f9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="cd23-4fff-4d55-15f9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="5be4-7c6c-83d5-c878" typeId="points" value="0"/>
@@ -845,7 +846,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
         <entryLink import="true" name="Scouts Equipment" hidden="false" id="c411-4938-9fe9-af25" collective="false" targetId="e404-bff4-d1e4-a791" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="b74-6b3d-4c08-42ef" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="f67e-7a31-24d3-c997" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="754f-ef5f-4c23-9449" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="754f-ef5f-4c23-9449" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1187,7 +1188,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0ed-cba0-11ab-f577" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3d3c-e486-5b04-5348" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3d3c-e486-5b04-5348" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="915-5a41-4251-104e" typeId="points" value="0"/>
@@ -1234,7 +1235,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Chasseurs Equipment" hidden="false" id="45b8-d6f4-b6d9-dcdf" collective="false" targetId="3d49-4d51-5282-648c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="5c0c-7fa1-fe5b-30a5" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5c0c-7fa1-fe5b-30a5" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1633,7 +1634,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44c1-b2b-336d-288c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="6c34-6996-1b02-1658" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="6c34-6996-1b02-1658" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="1928-6e23-89e7-b536" typeId="points" value="0"/>
@@ -1680,7 +1681,7 @@ For instance, a warrior with Ride Horse would need to gain the skill Ride Warh
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Knight Equipment" hidden="false" id="3754-7b19-8b2b-3a39" collective="false" targetId="7b01-ce7a-a09e-974b" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="242b-add9-1519-25dc" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="242b-add9-1519-25dc" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2090,7 +2091,7 @@ In subsequent rounds of combat, or if charged by enemy warriors, the mounted w
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b8-566e-29e2-f47b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="6a92-102a-bdc7-e1e1" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="6a92-102a-bdc7-e1e1" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="8638-cb13-7ebf-8371" typeId="points" value="0"/>
@@ -2165,7 +2166,7 @@ This counts as an academic skill.</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Chasseurs Equipment" hidden="false" id="d77f-13d0-4101-8913" collective="false" targetId="3d49-4d51-5282-648c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="a20d-b0be-834a-c356" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="a20d-b0be-834a-c356" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2461,7 +2462,7 @@ This counts as an academic skill.</description>
       <entryLinks>
         <entryLink import="true" name="Dagger" hidden="false" id="6c6e-7838-3656-ddf2" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
         <entryLink import="true" name="Free Dagger" hidden="false" id="877e-bd07-95ba-3db8" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="587d-6618-ba3a-bfea" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="587d-6618-ba3a-bfea" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="Hammer" field="name"/>
           </modifiers>

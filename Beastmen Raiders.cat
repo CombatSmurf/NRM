@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -134,7 +134,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3814-7c1a-94d4-ae6a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f091-36e5-a72b-3213" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="f091-36e5-a72b-3213" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -320,7 +320,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9e7-4f5d-1f63-0a27" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1ac9-cb75-a672-43bf" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="1ac9-cb75-a672-43bf" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -501,7 +501,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d94-d1f7-810f-269c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="21f8-49b2-8947-137c" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="21f8-49b2-8947-137c" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -702,7 +702,7 @@ This counts as an additional attack, which does not benefit from weapon bonuses 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48dd-f569-9a74-5964" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2760-9250-467c-860a" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="2760-9250-467c-860a" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -886,7 +886,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb61-e8f8-001f-3b92" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a055-4ce3-c683-f1c7" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="a055-4ce3-c683-f1c7" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1032,7 +1032,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7398-e32d-b174-802c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f93c-19e4-0561-d564" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="f93c-19e4-0561-d564" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1247,7 +1247,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337c-39d2-548f-3435" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="fced-466c-288f-8ca2" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="fced-466c-288f-8ca2" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1276,7 +1276,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
       <entryLinks>
         <entryLink id="16b7-704b-249a-4199" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink id="e743-b303-078d-580e" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="04c3-6648-7241-e5c1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="04c3-6648-7241-e5c1" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -1410,7 +1410,7 @@ See Mutants section on special rules.</description>
       <entryLinks>
         <entryLink id="2d53-e865-11e5-9a71" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="1dbd-fee6-5b46-c89e" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="1dca-7399-f47d-11f9" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="1dca-7399-f47d-11f9" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Mace, Hammer"/>
           </modifiers>
@@ -1611,10 +1611,10 @@ See Mutants section on special rules.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f4-98ec-6087-ab07" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="97d7-b68d-be04-e502" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-        <entryLink import="true" name="Light Armor, Discount" hidden="false" id="4483-f448-5c6f-5afa" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="7597-92c8-3cc0-4bf9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
-        <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="c122-95ef-e32d-45a1" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="97d7-b68d-be04-e502" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Light Armor, %" hidden="false" id="4483-f448-5c6f-5afa" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="7597-92c8-3cc0-4bf9" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Heavy Armour, %" hidden="false" id="c122-95ef-e32d-45a1" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d4f7-044f-41ce-5aec" name="Ungor Equipment" hidden="false" collective="false" import="true">
@@ -1627,7 +1627,7 @@ See Mutants section on special rules.</description>
       <entryLinks>
         <entryLink id="225b-551c-cb1d-ced5" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="08d8-82d7-c91e-6a65" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="4444-2e7b-e9b0-499e" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="4444-2e7b-e9b0-499e" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Mace, Hammer"/>
           </modifiers>
@@ -1657,7 +1657,7 @@ See Mutants section on special rules.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a633-731f-33ec-340c" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Shield, Discount" hidden="false" id="de16-717d-f1d0-5869" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="de16-717d-f1d0-5869" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3908-23d7-43dc-e401" name="Skills" hidden="false" collective="false" import="true">
@@ -1743,5 +1743,6 @@ See Mutants section on special rules.</description>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="5040-939c-652a-2255" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="9bf8-28b6-8c28-2f0f" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -31,7 +31,7 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="d040-797a-8497-943d" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="8786-cd1d-6cfd-92e2" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="4801-7df7-4eda-2429" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" type="selectionEntry" id="4801-7df7-4eda-2429" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
@@ -88,7 +88,7 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Armor, Dwarf Discount" hidden="false" id="b786-25d1-c4c7-7587" type="selectionEntryGroup" targetId="5787-938c-4e02-14b6" flatten="true"/>
+        <entryLink import="true" name="Armor, Dwarf %" hidden="false" id="b786-25d1-c4c7-7587" type="selectionEntryGroup" targetId="5787-938c-4e02-14b6" flatten="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" id="8cde-235f-34c3-48c2">
@@ -97,13 +97,13 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="f23e-fc94-d5e2-9204" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="b1d3-3d4-7a51-be34" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="50d2-bdc6-2dc0-fdcf" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" type="selectionEntry" id="50d2-bdc6-2dc0-fdcf" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="6c98-9ba-48e7-df91" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Double Handed Axe" hidden="false" type="selectionEntry" id="a0f4-8a91-b2df-39c2" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Axe" hidden="false" type="selectionEntry" id="a0f4-8a91-b2df-39c2" targetId="4002-4e79-75d0-3065"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="1c68-d1cc-7e5e-4442" targetId="5d01-06b9-3a86-73c9">
               <modifiers>
                 <modifier type="set" value="Battleaxe" field="name"/>
@@ -112,7 +112,7 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
             <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="ea9b-ae8-14db-a113" targetId="005e-e397-8108-f198"/>
             <entryLink import="true" name="Dwarf Axe" hidden="false" type="selectionEntry" id="7ac7-af25-cb4c-909b" targetId="5208-f70c-664-e36e"/>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="af40-e65f-cf91-374c" targetId="3c52-9e92-25ec-1939"/>
-            <entryLink import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="a61d-ebcf-3cf4-6aba" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="a61d-ebcf-3cf4-6aba" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="15f4-8590-99a0-b097"/>
@@ -166,7 +166,7 @@ Later purchases of Gromril Armour must be done using the normal Price Chart in 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Armor, Dwarf Discount" hidden="false" id="8405-589b-b492-2658" type="selectionEntryGroup" targetId="5787-938c-4e02-14b6" flatten="true"/>
+        <entryLink import="true" name="Armor, Dwarf %" hidden="false" id="8405-589b-b492-2658" type="selectionEntryGroup" targetId="5787-938c-4e02-14b6" flatten="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Special Skills (Dwarf Rangers)" hidden="false" id="891d-7c64-4bd1-eb62" collapsible="true">
@@ -465,7 +465,8 @@ Similarly the warrior could not combine the Rune of Stone on his shield with so
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="781-fb15-2a29-ba92" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="0e38-a935-016e-c1f5" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="ce63-c639-1e08-c0b0" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <selectionEntries>
     <selectionEntry id="5b44-759c-f763-7d6a" name="Runesmith" hidden="false" collective="false" import="true" type="model">
@@ -603,7 +604,7 @@ When a Runesmith advances and rolls a skill on the Hero Advance table, he may c
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17-f1cc-961c-adc9" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c01b-11cf-71eb-7f8c" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c01b-11cf-71eb-7f8c" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -637,7 +638,7 @@ When a Runesmith advances and rolls a skill on the Hero Advance table, he may c
         <entryLink id="7afb-8359-cc73-dae6" name="Dwarf Runes" hidden="false" collective="false" import="true" targetId="7466-d9e1-b2b9-172" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="834e-a8ef-f946-ae7e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="60f2-92fb-df24-3f20" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink id="dbb0-2902-524a-2d84" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="dbb0-2902-524a-2d84" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="f7c7-7c98-dea0-e3d" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -911,7 +912,7 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe2b-2e0e-4195-ac2d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7ec3-d535-794f-505" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="7ec3-d535-794f-505" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -939,7 +940,7 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
         <entryLink id="4db9-e6d9-965-36d8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
         <entryLink id="5c5-aff9-6045-1b3e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="70ee-ae02-73ae-b49e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink id="64a3-ab99-66fa-456c" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="64a3-ab99-66fa-456c" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8e51-125-6ce4-4d83" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -1291,7 +1292,7 @@ They are completely immune to all psychology and never need to test if fighting
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d9-532-e53a-7528" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8cce-2d8f-8292-670" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="8cce-2d8f-8292-670" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1322,7 +1323,7 @@ They are completely immune to all psychology and never need to test if fighting
         </entryLink>
         <entryLink id="26ba-6535-3006-1d84" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="c258-5265-74d9-ad42" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink id="b2e3-7d01-f396-56d8" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="b2e3-7d01-f396-56d8" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="b2e4-c082-45fb-2f6d" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -1628,7 +1629,7 @@ They are completely immune to all psychology and never need to test if fighting
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="893c-1cc9-18da-679a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7961-f224-e773-d17c" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="7961-f224-e773-d17c" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1658,7 +1659,7 @@ They are completely immune to all psychology and never need to test if fighting
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="2d24-540c-b475-7a54" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="2d24-540c-b475-7a54" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="true" id="107c-ea98-11bf-a8f8" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -2069,7 +2070,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="172b-c552-81e3-e3f5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="38d7-d844-5ed1-19" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="38d7-d844-5ed1-19" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2099,7 +2100,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="8abe-bc75-746d-d5b3" name="Crossbowmen Equipment" hidden="false" collective="false" import="true" targetId="b6f8-72e6-7260-bf13" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="8abe-bc75-746d-d5b3" name="Crossbowmen Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="b6f8-72e6-7260-bf13" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5f3a-128-6b97-6798" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -2496,7 +2497,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c5-b116-6ede-d6a6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="69c7-2214-bf94-92c1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="69c7-2214-bf94-92c1" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2526,7 +2527,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="bc96-5c96-57ec-303c" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="bc96-5c96-57ec-303c" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="true" id="4721-950c-ee4b-723d" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -2934,7 +2935,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5829-c1ea-271f-fc7e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="fb66-a115-caae-eaf1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="fb66-a115-caae-eaf1" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2964,7 +2965,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="6f21-1a03-75fa-1c70" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="6f21-1a03-75fa-1c70" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="true" id="1f23-641e-e04b-4ee6" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
@@ -3250,7 +3251,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="9e33-d702-6f7-422f" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="a22b-ab24-c787-51cd" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="f84-8be6-b661-8f32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="f84-8be6-b661-8f32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" id="8517-8812-cd77-d2b0" hidden="false" typeId="points" value="0"/>

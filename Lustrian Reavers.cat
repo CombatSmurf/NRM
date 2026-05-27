@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c182-5974-6237-14b7" name="Lustrian Reavers (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c182-5974-6237-14b7" name="Lustrian Reavers (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="6c3-139a-972a-2bf5" targetId="e020-c282-277b-b173"/>
-    <catalogueLink type="catalogue" name="Characters" id="ab7-e674-4718-461e" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
+    <catalogueLink type="catalogue" name="Characters" id="b575-f1b0-d25d-261d" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="1a14-b08e-6e3f-f6fd" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Heroes Equipment" id="bba1-49a-dbfb-aa79" hidden="false">
@@ -11,7 +11,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="1622-30dc-6ac2-8bf0" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="24cb-175c-b0e0-8fdd" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="2d6a-7c43-114-68b0" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="2d6a-7c43-114-68b0" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -227,7 +227,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Miscellaneous Equipment" id="50e6-61ee-fb36-2d23" hidden="false" sortIndex="4">
           <entryLinks>
-            <entryLink import="true" name="Rope And Hook" hidden="false" id="195c-51c0-6f98-2fb8" type="selectionEntry" targetId="0728-80a6-e76e-6b79" sortIndex="1"/>
+            <entryLink import="true" name="Rope and Hook" hidden="false" id="195c-51c0-6f98-2fb8" type="selectionEntry" targetId="0728-80a6-e76e-6b79" sortIndex="1"/>
             <entryLink import="true" name="Crimson Shade" hidden="false" id="df1-7c54-bf31-3a2f" type="selectionEntry" targetId="b1d0-06bb-b59a-f6ac" sortIndex="2"/>
             <entryLink import="true" name="Dark Venom" hidden="false" id="1188-1f96-9377-a599" type="selectionEntry" targetId="443d-dade-6b72-a76d" sortIndex="3"/>
             <entryLink import="true" name="Net" hidden="false" id="5d51-fd9d-7efd-6609" type="selectionEntry" targetId="10cd-d2e1-7961-1ace" sortIndex="4"/>
@@ -247,7 +247,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="ac6c-eba2-2c83-633b" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="1c20-38cd-e9d1-e344" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="b471-f0c8-e2e5-2388" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="b471-f0c8-e2e5-2388" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -657,7 +657,7 @@ They may hire an Ogre Bodyguard, Dwarf Trollslayer, Tilean Marksman or a Big G
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5147-73c9-a855-3578" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3d91-98ef-8990-aee4" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3d91-98ef-8990-aee4" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="9ab2-c58-cc09-b501" hidden="false" typeId="points" value="0"/>
@@ -1124,7 +1124,7 @@ This ability can save the Conqueror only one time.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba46-9c2e-584a-99f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="f264-8fc8-6f22-3eed" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="f264-8fc8-6f22-3eed" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="611e-75fa-8206-2ed3" hidden="false" typeId="points" value="0"/>
@@ -1668,7 +1668,7 @@ This ability can save the Conqueror only one time.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bab-230d-d790-e678" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="60be-6837-c26e-1d3d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="60be-6837-c26e-1d3d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="6b56-40d4-5925-8a2f" hidden="false" typeId="points" value="0"/>
@@ -2268,7 +2268,7 @@ The Hawk does not attack if the Beastmaster is engaged in hand-to-hand combat,�
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="322b-7bbf-74d3-af4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="724d-7e0-f4f5-294b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="724d-7e0-f4f5-294b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="8115-75f7-1d86-5ebc" hidden="false" typeId="points" value="0"/>
@@ -2324,7 +2324,7 @@ If you make the Jungle Shadow a Wizard, remove the Light Armour from the equip
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef0d-37c2-9f3e-7c69" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Lesser Magic" hidden="false" id="e7b3-5a8a-988a-1fa1" type="selectionEntryGroup" targetId="5cce5525-3057-85be-427a-ceeac0d35c53"/>
+            <entryLink import="true" name="Lesser Magic" hidden="false" id="e7b3-5a8a-988a-1fa1" type="selectionEntryGroup" targetId="c81b-0f96-fcce-222d"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2774,7 +2774,7 @@ This does not work with Blackpowder weapons.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc7c-c724-436-b9c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="4536-493f-fadd-b56e" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="4536-493f-fadd-b56e" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="89d1-ef8-a0f-9292" hidden="false" typeId="points" value="0"/>
@@ -3173,7 +3173,7 @@ Remove the counters when the trap is sprung.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65dd-f1aa-5521-3eee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="dbae-5337-68c4-1efb" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="dbae-5337-68c4-1efb" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="1838-204-c57d-b450" hidden="false" typeId="points" value="0"/>

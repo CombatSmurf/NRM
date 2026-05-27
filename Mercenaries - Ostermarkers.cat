@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c315-31da-1718-4dde" name="Mercenaries - Ostermarkers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c315-31da-1718-4dde" name="Mercenaries - Ostermarkers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="70d7-f26c-2d0f-b6a1" targetId="e020-c282-277b-b173"/>
-    <catalogueLink type="catalogue" name="Characters" id="340f-935f-33ea-76d8" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
+    <catalogueLink type="catalogue" name="Characters" id="b523-d389-07f7-5ea2" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="e039-e5f7-4eb0-5a7f" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Merc Equipment" id="279a-a0d1-d12a-b834" hidden="false" flatten="true">
@@ -2592,7 +2592,7 @@ Priests of Morr do not suffer from the All Alone rules.</description>
       <description>Ostermarkers are used to harsh odds and battling alone to defend their farms against mercenaries and other brigands. Their years of isolation and self-reliance have made them hardy warriors indeed, and, as such, they do not give up easily or balk in the face of outnumbering foes. Ostermarkers follow the rules for Mercenary warbands as given on page 48 of the Mordheim rulebook. In addition Ostermarkers (Heroes and Henchmen) may re-roll a failed Leadership test for being all alone and routing. A warrior Ostermark Warbands or warband must accept the second roll, however, regardless of the result.</description>
     </rule>
     <rule name="Hounds of War" id="267b-3ab0-8fce-bcc5" hidden="false">
-      <description>Furthermore, the men often use hounds to guard their farms and raise the alarm against trespassers. Any captain of an Ostermarker warband may have a wardog as part of his starting equipment to represent the beast who once protected his farm and holdings from bandits and other, fouler creatures. </description>
+      <description>Furthermore, the men often use hounds to guard their farms and raise the alarm against trespassers. Any captain of an Ostermarker warband may have a wardog as part of his starting equipment to represent the beast who once protected his farm and holdings from bandits and other, fouler creatures.</description>
     </rule>
   </rules>
 </catalogue>

@@ -1099,7 +1099,7 @@
                 <entryLink import="true" name="Spear" hidden="false" id="74f0-c28a-556b-9b2f" type="selectionEntry" targetId="005e-e397-8108-f198"/>
                 <entryLink import="true" name="Sword" hidden="false" id="0308-792b-87a6-e3ba" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
                 <entryLink import="true" name="DH Axe" hidden="false" id="2382-5059-ba25-b0c2" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="2a5b-25b5-a54c-0656" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="2a5b-25b5-a54c-0656" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="d543-e03a-2059-e318" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="dc5c-6aad-7936-19bc" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
                 <entryLink import="true" name="Axe" hidden="false" id="f571-6a68-21c6-413e" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
@@ -1134,7 +1134,7 @@
             <selectionEntryGroup name="Flagellant, HtH Weapons" id="9d11-0c40-fa0a-d5a6" hidden="false" sortIndex="1" flatten="true">
               <entryLinks>
                 <entryLink import="true" name="DH Axe" hidden="false" id="c1dd-3c61-6f9a-832e" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="d4dc-dc3e-cde2-cbd9" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="d4dc-dc3e-cde2-cbd9" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="11b3-bbeb-971a-7526" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Flail" hidden="false" id="dfe1-8857-8cc9-6c87" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="fcfa-ede8-5871-0207" type="selectionEntry" targetId="d5f3-1906-da91-4e8f"/>
@@ -1147,7 +1147,7 @@
                 <entryLink import="true" name="Spear" hidden="false" id="931d-aa77-a194-34f2" type="selectionEntry" targetId="005e-e397-8108-f198"/>
                 <entryLink import="true" name="Sword" hidden="false" id="1584-578d-5bbc-a454" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
                 <entryLink import="true" name="DH Axe" hidden="false" id="b7a1-e079-cef2-7e23" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="16e5-5c23-4a13-ff4a" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="16e5-5c23-4a13-ff4a" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="710d-0054-83d0-c7a2" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="45cb-65a8-642b-3e01" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
                 <entryLink import="true" name="Axe" hidden="false" id="ca00-8a8d-5431-7f1e" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
@@ -1197,7 +1197,7 @@
                 <entryLink import="true" name="Free Dagger" hidden="false" id="1e6b-381f-407b-eb08" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
                 <entryLink import="true" name="Sword" hidden="false" id="6fc8-2c28-55cb-37b8" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
                 <entryLink import="true" name="DH Axe" hidden="false" id="72df-aefd-ce0c-bd0b" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="e99f-29ab-e2c5-0a4c" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="e99f-29ab-e2c5-0a4c" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="31eb-d4b8-3726-af11" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="49b2-3e50-9321-c406" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
                 <entryLink import="true" name="Axe" hidden="false" id="359a-f1be-f033-3a74" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
@@ -1313,6 +1313,7 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="f297-1f83-e02b-000c" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="2246-4bb4-815c-2365" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="cde8-da03-7826-335d" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

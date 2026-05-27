@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Weak constitution" hidden="false" id="dd88-dc67-8282-9124">
       <description>Halflings are very weak and puny and even the lightest of blows tends to knock them senseless.
@@ -133,7 +133,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8e4-5883-74f8-2e7d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="e8a5-6b50-91e6-e0f9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="e8a5-6b50-91e6-e0f9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="447b-e029-6d50-119e" typeId="points" value="0"/>
@@ -166,7 +166,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="f66e-f0eb-9e57-2a18" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="7094-4c99-280c-9f2e" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="abb6-b39c-b0a5-c0ab" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="2b32-de47-5cf4-1a0c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="2b32-de47-5cf4-1a0c" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -431,7 +431,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8086-58cc-6f20-e5a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3a3e-cdf4-da68-2f4c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3a3e-cdf4-da68-2f4c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="4d05-d7be-d8a0-a896" typeId="points" value="0"/>
@@ -464,7 +464,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="f927-53b8-9716-d1fe" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="99e1-c618-b308-bfe4" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="46de-971b-dba7-8d86" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8969-52ec-37be-f00" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8969-52ec-37be-f00" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -774,7 +774,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="774e-56c8-73d3-5ada" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="f053-e02a-4a9e-5064" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="f053-e02a-4a9e-5064" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="370e-78b4-6f53-9f8d" typeId="points" value="0"/>
@@ -802,7 +802,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="8270-2e01-29c4-df58" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="97c4-aecb-b95a-3310" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="ec8f-7597-5580-ccca" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="4f7c-6a94-dd52-2028" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="4f7c-6a94-dd52-2028" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1152,7 +1152,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="350c-be83-3f09-43c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="bf30-4833-bfb4-7730" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="bf30-4833-bfb4-7730" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="3c8e-1302-846d-a3e4" typeId="points" value="0"/>
@@ -1195,7 +1195,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="2e40-a95-49b8-2196" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="111c-7494-1296-ab23" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="111c-7494-1296-ab23" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1599,7 +1599,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9d-4775-ee9-62bc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3744-7e1f-6898-5ed2" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3744-7e1f-6898-5ed2" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" hidden="false" id="e1e6-5561-ab89-4f8d" typeId="points" value="0"/>
@@ -1642,7 +1642,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="9d03-ee9c-ccc8-5296" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="e3e1-641b-802c-b435" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="e3e1-641b-802c-b435" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1919,7 +1919,8 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="62b7-88e3-5eeb-8d7c" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="2723-946a-83a6-818c" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="67c7-f205-45c7-c882" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Mootlander Equipment" hidden="false" id="a716-d7b2-2721-b5d8">
@@ -1936,7 +1937,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Free Dagger" hidden="false" id="6615-9a21-6075-65ec" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="21ad-debc-1b9d-d4d4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="21ad-debc-1b9d-d4d4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Staff" field="name">
                   <conditions>

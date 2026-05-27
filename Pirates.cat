@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6805-5465-81dd-a433" name="Pirates (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6805-5465-81dd-a433" name="Pirates (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="cf9d-16eb-44a7-1fbe" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="7d24-14c6-cb57-dc9f" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="638f-ab56-4ad1-a861" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
     <rule name="Swabbies" id="fbfc-67e9-3045-57e7" hidden="false">
@@ -217,7 +218,7 @@ They must however pay an additional +20 gc in upkeep if they have both Dwarfs 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b7-3a65-9ae0-4857" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="4297-f4f0-d254-7802" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="4297-f4f0-d254-7802" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="6353-676d-53c6-d652" hidden="false" typeId="points" value="0"/>
@@ -517,7 +518,7 @@ They must however pay an additional +20 gc in upkeep if they have both Dwarfs 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d72-edb2-a1cd-95a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="6d39-e856-9432-bf60" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="6d39-e856-9432-bf60" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="fdbc-d9c9-8023-9dbb" hidden="false" typeId="points" value="0"/>
@@ -855,7 +856,7 @@ They must however pay an additional +20 gc in upkeep if they have both Dwarfs 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9081-5790-ad45-ea06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="5a43-477e-cdca-d986" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="5a43-477e-cdca-d986" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="5231-8881-ec6c-ee07" hidden="false" typeId="points" value="0"/>
@@ -1226,7 +1227,7 @@ They must however pay an additional +20 gc in upkeep if they have both Dwarfs 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da67-a8bb-1d1f-6197" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="47e1-f94a-3aa-d8d9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="47e1-f94a-3aa-d8d9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="369a-ed04-fb25-d837" hidden="false" typeId="points" value="0"/>
@@ -1665,7 +1666,7 @@ They must however pay an additional +20 gc in upkeep if they have both Dwarfs 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aaa-873a-d41-2182" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="c74f-ee71-81e1-ba01" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="c74f-ee71-81e1-ba01" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="17b6-4615-5d40-d466" hidden="false" typeId="points" value="0"/>
@@ -2118,7 +2119,7 @@ If the latter, he retains all Experience and Skills he had previously.</descrip
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbb8-66a8-80da-6408" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="5d51-4e15-3580-53df" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="5d51-4e15-3580-53df" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="d8bc-6ed9-a61-9082" hidden="false" typeId="points" value="0"/>
@@ -2647,7 +2648,7 @@ Any Swabbies who are running away or have been taken out of action do not coun
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="e69e-aea8-c691-8ed2" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="cf3a-a586-ea4b-c953" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="2f8c-34f4-149b-cd59" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="2f8c-34f4-149b-cd59" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -3111,7 +3112,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="4101-f089-4ccc-3a8d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="a4d2-fafe-2da9-9b31" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="533b-a83a-ade8-d575" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="533b-a83a-ade8-d575" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -3317,7 +3318,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="d8de-18e6-77b0-535b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="bcb9-ce05-a41d-9e41" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="a5cb-8bc3-ceef-e92c" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="a5cb-8bc3-ceef-e92c" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -3815,7 +3816,7 @@ If he fails the test he remains in combat and must fight as normal in the follow
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="7763-971a-723d-899b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="daa4-d050-f91c-abd3" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="233-662e-60a2-fdc9" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="233-662e-60a2-fdc9" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -4351,7 +4352,7 @@ If the wielder is using two whips at the same time then they get +1A for the add
           </profiles>
           <infoLinks>
             <infoLink name="Concussion" id="d8d8-41e6-a12d-b677" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
-            <infoLink name="Firearm save modifier" id="40d9-a63-cadc-d36b" hidden="false" type="rule" targetId="5d21-2b30-4219-ec86"/>
+            <infoLink name="Firearm Save Modifier" id="40d9-a63-cadc-d36b" hidden="false" type="rule" targetId="5d21-2b30-4219-ec86"/>
           </infoLinks>
           <rules>
             <rule name="Ball Shot" id="9ed4-64e7-f34-71a" hidden="false">

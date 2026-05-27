@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="7d2b-89ab-a974-f328" name="Tomb Guardians (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="488d-4919-cbab-67d9" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="ee44-b23c-907a-0eae" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="fb47-f724-6553-d4ce" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Undead Equipment" id="982b-baae-2892-3979" hidden="false">
@@ -10,7 +11,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="7d5c-8375-6ad5-7941" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" id="2c93-1b29-c17d-3d00" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="d9e0-5145-7cb4-aa5" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="d9e0-5145-7cb4-aa5" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -262,7 +263,7 @@ Any attack with a ranged weapon performed using these arrows benefits from a +1 
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2128-55da-7c41-703a" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" id="d21b-b6e9-19a3-d53f" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="a1ee-bebd-85aa-1c03" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="a1ee-bebd-85aa-1c03" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Staff" field="name"/>
               </modifiers>
@@ -922,7 +923,7 @@ Place the model anywhere within 6&quot; of the Liche Priest, but not straight in
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddce-b0cd-b70e-f59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="43b4-6c7b-43f4-7759" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="43b4-6c7b-43f4-7759" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="50b3-7950-58a6-61ac" hidden="false" typeId="points" value="0"/>
@@ -1233,7 +1234,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8eef-15ae-1389-4063" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="f96f-89e-9945-fcb8" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="f96f-89e-9945-fcb8" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="c57f-b69f-a222-60c0" hidden="false" typeId="points" value="0"/>
@@ -1575,7 +1576,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f28-de3c-29cd-fab7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="c37c-9685-36a9-4bf6" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="c37c-9685-36a9-4bf6" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="6fdd-cc24-1d55-dac" hidden="false" typeId="points" value="0"/>
@@ -1862,7 +1863,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4384-b72d-1260-97a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="da98-95a-9882-fad0" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="da98-95a-9882-fad0" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="d5e-ccf1-ac0c-388c" hidden="false" typeId="points" value="0"/>
@@ -2018,7 +2019,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6c0-bc99-824c-9703" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d00c-d12d-46c2-cdd6" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="d00c-d12d-46c2-cdd6" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="a541-1199-d3f-f2b3" hidden="false" typeId="points" value="0"/>
@@ -2534,7 +2535,7 @@ If the chariot is hit, roll a D6 to see where it is hit: 1-2 steed, 3-4 chari
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="8864-7d5e-f08e-36d5" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="48f6-41e6-a802-efd0" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="7709-d489-f21c-438f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="7709-d489-f21c-438f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" id="3ce4-5a1d-c58d-5373" hidden="false" typeId="points" value="0"/>

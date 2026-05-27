@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a831-b626-c36f-258b" name="Greenskins - Black Orcs (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a831-b626-c36f-258b" name="Greenskins - Black Orcs (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="5ad9-1a6a-43ce-64a8" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="a1af-db13-3c15-7193" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="7528-d433-143a-d57e" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <publications>
     <publication name="GitHub" hidden="false" id="28e0-9e7c-f2f5-2c48" publisherUrl="https://github.com/BSData/mordheim" shortName="GitHub"/>

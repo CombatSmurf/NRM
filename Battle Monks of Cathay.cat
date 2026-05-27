@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="2085-9795-666b-65cf" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="common-data" id="2085-9795-666b-65cf" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="4e58-ae2e-798d-0252" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Soldier Equipment" id="77ae-224e-4179-d7aa" hidden="false">
@@ -55,10 +56,10 @@
             <entryLink import="true" name="Shield" hidden="false" id="430b-dd28-4f1e-7ba7" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="1627-bb9a-f46a-89a5" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Heavy Armor" hidden="false" id="a9ed-305b-94b2-c8c2" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
-            <entryLink import="true" name="Shield, Discount" hidden="false" id="017c-63fa-07ef-ac51" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="218b-fb58-566f-fb2a" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
-            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="6793-8964-75af-00c0" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
-            <entryLink import="true" name="Helmet, Discount" hidden="false" id="5671-37e8-5714-b685" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="017c-63fa-07ef-ac51" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="218b-fb58-566f-fb2a" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Heavy Armour, %" hidden="false" id="6793-8964-75af-00c0" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="5671-37e8-5714-b685" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Miscellaneous Equipment" id="a7b8-2cc1-8ba6-47df" hidden="true">
@@ -529,7 +530,7 @@ When a mount gets knocked down, the rider falls off (see 3-4 on the Whoa Boy! 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f99-6bf0-323c-b8bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="3a09-a553-a0bd-c700" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="3a09-a553-a0bd-c700" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="add1-4b2e-c3fc-cd94" hidden="false" typeId="points" value="0"/>
@@ -837,7 +838,7 @@ The new Emissary will then reclaim Leadership of the warband.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf61-1a98-d19c-b0bb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="e87d-35a8-986b-2b69" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="e87d-35a8-986b-2b69" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="feb9-f6e9-19ee-45a6" hidden="false" typeId="points" value="0"/>
@@ -1165,7 +1166,7 @@ The new Emissary will then reclaim Leadership of the warband.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2e5-fca1-75f9-86d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="b5f8-5568-a46e-e3c5" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="b5f8-5568-a46e-e3c5" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="ed82-c713-51a5-42fc" hidden="false" typeId="points" value="0"/>
@@ -1490,7 +1491,7 @@ If the Dragon Monk wields a quarter staff, only the unarmed attacks will cause 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc36-55d9-e8e5-ba9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d04f-ae74-eb3-483c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="d04f-ae74-eb3-483c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="499f-bcb2-30df-d6e3" hidden="false" typeId="points" value="0"/>
@@ -1945,7 +1946,7 @@ Note that this only applies when they are armed with normal swords, and not wit
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bcd-78f9-9541-627d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="c329-246d-b497-6227" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Equipment - All" hidden="false" id="c329-246d-b497-6227" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" id="dc71-b293-ad8a-8c38" hidden="false" typeId="points" value="0"/>
@@ -2358,7 +2359,7 @@ The model is immediately taken out of action.</description>
       <entryLinks>
         <entryLink import="true" name="Gold" hidden="false" id="aedd-4f11-98c9-6a" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="4c00-f2e1-25d9-6ea9" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="5c93-c3e5-27af-c68a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="5c93-c3e5-27af-c68a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" id="c96d-b86f-261c-3d05" hidden="false" typeId="points" value="0"/>

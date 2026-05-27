@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="a434-e23f-bfff-a11a" name="Serpent Priestess" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -133,7 +133,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="461d-de22-efa9-f8f7" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b7d8-07f3-5d04-252f" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="b7d8-07f3-5d04-252f" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -297,7 +297,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7077-f658-8d16-e7df" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c8d7-a6b5-1aac-3da3" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="c8d7-a6b5-1aac-3da3" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -460,7 +460,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f79e-8ba1-d91c-f5d4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0b37-412f-3ba6-8e91" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="0b37-412f-3ba6-8e91" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
             <entryLink id="a2d3-6863-3635-4d55" name="Conch Shell Horn" hidden="false" collective="false" import="true" targetId="4648-e96e-321c-e8c2" type="selectionEntry"/>
           </entryLinks>
           <costs>
@@ -624,7 +624,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e40-a617-29f8-4d6d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6baa-3d95-133e-ac6e" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="6baa-3d95-133e-ac6e" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -790,7 +790,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8093-c466-b146-5c97" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d981-5718-c2d9-afc0" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+            <entryLink id="d981-5718-c2d9-afc0" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -838,7 +838,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
       <entryLinks>
         <entryLink id="cf2e-ea28-cc90-29a4" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink id="f1ba-bfd9-d8b0-0afb" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="2d78-37f2-5ee2-19d8" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="2d78-37f2-5ee2-19d8" name="Equipment - All" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -1200,7 +1200,7 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="4c49-55f9-f9ae-3a22" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="f6a5-b486-f194-1a2f" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="8bb1-211b-da9b-a5e5" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="8bb1-211b-da9b-a5e5" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>
@@ -1339,8 +1339,8 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
         <entryLink id="00c2-93de-d22a-9369" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
         <entryLink id="6eb6-0922-4015-6861" name="Buckler" hidden="false" collective="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry"/>
         <entryLink id="cf1b-ef93-f56d-8791" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="b4b4-b4a8-dd8f-36a3" type="selectionEntry"/>
-        <entryLink import="true" name="Buckler, Discount" hidden="false" id="1f47-e823-9ae9-4d2b" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="9f0b-a823-59d3-ac3e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="1f47-e823-9ae9-4d2b" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="9f0b-a823-59d3-ac3e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4533-e33e-be5f-6b33" name="Miscellaneous" hidden="false" collective="false" import="true">
@@ -1360,7 +1360,7 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="686b-8364-592b-8f1a" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="0ab3-92a1-fcd4-8974" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="b56d-a946-f86f-ff97" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="b56d-a946-f86f-ff97" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>
@@ -1497,14 +1497,14 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="ecb6-d82c-d772-72a1" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true" targetId="907f-c493-45c2-d006" type="selectionEntryGroup"/>
         <entryLink id="22a9-fe37-74a3-2946" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="2d6c-8476-abba-a540" type="selectionEntryGroup"/>
-        <entryLink id="2a5b-a140-eb70-2636" name="Armor" hidden="false" collective="false" import="true" targetId="ad77-29dd-d8c7-51a0" type="selectionEntryGroup"/>
+        <entryLink id="2a5b-a140-eb70-2636" name="Armor - Jaguar Warrior (Amazons 1b)" hidden="false" collective="false" import="true" targetId="ad77-29dd-d8c7-51a0" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="907f-c493-45c2-d006" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="2d83-b8bb-b3f3-3abc" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="72c8-c01b-88f8-1499" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="4898-5fbb-48ae-575f" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="4898-5fbb-48ae-575f" name="Club/Hammer/Mace/Staff" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>
@@ -1543,12 +1543,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="5561-b4a7-fa2a-a3a4" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
         <entryLink id="4844-cb0d-d3c2-e6e3" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="b4b4-b4a8-dd8f-36a3" type="selectionEntry"/>
-        <entryLink import="true" name="Helmet, Discount" hidden="false" id="6197-29f4-dd36-c6bf" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+        <entryLink import="true" name="Helmet, %" hidden="false" id="6197-29f4-dd36-c6bf" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="721b-9624-66b8-f3a6" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Characters" id="6a9b-88c7-aa32-47fe" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
   </catalogueLinks>
   <publications>
     <publication name="GitHub" hidden="false" id="c766-4c9f-c70c-d00a" publisherUrl="https://github.com/BSData/mordheim.git"/>

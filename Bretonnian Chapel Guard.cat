@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="16d6-0792-5df8-ebd3" name="Bretonnian Chapel Guard (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="16d6-0792-5df8-ebd3" name="Bretonnian Chapel Guard (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Skills" id="6f78-7e4d-8744-a685" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -147,7 +147,7 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
       <selectionEntryGroups>
         <selectionEntryGroup name="Bowmens Equipment" id="af05-4b00-c026-8785" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Armor, Bretonnia Discount" hidden="false" id="fee0-8669-b9eb-f7ab" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="3">
+            <entryLink import="true" name="Armor, Bretonnia %" hidden="false" id="fee0-8669-b9eb-f7ab" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -203,13 +203,13 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
         </selectionEntryGroup>
         <selectionEntryGroup name="Knights Equipment" id="6e67-ab3a-c7bb-0573" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Armor, Bretonnia Discount" hidden="false" id="bc09-a5ce-81e2-f6f8" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="2"/>
+            <entryLink import="true" name="Armor, Bretonnia %" hidden="false" id="bc09-a5ce-81e2-f6f8" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="2"/>
             <entryLink import="true" name="Miscellaneous Equipment - All" hidden="false" id="661a-3ae2-f016-7afa" collective="false" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="HtH Weapons" id="902a-f0d1-e7aa-cfae" hidden="false" sortIndex="1" flatten="true">
               <entryLinks>
-                <entryLink import="true" name="Broadsword (Bretonnian Knights Only)" hidden="false" id="2511-08a4-0f69-70eb" type="selectionEntry" targetId="09ac-c913-931c-5d22"/>
+                <entryLink import="true" name="Broadsword (Bret Knights Only)" hidden="false" id="2511-08a4-0f69-70eb" type="selectionEntry" targetId="09ac-c913-931c-5d22"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="de32-ac66-ae7f-efc0" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
                 <entryLink import="true" name="Flail" hidden="false" id="5b66-24e2-6443-5151" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="dbb9-464a-9fae-8763" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
@@ -219,7 +219,7 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
                 <entryLink import="true" name="Spear" hidden="false" id="e392-6971-5662-b4a9" type="selectionEntry" targetId="005e-e397-8108-f198"/>
                 <entryLink import="true" name="Sword" hidden="false" id="7032-463d-8843-62d3" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
                 <entryLink import="true" name="DH Axe" hidden="false" id="53a2-9fc6-6a28-c259" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="42d2-1723-1aae-1b9c" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="42d2-1723-1aae-1b9c" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="2aee-c854-d822-9ba2" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -230,14 +230,14 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
                 <entryLink import="true" name="Shield" hidden="false" id="54e7-7ad6-9415-0096" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
                 <entryLink import="true" name="Helmet" hidden="false" id="60cc-91e8-f09e-6613" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
                 <entryLink import="true" name="Barding" hidden="false" id="bc81-751b-4bcf-d371" type="selectionEntry" targetId="98cf-5b49-a433-c337"/>
-                <entryLink import="true" name="Kite Shield (Bretonnian Knights Only)" hidden="false" id="36cb-eccf-c9e2-df4d" type="selectionEntry" targetId="fdb7-3c58-809e-412d"/>
+                <entryLink import="true" name="Kite Shield (Bret Knights)" hidden="false" id="36cb-eccf-c9e2-df4d" type="selectionEntry" targetId="fdb7-3c58-809e-412d"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pilgrims Equipment" id="6e0c-c739-08b0-bed6" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Armor, Bretonnia Discount" hidden="true" id="e164-e2d2-f619-e3a2" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="2"/>
+            <entryLink import="true" name="Armor, Bretonnia %" hidden="true" id="e164-e2d2-f619-e3a2" type="selectionEntryGroup" targetId="e3da-829f-ee59-5304" flatten="true" sortIndex="2"/>
             <entryLink import="true" name="Miscellaneous Equipment - All" hidden="true" id="b5ef-b933-acc6-8448" collective="false" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <selectionEntryGroups>
@@ -253,7 +253,7 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="e026-1cbe-bfb3-a4bf" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
                 <entryLink import="true" name="DH Axe" hidden="false" id="8671-2d30-06a0-5f89" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
-                <entryLink import="true" name="DH Mace/Hammer/Club" hidden="false" id="d039-0b1d-de79-8e81" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+                <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="d039-0b1d-de79-8e81" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
                 <entryLink import="true" name="DH Sword" hidden="false" id="777b-e249-4a27-6ece" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
                 <entryLink import="true" name="Spear" hidden="false" id="1d08-a0b9-48e8-b49e" type="selectionEntry" targetId="005e-e397-8108-f198"/>
                 <entryLink import="true" name="Sword" hidden="false" id="547d-9f45-f17d-bc35" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
@@ -305,7 +305,8 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="2929-d25f-b5b4-e606" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="6ddb-5114-bff8-090b" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="common-data" id="0c24-6a04-8946-7b42" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Bowmen" hidden="false" id="ea2e-33b0-0912-8974" collective="false">
@@ -619,17 +620,17 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
                 <modifier type="set" value="40" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Warhorse, Discount" hidden="false" id="81f0-8712-e008-d8ea" type="selectionEntry" targetId="5bf4-bbc9-deda-4c68">
+            <entryLink import="true" name="Warhorse, %" hidden="false" id="81f0-8712-e008-d8ea" type="selectionEntry" targetId="5bf4-bbc9-deda-4c68">
               <modifiers>
                 <modifier type="set" value="20" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="5ade-1400-b520-e71d" type="selectionEntry" targetId="7e46-dc45-605f-2af2">
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="5ade-1400-b520-e71d" type="selectionEntry" targetId="7e46-dc45-605f-2af2">
               <modifiers>
                 <modifier type="set" value="5" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="87c0-e2ca-213d-64ed" type="selectionEntry" targetId="0fd7-ba59-1775-4a35">
+            <entryLink import="true" name="Heavy Armour, %" hidden="false" id="87c0-e2ca-213d-64ed" type="selectionEntry" targetId="0fd7-ba59-1775-4a35">
               <modifiers>
                 <modifier type="set" value="12.5" field="points"/>
               </modifiers>
@@ -967,17 +968,17 @@ While in Ratswarm form the Vampire may not use weapons and does not receive any
                 <modifier type="set" value="40" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Warhorse, Discount" hidden="false" id="8a64-31b1-5fda-ede4" type="selectionEntry" targetId="5bf4-bbc9-deda-4c68">
+            <entryLink import="true" name="Warhorse, %" hidden="false" id="8a64-31b1-5fda-ede4" type="selectionEntry" targetId="5bf4-bbc9-deda-4c68">
               <modifiers>
                 <modifier type="set" value="20" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Light Armor, Discount" hidden="false" id="5c6b-9163-9f3a-8b9e" type="selectionEntry" targetId="7e46-dc45-605f-2af2">
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="5c6b-9163-9f3a-8b9e" type="selectionEntry" targetId="7e46-dc45-605f-2af2">
               <modifiers>
                 <modifier type="set" value="5" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour, Discount" hidden="false" id="947f-e0e7-af1b-f56a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35">
+            <entryLink import="true" name="Heavy Armour, %" hidden="false" id="947f-e0e7-af1b-f56a" type="selectionEntry" targetId="0fd7-ba59-1775-4a35">
               <modifiers>
                 <modifier type="set" value="12.5" field="points"/>
               </modifiers>
