@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Greenskins - Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Characters" id="cd3f-e5da-8161-bb17" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="8d94-0b03-0bea-afa2" targetId="e020-c282-277b-b173" importRootEntries="true"/>
@@ -150,6 +150,9 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             </entryLink>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="cc27-9822-af4e-cb57" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Boss Pole" hidden="false" type="selectionEntry" id="88a-7402-f87f-e7f5" targetId="9510-d071-4cce-6d20"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="6047-014b-6539-9728" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="6d15-fb42-9bad-5853" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="0e1f-1651-e3a9-01e8" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f22-2b5c-9ed9-13d5" includeChildSelections="false"/>
@@ -161,161 +164,6 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="c535-b81e-a240-dc09">
-              <infoLinks>
-                <infoLink name="Parry" id="85fd-a8cc-7aab-188a" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
-                <infoLink name="Two Handed" id="7571-e718-4a7c-6f58" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
-                <infoLink name="Strike Last" id="c904-a54a-cfdb-1bf3" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="74c6-7851-bbac-8aa5" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="14aa-b667-e8b3-0a39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="857f-7f97-4d24-4150" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="823a-7480-aea4-4046" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f8a9-6e7d-940d-2da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="35b2-d073-fde5-8164" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="3909-8591-a128-7ff1">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="3b95-91c8-6682-b15d">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="9106-adb1-fe9c-1b46" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="68a2-ffe9-e7c1-70d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="df98-c2b2-5cb5-138c" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="ac1b-3cb3-5ec8-998a" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cb8d-52bf-1fa3-3707" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="fd9e-4cf3-474d-55af" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Strike Last" id="4a74-566b-bd15-5e90" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="0f9e-38ab-cd34-6a3d" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Concussion" id="d182-dd31-f48b-1cad" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="1eb8-b885-6127-85e4">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="6b0a-44b4-42ea-5547">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="e8da-6446-4666-1353" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9141-41f8-82d8-76b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="6cb5-f6a6-1bf9-cc79" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="0d50-dffc-cd66-c7e4" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bbc3-b683-09a1-b87c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="38dc-710e-560f-bd4c" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Strike Last" id="a443-1fbf-2bfb-2b87" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="6ff4-0a8e-0ba7-3fe5" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Cutting edge" id="ca15-6e78-b595-27cd" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="54a1-f877-c202-059a">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" hidden="false" id="f6a1-73fc-5627-f400" flatten="true">
           <entryLinks>
@@ -323,7 +171,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Blowpipe" hidden="false" type="selectionEntry" id="2489-b181-8c56-80b0" targetId="b6b-2ea5-1f65-a84b"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="34b8-cf53-f8a-2978" flatten="true">
+        <selectionEntryGroup name="Armor" hidden="false" id="34b8-cf53-f8a-2978" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="f1a2-1d90-5b79-c26b" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="e2bc-35ab-9c1b-45e9" targetId="74fb-cc90-1361-df26"/>
@@ -351,10 +199,10 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ab6-22f5-a49a-13b2" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="50a0-6dbf-8883-d6fb" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="3" field="8ab6-22f5-a49a-13b2">
+            <modifier type="set" value="3" field="50a0-6dbf-8883-d6fb">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
               </conditions>
@@ -368,12 +216,12 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Throwing Knives/Stars" hidden="false" type="selectionEntry" id="4f1b-4fe1-545-62cb" targetId="23f5-19c3-5a6c-a8fb"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" hidden="false" id="50d1-1dfa-e9e7-a682">
+        <selectionEntryGroup name="Armor" hidden="false" id="50d1-1dfa-e9e7-a682" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="96a2-b8cc-55b8-9595" targetId="74fb-cc90-1361-df26"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor, %" id="bfe6-e38e-5b9d-a610" hidden="false">
+        <selectionEntryGroup name="Armor, %" id="bfe6-e38e-5b9d-a610" hidden="false" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Shield, %" hidden="false" id="7ab8-ceb8-efa9-e072" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
           </entryLinks>
@@ -394,6 +242,9 @@ Range:12&quot; The first model in its path must roll under its Toughness or tak
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b2d-e330-fa30-717b"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2 Gaze of Mork" hidden="false" id="9b44-c3cb-d576-6f45">
           <profiles>
@@ -407,6 +258,9 @@ Range 12&quot;. D3 S3 hits strike the first model in their path.</characteristic
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d98c-9433-f365-9572"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3 ‘Eadbanger" hidden="false" id="31c4-ddf2-4f76-6921">
           <profiles>
@@ -426,6 +280,9 @@ The Shaman collapses and goes out of action.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f93b-636c-e6ec-4d91"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="4 Leap of Waaagh!" hidden="false" id="438b-f193-34f1-dc4e">
           <profiles>
@@ -440,6 +297,9 @@ If this move brings them into close combat, they count as charging in the close
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d755-6c5d-953a-14d4"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="5 Idol of Gork" hidden="false" id="327-e722-d7bd-cbad">
           <profiles>
@@ -454,6 +314,9 @@ This enhancement lasts until the Shaman takes a wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b06-25c4-75b5-9a37"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="6 ‘Ere we go!" hidden="false" id="95ce-9db8-f470-fe2">
           <profiles>
@@ -470,8 +333,14 @@ The effects last until the Shaman takes a wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3423-e638-41be-3d73"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76bf-74d7-1223-c667"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <selectionEntries>
@@ -802,7 +671,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <entryLink id="37c1-7d35-9502-e0e4" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="a1f-98b2-4503-acc1" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="2afb-555a-3637-a2d8" targetId="aa8c-67af-c03a-75c6" flatten="true"/>
-        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="7838-3741-ff08-2f06" targetId="b21c-8103-66f7-21af"/>
+        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="7838-3741-ff08-2f06" targetId="b21c-8103-66f7-21af" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>

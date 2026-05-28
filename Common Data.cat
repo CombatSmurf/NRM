@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="38" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="39" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1825,24 +1825,6 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c51a-d060-7bf2-7ae3" name="Warplock Pistol" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="ca09-3e89-0c7a-6755" name="Warplock Pistol" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8</characteristic>
-            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
-            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire every other turn</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="6a4f-2568-1dde-574c" name="-3 Save Modifier" hidden="false" targetId="f8a4-02ae-0f3c-3da0" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1478-15cf-1d4e-3e13" name="Sigmarite Warhammer (Sisters only)" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="fdf9-610c-e8fc-eaf8" name="Sigmarite Warhammer" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
@@ -3395,17 +3377,16 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <profile name="Dark Elf Blade" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="4080-4d17-b7a6-71ce">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As User</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Dark Elf Blades are forged in the city of Hag  Graef, the Dark Crag. They are fashioned from combat. Blacksteel, a rare form of steel found deep within the mountains around the city. Dark Elf Blades have wicked protrusions and serrated, which inflict serious damage on an opponent. Any Dark Elf can upgrade a sword or dagger to a Dark Elf blade by paying an additional 20 gc at the time of purchase. Weapons upgraded to a Dark Elf Blade retain  all of their abilities (ie. swords can parry, daggers grant an armour save of 6+).
-</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Dark Elf Blades are forged in the city of Hag  Graef, the Dark Crag. They are fashioned from combat. Blacksteel, a rare form of steel found deep within the mountains around the city. Dark Elf Blades have wicked protrusions and serrated, which inflict serious damage on an opponent. Any Dark Elf can upgrade a sword or dagger to a Dark Elf blade by paying an additional 20 gc at the time of purchase. Weapons upgraded to a Dark Elf Blade retain  all of their abilities (ie. swords can parry, daggers grant an armour save of 6+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
         <rule name="Critical Damage" id="95c3-472a-31b6-3443" hidden="false">
-          <description>Dark Elf blades inflict serious damage on their opponents, when rolling on the critical hit chart a Dark Elf blade will add +1 to the result. </description>
+          <description>Dark Elf blades inflict serious damage on their opponents, when rolling on the critical hit chart a Dark Elf blade will add +1 to the result.</description>
         </rule>
         <rule name="Wicked Edge" id="6626-b073-f29f-7159" hidden="false">
-          <description>Dark Elf blades are set with sharp protrusions and serrated edges which inflict serious damage on an opponent, a roll of 2-4 on the injury table is a Stunned result. </description>
+          <description>Dark Elf blades are set with sharp protrusions and serrated edges which inflict serious damage on an opponent, a roll of 2-4 on the injury table is a Stunned result.</description>
         </rule>
         <rule name="Rarity" id="1328-38d5-b960-7103" hidden="false">
           <description>Rarity 9</description>
@@ -3415,6 +3396,89 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name="pts" typeId="points" value="20"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Weeping Blade" hidden="false" id="a98d-a565-758a-cb58">
+      <profiles>
+        <profile name="Weeping Blade" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="1b34-9d6c-3622-8402">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Parry" id="1e6b-858d-6eb2-c544" hidden="false" type="rule" targetId="17dc-9c49-08e1-af45"/>
+        <infoLink name="Pair" id="c985-20ba-e9bd-d9e5" hidden="false" type="rule" targetId="f053-2d68-666e-727a"/>
+        <infoLink name="Venomous" id="959d-5aef-831f-e1a6" hidden="false" type="rule" targetId="31ea-6004-b716-6fb1"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="234d-6b7f-7d48-ad87" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7956-98fa-e4f3-f6f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gromril weapon" id="bcd0-822c-d8ee-6093" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="150"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ithilmar Weapon" hidden="false" id="1a4e-0a98-0949-fc18" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ee3a-a5d9-9404-8f02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ithilmar weapon" id="ffca-f8f3-86e5-13ff" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warplock Pistol" hidden="false" id="bc45-0261-3bd9-13bb">
+      <profiles>
+        <profile name="Warplock Pistol" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="e93d-4f7a-776d-ecd0">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8&quot;</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare Shot, Firearm Save Modifier</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Firearm Save Modifier" id="f0ef-0ff8-97e6-6f08" hidden="false" type="rule" targetId="5d21-2b30-4219-ec86"/>
+        <infoLink name="Prepare shot" id="91ef-6494-e0ce-6765" hidden="false" type="rule" targetId="4f7f-29ec-a9da-82fc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warplock Pistol - Brace" hidden="false" id="0532-a18e-65c3-d862">
+      <profiles>
+        <profile name="Warplock Pistol" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="8e54-faaf-cb10-4d4e">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8&quot;</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare Shot, Firearm Save Modifier</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="70"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Prepare shot" id="a183-1170-69b0-4471" hidden="false" type="rule" targetId="4f7f-29ec-a9da-82fc"/>
+        <infoLink name="Firearm Save Modifier" id="c0f5-7713-46c8-8bd9" hidden="false" type="rule" targetId="5d21-2b30-4219-ec86"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4183,7 +4247,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Repeater Crossbow" hidden="false" id="e3a8-8335-c989-443c" type="selectionEntry" targetId="a802-b7c6-caea-a5b1"/>
         <entryLink import="true" name="Pistol" hidden="false" id="e6a4-b8d2-0671-2bad" type="selectionEntry" targetId="67e9-a4f5-8f76-168c"/>
         <entryLink import="true" name="Double Barreled Pistol" hidden="false" id="e433-74f6-bcae-00a8" type="selectionEntry" targetId="b8bb-20cf-ae3a-693f"/>
-        <entryLink import="true" name="Warplock Pistol" hidden="false" id="ac29-c3d9-171e-09c2" type="selectionEntry" targetId="c51a-d060-7bf2-7ae3"/>
+        <entryLink import="true" name="Warplock Pistol" hidden="false" id="ac29-c3d9-171e-09c2" type="selectionEntry" targetId="bc45-0261-3bd9-13bb"/>
         <entryLink import="true" name="Dueling Pistol" hidden="false" id="56c9-9406-a56f-3904" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
         <entryLink import="true" name="Belaying Pin" hidden="false" id="f184-9f47-b0cd-8cc4" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
         <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="fa75-867c-ccbc-f75d" type="selectionEntry" targetId="23f5-19c3-5a6c-a8fb"/>
@@ -4200,6 +4264,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Double Barreled Pistols - Brace" hidden="false" id="d866-b029-c1c5-e47a" type="selectionEntry" targetId="2371-4b4e-9b0e-a37b"/>
         <entryLink import="true" name="Pistols - Brace" hidden="false" id="462b-8b5e-7386-fe1a" type="selectionEntry" targetId="eda4-7746-2e0d-a342"/>
         <entryLink import="true" name="Dueling Pistols - Brace" hidden="false" id="930e-6bcc-d914-f80c" type="selectionEntry" targetId="5f5e-d1ff-0fe7-4604"/>
+        <entryLink import="true" name="Warplock Pistol - Brace" hidden="false" id="9177-ca2d-1de0-13c1" type="selectionEntry" targetId="0532-a18e-65c3-d862"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="313b-a816-0a89-926c" name="Serious Injuries" hidden="false" collective="false" import="true">
@@ -5893,7 +5958,7 @@ If the test fails, the sword disappears.</characteristic>
         <selectionEntry type="upgrade" import="true" name="Fury of Khaine" hidden="false" id="afe4-25ae-b093-73d9">
           <rules>
             <rule name="Fury of Khaine" id="a919-a46c-0522-070e" hidden="false">
-              <description>The Dark Elf is infused with an intense raging thirst for blood and is a whirlwind in hand-to-hand combat, moving from opponent to opponent. The Dark Elf may make a 4&quot; follow up move if he takes all of his opponents out of action. If he comes into contact with another enemy this starts a new combat. This new combat takes place in the following turn and the model counts as charging. May not follow up in the opponent’s turn </description>
+              <description>The Dark Elf is infused with an intense raging thirst for blood and is a whirlwind in hand-to-hand combat, moving from opponent to opponent. The Dark Elf may make a 4&quot; follow up move if he takes all of his opponents out of action. If he comes into contact with another enemy this starts a new combat. This new combat takes place in the following turn and the model counts as charging. May not follow up in the opponent’s turn</description>
             </rule>
           </rules>
           <constraints>
@@ -5903,7 +5968,7 @@ If the test fails, the sword disappears.</characteristic>
         <selectionEntry type="upgrade" import="true" name="Powerful Build" hidden="false" id="989b-1366-d5d9-5b77">
           <rules>
             <rule name="Powerful Build" id="e141-3e0d-5a23-a408" hidden="false">
-              <description>The warrior is strongly built for an Elf and is capable of feats of strength. A warrior with this skill may choose skills from the Strength table. The Sorceress may never take this skill and no more than two warriors in the warband may take this skill at any one time. </description>
+              <description>The warrior is strongly built for an Elf and is capable of feats of strength. A warrior with this skill may choose skills from the Strength table. The Sorceress may never take this skill and no more than two warriors in the warband may take this skill at any one time.</description>
             </rule>
           </rules>
           <constraints>
@@ -5923,7 +5988,7 @@ If the test fails, the sword disappears.</characteristic>
         <selectionEntry type="upgrade" import="true" name="Infiltration" hidden="false" id="8f14-772b-6b99-6280">
           <rules>
             <rule name="Infiltration" id="b43d-45dc-d7fb-968b" hidden="false">
-              <description>The Dark Elf can infiltrate, this skill is exactly the same as the Skaven skill. </description>
+              <description>The Dark Elf can infiltrate, this skill is exactly the same as the Skaven skill.</description>
             </rule>
           </rules>
           <constraints>
@@ -5933,13 +5998,130 @@ If the test fails, the sword disappears.</characteristic>
         <selectionEntry type="upgrade" import="true" name="Master of Poisons" hidden="false" id="9d87-f9d6-4e89-4484">
           <rules>
             <rule name="Master of Poisons" id="b493-adf4-bba5-b040" hidden="false">
-              <description>The Dark Elf is proficient in concocting different poisons. If the Hero doesn’t search for rare items, he may make D3-1 doses of Dark Venom instead. There is a chance of getting none, as the hero doesn’t have access to a stable workplace. The poison must be used in the next battle and cannot be sold or traded to other warbands as the Dark Elves guard their secrets very carefully.
-</description>
+              <description>The Dark Elf is proficient in concocting different poisons. If the Hero doesn’t search for rare items, he may make D3-1 doses of Dark Venom instead. There is a chance of getting none, as the hero doesn’t have access to a stable workplace. The poison must be used in the next battle and cannot be sold or traded to other warbands as the Dark Elves guard their secrets very carefully.</description>
             </rule>
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d254-237d-9075-54a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic of the Horned Rat" id="3442-f32d-5c5f-5f9d" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 - Children of the Horned Rat" hidden="false" id="d5fd-f58f-7615-9302" collective="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6d04-5f50-a378-1ee7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="d55e-78f6-de9e-c9a9" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="f68b-7d87-cf25-5c52" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Children of the Horned Rat" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="5989-976f-798d-2639">
+              <characteristics>
+                <characteristic name="Difficulty" id="499a-af4e-5a17-1a55" hidden="false" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
+                <characteristic name="Effect" id="f8bf-6bad-76cb-315e" hidden="false" typeId="0592-3510-8508-7263">This spell must be used before the game, and may only be used once.
+
+
+When cast the spell summons D3 Giant Rats, which are placed within 6&quot; of the Sorcerer.
+The Sorcerer may cast this spell successfully only once per battle, and the rats disappear after the battle.
+They do not count towards the maximum size of the Skaven warband.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="1 - Warpfire" hidden="false" id="6ef7-09be-ee39-bbb2" collective="false" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a947-4d66-96a1-ca7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="a6ca-95c1-06e7-ce06" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="fb16-b536-fb0b-f326" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Warpfire" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="062c-8b94-7f0f-486e">
+              <characteristics>
+                <characteristic name="Difficulty" id="fb4f-6215-4d35-c568" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" id="52c6-369d-bc58-831f" hidden="false" typeId="0592-3510-8508-7263">The spell has range of 8&quot;, hitting the first model in its path.
+The spell causes D3 Strength 4 hits on its target, and one Strength 3 hit on each model within 2&quot; of the target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 - Gnawdoom" hidden="false" id="9a3a-3a51-114a-d5e7" collective="false" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a96f-ec85-1fd1-7f7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="d814-233d-525d-cb92" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="1b40-2bed-bab1-284b" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Gnawdoom" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="daf5-d773-fb8f-0444">
+              <characteristics>
+                <characteristic name="Difficulty" id="4255-17e0-645e-1deb" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" id="be6c-08b5-e08e-60df" hidden="false" typeId="0592-3510-8508-7263">The Gnawdoom causes 2D6 Strength 1 hits on a single model within 8&quot; of the caster.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 - Eye of the Warp" hidden="false" id="5da5-3f16-499a-e7d4" collective="false" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3660-68db-a36e-5f27" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="8db5-1491-129d-ff68" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="eb0b-2094-c63c-86f8" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Eye of the Warp" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="5931-8029-21ff-bfb1">
+              <characteristics>
+                <characteristic name="Difficulty" id="1230-2ac5-75c0-04c5" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" id="d9c7-2895-3116-08ea" hidden="false" typeId="0592-3510-8508-7263">All standing models in base contact with the Sorcerer must take an immediate Leadership test.
+
+
+If they fail, they each suffer a Strength 3 hit and must run 2D6 directly away from the Sorcerer, exactly as if they had lost their nerve when fighting against more than one opponent.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 - Sorcerer&apos;s Curse" hidden="false" id="2f1d-68c5-9f7b-d117" collective="false" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c8b3-b719-fffe-66d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="12a4-27c0-6088-d7f8" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="cf0a-2ad2-6622-1eaf" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Sorcerer&apos;s Curse" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="a863-0107-eb1b-2ad9">
+              <characteristics>
+                <characteristic name="Difficulty" id="2706-e6a7-fa61-63f3" hidden="false" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" id="956d-ea25-d27b-a067" hidden="false" typeId="0592-3510-8508-7263">The spell has a range of 12&quot; and affects a single model within range.
+
+
+The target must re-roll any successful armor saves and to hit rolls during the Skaven hand-to-hand phase and his own next shooting and hand-to-hand combat phases.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 - Black Fury" hidden="false" id="8616-8c1e-e4f5-cc44" collective="false" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0af4-82b1-f590-6e16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" id="d70d-6c28-ca05-d868" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="c7d0-9b38-a9d2-2b34" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Black Fury" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="fd62-8061-b792-0fa9">
+              <characteristics>
+                <characteristic name="Difficulty" id="1e88-1fd0-dca6-613e" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" id="48d9-0474-7485-1910" hidden="false" typeId="0592-3510-8508-7263">The Sorcerer may immediately charge any enemy model within 12&quot; (ignoring any terrain and interposing models) and gains 2 extra Attacks and +1 Strength during this turn&apos;s hand-to-hand combat phase only.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -6231,6 +6413,9 @@ normal or charge their original target. When making a compelled charge, the Kni
     </rule>
     <rule name="Expert Swordsmen" id="3e98-1322-d569-6053" hidden="false">
       <description>Swordsmen are so skilled with their weapons that they may re-roll any failed hits when charging. Note that this only applies when they are armed with normal swords, and not with double-handed swords or any other weapons.</description>
+    </rule>
+    <rule name="Venomous" id="31ea-6004-b716-6fb1" hidden="false">
+      <description>The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

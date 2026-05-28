@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ebaf-f5a8-cac6-bd65" name="Pit Fighter (1a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -326,12 +326,12 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
       </profiles>
       <rules>
         <rule id="9b29-a5e0-e77b-ea41" name="Not a Fighter" hidden="false">
-          <description>If a Human Scout is taken Out of Action during a game, he decides to leave on a 1-3, instead of the normal 1-2 when rolling for injury at the end of the game. </description>
+          <description>If a Human Scout is taken Out of Action during a game, he decides to leave on a 1-3, instead of the normal 1-2 when rolling for injury at the end of the game.</description>
         </rule>
         <rule id="ff6e-310a-786b-1d92" name="Human Scout" hidden="false">
           <description>Upkeep +5gc
 Rating +9pts (+1/exp)
-May be Hired: Any warband except Orcs, Goblins, Beastmen or Possessed may hire the Human Scout. </description>
+May be Hired: Any warband except Orcs, Goblins, Beastmen or Possessed may hire the Human Scout.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -397,7 +397,7 @@ May be Hired: Any warband except Orcs, Goblins, Beastmen or Possessed may hire 
               <rules>
                 <rule name="Expert Hunter" id="aa3e-68f9-ac07-4621" hidden="false">
                   <description>A Human Scout that has been declared as Hidden may only be detected by models within half their Initiative value in inches, not their Initiative value as normal.
-In addition, a Human Scout may fire his Bow without giving away his position (he may fire and remain Hidden). </description>
+In addition, a Human Scout may fire his Bow without giving away his position (he may fire and remain Hidden).</description>
                 </rule>
               </rules>
               <constraints>
@@ -407,7 +407,7 @@ In addition, a Human Scout may fire his Bow without giving away his position (
             <selectionEntry type="upgrade" import="true" name="Sit in Wait" hidden="false" id="e686-db56-a769-d464">
               <rules>
                 <rule name="Sit in Wait" id="fff2-e85d-973c-e89b" hidden="false">
-                  <description> A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
+                  <description>A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
                 </rule>
               </rules>
               <constraints>
@@ -417,7 +417,7 @@ In addition, a Human Scout may fire his Bow without giving away his position (
                 <selectionEntry type="upgrade" import="true" name="Sit in Wait" hidden="false" id="e71c-3a09-8042-8e5a">
                   <rules>
                     <rule name="Sit in Wait" id="9200-da72-82a5-d1ec" hidden="false">
-                      <description> A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
+                      <description>A Human Scout is able to Infiltrate (as the Skaven skill of the same name - see the Skaven warband rules in the Mordheim rulebook.</description>
                     </rule>
                   </rules>
                   <constraints>
@@ -1441,9 +1441,7 @@ May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a 
         <rule id="426d-1196-a630-8fac" name="Dark Elf Assassin" hidden="false">
           <description>Upkeep: 25gc
 Rating: +25pts (+1/exp)
-May be hired: Any evil warband may hire a Dark Elf Assassin. 
-
-</description>
+May be hired: Any evil warband may hire a Dark Elf Assassin.</description>
         </rule>
         <rule id="da4e-9fee-a275-c688" name="Excellent Sight" hidden="false">
           <description>The Elf spots Hidden enemies from two times as far away as other warriors (ie, twice his Initiative value in inches).</description>
@@ -1452,9 +1450,7 @@ May be hired: Any evil warband may hire a Dark Elf Assassin. 
           <description>All attacks made by the Assassin, whether in shooting or close combat, have an extra -1 save modifier to represent his skill in striking at unarmoured spots.</description>
         </rule>
         <rule id="13f5-5ff6-5db6-9c82" name="Kindred Hatred" hidden="false">
-          <description>The Dark Elves have been fighting the High Elves for many centuries. The wars between these two races have been very long and bloody affairs. Dark Elves Hate any High Elf warriors including High Elf Hired Swords. 
-
-</description>
+          <description>The Dark Elves have been fighting the High Elves for many centuries. The wars between these two races have been very long and bloody affairs. Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3964,7 +3960,7 @@ Veskit can spot hidden enemies within twice his Initiative value in inches.</des
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </entryLink>
-            <entryLink id="582d-18fb-9983-386e" name="Warplock Pistol" hidden="false" collective="false" import="true" targetId="c51a-d060-7bf2-7ae3" type="selectionEntry">
+            <entryLink id="582d-18fb-9983-386e" name="Warplock Pistol - Brace" hidden="false" collective="false" import="true" targetId="0532-a18e-65c3-d862" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cca0-fb9b-a123-2517" type="min"/>
               </constraints>
@@ -5648,8 +5644,7 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
           <description>Upkeep +25gc
 Rating +20pts (+1/exp)
 
-May be Hired: A Cursed Hillman can be hired by the Undead, Beastmen or Possessed warbands.
-</description>
+May be Hired: A Cursed Hillman can be hired by the Undead, Beastmen or Possessed warbands.</description>
         </rule>
         <rule id="fb27-dcff-58c6-360d" name="Lycanthrope" hidden="false">
           <description>The Cursed Hillman is a werewolf. Any time he loses a wound, he must roll a D6. On a roll of 4+, the beast within escapes and he transforms into a werewolf. Ignore any injury table rolls. Should he not transform, roll on the injury table at -1 (thus knocked down is 2-3, stunned is 4-5, and OOA is on a 6 only). While in wolf-form, he has a bonus Bite attack. This is resolved at -1S.</description>
@@ -5744,9 +5739,7 @@ he counts as having -1T in hand to hand combat.</description>
                 <selectionEntry type="upgrade" import="true" name="Control" hidden="false" id="5c3b-4d9b-e3da-0e85">
                   <rules>
                     <rule name="Control" id="e21b-5f08-24aa-5695" hidden="false">
-                      <description>So long has he been cursed that the Hillman can attempt to call upon the beast within at will. The Hillman can transform into the Werewolf during the shooting phase on a D6 roll of 2+. Should this roll fail, the Hillman must remain static as the excruciating transformation takes longer than anticipated. He counts as being knocked down, and will be completely transformed by the beginning of his controllers next turn.
-
-</description>
+                      <description>So long has he been cursed that the Hillman can attempt to call upon the beast within at will. The Hillman can transform into the Werewolf during the shooting phase on a D6 roll of 2+. Should this roll fail, the Hillman must remain static as the excruciating transformation takes longer than anticipated. He counts as being knocked down, and will be completely transformed by the beginning of his controllers next turn.</description>
                     </rule>
                   </rules>
                 </selectionEntry>

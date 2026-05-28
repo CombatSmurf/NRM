@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6518-bc7b-3999-c73f" name="Skaven of Clan Pestilens (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6518-bc7b-3999-c73f" name="Skaven of Clan Pestilens (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Characters" id="a51c-7bff-7225-0300" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="fc6c-f49e-edf0-5099" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Heroes Equipment" id="43a3-ee93-4d88-5310" hidden="false">
+    <selectionEntryGroup name="Heroes Equipment" id="43a3-ee93-4d88-5310" hidden="false" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" id="446c-7464-ec4-1566" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" id="446c-7464-ec4-1566" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="f57e-8b7-5295-ccbf" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="8d83-3b79-93cd-8086" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
@@ -38,7 +38,7 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" id="111f-1692-7570-dc36" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" id="111f-1692-7570-dc36" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Sling" hidden="false" id="67a3-7a9e-b830-4fb0" type="selectionEntry" targetId="87c7-49b5-f1e7-6662"/>
           </entryLinks>
@@ -46,18 +46,29 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8411-6664-b4d-ff1e"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" id="a35e-4ec-c456-7fae" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armor" id="a35e-4ec-c456-7fae" hidden="false" collective="false" import="true" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" id="9062-7617-71ad-d5c" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="4e0b-5d87-74f3-cdb9" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="50b1-5cd8-ea6d-c33c" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="4d46-fb2e-b45c-58ea" hidden="false" collective="false" import="true" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="cae0-9476-7a74-8e63" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="5d74-61d9-3566-111b" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="92a0-34e3-2ead-974e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Pestilens Miscellaneous Equipment" hidden="false" id="84a5-be92-373b-c69d" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93" collapsible="true"/>
+        <entryLink import="true" name="Miscellaneous Equipment - All" hidden="false" id="88a3-0bf1-6ac6-9d84" type="selectionEntryGroup" targetId="a2cf-6f28-f7c2-275d" collapsible="true"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Henchmen Equipment" id="59fd-6ff1-c47d-1bc1" hidden="false">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" id="58a1-9a5b-c4d4-ccb0" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" id="58a1-9a5b-c4d4-ccb0" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="246d-317e-dd74-80af" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="f45-7ac4-5457-263c" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
@@ -80,7 +91,7 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" id="acce-8528-21ac-f327" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" id="acce-8528-21ac-f327" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Sling" hidden="false" id="2882-988b-9883-5ac" type="selectionEntry" targetId="87c7-49b5-f1e7-6662"/>
           </entryLinks>
@@ -88,14 +99,25 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9cda-e4cd-e7c4-6b7f"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" id="b57b-8bf7-b19d-b492" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armor" id="b57b-8bf7-b19d-b492" hidden="false" collective="false" import="true" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Light Armor" hidden="false" id="b06e-a1fb-ec94-6055" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="383e-daf9-31a4-47fd" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="365-4f5-cddb-ac3b" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="e37c-6dd7-f869-b77c" hidden="false" collective="false" import="true" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="e338-7c17-61e5-a325" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="504e-72db-63d7-25f5" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="4077-d65c-ce40-04c6" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Pestilens Miscellaneous Equipment" hidden="false" id="eea3-0eed-1afe-0651" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93" collapsible="true"/>
+        <entryLink import="true" name="Miscellaneous Equipment - All" hidden="false" id="affb-e72f-3fb8-4a25" type="selectionEntryGroup" targetId="a2cf-6f28-f7c2-275d" collapsible="true"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Special Skills (Skaven Pestilens)" id="16e3-d71b-66e3-a530" hidden="false" collective="false" import="true">
       <constraints>
@@ -301,125 +323,7 @@ The Hero may add +1 attack and +D3&quot; to the total move to his profile for th
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic of the Horned Rat" id="5e0d-311f-962f-79" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 - Children of the Horned Rat" hidden="false" id="f2a-7721-5748-90a3" collective="false" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aa48-856e-30b7-2d0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="fa2d-be12-fa39-f58c" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="f59b-176e-f23e-b7e8" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Children of the Horned Rat" hidden="false" id="b427-a34f-e337-4882" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="d6e-fc16-fee7-7bde" hidden="false" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
-                <characteristic name="Effect" id="85ee-4230-e47f-8b86" hidden="false" typeId="0592-3510-8508-7263">This spell must be used before the game, and may only be used once.
-
-
-When cast the spell summons D3 Giant Rats, which are placed within 6&quot; of the Sorcerer.
-The Sorcerer may cast this spell successfully only once per battle, and the rats disappear after the battle.
-They do not count towards the maximum size of the Skaven warband.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="1 - Warpfire" hidden="false" id="e18-19f2-b4be-6feb" collective="false" sortIndex="1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c963-651b-52ae-d9cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="14cd-4d05-3a37-5c46" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="3b17-f77c-9ef8-a501" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Warpfire" hidden="false" id="82df-7f6-eca9-6bee" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="ded4-66bb-a9df-7f32" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" id="6125-9f02-ea81-1c5c" hidden="false" typeId="0592-3510-8508-7263">The spell has range of 8&quot;, hitting the first model in its path.
-The spell causes D3 Strength 4 hits on its target, and one Strength 3 hit on each model within 2&quot; of the target.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="3 - Gnawdoom" hidden="false" id="aac3-e922-141-656f" collective="false" sortIndex="3">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e08c-8bfb-754b-a8ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="9da-698-b824-2625" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="aa41-807-910a-b0ab" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Gnawdoom" hidden="false" id="a3ba-fc5f-92b3-352a" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="651d-3690-fe29-b463" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" id="416b-7d71-41d1-f003" hidden="false" typeId="0592-3510-8508-7263">The Gnawdoom causes 2D6 Strength 1 hits on a single model within 8&quot; of the caster.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="5 - Eye of the Warp" hidden="false" id="c852-e6f0-e91f-b37d" collective="false" sortIndex="5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6ec1-8296-e9ea-41b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="3edf-ab2d-dba8-d76b" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="d853-71f7-7a28-2bd5" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Eye of the Warp" hidden="false" id="56cc-2adf-d446-5a5f" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="3516-bb58-53e5-d5ed" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" id="60f1-68b5-aae2-c1ef" hidden="false" typeId="0592-3510-8508-7263">All standing models in base contact with the Sorcerer must take an immediate Leadership test.
-
-
-If they fail, they each suffer a Strength 3 hit and must run 2D6 directly away from the Sorcerer, exactly as if they had lost their nerve when fighting against more than one opponent.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="6 - Sorcerer&apos;s Curse" hidden="false" id="9446-d9ae-cba8-a9e8" collective="false" sortIndex="6">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a2c4-7474-ccd3-a229" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="f84a-79d3-f75-4b3" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="c115-221f-2e8e-7cad" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Sorcerer&apos;s Curse" hidden="false" id="5b2a-84af-8283-53a2" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="bebf-a94f-b721-39da" hidden="false" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" id="c4d2-da4f-bc86-2759" hidden="false" typeId="0592-3510-8508-7263">The spell has a range of 12&quot; and affects a single model within range.
-
-
-The target must re-roll any successful armor saves and to hit rolls during the Skaven hand-to-hand phase and his own next shooting and hand-to-hand combat phases.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="4 - Black Fury" hidden="false" id="f906-46c4-68ba-73e3" collective="false" sortIndex="4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4101-24ec-e75e-3ca3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" id="5323-6550-fe08-7840" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="a14c-d4e8-3ca5-b523" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Black Fury" hidden="false" id="c438-6e3a-8b3-a9f3" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="61ce-901c-5a46-ed49" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" id="7ea5-d748-e23d-ae5c" hidden="false" typeId="0592-3510-8508-7263">The Sorcerer may immediately charge any enemy model within 12&quot; (ignoring any terrain and interposing models) and gains 2 extra Attacks and +1 Strength during this turn&apos;s hand-to-hand combat phase only.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Miscellaneous Equipment" id="9cd4-fd73-6ae6-3e93" hidden="false">
+    <selectionEntryGroup name="Pestilens Miscellaneous Equipment" id="9cd4-fd73-6ae6-3e93" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Warpstone Amulet" hidden="false" id="d34d-87de-2b85-d2a3">
           <costs>
@@ -772,20 +676,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         <categoryLink name="Heroes" hidden="false" id="2916-7a66-ba70-5f83" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="a1bb-3454-a786-66f3" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="abd-b85e-d1bf-3092" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4824-98ed-6a19-c64c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment - All" hidden="false" id="a03c-5bc5-104a-70d8" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" id="a45d-5974-552c-b838" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="4d0b-cd3-3153-7d01" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="4fb6-bb1c-cc32-3b2a" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="4fb6-bb1c-cc32-3b2a" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b6a-97f9-8bde-2849" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3fd-204f-215c-429" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -805,15 +696,15 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="1413-95d6-f0fb-fe45" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="1413-95d6-f0fb-fe45" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="f609-e2eb-a273-779" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Heroes Equipment" hidden="false" id="bdf4-dae7-2dd-756b" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="4b-40a7-9eeb-8285" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="1ce8-fa85-d417-1f81" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5da7-d763-4a48-6ee6" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="bdf4-dae7-2dd-756b" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="4b-40a7-9eeb-8285" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="1ce8-fa85-d417-1f81" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5da7-d763-4a48-6ee6" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -948,7 +839,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Magic of the Horned Rat" hidden="true" id="1dc3-e03c-67a-fe76" type="selectionEntryGroup" targetId="5e0d-311f-962f-79">
+        <entryLink import="true" name="Magic of the Horned Rat" hidden="true" id="1dc3-e03c-67a-fe76" type="selectionEntryGroup" targetId="3442-f32d-5c5f-5f9d" flatten="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -962,7 +853,6 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="fb90-6c45-46fc-4a8e" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="85"/>
@@ -1087,20 +977,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         <categoryLink name="Heroes" hidden="false" id="6a83-c8d3-e368-21d9" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="6051-3ee8-6f69-89a" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9fd6-a08-ccbd-b1f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9656-a8a5-89a0-8f5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment - All" hidden="false" id="12fd-527d-cd28-5d56" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" id="3d4b-4e80-d08f-f3b8" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="e847-c04a-d03f-d678" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="708d-de5b-2090-3674" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="708d-de5b-2090-3674" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b96-3387-537b-cd84" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53a0-1242-45ac-3436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1117,15 +994,15 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="5a64-7538-bda4-b8c8" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="5a64-7538-bda4-b8c8" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="f2bc-d6a4-41a7-a0c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Heroes Equipment" hidden="false" id="6945-f816-7f8a-677e" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="5816-f3ad-d328-5d90" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="baea-b739-67a0-d07c" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="48f3-867b-b582-c8e7" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="6945-f816-7f8a-677e" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="5816-f3ad-d328-5d90" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="baea-b739-67a0-d07c" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="48f3-867b-b582-c8e7" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1300,8 +1177,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Magic of the Horned Rat" hidden="false" id="ff6e-c8e6-d5b0-a7b3" type="selectionEntryGroup" targetId="5e0d-311f-962f-79"/>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="c1b0-5bd1-ed91-24e6" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93"/>
+        <entryLink import="true" name="Magic of the Horned Rat" hidden="false" id="ff6e-c8e6-d5b0-a7b3" type="selectionEntryGroup" targetId="3442-f32d-5c5f-5f9d" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45"/>
@@ -1426,20 +1302,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         <categoryLink name="Heroes" hidden="false" id="e9be-b1dc-d5bd-9f6" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="219-b6b2-c48c-48b1" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ab5f-f9e9-1284-a49c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f51f-6e61-fae0-f3dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment - All" hidden="false" id="b702-11fe-71aa-238e" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" id="1774-de82-bc28-e847" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="f5ba-4c3b-5124-d9bf" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="759-15fb-913d-9639" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="759-15fb-913d-9639" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500c-2de8-7ed3-d87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cd3-eed-ab3e-51aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1458,11 +1321,11 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="13fb-12cd-8ea5-147" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Heroes Equipment" hidden="false" id="5a5c-d784-76c9-d61b" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="b55e-8c0c-493c-f1ca" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="2f72-aa25-970b-dad6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5687-a3e4-2c1e-5215" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Experience" hidden="false" id="13fb-12cd-8ea5-147" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="5a5c-d784-76c9-d61b" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="b55e-8c0c-493c-f1ca" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="2f72-aa25-970b-dad6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5687-a3e4-2c1e-5215" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1677,7 +1540,6 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="7103-93ee-27c6-139d" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45"/>
@@ -1802,20 +1664,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         <categoryLink name="Heroes" hidden="false" id="141c-ae4e-95b2-ecb0" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="8c9e-389f-5460-f38" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="937e-63cb-3d38-f85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0dd-a871-3aea-f9d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment - All" hidden="false" id="65b9-a7eb-146e-ca6d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" id="3450-1e0d-5f8e-753b" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="33e8-e083-56d2-b5ea" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="7e18-6812-5499-c884" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="7e18-6812-5499-c884" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3786-c90c-f921-3478" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d0a-24b6-9c9b-178" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1833,11 +1682,11 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="9b64-d42f-4b5b-6751" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Heroes Equipment" hidden="false" id="ccb6-c79b-6012-9b33" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="bdb5-1f30-6001-4fbf" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="3a12-7c9f-f204-54fc" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="c2e3-42b8-ad95-207f" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Experience" hidden="false" id="9b64-d42f-4b5b-6751" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="ccb6-c79b-6012-9b33" collective="false" targetId="43a3-ee93-4d88-5310" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="bdb5-1f30-6001-4fbf" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="3a12-7c9f-f204-54fc" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="c2e3-42b8-ad95-207f" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2052,7 +1901,6 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="852d-90c4-cc08-d619" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -2174,20 +2022,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         <categoryLink name="Henchmen" hidden="false" id="9540-817c-8b91-4ff9" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="e2c3-696f-34a2-7d3e" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c4d2-3184-7c5-3d24" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="658f-f7c0-5184-175b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment - All" hidden="false" id="74b3-c626-8ca2-8d29" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" id="d36c-2873-dd25-f825" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="7aa4-22ab-9d1f-1e34" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="3b94-c35d-6019-73f">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="3b94-c35d-6019-73f" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -2206,10 +2041,10 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="6cf2-c63c-4af7-9cc0" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Promoted" hidden="false" id="d8e2-b87-b7bd-22f4" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="8862-6d53-eb-4c89" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="true" id="2dd7-32f9-2bb7-f644" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink import="true" name="Experience" hidden="false" id="6cf2-c63c-4af7-9cc0" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Promoted" hidden="false" id="d8e2-b87-b7bd-22f4" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
+        <entryLink import="true" name="Charactaristics +/-" hidden="false" id="8862-6d53-eb-4c89" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Serious Injuries" hidden="true" id="2dd7-32f9-2bb7-f644" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2218,7 +2053,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Skills" hidden="true" id="587c-293d-d11b-6b33" collective="false" targetId="e8cb-e24-349-a81c" type="selectionEntryGroup">
+        <entryLink import="true" name="Skills" hidden="true" id="587c-293d-d11b-6b33" collective="false" targetId="e8cb-e24-349-a81c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2227,8 +2062,8 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Henchmen Equipment" hidden="false" id="bc46-bda3-4716-6716" collective="false" targetId="59fd-6ff1-c47d-1bc1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="c10d-8084-e34d-fa07" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Henchmen Equipment" hidden="false" id="bc46-bda3-4716-6716" collective="false" targetId="59fd-6ff1-c47d-1bc1" type="selectionEntryGroup" flatten="true"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="c10d-8084-e34d-fa07" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2448,7 +2283,7 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="24ea-f21b-4eb2-b720" type="selectionEntry" targetId="583e-a0c5-873-acdc">
+        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="24ea-f21b-4eb2-b720" type="selectionEntry" targetId="583e-a0c5-873-acdc" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
               <conditions>
@@ -2497,7 +2332,6 @@ If the model wielding the censer also has the fog-enhancing warpstone shards, he
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Miscellaneous Equipment" hidden="false" id="6f9-647e-23d1-e1cf" type="selectionEntryGroup" targetId="9cd4-fd73-6ae6-3e93"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -2658,7 +2492,7 @@ A result of 10 - 12 on the henchmen advancement table, instead of the promotio
         <infoLink name="Animals" id="73c9-afb1-b352-c1d2" hidden="false" type="rule" targetId="daaa-38f1-8c4c-3140"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Advancement (Henchmen)" hidden="true" id="70d0-b2b6-804c-5a5d" type="selectionEntry" targetId="583e-a0c5-873-acdc">
+        <entryLink import="true" name="Advancement (Henchmen)" hidden="true" id="70d0-b2b6-804c-5a5d" type="selectionEntry" targetId="583e-a0c5-873-acdc" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
               <conditions>
@@ -2707,7 +2541,7 @@ A result of 10 - 12 on the henchmen advancement table, instead of the promotio
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Experience" hidden="true" id="89dc-6e2-5baf-5eb6" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="true" id="89dc-6e2-5baf-5eb6" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2716,7 +2550,7 @@ A result of 10 - 12 on the henchmen advancement table, instead of the promotio
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Characteristic Increases" hidden="true" id="4059-bf10-4392-17d7" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup">
+        <entryLink import="true" name="Charactaristics +/-" hidden="true" id="4059-bf10-4392-17d7" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2730,18 +2564,18 @@ A result of 10 - 12 on the henchmen advancement table, instead of the promotio
         <categoryLink name="Henchmen" hidden="false" id="3d0f-6e0c-b1af-6ce7" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="1e4b-dbc5-450-40ea">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="1e4b-dbc5-450-40ea" collapsible="true">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="290e-c396-175f-30ab" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rat Familiar" hidden="false" id="eefe-8c87-e26c-4be9">
+        <selectionEntry type="upgrade" import="true" name="Rat Familiar" hidden="false" id="eefe-8c87-e26c-4be9" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="67f4-c85-bff7-8ca2" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5464-c997-c267-e300" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Improved spellcasting" hidden="true" id="287c-6643-2e85-d8e8">
+        <selectionEntry type="upgrade" import="true" name="Improved spellcasting" hidden="true" id="287c-6643-2e85-d8e8" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
