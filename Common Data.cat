@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="39" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="40" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2425,12 +2425,7 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Advancement (Hero)" hidden="false" id="c26e-414e-293-2621" collective="false">
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f983-fe4b-65c8-b54f" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a79c-4fb2-4100-9f13" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Advancement (Hero)" hidden="false" id="c26e-414e-293-2621" collective="false"/>
     <selectionEntry type="upgrade" import="true" name="Pike" hidden="false" id="68ec-2a33-6ca8-d146" page="0" collective="false">
       <profiles>
         <profile name="Pike" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="d7b5-68c6-efaa-add4" page="0">
@@ -3479,6 +3474,187 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <infoLink name="Prepare shot" id="a183-1170-69b0-4471" hidden="false" type="rule" targetId="4f7f-29ec-a9da-82fc"/>
         <infoLink name="Firearm Save Modifier" id="c0f5-7713-46c8-8bd9" hidden="false" type="rule" targetId="5d21-2b30-4219-ec86"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kanabo" hidden="false" id="9b44-56ba-6b28-311e">
+      <profiles>
+        <profile name="Kanabo" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="38f8-dab6-67b6-863b">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-Handed, Concussion</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two Handed" id="dcd9-de22-7309-a0dc" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+        <infoLink name="Concussion" id="6939-a726-f184-8e0e" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sashimono" hidden="false" id="5b04-78ed-ce59-8b63">
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Reroll Non-Rout Leadership Tests" id="5948-5af0-98c1-055a" hidden="false" type="rule" targetId="ded9-89e7-c10f-9fc4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Horo" hidden="false" id="eb64-5b79-b346-d3a2">
+      <rules>
+        <rule name="Rarity" id="4782-cafd-b31b-049b" hidden="false">
+          <description>Rarity 6</description>
+        </rule>
+        <rule name="Horo" id="e5b3-2a47-b449-729c" hidden="false">
+          <description>A model wearing a Horo receives a +1 to all armor saves, (6+ if no armor is worn) against ranged weapons, as long as they are mounted on a horse or warhorse</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Horo, %" hidden="false" id="16a4-55e8-9ce7-98be">
+      <rules>
+        <rule name="Rarity" id="29ad-3a6d-0ae5-c038" hidden="false">
+          <description>Rarity 6</description>
+        </rule>
+        <rule name="Horo" id="b3d3-c2ff-c16b-84c1" hidden="false">
+          <description>A model wearing a Horo receives a +1 to all armor saves, (6+ if no armor is worn) against ranged weapons, as long as they are mounted on a horse or warhorse</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kusarigama" hidden="false" id="f5af-baf3-ba1a-5b52">
+      <rules>
+        <rule name="Rarity" id="7bd8-d685-a24a-707a" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+        <rule name="Cannot be parried" id="443c-12f1-02c3-3b99" hidden="false">
+          <description>A model attacked by a Kusarigama may not make parries with a sword or buckler.</description>
+        </rule>
+        <rule name="Chain Strike" id="c024-699c-32fb-e6e2" hidden="false">
+          <description>Due to the length of the chain attached to the weapon, a model not engaged in combat that has a Kusarigama can force enemies who fail a charge against them or friendlies within 3” to become knocked down</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Kusarigama" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="b55f-39e5-7293-4774">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">Same as User</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-Handed
+
+Cannot be parried: A model attacked by a Kusarigama may not make parries with a sword or buckler.
+
+
+Chain Strike: Due to the length of the chain attached to the weapon, a model not engaged in combat that has a Kusarigama can force enemies who fail a charge against them or friendlies within 3” to become knocked down</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two Handed" id="24a7-d095-0387-56dd" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sashimono, %" hidden="false" id="73f1-b2b8-c437-f7d2">
+      <costs>
+        <cost name="pts" typeId="points" value="7.5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Reroll Non-Rout Leadership Tests" id="f861-efd1-657f-c3d3" hidden="false" type="rule" targetId="ded9-89e7-c10f-9fc4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sword Breaker" hidden="false" id="be4b-03f2-902e-711c">
+      <rules>
+        <rule name="Rarity" id="439d-5cf4-7953-ec2f" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+        <rule name="Trap Blade" id="22f0-f604-6ac4-99c3" hidden="false">
+          <description>Whenever you make a successful parry attempt roll a D6. If you score a 4+, you break the weapon your opponent was using. The weapon is now useless [for the rest of this scenario? for the rest of this combat?] and they must use another one, or if they have no other weapon, resort to unarmed combat.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Sword Breaker" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="8dcd-772a-ee7f-2916">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry, Trap Blade</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Parry" id="c75c-f3bd-dd79-0955" hidden="false" type="rule" targetId="17dc-9c49-08e1-af45"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trip Wire" hidden="false" id="1033-b669-6669-5ac5">
+      <rules>
+        <rule name="Trip Wire" id="16a7-5825-05ab-e0ac" hidden="false">
+          <description>The Hero may set a trap if he spends a turn doing nothing else (he may not set traps if he’s just recovered from being knocked down). Place a marker in base contact with the Hero. When a model, friend or foe, moves within 2&quot; of the marker he risks setting off the trap – roll a D6. On a score of 3+ he has triggered the trap and suffers a S4 hit (note that the Hero won’t trigger his own traps). If the trap did not wound the model or it didn’t trigger, the victim may finish his move otherwise he is placed knocked down or stunned 2&quot; from the marker. The marker is removed whether the trap was triggered or not.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Caltrops" hidden="false" id="1f48-7a29-a17f-c035">
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Rarity" id="ad13-85d2-047a-c316" hidden="false">
+          <description>Rarity 6</description>
+        </rule>
+        <rule name="Price Modifier" id="bbbf-44f5-5445-63a2" hidden="false">
+          <description>+ 2D6</description>
+        </rule>
+        <rule name="Caltrops" id="94dd-87eb-0378-7d4d" hidden="false">
+          <description>Originally used on the battlefield to impede cavalry charges, a caltrop is a small spiked iron ball. In the City of the Damned, a pouch of these small items can be enough to deter any attacker who risks serious injury should they try to charge over them. There are enough caltrops to last for one use only. They may be used when an opponent decides to charge. The defender simply throws the caltrops into the path of his attacker and they reduce his charge range by D6 inches. If this means that the attacker cannot reach his target then it is a failed charge.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lock Picks" hidden="false" id="5598-7ad5-594a-57f6">
+      <rules>
+        <rule name="Lock Picking" id="fce9-1caa-961e-4783" hidden="false">
+          <description>A standard piece of kit for less scrupulous characters. A set of lock picks may be used by those who rely more on skill-at-arms and speed of thought than brute strength to open doors that others have secured. A model equipped with a set of lock picks may make his test to open doors on his Initiative rather than his Strength characteristic if he wishes. This is done at the end of his Movement phase as if the model were ripping the door off its hinges, though he uses his Initiative rather than Strength, there is no negative modifier, and there is no chance that the door is too damaged to be locked again later.</description>
+        </rule>
+        <rule name="Rarity" id="1be3-4f1a-b1ca-c2aa" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flash Powder" hidden="false" id="ebc9-d93e-359e-f6e5">
+      <rules>
+        <rule name="Variable price" id="2397-218c-d354-1af6" hidden="false">
+          <description>+ 2D6</description>
+        </rule>
+        <rule name="Rarity" id="782b-1a99-ddf6-eddf" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+        <rule name="Flash!" id="7bb9-d38e-363c-3885" hidden="false">
+          <description>An ancient Dwarf creation, flash powder is used in mines to illuminate darkened fissures in the search for gold and other precious minerals. In Mordheim, small bags of this substance can be used to blind enemies, throwing them into disarray as you launch your attack. Flash Powder can be thrown as any enemy charges the wielder (as an interrupt). The charger must take an immediate Initiative test in order to cover their eyes. If he fails, he is temporarily blinded and it counts as a failed charge. There is only enough flash powder for one use during the battle</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5129,6 +5305,7 @@ Warriors without Ride may not use this skill.</description>
         <entryLink import="true" name="Light Armor, %" hidden="false" id="f63e-cc74-e767-5b15" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
         <entryLink import="true" name="Heavy Armour, %" hidden="false" id="48bf-44ed-428a-1c60" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
         <entryLink import="true" name="Buckler, %" hidden="false" id="de1f-f3f7-9e94-a0ae" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Barding, %" hidden="false" id="9581-956c-4677-e83b" type="selectionEntry" targetId="18cc-7c29-7f0c-f572"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Dwarf %" id="5787-938c-4e02-14b6" hidden="false">
@@ -6125,6 +6302,121 @@ The target must re-roll any successful armor saves and to hit rolls during the S
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Arabian Elemental Magic" id="4b29-e44a-35f8-a451" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="b3eb-7166-2507-b8ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="1 Riding the Wind " hidden="false" id="0b64-95d5-a570-6171" page="0" collective="false">
+          <profiles>
+            <profile name="Riding the Wind " typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="529b-7010-add9-2fa8">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell js cast at the beginning of the caster’s Movement phase. The caster may move up to 12+D6&quot; anywhere on the battlefield, ignoring any intervening terrain; this counts as the caster’s movement for that turn. This spell may not be used to move the caster into base contact with an enemy warrior, but the caster may shoot as normal (with a -1 penalty for having moved). </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="347d-a526-ff82-ac0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Skin of Stone " hidden="false" id="ca99-7213-a6e5-520d" page="0" collective="false">
+          <profiles>
+            <profile name="Skin of Stone " typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="4423-2cf0-1ecf-b3f2">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell may be cast on any friendly warrior within 6&quot;, The target gains +2 to his armour save but suffers a -1 penalty to Initiative. The spell may be maintained each turn, providing the affected warrior remains within 6&quot; of the caster and the caster can pass a Difficulty test. If the caster is more than 6&quot; away from the affected warrior in the Recovery phase, the spell cannot be maintained and wears off. Only one warrior may be affected by a Stone Skin spell at any one time, although the caster is free to cast other spells while maintaining the Stone Skin. 
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2819-adbb-42b6-68df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 Burning Hand " hidden="false" id="6c1b-4bb7-e8d7-16ce" page="0" collective="false">
+          <profiles>
+            <profile name="Burning Hand " typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="f3f3-74f9-d6ee-20a3">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell is cast at the beginning of the Combat phase. The caster may sacrifice all of his normal attacks to make one hand-to-hand attack at Strength 5 causing 2 wounds. If the enemy warrior is successfully hit, he is set on fire on a roll of 4+. This spell lasts for one round only. 
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dc9f-b004-dacd-d647" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 Quicksand" hidden="false" id="334b-a737-794b-441f" page="0" collective="false">
+          <profiles>
+            <profile name="Quicksand" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="1d47-d677-4ecf-d35a">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell is cast at any warrior within 6&quot;. The water floods the area for 3&quot; around the targeted warrior. The effect lasts until the beginning of the caster’s next Recovery phase. All warriors within the quicksand must pass a Strength test or be unable to move. Warriors in combat cannot attack but may defend themselves. 
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f59c-4d72-29be-cfb5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 Storm of Magic" hidden="false" id="182b-05d9-8ec3-94f3" page="0" collective="false">
+          <profiles>
+            <profile name="Storm of Magic " typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="c1fc-d705-2dbf-8717">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The caster may target any warrior within 12&quot;. If the spell is successfully cast, the arsce struck by a bolt of energy and takes one $5 hit. Armour saves may be taken as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ca1b-c14e-6c13-22d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 Blessing of the Elements " hidden="false" id="5703-2a9b-3890-9ecb" page="0" collective="false">
+          <profiles>
+            <profile name="Blessing of the Elements" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="79dd-30f8-afeb-9571">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">In the post battle sequence the player may re-roll any one dice or modify one dice by +1/-1. If the caster was taken out of action this spell my not be cast. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f0e3-f37b-6a9b-7cd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="98ac-2376-00c1-4f65" name="+1 Enemy armour save" page="0" hidden="false">
@@ -6416,6 +6708,9 @@ normal or charge their original target. When making a compelled charge, the Kni
     </rule>
     <rule name="Venomous" id="31ea-6004-b716-6fb1" hidden="false">
       <description>The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.</description>
+    </rule>
+    <rule name="Reroll Non-Rout Leadership Tests" id="ded9-89e7-c10f-9fc4" hidden="false">
+      <description>The model may reroll all non-rout leaderships tests, but must accept the second result.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
