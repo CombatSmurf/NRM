@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3004-7532-bb3d-c234" name="Nipponese Expedition (2a)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3004-7532-bb3d-c234" name="Nipponese Expedition (2a)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Hatamoto" hidden="false" id="c4ed-06a5-7ebb-dd8d" collective="false">
       <constraints>
@@ -306,7 +306,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shinobi" hidden="false" id="dfee-84a5-692a-3578" collective="false">
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9f22-b519-6334-877d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f22-b519-6334-877d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="Shinobi" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="a4e4-6679-0b40-c4be">
@@ -1091,9 +1091,7 @@
 The Duellist counts as using a shield in close combat.</description>
         </rule>
         <rule name="Wall of Steel" id="c217-4cbc-943f-77a5" hidden="false">
-          <description>Even the most lowly of Ashigaru is a veteran of hours of drill, and because of this If wielding a spear you may choose to wield it twohanded, in which case the spear gains the parry special rule
-
-</description>
+          <description>Even the most lowly of Ashigaru is a veteran of hours of drill, and because of this If wielding a spear you may choose to wield it twohanded, in which case the spear gains the parry special rule</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -3093,14 +3091,10 @@ The Duellist counts as using a shield in close combat.</description>
   </catalogueLinks>
   <rules>
     <rule name="May hire" id="bf33-83e8-2b14-98bc" hidden="false">
-      <description>A Nippon warband is allowed the same selection of Hired Swords as Human Mercenary warbands
-
-</description>
+      <description>A Nippon warband is allowed the same selection of Hired Swords as Human Mercenary warbands</description>
     </rule>
     <rule name="Strategic Minded" id="8b10-eba9-122e-cff2" hidden="false">
-      <description>A Nipponese warband must rely on its battlefield experience so far from home. They may choose to rout after suffering 1 fewer casualty than normal
-
-</description>
+      <description>A Nipponese warband must rely on its battlefield experience so far from home. They may choose to rout after suffering 1 fewer casualty than normal</description>
     </rule>
   </rules>
 </catalogue>
