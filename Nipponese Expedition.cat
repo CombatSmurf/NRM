@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3004-7532-bb3d-c234" name="Nipponese Expedition (2a)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3004-7532-bb3d-c234" name="Nipponese Expedition (2a)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Hatamoto" hidden="false" id="c4ed-06a5-7ebb-dd8d" collective="false">
       <constraints>
@@ -124,8 +124,8 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="8237-98b5-b7f3-8d51" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9456-6238-ebbf-71e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6232-a124-f9ce-3d45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9456-6238-ebbf-71e2-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9456-6238-ebbf-71e2-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="90e5-7ed6-398d-8c9c" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -424,8 +424,8 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="1516-9bc9-7ae9-659d" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="99f7-3d2b-00bb-287e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9850-e6f9-8161-4012" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9850-e6f9-8161-4012-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9850-e6f9-8161-4012-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="6db7-ae1d-fe14-576b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -636,8 +636,8 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f983-fe4b-65c8-b54f" includeChildSelections="false"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a79c-4fb2-4100-9f13" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a79c-4fb2-4100-9f13" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f983-fe4b-65c8-b54f" includeChildSelections="false" automatic="true"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -771,8 +771,8 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="dc34-6f60-484a-f04d" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9076-a0fe-bcf1-409a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1be-ce60-7868-d77e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1be-ce60-7868-d77e-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1be-ce60-7868-d77e-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="f929-c2e6-ddf0-e66b" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -1212,8 +1212,8 @@ The Duellist counts as using a shield in close combat.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="1747-ed84-93fe-ec0a" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a578-deb1-2dfe-e78a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f21-8ebd-5f84-5f24" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f21-8ebd-5f84-5f24-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f21-8ebd-5f84-5f24-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="0788-af3a-f63a-cd04" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -1668,8 +1668,8 @@ The Duellist counts as using a shield in close combat.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="8e37-52ae-f225-933a" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f2ac-c513-a9ce-f60b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4d0-b1df-2d6f-c4f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4d0-b1df-2d6f-c4f6-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4d0-b1df-2d6f-c4f6-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="7bc2-314f-0393-9d8d" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -2477,8 +2477,8 @@ The Duellist counts as using a shield in close combat.</description>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="7fba-4fa5-e785-6fb6" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="45ff-7c53-7bcd-5495" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af7-256e-9ac3-4efc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af7-256e-9ac3-4efc-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af7-256e-9ac3-4efc-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Equipment - All" hidden="false" id="ba70-02da-baab-2cdd" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
@@ -2780,7 +2780,7 @@ The Duellist counts as using a shield in close combat.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Warrior Monk Equipment" id="ab6f-277f-d4aa-876d" hidden="false" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" id="b1c6-45fe-1406-1831" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" id="b1c6-45fe-1406-1831" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="f298-7986-66c6-4db0" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry">
               <modifiers>
@@ -2827,7 +2827,7 @@ The Duellist counts as using a shield in close combat.</description>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" id="5e73-1e60-16e7-9f7f" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" id="5e73-1e60-16e7-9f7f" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Bow" hidden="false" id="50c7-45e4-a13d-b29f" type="selectionEntry" targetId="311a-bf3f-67ff-46e7">
               <modifiers>
@@ -2851,7 +2851,7 @@ The Duellist counts as using a shield in close combat.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Shinobi Equipment" id="6f29-008e-4869-1a2a" hidden="false" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" id="6ffe-612f-178f-dd13" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" id="6ffe-612f-178f-dd13" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dragon Sword (Katana)" hidden="false" id="d11d-0ca0-047d-dedf" type="selectionEntry" targetId="b6d9-7260-674e-ec68">
               <modifiers>
@@ -2897,7 +2897,7 @@ The Duellist counts as using a shield in close combat.</description>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Missile Weapons" id="b63b-684e-e5a9-99e0" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Missile Weapons" id="b63b-684e-e5a9-99e0" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Crossbow" hidden="false" id="68ea-4c68-46c7-0029" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Blowpipe" hidden="false" id="2405-b29a-8c39-31ee" type="selectionEntry" targetId="b6b-2ea5-1f65-a84b"/>
@@ -2921,7 +2921,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5cbb-1aca-9ff7-a265"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="9ed8-dbd6-e237-b5e1" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Equipment" id="9ed8-dbd6-e237-b5e1" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Trip Wire" hidden="false" id="9d60-1f66-d3be-58ea" type="selectionEntry" targetId="1033-b669-6669-5ac5"/>
             <entryLink import="true" name="Lock Picks" hidden="false" id="ddfb-0688-21c5-83b4" type="selectionEntry" targetId="5598-7ad5-594a-57f6"/>
@@ -2934,7 +2934,7 @@ The Duellist counts as using a shield in close combat.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Nippon Noble Equipment" id="a4ca-993b-bf0b-f925" hidden="false" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hand to Hand Weapons" id="6a62-9c19-6d0e-a03f" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Hand to Hand Weapons" id="6a62-9c19-6d0e-a03f" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="4a3f-d2c4-db95-6177" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
               <modifiers>
@@ -3002,7 +3002,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7bb8-4b3f-19ce-e889"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" id="b439-fb45-1b66-49f2" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armor" id="b439-fb45-1b66-49f2" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Barding" hidden="false" id="a806-ecbf-ca01-54bd" type="selectionEntry" targetId="98cf-5b49-a433-c337"/>
             <entryLink import="true" name="Barding, %" hidden="false" id="42b3-4b4e-8478-4f70" type="selectionEntry" targetId="18cc-7c29-7f0c-f572"/>

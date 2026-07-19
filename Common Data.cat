@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="43" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="44" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -5053,7 +5053,7 @@ must retire from the warband.</description>
         <entryLink id="af8a-aa1a-1e8f-8701" name="Missile Weapons - All" hidden="false" collective="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment - All" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Armor, %" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0" collapsible="true"/>
-        <entryLink import="true" name="Mounts" hidden="false" id="838d-46bf-4ebb-1990" type="selectionEntryGroup" targetId="6e6a-89e6-4064-b773">
+        <entryLink import="true" name="Mounts" hidden="false" id="838d-46bf-4ebb-1990" type="selectionEntryGroup" targetId="6e6a-89e6-4064-b773" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Horse" hidden="false" id="3a75-399a-3f60-b26e" type="selectionEntry" targetId="567a-3811-5a9d-d5fd"/>
             <entryLink import="true" name="Horse, %" hidden="false" id="d038-e44e-76af-541e" type="selectionEntry" targetId="598f-3a2d-c558-890d"/>
@@ -5068,6 +5068,9 @@ must retire from the warband.</description>
             <entryLink import="true" name="Nightmare" hidden="false" id="05ad-f52c-eb01-0eed" type="selectionEntry" targetId="822c-bc67-8800-b113"/>
             <entryLink import="true" name="Mule" hidden="false" id="d310-a66f-4aae-cf6e" type="selectionEntry" targetId="ba1e-66e6-48fb-7278"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="c7a7-0de2-da4f-bfff" primary="false" name="Heroes"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7312,22 +7315,4 @@ normal or charge their original target. When making a compelled charge, the Kni
       </characteristics>
     </profile>
   </sharedProfiles>
-  <entryLinks>
-    <entryLink import="true" name="Warhorse, %" hidden="false" id="fc15-d840-cb98-db52" type="selectionEntry" targetId="5bf4-bbc9-deda-4c68">
-      <rules>
-        <rule name="Battle Schooled" id="a837-2c1a-eb78-8e29" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
-        </rule>
-      </rules>
-    </entryLink>
-    <entryLink import="true" name="Warhorse" hidden="false" id="2c55-b0f9-175f-73aa" type="selectionEntry" targetId="7863-e620-5c6e-7eee">
-      <rules>
-        <rule name="Battle Schooled" id="3937-a02d-e75b-18df" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
-        </rule>
-      </rules>
-    </entryLink>
-    <entryLink import="true" name="Horse, %" hidden="false" id="4bf0-59b2-dd81-9f71" type="selectionEntry" targetId="598f-3a2d-c558-890d"/>
-    <entryLink import="true" name="Horse" hidden="false" id="2df0-1b65-4de6-84d0" type="selectionEntry" targetId="567a-3811-5a9d-d5fd"/>
-  </entryLinks>
 </catalogue>
