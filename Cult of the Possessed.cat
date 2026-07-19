@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Brethren" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -480,7 +480,11 @@ They automatically pass any Leadership tests they are required to take.</descrip
         <entryLink id="774e34d7-1dc7-e857-e903-e863026a7156" name="Magic" hidden="false" collective="false" import="true" targetId="e79d1530-e0da-1681-1b2a-f57bc2c48d13" type="selectionEntryGroup" flatten="true" sortIndex="2"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="3053-adc8-74ac-2e96" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Cultist Equipment (Cult of the Possessed 1a)" hidden="false" id="b97a-0af6-2d26-455a" collective="false" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup" sortIndex="1"/>
-        <entryLink import="true" name="Experience" hidden="false" id="f87c-4c1b-9e2a-4481" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink import="true" name="Experience" hidden="false" id="f87c-4c1b-9e2a-4481" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="3b7c-0807-a8d3-b6de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="70"/>
@@ -1193,7 +1197,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="20"/>
+            <cost name="pts" typeId="points" value="40"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1219,7 +1223,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="100"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1245,7 +1249,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="35"/>
+            <cost name="pts" typeId="points" value="70"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1274,11 +1278,11 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             <entryLink id="6297d54b-6834-0b76-33ef-e8a1e34c9505" hidden="false" collective="false" import="true" targetId="492ef626-87b8-7b39-378d-38fbd1ffb131" type="selectionEntry" name="+1 M"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="80"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bc9a00f5-f67a-d480-cf6a-3b84090eb3fd" name="BlackBlood" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bc9a00f5-f67a-d480-cf6a-3b84090eb3fd" name="Blackblood" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="a9a369c7-50d9-03e6-602f-9e2d4cc87a93" name="BlackBlood" hidden="false">
               <description>If the model loses a wound in close combat, anyone in base contact with the model suffers a Strength 3 hit (no critical hits) from the spurting corrosive blood.</description>
@@ -1300,7 +1304,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="30"/>
+            <cost name="pts" typeId="points" value="60"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1326,7 +1330,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="35"/>
+            <cost name="pts" typeId="points" value="70"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1352,7 +1356,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="80"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1378,7 +1382,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="80"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
@@ -1408,7 +1412,7 @@ for details.</description>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="80"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
