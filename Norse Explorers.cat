@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Characters" id="4b75-7c91-30b5-90ba" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="c50e-e122-825f-591e" targetId="e020-c282-277b-b173" importRootEntries="true"/>
@@ -19,6 +19,9 @@
             <entryLink import="true" name="Axe" hidden="false" id="ad69-5a52-2cb5-3d1" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="39bb-55e-d2aa-919c" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Flail" hidden="false" id="10c3-d05b-d95b-aa55" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="99ea-9876-212c-8c48" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="1382-966a-ef9f-ff10" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="c889-46e2-7d95-cfd5" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d3f7-89dc-81e3-737"/>
@@ -30,161 +33,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="87bb-5550-2ccc-96b3">
-              <infoLinks>
-                <infoLink name="Parry" id="4ccb-dca9-6cca-c3ae" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
-                <infoLink name="Two Handed" id="4331-be08-3462-fdf9" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
-                <infoLink name="Strike Last" id="53e3-e65e-08b3-317f" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="3928-c85f-d3f2-51cc" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bcb5-686e-a084-869d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="52c6-5271-8681-1262" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="4d44-270c-1bf1-031e" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a20b-31a3-36cd-ddce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="6c5b-82e7-9d85-78ac" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="a1af-ce39-1535-9133">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="df81-fa8c-2174-f8c3">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="9ede-bcc3-6eb3-b950" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b288-82e6-84f7-fbd8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="c722-47b2-54dd-dd50" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="d40c-b246-001a-a241" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6cfc-ac8d-3286-8f03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="9a0d-2174-d89e-9b71" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Strike Last" id="9c5b-93a9-eebe-2529" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="d882-6841-aa92-7601" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Concussion" id="0e72-bcfd-398a-124a" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="832d-20c4-72cd-4f13">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="64b5-c3fd-e78f-e5ab">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="4d1b-78cb-2468-7b2a" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e09c-0ae4-6305-bed8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="c478-5fc1-5907-d827" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="9c3d-14e8-d6e7-bcf9" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="daf8-cd73-aba8-7bf9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="5d83-ee4b-7478-bb29" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Strike Last" id="8c79-5d0a-0ef3-4efc" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="9898-d411-3af9-fd30" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Cutting edge" id="ce2c-5543-5858-d705" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="1270-c3c8-cfea-6f9c">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="1ff6-88bd-d3f6-d736" collective="false" import="true" flatten="true">
           <entryLinks>
@@ -236,6 +84,9 @@
             <entryLink import="true" name="Axe" hidden="false" id="eedf-9961-3923-dca9" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="96e-76f1-8b0f-7c41" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Spear" hidden="false" id="2da6-4ec6-c2c3-95dc" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="4b4c-3524-d6bc-76be" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="47c9-7e23-9dd5-5754" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="257b-4cc9-f8df-2a6f" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="811d-9d03-1749-154f"/>
@@ -247,161 +98,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="5c34-77b6-e624-b7de">
-              <infoLinks>
-                <infoLink name="Parry" id="ec78-f2ed-85d4-e5a3" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
-                <infoLink name="Two Handed" id="1079-de47-ac7a-ff76" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
-                <infoLink name="Strike Last" id="375f-f5a1-7392-7b53" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="53f4-c330-4954-ef76" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0fda-75bc-f1d2-fd9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="af77-dc07-f204-b72e" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="5246-2dcd-2eca-c72f" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cee7-d56d-8e8d-0590" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="1b2c-5b6b-01b7-cebc" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="669e-291f-32ef-7f8a">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="9bf0-fefc-b32d-09c6">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="3c11-1bbe-ba6e-625a" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bd4b-71df-074e-146f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="3e94-2c5b-630c-84d1" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="688a-4939-56d0-b4d3" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b834-f043-6140-2f80" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="3363-0121-4cc2-0c76" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Strike Last" id="8e2c-2bc3-79ea-a093" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="da64-71fd-277d-8a31" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Concussion" id="dcfd-b3c2-4c23-306b" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="2d4f-cbce-04fc-c80f">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="f24b-261c-a494-2184">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="d4e2-06b7-3a24-8129" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b1f2-5dd5-dd97-40ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="07ea-ff4a-d198-146a" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="22d8-5d17-1eab-ba3e" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5d6d-9a5d-8cdc-639f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="df0e-14be-6251-2eea" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Strike Last" id="0abf-47e5-ce0e-af00" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="720c-b75b-5c9b-3b5c" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Cutting edge" id="4ed7-cb85-3c12-1354" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="2386-fe70-adf0-68c4">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="313-6da6-2ba0-5d3a" collective="false" import="true" flatten="true">
           <entryLinks>
@@ -444,6 +140,9 @@
             <entryLink import="true" name="Axe" hidden="false" id="4dad-1fdb-1699-4529" collective="false" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
             <entryLink import="true" name="Sword" hidden="false" id="2ceb-8e55-1028-104a" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink import="true" name="Spear" hidden="false" id="21fe-98ba-f899-7d7e" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="e61b-8331-fe5b-a13c" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="1240-d61a-352b-50ce" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="0b48-91b5-2621-4974" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c800-5488-a986-45c7"/>
@@ -455,161 +154,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Sword" hidden="false" id="0bfd-5ea0-3f2e-0ab1">
-              <infoLinks>
-                <infoLink name="Parry" id="4ba1-90d3-f56b-b2bd" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
-                <infoLink name="Two Handed" id="9873-4f7f-60ba-f400" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
-                <infoLink name="Strike Last" id="28e6-9e52-5102-3310" hidden="false" targetId="a365-c068-5790-d61d" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="9b81-8046-113e-b023" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="151d-a2a7-6c42-c2db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="b7f1-8c6a-cb32-4468" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="bf6a-536d-0aea-9cfd" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e534-3661-85b1-46a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="1a72-3f57-8c9f-7c52" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Double Handed Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="c47d-5968-b7a4-cd98">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike Last, Two Handed, Parry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Mace/Hammer/Club" hidden="false" id="f58e-df3d-ea8d-c1f1">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="f63d-d0bc-ec46-8d11" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7ad5-b12b-38cc-c9ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="4929-c3e4-90b6-93bd" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="6a24-2d1b-bc90-6db8" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd34-7bcb-2b8b-ab81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="a1ad-6e00-71d8-5651" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Strike Last" id="87c8-6b96-1dc2-2147" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="0e75-0378-aaca-9179" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Concussion" id="ae01-c782-d31f-b757" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Mace/Hammer/Club" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="be83-011d-0efb-990e">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Concussion</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Double Handed Axe" hidden="false" id="2d3d-44ad-d169-ba9f">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="6742-ee41-fe7b-1034" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="45" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8ffa-ff22-5b53-63a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Gromril weapon" id="c4bc-e262-2caa-19d4" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="51b8-1016-2a67-7f1d" page="0" collective="false">
-                  <modifiers>
-                    <modifier type="set" value="30" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9e88-2488-7ff6-01ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Ithilmar weapon" id="33d1-b97d-3b58-28f6" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Strike Last" id="e369-e1f3-f52b-042b" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
-                <infoLink name="Two Handed" id="e77c-b0ae-bd1d-7152" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
-                <infoLink name="Cutting edge" id="4be9-0be7-96a1-4f4f" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Double Handed Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="6a6e-1cc0-fab6-2b7c">
-                  <characteristics>
-                    <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
-                    <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Strike Last, Cutting Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="8bad-6e30-84fd-966e" collective="false" import="true" flatten="true">
           <entryLinks>
@@ -3533,6 +3077,13 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
       <entryLinks>
         <entryLink import="true" name="Equipment - All" hidden="false" id="fd30-5510-0d27-0cf5" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" id="cd11-1092-dceb-29bb" primary="true" name="Stash"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc4f-a4a5-7844-3914-min" negative="false" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc4f-a4a5-7844-3914-max" negative="false" automatic="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
