@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Greenskins - Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Greenskins - Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Characters" id="cd3f-e5da-8161-bb17" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="8d94-0b03-0bea-afa2" targetId="e020-c282-277b-b173" importRootEntries="true"/>
@@ -94,44 +94,6 @@ Most are bat feet, lizard lips, and the like, but still seem to provide benefits
 The Shaman may re-roll a failed magic test on a D6 roll of 4+.</description>
         </rule>
       </rules>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Giant Spider" hidden="false" id="3ff2-9ede-8d6-e4a8">
-      <costs>
-        <cost name="pts" typeId="points" value="100"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <rules>
-        <rule id="e2-1f76-e0d7-1b93" name="Rarity" hidden="false">
-          <description>Rarity 11 (Goblins Only)</description>
-        </rule>
-        <rule name="Poisoned Attack" hidden="false" id="4340-5009-1c7f-ebb1">
-          <description>Giant Spider attacks are poisoned; attacks are considered as Strength 4, but this will not modify any armour saves.</description>
-        </rule>
-        <rule name="Wall Walk" hidden="false" id="6276-be39-d2a2-5e5f">
-          <description>Giant Spiders (and their riders) may walk up and down walls without making Initiative tests.
-
-
-They may only jump up to 2&quot; across or down, but this does count as a diving charge.
-When a spider jumps, its rider must make an Initiative test; if this test is failed, something has gone wrong – roll on the Whoa
-Boy! Table.
-Note even if the rider has the Running Dismount skill, the maximum diving charge is only 2&quot;.</description>
-        </rule>
-      </rules>
-      <profiles>
-        <profile name="Giant Spider" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="890d-9418-e2ec-8d2d">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3(4)</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -853,7 +815,6 @@ The effects last until the Shaman takes a wound.</characteristic>
         <entryLink id="aec3-7d75-fd20-f1f7" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="1eb3-4e2-f633-dd77" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="3763-ad0b-38c7-d4fb" targetId="aa8c-67af-c03a-75c6"/>
-        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="5a7a-f924-60a8-b7b9" targetId="b21c-8103-66f7-21af" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
