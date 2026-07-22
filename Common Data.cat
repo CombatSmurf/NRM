@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="46" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="47" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -3985,9 +3985,7 @@ Beastlash causes Fear in animals, any animal
 charged or wishing to charge a Beastmaster
 with one of these weapons must first take a
 Fear test as mentioned in the psychology
-section of the Mordheim rules.
-
-</description>
+section of the Mordheim rules.</description>
         </rule>
         <rule name="Reach" id="6d8c-ce57-c52c-e129" hidden="false">
           <description>Reach: A Beastlash may attack opponents up
@@ -4777,6 +4775,11 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="c0c2-ef4c-cfe2-5cdf" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
         <entryLink import="true" name="Cathayan Longsword" hidden="false" id="f692-91a8-b8bb-2c96" type="selectionEntry" targetId="c3c1-acf0-6d76-fa15"/>
         <entryLink import="true" name="Broadsword (Bret Knights Only)" hidden="false" id="aaa3-db76-0e89-f023" type="selectionEntry" targetId="09ac-c913-931c-5d22"/>
+        <entryLink import="true" name="Shortsword" hidden="false" id="72b7-26e1-cb62-fc8a" type="selectionEntry" targetId="097c-0925-1f2e-1c01"/>
+        <entryLink import="true" name="Beastlash (Beastmaster only)" hidden="false" id="7d71-c509-9a8f-9d9a" type="selectionEntry" targetId="e685-cad9-9e27-c01f"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="d883-43f6-8c13-5c33" type="selectionEntry" targetId="f009-768d-cd97-e4d6"/>
+        <entryLink import="true" name="Weeping Blade" hidden="false" id="3a79-478c-cbb7-b3b4" type="selectionEntry" targetId="a98d-a565-758a-cb58"/>
+        <entryLink import="true" name="Sword Breaker" hidden="false" id="36ac-d3c1-a500-7188" type="selectionEntry" targetId="be4b-03f2-902e-711c"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons - All" hidden="false" collective="false" import="true">
@@ -5101,11 +5104,7 @@ must retire from the warband.</description>
     <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment - All" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="5ba4-c93b-a512-6afa" name="Armor - All" hidden="false" collective="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink id="7364-e39a-1a0b-a869" name="Hand to Hand Weapons - All" hidden="false" collective="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup" collapsible="true">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="bdba-5e5e-ea11-ab49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="7364-e39a-1a0b-a869" name="Hand to Hand Weapons - All" hidden="false" collective="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="af8a-aa1a-1e8f-8701" name="Missile Weapons - All" hidden="false" collective="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment - All" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Armor, %" hidden="false" id="1560-d42a-7c19-609b" type="selectionEntryGroup" targetId="82d9-2ec1-0dae-09e0" sortIndex="0" collapsible="true"/>

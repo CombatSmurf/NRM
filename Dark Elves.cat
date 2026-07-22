@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="High Born" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -135,8 +135,8 @@
         </selectionEntry>
         <selectionEntry id="a9874b15-5410-29f0-f05c-e629500fc5f5" name="Characteristics" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8d66-ffc8-4ee3-4345-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8d66-ffc8-4ee3-4345-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink id="4e184abe-fdce-287e-ab88-b98585f03810" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" name="Charactaristics +/-" collapsible="true"/>
@@ -324,8 +324,8 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="cba2-77f5-525e-7fc2" page="0" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c8fc-a329-c161-83ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1ffa-36b4-625d-4fae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c8fc-a329-c161-83ce-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c8fc-a329-c161-83ce-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Charactaristics +/-" hidden="false" id="4a43-b595-3f82-6297" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
@@ -517,8 +517,8 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="e66e-ed61-0916-69d1" page="0" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="34e9-abda-dd00-4f5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1e31-0095-b11c-3f5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4253-84aa-7df3-ec09-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4253-84aa-7df3-ec09-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Charactaristics +/-" hidden="false" id="892f-2774-937d-05c8" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
@@ -689,8 +689,8 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="7fbf-c01c-68ad-f690" page="0" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4def-7038-f4a6-4f2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="68f0-163d-8914-68d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3bcb-1cb7-3abb-8563-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3bcb-1cb7-3abb-8563-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Charactaristics +/-" hidden="false" id="7b60-78ba-d60f-afee" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
@@ -856,8 +856,8 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="24fe-0b64-bec0-b6f8" page="0" collective="false" collapsible="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6849-81a1-2f27-77a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8999-4753-1b02-3949" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e84a-78c5-1302-6a56-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e84a-78c5-1302-6a56-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Charactaristics +/-" hidden="false" id="89ea-8949-e6cf-d423" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
@@ -1199,8 +1199,8 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Characteristics" hidden="false" id="2747-0e3d-07db-7a8d" page="0" collective="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c1b1-0dfa-54e2-2209" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="85aa-4654-49b2-7105" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7616-606a-39d1-5208-min" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7616-606a-39d1-5208-max" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Charactaristics +/-" hidden="false" id="90ac-7cff-21a1-562d" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
