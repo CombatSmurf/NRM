@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="45" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="46" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1640,7 +1640,7 @@ Not available to Skaven.</description>
 Only available to Humans.</description>
         </rule>
         <rule name="Battle Schooled" id="78d2-ffcd-512f-96db" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
         </rule>
       </rules>
       <costs>
@@ -3038,7 +3038,7 @@ It can never be removed.</description>
 Only available to Humans.</description>
         </rule>
         <rule name="Battle Schooled" id="ea7f-d86b-c526-8508" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
         </rule>
       </rules>
       <costs>
@@ -3706,7 +3706,7 @@ Only available to Orcs.</description>
         <rule name="Ferocious Charge" id="ed04-df75-1411-5539" hidden="false">
           <description>Orc war boars attack with
 +2S when charging, due to their bulk. Note
-that this applies only to the boar, not the rider. </description>
+that this applies only to the boar, not the rider.</description>
         </rule>
         <rule name="Thick Skinned" id="9ec2-c20a-29da-c650" hidden="false">
           <description>The thick skin and matted fur
@@ -3779,15 +3779,13 @@ Available to any warband.</description>
           <description>Mules are not the fastest of mounts and only bolt 2D6&quot;.</description>
         </rule>
         <rule name="Stubborn" id="2ff6-1e52-6e3e-b9cf" hidden="false">
-          <description>If a warrior is riding a mule, or is in base contact with a mule, he must make a Leadership test each round or the mule will refuse to move. 
-
-</description>
+          <description>If a warrior is riding a mule, or is in base contact with a mule, he must make a Leadership test each round or the mule will refuse to move.</description>
         </rule>
         <rule name="Non-combatant" id="33af-3cdf-f9a3-adbd" hidden="false">
-          <description>Mules will not fight in combat and may not be used to charge into combat — they will simply refuse to move. If an enemy warrior charges a ridden mule, immediately roll on the Whoa Boy! Table. If an unridden mule is charged, it will bolt directly away from the charger. </description>
+          <description>Mules will not fight in combat and may not be used to charge into combat — they will simply refuse to move. If an enemy warrior charges a ridden mule, immediately roll on the Whoa Boy! Table. If an unridden mule is charged, it will bolt directly away from the charger.</description>
         </rule>
         <rule name="Ornery" id="819f-f5e9-117e-73da" hidden="false">
-          <description>With no leader or rider, a mule will wander in a random direction. Should any close combat occur within 6&quot;, it will automatically bolt directly away from the combat. </description>
+          <description>With no leader or rider, a mule will wander in a random direction. Should any close combat occur within 6&quot;, it will automatically bolt directly away from the combat.</description>
         </rule>
       </rules>
       <costs>
@@ -3893,7 +3891,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
 Only available to Elves.</description>
         </rule>
         <rule name="Battle Schooled" id="d36e-fa11-ebd0-8b14" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
         </rule>
       </rules>
       <costs>
@@ -3959,13 +3957,71 @@ Only available to Dark Elves.</description>
 Only available to Chaos. May not be ridden by The Possessed models.</description>
         </rule>
         <rule name="Battle Schooled" id="7887-9baf-e6cd-7cbe" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test. </description>
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
         </rule>
       </rules>
       <costs>
         <cost name="pts" typeId="points" value="90"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Beastlash (Beastmaster only)" hidden="false" id="e685-cad9-9e27-c01f">
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Beastlash (Beastmaster only)" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="b592-c62f-0909-8fda">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">-1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Reach, Beastbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Beastbane" id="3314-5cdd-5bce-f783" hidden="false">
+          <description>Beastbane: The Beastmaster wielding a
+Beastlash causes Fear in animals, any animal
+charged or wishing to charge a Beastmaster
+with one of these weapons must first take a
+Fear test as mentioned in the psychology
+section of the Mordheim rules.
+
+</description>
+        </rule>
+        <rule name="Reach" id="6d8c-ce57-c52c-e129" hidden="false">
+          <description>Reach: A Beastlash may attack opponents up
+to 4&quot; away (see Sisters of Sigmar Steelwhip).</description>
+        </rule>
+        <rule name="Price Modifier" id="81ef-3e5b-0472-dbea" hidden="false">
+          <description>+ 1d6</description>
+        </rule>
+        <rule name="Rarity" id="339a-0eb0-3c03-2665" hidden="false">
+          <description>Rare 8 (Beastmaster only)</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sea Dragon Cloak" hidden="false" id="83c0-52d0-900a-69b5">
+      <profiles>
+        <profile name="Sea Dragon Cloak" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="0003-850b-ac11-b731">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+ / 4+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Scales: 5+ armour save in close combat, 4+ armour save against missiles.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="4abe-5145-b834-57c9" hidden="false">
+          <description>+ 2d6</description>
+        </rule>
+        <rule name="Rarirty" id="ea32-41bc-4bf1-9ec1" hidden="false">
+          <description>Rare 10 Dark</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
