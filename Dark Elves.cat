@@ -874,7 +874,7 @@
             <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317b-02ec-9d5b-e551" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="51057851-ce67-7a3a-f492-1de02a15ca3b" name="Magic" hidden="false" collective="false" import="true" targetId="e79d1530-e0da-1681-1b2a-f57bc2c48d13" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="51057851-ce67-7a3a-f492-1de02a15ca3b" name="Magic" hidden="false" collective="false" import="true" targetId="e79d1530-e0da-1681-1b2a-f57bc2c48d13" type="selectionEntryGroup" flatten="true" sortIndex="1"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="0ed0-92f3-ac26-43e7" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
       </entryLinks>
       <costs>
