@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="High Born" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1509,6 +1509,21 @@ If she engages a ﬂeeing enemy in the close combat phase she will score 1 autom
                 <cost name="Warband Rating" typeId="wb-rating" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crossbow Pistol" hidden="false" id="5b0d-a3f9-7d8e-03a6" page="0" collective="false">
+              <profiles>
+                <profile name="Crossbow Pistol" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="7c8a-978a-2ef0-3404" page="0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
+                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Shoot in hand-to-hand combat: A model armed with a crossbow pistol may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model’s Ballistic Skill to see whether it hits or not. This bonus attack is in addition to any close combat weapon attacks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="81a8-a472-3028-be0c" hidden="false" collective="false" import="true" flatten="true">
@@ -1586,21 +1601,6 @@ If she engages a ﬂeeing enemy in the close combat phase she will score 1 autom
             <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="9bc9-5ca4-77bb-bd77" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Crossbow Pistol" hidden="false" id="5b0d-a3f9-7d8e-03a6" page="0" collective="false">
-              <profiles>
-                <profile name="Crossbow Pistol" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="7c8a-978a-2ef0-3404" page="0">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Shoot in hand-to-hand combat: A model armed with a crossbow pistol may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model’s Ballistic Skill to see whether it hits or not. This bonus attack is in addition to any close combat weapon attacks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Repeater Crossbow" hidden="false" id="25d0-663d-fdea-180b" page="0" collective="false">
               <profiles>
                 <profile name="Repeater Crossbow" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="ded3-9827-a180-58a2" page="0">
