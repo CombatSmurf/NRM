@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="High Born" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -157,11 +157,6 @@
             <entryLink id="7dfe147c-aba4-13bc-bf11-383a8c4f97f3" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
             <entryLink id="1cd8773e-95ba-8894-60bc-b9371a36d1b4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
             <entryLink id="b1a4334a-194d-229c-6ba5-7ff7c7319378" name="Dark Elf Special Skills" hidden="false" collective="false" import="true" targetId="854e-a887-8123-443d" type="selectionEntryGroup"/>
-            <entryLink id="656f-995d-eaaa-c3d8" name="Strength Skills" hidden="true" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -311,11 +306,6 @@
             <entryLink id="eecb-af57-7a99-5632" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
             <entryLink id="e170-c3cc-9195-bd5b" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink id="f470-6753-d6b3-86e8" name="Dark Elf Special Skills" hidden="false" collective="false" import="true" targetId="854e-a887-8123-443d" type="selectionEntryGroup"/>
-            <entryLink id="7dd3-caa4-f924-2cb6" name="Strength Skills" hidden="true" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -504,11 +494,6 @@
             <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
             <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink id="56a33589-9173-8a8c-1b0a-ed7c4461fdd9" name="Dark Elf Special Skills" hidden="false" collective="false" import="true" targetId="854e-a887-8123-443d" type="selectionEntryGroup"/>
-            <entryLink id="32af-42e6-7979-3feb" name="Strength Skills" hidden="true" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -671,7 +656,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="atLeast" childName="Promoted"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -702,7 +687,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="ead51f82-ca51-5519-9a8a-b462449cf11d" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry" name="Promoted"/>
+        <entryLink id="ead51f82-ca51-5519-9a8a-b462449cf11d" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" name="Promoted"/>
         <entryLink id="3ace7cec-b98a-8120-c6ce-caf458afb673" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" name="Experience"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="d82d-85dc-6e41-5ec6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
       </entryLinks>
@@ -716,7 +701,7 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2bb25071-df94-bc53-5557-fd2deccf25d4" name="Soceress" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+        <profile id="2bb25071-df94-bc53-5557-fd2deccf25d4" name="Sorceress" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
@@ -899,7 +884,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment - All"/>
       </entryLinks>
       <costs>
@@ -1177,7 +1162,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo" childName="Promoted"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1213,7 +1198,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="afaa-8d51-8c07-60df" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" name="Experience"/>
-        <entryLink id="e475-78d4-dfc9-cf5b" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry" name="Promoted"/>
+        <entryLink id="e475-78d4-dfc9-cf5b" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" name="Promoted"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="8789-907f-7905-f680" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
       </entryLinks>
       <costs>
@@ -1239,146 +1224,6 @@ Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</descript
     <infoLink id="5acdcee6-8115-9d89-26d7-1908b50dda55" name="EXP advancement" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
     <infoLink id="3a347076-4145-7a31-2e75-67112fcaaf2f" name="Hatred" hidden="false" targetId="fcb5-1485-5135-40ff" type="rule"/>
   </infoLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7e03b263-c206-09f3-f9d3-47c0c9294235" name="+1 BS" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0cbce569-483e-fc61-9a46-75bb7f52573a" name="+1 I" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e6a2720c-06c4-d495-d8e5-0eeb2009570a" name="+1 LD" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="492ef626-87b8-7b39-378d-38fbd1ffb131" name="+1 M" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="62be0dba-2c77-76b0-3da3-48c05611f170" name="+1 S" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" name="+1 T" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a3c87526-fae5-8945-97c3-057d97df69e7" name="+1 W" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" name="+1 WS" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="06c6e571-9da5-51a2-4053-aeca9035e1a2" name="-1 A" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a93c5e1e-9169-8d09-5cba-5aa094184fe1" name="-1 BS" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" name="-1 I" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="043d62b3-76f8-822e-3d67-9c3806889918" name="-1 LD" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bf7c1f26-0442-54db-cacc-44dc499dcebc" name="-1 M" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" name="-1 S" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" name="-1 T" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bbd9ff4c-4aa7-432d-a143-b786400cef79" name="-1 W" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="abc4f440-9124-351f-831d-aaf5be4d3ae4" name="-1 WS" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b39ee84c-3f79-227e-4b39-8469fb19d56a" name="Gold" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="1"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0f2c78d6-e019-6b88-136a-9e00031645e5" name="Promoted" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e79d1530-e0da-1681-1b2a-f57bc2c48d13" name="Magic" hidden="false" collective="false" import="true">
       <constraints>
@@ -1386,99 +1231,8 @@ Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</descript
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections-max" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" name="Dark Elf Magic" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup"/>
+        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" name="Dark Elf Magic" hidden="false" collective="false" import="true" targetId="839f-27e4-b140-dff7" type="selectionEntryGroup"/>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="5cce5525-3057-85be-427a-ceeac0d35c53" name="Dark Elf Magic" hidden="false" collective="false" import="true" flatten="true">
-      <selectionEntries>
-        <selectionEntry id="e3386f70-58e5-97e7-0e9f-c791ea7912cf" name="1 Doombolt" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="1448-c466-2fa7-d7d4" name="1 Doombolt" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The bolt of doom may be targeted at any enemy model in line of sight. The Doombolt has an 18&quot; range and causes a Strength 5 hit. If the target model is wounded, then the next closest model within 6&quot; is also hit on a 4+, at -1 Strength than the previous hit. The bolt will keep leaping until there are no more targets within range or until its Strength drops to a one. Each model can only be hit by a bolt once per turn. Take armour saves as normal.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="74ac1b53-6add-f799-a654-d212ab9f2303" name="2 Word of Pain" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="81e5-6702-910b-e33f" name="2 Word of Pain" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell may be cast at an enemy model within 12&quot;. The victim must re-roll all successful hand to hand or missile attacks and all to wound rolls. If the victim wishes to charge, he must pass a successful Leadership test ﬁrst. Lasts until the beginning of the next Dark Elf turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="717a7f44-f051-38a6-8a8e-3283bbb9e67f" name="3 Soul Stealer" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="10bd-d518-57f4-5415" name="3 Soul Stealer" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Once successfully cast, the Sorceress has to make a to hit roll against a model in base contact. If the attack is successful and her opponent is struck, he suffers a wound with no armour save possible. The Sorceress feeds on this life-force and adds one wound to her proﬁle. Note: the Sorceress can never have more then one extra wound from the use of this spell and the extra wound is lost at the end of the battle.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="82dc048a-4d2e-6d19-96dd-11cae21d5e64" name="4 Flamesword" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="60cd-d768-c5ae-c193" name="4 Flamesword" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may choose the hand-to-hand combat weapon of a member of her warband within 6&quot; to be engulfed in ﬂames. A weapon with these ﬂames acts as a normal weapon of its type, but also adds a +2 bonus to the users Strength. Hits inﬂicted from the weapon ignore armour saves. Lasts until the Sorceress’ next shooting phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fcd4912e-e220-e29e-a8d7-4bcf845015e2" name="5 Deathspasm" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="4818-44a8-9c69-08a4" name="5 Deathspasm" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Deathspasm has a range of 6&quot; and must be cast on the closest enemy model.
-The affected model must roll on the injury chart.
-If successfully cast, the casting Sorceress is immediately knocked down.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="959b63b6-8a79-4291-d753-9f2166e0c0f1" name="6 Witch Flight" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="c983-7932-14c0-df99" name="6 Witch Flight" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may immediately move anywhere within 12&quot;, and may count as charging.
-If she engages a ﬂeeing enemy in the close combat phase she will score 1 automatic hit and then the opponent will ﬂee again.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Dark Elf Equipment" id="22f9-263b-3a23-0432" hidden="false" flatten="true">
       <selectionEntryGroups>
@@ -1539,9 +1293,9 @@ If she engages a ﬂeeing enemy in the close combat phase she will score 1 autom
             <entryLink import="true" name="DH Sword" hidden="false" id="dff6-c571-bc04-6033" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
             <entryLink import="true" name="Halberd" hidden="false" id="e5e5-8fac-906b-9cde" type="selectionEntry" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Spear" hidden="false" id="fb2f-2031-cc1e-aa65" type="selectionEntry" targetId="005e-e397-8108-f198"/>
-            <entryLink import="true" name="Beastlash (Beastmaster only)" hidden="false" id="47e6-37be-1f3d-d98e" type="selectionEntry" targetId="e685-cad9-9e27-c01f">
+            <entryLink import="true" name="Beastlash (Beastmaster only)" hidden="true" id="47e6-37be-1f3d-d98e" type="selectionEntry" targetId="e685-cad9-9e27-c01f">
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="self" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" shared="true" includeChildSelections="false" childName="Beast Master" includeChildForces="true"/>
                   </conditions>
@@ -1578,6 +1332,7 @@ If she engages a ﬂeeing enemy in the close combat phase she will score 1 autom
             <entryLink import="true" name="Sea Dragon Cloak" hidden="false" id="6f56-bed3-cc0a-c5b9" type="selectionEntry" targetId="83c0-52d0-900a-69b5"/>
             <entryLink import="true" name="Dark Venom" hidden="false" id="2b75-ec97-6ade-168e" type="selectionEntry" targetId="443d-dade-6b72-a76d"/>
             <entryLink import="true" name="Dark Elf Blade" hidden="false" id="bd10-ce40-070d-ac5f" type="selectionEntry" targetId="f009-768d-cd97-e4d6"/>
+            <entryLink import="true" name="Sea Dragon Cloak (1b), %" hidden="false" id="df41-5781-6bac-f70b" type="selectionEntry" targetId="9ffa-7f1f-0aa5-d809"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Extra Equipment" id="d934-a7d6-e82d-70c8" hidden="false">
