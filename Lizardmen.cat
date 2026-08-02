@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="13" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="14" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -4741,7 +4741,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         <entryLink id="2ea2-4ea4-8d45-b309" name="DH Sword" hidden="false" collective="false" import="true" targetId="79aa-d8dd-5576-e3f4" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="64c4-51bc-abb6-c69a" name="Armor" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="64c4-51bc-abb6-c69a" name="Saurus Armor" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="370c-25ae-13f3-13bd" name="Helmet" hidden="false" collective="false" import="true" targetId="ee9f-8b7a-8bd1-5f81" type="selectionEntry">
           <modifiers>
@@ -4752,7 +4752,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         <entryLink id="3389-baaa-73aa-6f89" name="Shield" hidden="false" collective="false" import="true" targetId="4638-1a61-6a70-f004" type="selectionEntry"/>
         <entryLink import="true" name="Helmet, %" hidden="false" id="e376-0d91-f2f3-e19e" type="selectionEntry" targetId="c138-9c66-20d9-fc8e">
           <modifiers>
-            <modifier type="set" value="Bone Helmet" field="name"/>
+            <modifier type="set" value="Bone Helmet, %" field="name"/>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Shield, %" hidden="false" id="1a6a-1933-17b1-611f" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
@@ -4812,7 +4812,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         <entryLink id="1e79-683c-ce02-681a" name="Blowpipe" hidden="false" collective="false" import="true" targetId="cced-17a1-966d-2750" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="791d-e1cc-f62b-b00e" name="Armor" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="791d-e1cc-f62b-b00e" name="Skink Armor" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="fe9c-d2ef-5305-e6d7" name="Helmet" hidden="true" collective="false" import="true" targetId="ee9f-8b7a-8bd1-5f81" type="selectionEntry">
           <modifiers>
@@ -4828,7 +4828,8 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
         <entryLink import="true" name="Shield, %" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
         <entryLink import="true" name="Helmet, %" hidden="false" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e">
           <modifiers>
-            <modifier type="set" value="Bone Helmet" field="name">
+            <modifier type="set" value="Bone Helmet, %" field="name"/>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="83ab8692-01da-65c5-af52-a55d4800f012" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
