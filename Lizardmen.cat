@@ -686,7 +686,7 @@
         <categoryLink id="83acbe09-ec66-c45c-0f5b-1a9e0017016e-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a359fe11-ad97-3216-79e2-42fa0fcef557" name="Extra Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a359fe11-ad97-3216-79e2-42fa0fcef557" name="Extra Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -699,7 +699,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="56248f6d-5ee0-e166-254d-f40501f26f09" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="56248f6d-5ee0-e166-254d-f40501f26f09" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -725,7 +725,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5d5c6559-2773-1cc5-3835-0eb5869758f2" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5d5c6559-2773-1cc5-3835-0eb5869758f2" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -740,7 +740,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4453-14ed-92ad-1145" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4453-14ed-92ad-1145" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30f8-4cce-b60e-fae3" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4ec-ec33-056d-af8c" type="max"/>
@@ -755,7 +755,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9364-f9b4-e77b-0af4" type="min"/>
           </constraints>
@@ -1051,14 +1051,14 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f917-ba84-e8a7-e5b1" name="Skinks Equipment" hidden="false" collective="false" import="true" targetId="8b46-430c-00c2-9adc" type="selectionEntryGroup"/>
+            <entryLink id="f917-ba84-e8a7-e5b1" name="Skinks Equipment" hidden="false" collective="false" import="true" targetId="8b46-430c-00c2-9adc" type="selectionEntryGroup" flatten="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="04fe2754-4270-2490-96f1-ab3b718bec62" name="Serious Injuries" page="0" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="04fe2754-4270-2490-96f1-ab3b718bec62" name="Serious Injuries" page="0" hidden="true" collective="false" import="true" type="upgrade" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1084,14 +1084,14 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9531e450-451a-d77b-e6c2-7a391c8049ab" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
+            <entryLink id="9531e450-451a-d77b-e6c2-7a391c8049ab" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e486a1eb-1be8-c547-e111-cf507ef97a76" name="Skills" page="0" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e486a1eb-1be8-c547-e111-cf507ef97a76" name="Skills" page="0" hidden="true" collective="false" import="true" type="upgrade" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1131,7 +1131,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="2025-c024-e38a-9d11">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="2025-c024-e38a-9d11" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1155,7 +1155,7 @@
             <modifier type="set" field="minSelections" value="0"/>
           </modifiers>
         </entryLink>
-        <entryLink id="a33c-0978-47d4-7944" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
+        <entryLink id="a33c-0978-47d4-7944" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
         <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="b909-cf6-dc01-57de" type="selectionEntry" targetId="583e-a0c5-873-acdc">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
@@ -1548,7 +1548,7 @@
         <categoryLink id="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1b8fedb9-5f2a-4b64-b7f7-6971bb171b80" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1b8fedb9-5f2a-4b64-b7f7-6971bb171b80" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1561,20 +1561,20 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dffcad05-cd44-7e6c-17c1-d0c11ca56c51" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dffcad05-cd44-7e6c-17c1-d0c11ca56c51" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6209c454-53f7-8a66-0639-73bbaaf14416" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
+            <entryLink id="6209c454-53f7-8a66-0639-73bbaaf14416" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5b74566b-dcaa-ceca-4714-3f5a72485eb8" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5b74566b-dcaa-ceca-4714-3f5a72485eb8" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1622,7 +1622,7 @@
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beda-1a62-10e2-7b61" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="4a3c-464b-8c96-28db" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="4a3c-464b-8c96-28db" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1922,7 +1922,7 @@
         <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a1391776-47ea-0568-037f-ec8f44d71045" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a1391776-47ea-0568-037f-ec8f44d71045" name="Serious Injuries" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1935,13 +1935,13 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ab0d5c14-996b-9379-7070-817be5b9161a" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ab0d5c14-996b-9379-7070-817be5b9161a" name="Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="44fd38ee-cf49-6b20-69b1-014f6828bab0" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases">
+            <entryLink id="44fd38ee-cf49-6b20-69b1-014f6828bab0" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases" collapsible="true">
               <modifiers>
                 <modifier type="increment" field="minSelections" value="0"/>
               </modifiers>
@@ -1952,7 +1952,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9f7d41cd-13db-b929-0b5e-8b2cfbe8ca02" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9f7d41cd-13db-b929-0b5e-8b2cfbe8ca02" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1967,7 +1967,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1ba2be4c-22b8-c8fa-bd6d-f7adf12edd83" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1ba2be4c-22b8-c8fa-bd6d-f7adf12edd83" name="Magic" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1991,14 +1991,14 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d766-12e3-a3dc-4592" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="eaa9-435b-81fe-33f3" name="Skinks Equipment" hidden="false" collective="false" import="true" targetId="8b46-430c-00c2-9adc" type="selectionEntryGroup"/>
+            <entryLink id="eaa9-435b-81fe-33f3" name="Skinks Equipment" hidden="false" collective="false" import="true" targetId="8b46-430c-00c2-9adc" type="selectionEntryGroup" flatten="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="91d1-2732-ff0a-9d0b" name="Extra Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="91d1-2732-ff0a-9d0b" name="Extra Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbba-1782-e762-913e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5dbc-fe61-b6eb-df31" type="max"/>
@@ -2013,7 +2013,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a7d4eb84-400b-29e8-339c-fceebcba1553" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="a7d4eb84-400b-29e8-339c-fceebcba1553" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="432b-8411-4b74-9866" type="min"/>
           </constraints>
@@ -4765,7 +4765,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-430c-00c2-9adc" name="Skinks Equipment" hidden="false" collective="false" import="true" flatten="true">
       <entryLinks>
-        <entryLink id="644b-2a85-bc7e-3ef5" name="Melee" hidden="false" collective="false" import="true" targetId="60df-77ed-07be-0b19" type="selectionEntryGroup">
+        <entryLink id="644b-2a85-bc7e-3ef5" name="Melee" hidden="false" collective="false" import="true" targetId="60df-77ed-07be-0b19" type="selectionEntryGroup" flatten="true">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1874-ef40-7a0a-2ad8" includeChildSelections="false"/>
           </constraints>
@@ -4777,8 +4777,8 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="bc95-b24b-2852-0c4c" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="518a-025a-be8e-3534" type="selectionEntryGroup"/>
-        <entryLink id="1cbe-894f-2fe8-43b9" name="Armor" hidden="false" collective="false" import="true" targetId="791d-e1cc-f62b-b00e" type="selectionEntryGroup"/>
+        <entryLink id="bc95-b24b-2852-0c4c" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="518a-025a-be8e-3534" type="selectionEntryGroup" flatten="true"/>
+        <entryLink id="1cbe-894f-2fe8-43b9" name="Armor" hidden="false" collective="false" import="true" targetId="791d-e1cc-f62b-b00e" type="selectionEntryGroup" flatten="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="60df-77ed-07be-0b19" name="Melee" hidden="false" collective="false" import="true">
