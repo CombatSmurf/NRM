@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="12" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="13" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -4824,9 +4824,8 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="3a4a-b8fd-6fd8-fc5a" name="Light Armor" hidden="false" collective="false" import="true" targetId="0148-3bf7-797a-83fa" type="selectionEntry"/>
         <entryLink id="78c0-a9da-3255-aab1" name="Buckler" hidden="false" collective="false" import="true" targetId="9275-557a-4ad3-5ffa" type="selectionEntry"/>
-        <entryLink import="true" name="Buckler, %" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink import="true" name="Shield, %" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
         <entryLink import="true" name="Helmet, %" hidden="false" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e">
           <modifiers>
             <modifier type="set" value="Bone Helmet" field="name">
@@ -4836,7 +4835,8 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Light Armor, %" hidden="false" id="ed5f-1e46-f201-bcbe" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+        <entryLink import="true" name="Buckler, %" hidden="false" id="0004-74f5-b17d-b684" type="selectionEntry" targetId="9d7a-b710-1718-fd19"/>
+        <entryLink id="7a8d-28a3-6664-b320" name="Shield" hidden="false" collective="false" import="true" targetId="4638-1a61-6a70-f004" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
