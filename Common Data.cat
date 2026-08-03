@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="48" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="49" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2479,7 +2479,12 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Advancement (Hero)" hidden="false" id="c26e-414e-293-2621" collective="false"/>
+    <selectionEntry type="upgrade" import="true" name="Advancement (Hero)" hidden="false" id="c26e-414e-293-2621" collective="false">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="02b7-9a0b-8b24-0019" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="110e-6023-c284-3bf3" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pike" hidden="false" id="68ec-2a33-6ca8-d146" page="0" collective="false">
       <profiles>
         <profile name="Pike" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="d7b5-68c6-efaa-add4" page="0">
@@ -4101,9 +4106,7 @@ to 4&quot; away (see Sisters of Sigmar Steelwhip).</description>
       </profiles>
       <rules>
         <rule name="Swift" id="ff9b-443c-c8a6-9fed" hidden="false">
-          <description>A Draich, unlike other double-handed weapons, does not Strike last.
-
-</description>
+          <description>A Draich, unlike other double-handed weapons, does not Strike last.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -7232,7 +7235,7 @@ knows about enemy model (has a line of sight, has
 unhided it etc.), the Beastmaster and all other
 slavehounds of the same warband can declare charge on
 this model even if they do not see it. No Initiative roll is
-necessary. </description>
+necessary.</description>
     </rule>
     <rule id="2fb3-525b-86c3-2cd6" name="Two Handed" page="0" hidden="false">
       <description>A model armed with a 2handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
