@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="50" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="51" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -4221,6 +4221,57 @@ to 4&quot; away (see Sisters of Sigmar Steelwhip).</description>
           <description>Rare 10 Dark Elves Only</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry id="be77-6861-3c38-e3ba" name="Goblin Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d3e3-84e8-dfc8-5888" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9c3b-7b93-8985-3ca3" name="Cavalry bonus" hidden="false" targetId="ef77-8d02-8707-afc4" type="rule"/>
+        <infoLink id="6dc6-3140-4ad2-ee4e" name="Strike First" hidden="false" targetId="744d-bb7c-09b9-ab1c" type="rule"/>
+        <infoLink id="6393-6aac-7c8b-0bcc" name="Unwieldy" hidden="false" targetId="2b45-f8c1-de87-638f" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="7041-728b-9e07-eb42" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="15"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a129-7345-2115-e6be" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7957-6d34-ff47-82df" name="Gromril weapon" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="29a7-857b-8519-0ebb" name="Ithilmar weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="10"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b653-6503-ab43-e446" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="030d-4bcd-d96d-86fd" name="Ithilmar weapon" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

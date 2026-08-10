@@ -105,7 +105,7 @@ The Shaman may re-roll a failed magic test on a D6 roll of 4+.</description>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="b40c-222f-a22f-b6ef" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="27dd-8c75-4a17-a5d7" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="fc5e-b330-4a6d-693a" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="005e-e397-8108-f198">
+            <entryLink import="true" name="Goblin Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="be77-6861-3c38-e3ba">
               <modifiers>
                 <modifier type="set" value="5" field="points"/>
               </modifiers>
@@ -154,7 +154,7 @@ The Shaman may re-roll a failed magic test on a D6 roll of 4+.</description>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="c9d6-406d-67c7-d6ca" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="c922-50a8-8da3-24b5" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ad83-f7c4-6621-6012" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198">
+            <entryLink import="true" name="Goblin Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="be77-6861-3c38-e3ba">
               <modifiers>
                 <modifier type="set" value="5" field="points"/>
               </modifiers>
