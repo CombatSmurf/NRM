@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="49" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="50" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -7229,13 +7229,13 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>weapons are so heavy that the model using them always strikes last, even when charging.</description>
     </rule>
     <rule id="20f0-4428-0681-c9f9" name="Stupidity" page="0" hidden="false">
-      <description>Slavehounds are trained to detect hiding
-slaves and show them to their masters. If a Slavehound
-knows about enemy model (has a line of sight, has
-unhided it etc.), the Beastmaster and all other
-slavehounds of the same warband can declare charge on
-this model even if they do not see it. No Initiative roll is
-necessary.</description>
+      <description>Many large and powerful creatures, as well as some of the more unhinged individuals in Mordheim, are unfortunately rather stupid. Models that are stupid test at the start of their turn to see if they overcome their stupidity. Make a test for each model affected by stupidity. If you pass the test by rolling their Leadership value or less on 2D6 then all is well – the creatures behave reasonably intelligently and the player may move and fight with them as normal. If the test is failed all is not well. Until the start of his next turn (when it takes a new Stupidity test) the model will not cast spells or fight in hand-to-hand combat (though his opponent will still have to roll to hit him as normal). If a model who fails a Stupidity test is not in hand-to- hand combat, roll a D6:
+
+
+1-3 The warrior moves directly forward at half speed in a shambling manner. He will not charge an enemy (stop his movement 1&quot; away from any enemy he would have come into contact with). He can fall down from the edge of a sheer drop (see the Falling rules) or hit an obstacle, in which case he stops. The model will not shoot this turn. 
+
+
+4-6 The warrior stands inactive and drools a bit during this turn. He may do nothing else, as drooling is so demanding. Leadership &amp; psychology “You can either have lots of men or really good equipment, weapons and armour. Make your own mind up which. I would try and strike a balance between the two.” Regardless of whether the test is passed or failed, the result applies until the start of the model&apos;s following turn (when it takes a new Stupidity test).</description>
     </rule>
     <rule id="2fb3-525b-86c3-2cd6" name="Two Handed" page="0" hidden="false">
       <description>A model armed with a 2handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
