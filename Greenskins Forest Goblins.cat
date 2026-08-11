@@ -853,7 +853,6 @@ The effects last until the Shaman takes a wound.</characteristic>
         <entryLink id="aec3-7d75-fd20-f1f7" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="1eb3-4e2-f633-dd77" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Hero Equipment" hidden="false" type="selectionEntryGroup" id="3763-ad0b-38c7-d4fb" targetId="aa8c-67af-c03a-75c6"/>
-        <entryLink import="true" name="Forest Goblin Magic" hidden="false" type="selectionEntryGroup" id="5a7a-f924-60a8-b7b9" targetId="b21c-8103-66f7-21af" flatten="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
