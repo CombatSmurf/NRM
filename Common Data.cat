@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="52" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="53" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -310,6 +310,17 @@ Warhorses only.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="3968-f4e1-6617-83b1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6de9-1ba2-9d1c-f6ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="f604-d054-dd06-e069" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="10" field="points"/>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="5"/>
@@ -399,6 +410,17 @@ ignores the special rules for Animosity.</description>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="78bc-f6f3-6fac-5a41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e629-8e4c-28fc-fbd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="d963-a2bd-5740-7ff8" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="4" field="points"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -536,6 +558,17 @@ ignores the special rules for Animosity.</description>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="4829-eaae-0ace-8b90">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f7f6-0903-8304-4ff9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="72a2-4dd7-8221-d44b" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="20" field="points"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -743,6 +776,17 @@ ignores the special rules for Animosity.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="e85b-60ad-51b4-3361">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c61e-1b64-3363-720f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="1b77-12e5-cb42-1d2a" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="20" field="points"/>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="10"/>
@@ -791,6 +835,17 @@ ignores the special rules for Animosity.</description>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="f4e1-42f0-6aa2-f7fd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="566d-98aa-1b68-738c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="7772-6809-2124-28d7" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="20" field="points"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3686,9 +3741,7 @@ the speed of the slower team member.</description>
           <description>A jezzail normally requires a crew of 2 to operate. Any Skaven model may act as the firer’s
 assistant providing he stays in base contact. In the absence of an assistant the remaining model can only
 carry the jezzail at half speed and suffers a –1 penalty to hit. Also if the pair is shot at the assistant will
-always be hit first.
-
-</description>
+always be hit first.</description>
         </rule>
         <rule name="Rarity" id="2c7f-d8eb-5096-0fe0" hidden="false">
           <description>Rare 11</description>
@@ -3739,7 +3792,7 @@ always be hit first.
       </profiles>
       <rules>
         <rule name="Tap into the winds" id="a905-ff5f-42fa-3701" hidden="false">
-          <description> Warp Blades may be attached to any spear, staff or halberd. It gives its bearer +1 strength and the knowledge of the Chain Lightning spell.</description>
+          <description>Warp Blades may be attached to any spear, staff or halberd. It gives its bearer +1 strength and the knowledge of the Chain Lightning spell.</description>
         </rule>
         <rule name="Warp Blades" id="008a-90a4-9b2b-1574" hidden="false">
           <description>These arcane tools come in the shape of large blades and are attached to any pole the skaven has handy.</description>
@@ -3831,6 +3884,193 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
       <modifiers>
         <modifier type="multiply" value="0.5" field="points"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Beastlash (Beastmaster only)" hidden="false" id="e685-cad9-9e27-c01f">
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Beastlash (Beastmaster only)" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="b592-c62f-0909-8fda">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">-1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Reach, Beastbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Beastbane" id="3314-5cdd-5bce-f783" hidden="false">
+          <description>Beastbane: The Beastmaster wielding a
+Beastlash causes Fear in animals, any animal
+charged or wishing to charge a Beastmaster
+with one of these weapons must first take a
+Fear test as mentioned in the psychology
+section of the Mordheim rules.</description>
+        </rule>
+        <rule name="Reach" id="6d8c-ce57-c52c-e129" hidden="false">
+          <description>Reach: A Beastlash may attack opponents up
+to 4&quot; away (see Sisters of Sigmar Steelwhip).</description>
+        </rule>
+        <rule name="Price Modifier" id="81ef-3e5b-0472-dbea" hidden="false">
+          <description>+ 1d6</description>
+        </rule>
+        <rule name="Rarity" id="339a-0eb0-3c03-2665" hidden="false">
+          <description>Rare 8 (Beastmaster only)</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sea Dragon Cloak (1b)" hidden="false" id="83c0-52d0-900a-69b5">
+      <profiles>
+        <profile name="Sea Dragon Cloak" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="0003-850b-ac11-b731">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+ / 4+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Scales: 5+ armour save in close combat, 4+ armour save against missiles.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="4abe-5145-b834-57c9" hidden="false">
+          <description>+ 2d6</description>
+        </rule>
+        <rule name="Rarirty" id="ea32-41bc-4bf1-9ec1" hidden="false">
+          <description>Rare 10 Dark Elves Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sea Dragon Cloak (1b), %" hidden="false" id="9ffa-7f1f-0aa5-d809">
+      <profiles>
+        <profile name="Sea Dragon Cloak" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="7a52-8c80-b74d-0d9d">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+ / 4+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Scales: 5+ armour save in close combat, 4+ armour save against missiles.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="c1b1-45e4-7443-edde" hidden="false">
+          <description>+ 2d6</description>
+        </rule>
+        <rule name="Rarirty" id="05cd-d53e-7ce6-6bf9" hidden="false">
+          <description>Rare 10 Dark Elves Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sea Dragon Cloak (2a)" hidden="false" id="38c0-7998-e1b4-c4c5">
+      <profiles>
+        <profile name="Sea Dragon Cloak" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="1186-ac9f-8ced-cfda">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+ / 5+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Scales: 5+ armour save in close combat, 4+ armour save against missiles.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="ac58-d18e-2edf-87ce" hidden="false">
+          <description>+ 2d6</description>
+        </rule>
+        <rule name="Rarirty" id="c5fa-d87a-a529-da10" hidden="false">
+          <description>Rare 10 Dark Elves Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sea Dragon Cloak (2a), %" hidden="false" id="5bdc-f4c7-30da-b645">
+      <profiles>
+        <profile name="Sea Dragon Cloak" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="c23d-c7d1-7c7e-f297">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+ / 5+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Scales: 5+ armour save in close combat, 4+ armour save against missiles.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="f754-fd15-9bb1-0fef" hidden="false">
+          <description>+ 2d6</description>
+        </rule>
+        <rule name="Rarirty" id="139a-6e81-a356-34df" hidden="false">
+          <description>Rare 10 Dark Elves Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Draich" hidden="false" id="b698-5ba3-be19-6f1e">
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Draich" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="bc92-7c60-fe28-7f3c">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Swift</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Swift" id="ff9b-443c-c8a6-9fed" hidden="false">
+          <description>A Draich, unlike other double-handed weapons, does not Strike last.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Two Handed" id="3fc9-395f-18a6-d958" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dark Steel" hidden="false" id="de2e-c1f1-4788-fcf1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fbae-bb33-a00a-d6f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steel Weapon" id="bad6-490b-f95f-891d" hidden="false" targetId="d228-cc09-bb80-4eb7" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="50" field="points"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="589d-ca92-7192-2bd5" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="75" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bf05-21a7-6fef-73e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gromril weapon" id="a489-c8a8-8a7e-8a6a" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="fe54-7433-6167-3ded" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="50" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5bd8-65b8-e70d-030d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ithilmar weapon" id="5fc6-b441-ecd2-2b07" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -6584,6 +6824,201 @@ The target must re-roll any successful armor saves and to hit rolls during the S
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Dark Elf Magic (1b)" id="839f-27e4-b140-dff7" hidden="false" collective="false" import="true" flatten="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1 Doombolt" hidden="false" id="a930-b4dd-2c79-216a" page="0" collective="false">
+          <profiles>
+            <profile name="1 Doombolt" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="44b3-c477-cb08-cf92">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The bolt of doom may be targeted at any enemy model in line of sight. The Doombolt has an 18&quot; range and causes a Strength 5 hit. If the target model is wounded, then the next closest model within 6&quot; is also hit on a 4+, at -1 Strength than the previous hit. The bolt will keep leaping until there are no more targets within range or until its Strength drops to a one. Each model can only be hit by a bolt once per turn. Take armour saves as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Word of Pain" hidden="false" id="0ec5-1b36-a309-0e7c" page="0" collective="false">
+          <profiles>
+            <profile name="2 Word of Pain" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="7c95-d3c3-434b-5e33">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell may be cast at an enemy model within 12&quot;. The victim must re-roll all successful hand to hand or missile attacks and all to wound rolls. If the victim wishes to charge, he must pass a successful Leadership test ﬁrst. Lasts until the beginning of the next Dark Elf turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 Soul Stealer" hidden="false" id="4e67-e75a-e65a-a6ac" page="0" collective="false">
+          <profiles>
+            <profile name="3 Soul Stealer" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="b1e5-7d00-3df1-de1a">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Once successfully cast, the Sorceress has to make a to hit roll against a model in base contact. If the attack is successful and her opponent is struck, he suffers a wound with no armour save possible. The Sorceress feeds on this life-force and adds one wound to her proﬁle. Note: the Sorceress can never have more then one extra wound from the use of this spell and the extra wound is lost at the end of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 Flamesword" hidden="false" id="62b6-eb26-e71d-1451" page="0" collective="false">
+          <profiles>
+            <profile name="4 Flamesword" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="2bb0-3cc5-b793-09ca">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may choose the hand-to-hand combat weapon of a member of her warband within 6&quot; to be engulfed in ﬂames. A weapon with these ﬂames acts as a normal weapon of its type, but also adds a +2 bonus to the users Strength. Hits inﬂicted from the weapon ignore armour saves. Lasts until the Sorceress’ next shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 Deathspasm" hidden="false" id="0f43-1e1b-490a-93b0" page="0" collective="false">
+          <profiles>
+            <profile name="5 Deathspasm" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="4a5e-2b1b-aa4d-f5d2">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Deathspasm has a range of 6&quot; and must be cast on the closest enemy model.
+The affected model must roll on the injury chart.
+If successfully cast, the casting Sorceress is immediately knocked down.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 Witch Flight" hidden="false" id="6473-6262-dccd-e154" page="0" collective="false">
+          <profiles>
+            <profile name="6 Witch Flight" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="9379-2f19-3eeb-772a">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may immediately move anywhere within 12&quot;, and may count as charging.
+If she engages a ﬂeeing enemy in the close combat phase she will score 1 automatic hit and then the opponent will ﬂee again.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dark Elf Magic (2a)" id="957a-f147-ba4a-42b3" hidden="false" collective="false" import="true" flatten="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1 Doombolt" hidden="false" id="97f7-87fc-8c14-cf2c" page="0" collective="false">
+          <profiles>
+            <profile name="1 Doombolt" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="0c67-d956-2547-41dd">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Doombolt may be targeted at any enemy model in line of sight. The bolt has an 18&quot; range and causes a Strength 5
+hit. If the target model is wounded, then the next closest model within 6&quot; is also hit on a 4+, at -1 Strength from the
+previous hit. The bolt will leap a maximum of four times or until there are no more targets within range. A model may
+only be hit once by a single casting of the spell. Take armour saves as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Word of Pain" hidden="false" id="563f-1fdd-934c-2660" page="0" collective="false">
+          <profiles>
+            <profile name="2 Word of Pain" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="0bfd-6313-cfe1-7d4f">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell may be cast at an enemy model within 12&quot;. The victim must re-roll all successful hand to hand or missile attacks
+and all to wound rolls. If the victim wishes to charge, he must pass a successful Leadership test first. Lasts until the
+beginning of the next Dark Elf turn</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 Soul Stealer" hidden="false" id="df56-8c36-63f4-462d" page="0" collective="false">
+          <profiles>
+            <profile name="3 Soul Stealer" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="7c2b-39f7-9b32-81dc">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Once successfully cast, the Sorceress has to succeed in at least one to-hit roll in close combat phase against a model in
+base contact. If the attack is successful and her opponent is struck, he suffers a wound with no armour save possible. The
+Sorceress feeds on this life-force and adds one wound to her current total.
+
+
+Note: the Sorceress can never have more than one extra wound on her profile from the use of this spell (she may cast it
+as many times as she wishes to regain lost wounds) and the extra wound is lost once the battle is over.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 Black Blade of Khaine" hidden="false" id="34ee-1507-0f20-e9d3" page="0" collective="false">
+          <profiles>
+            <profile name="4 Black Blade of Khaine" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="9edb-f1e0-f0a5-2d3d">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may choose the hand-to-hand combat weapon of a member of her warband within 6&quot; to be engulfed in
+flames. A weapon with these flames acts as a normal weapon of its type, but adds a +2 bonus to the user&apos;s Strength. Hits
+inflicted from the weapon ignore armour saves. Lasts until the Sorceress&apos; shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 Deathspasm" hidden="false" id="35b5-c1f8-4f0a-1734" page="0" collective="false">
+          <profiles>
+            <profile name="5 Deathspasm" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="54bf-0a48-c173-024b">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Deathspasm has a range of 6&quot; and must be cast on the closest enemy model.
+The affected model must roll on the injury chart.
+If successfully cast, the casting Sorceress is immediately knocked down.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 Witch Flight" hidden="false" id="4452-fa67-e545-e0b3" page="0" collective="false">
+          <profiles>
+            <profile name="6 Witch Flight" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="001c-d45d-81fe-ff6f">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorceress may immediately move anywhere within 12&quot;, and may count as charging. If she engages a fleeing enemy
+in the close combat phase, she will score 1 automatic hit and then the opponent will flee again.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="98ac-2376-00c1-4f65" name="+1 Enemy armour save" page="0" hidden="false">
@@ -6878,6 +7313,17 @@ normal or charge their original target. When making a compelled charge, the Kni
     </rule>
     <rule name="Reroll Non-Rout Leadership Tests" id="ded9-89e7-c10f-9fc4" hidden="false">
       <description>The model may reroll all non-rout leaderships tests, but must accept the second result.</description>
+    </rule>
+    <rule name="Dark Steel Weapon" id="d228-cc09-bb80-4eb7" hidden="false">
+      <description>3 x Price / Availability: Rare 9
+
+Darksteel weapons are forged in the city of Hag Graef, the Dark Crag. They are fashioned from black steel, a rare form of steel found deep within the mountains around the city and are forged using an ancient technique known only to the Dark Elves. Weapons with Darksteel blades have wicked protrusions and serrated edges, which inflict serious damage on an opponent. Any Druchii hero can use a close-combat weapon with a Darksteel blade. Getting it, however, is not that easy, and it costs three times more than the usual steel weapon of the same type. Darksteel weapons have all abilities of their usual counterparts (i.e. swords can parry, doublehanded weapons strike last) as well as the following special rules.
+
+
+SPECIAL RULES
+Critical Damage: Darksteel weapons inflict serious damage on their opponents. When rolling on the critical hit chart, a Darksteel weapon will add +1 to the result.
+
+Wicked Edge: Darksteel weapons are set with sharp protrusions and serrated edges which inflict serious damage on an opponent. A roll of 2-4 on the injury table is a stunned result.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
