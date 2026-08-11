@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="83a5-8a81-2a87-0b65" name="Skaven of Clan Skryre (2b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="common-data" id="b388-2114-b2d5-7556" targetId="e020-c282-277b-b173"/>
+    <catalogueLink type="catalogue" name="Characters" id="e564-86bc-714b-4511" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Clanrats" hidden="false" id="e2d6-cbfc-4a66-ea60">
+      <categoryLinks>
+        <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="5e8c-c636-2a0d-09ef" primary="true" name="Henchmen"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Clanrats" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="7fc8-c6f4-32f7-c164">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Henchmen Equipment" hidden="false" id="0501-5fc6-699a-5d76" type="selectionEntryGroup" targetId="f667-e579-1735-f3f1"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Engineers" hidden="false" id="e458-c1e2-8fce-99df">
+      <categoryLinks>
+        <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="eb5d-4bc8-3c67-bf5d" primary="true" name="Heroes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Engineers" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="6aa9-6069-4cb7-92b8">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2d4b-71d1-3f4f-5542"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="40"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Experience" hidden="false" id="7e47-9e15-20ee-d5df" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="1953-215f-b503-736a" automatic="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="1c6e-1f24-f732-b1ab" type="selectionEntryGroup" targetId="5f4a-4a82-5be0-c956"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlock Engineer" hidden="false" id="45f8-ee26-97c3-c82a">
+      <categoryLinks>
+        <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="e3c8-59db-f4ea-7016" primary="true" name="Heroes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Warlock Engineer" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="c3b5-2d9c-2f48-bcd7">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Magic of the Horned Rat" hidden="false" id="8c46-27ae-0653-9598" type="selectionEntryGroup" targetId="3442-f32d-5c5f-5f9d"/>
+        <entryLink import="true" name="Experience" hidden="false" id="86a1-2611-c28c-b8e4" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="faee-2387-badf-c905" automatic="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="f263-8ccb-aa70-e751" type="selectionEntryGroup" targetId="5f4a-4a82-5be0-c956"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ae-0c40-de02-fbfa"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Engineer Apprentices" hidden="false" id="e133-d2d7-d2d9-fa9a">
+      <categoryLinks>
+        <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="a39d-02e0-8cf2-ff0d" primary="true" name="Heroes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Engineer Apprentices" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="ffd1-3465-b3b8-6459">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c41-6ffc-8ec7-b180"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Experience" hidden="false" id="4b34-34ba-b028-827e" type="selectionEntry" targetId="d769-0d85-e810-df60"/>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="f948-5796-f277-62d1" type="selectionEntryGroup" targetId="5f4a-4a82-5be0-c956"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Giant Rats" hidden="false" id="b730-ffaf-522d-9e82">
+      <categoryLinks>
+        <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="0a1b-d479-fd16-1b97" primary="true" name="Henchmen"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Giant Rats" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="18f4-aa9f-b16b-9ccd">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Experience" id="ed94-be4e-435b-aff3" hidden="false">
+          <description>Giant Rats are animals and do not gain experience</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="325e-9ae5-d4bc-96e2">
+      <categoryLinks>
+        <categoryLink targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" id="0793-80e6-ea0c-8f82" primary="true" name="Stash"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="1de5-74c5-f99e-757c" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead"/>
+        <entryLink import="true" name="Gold" hidden="false" id="7667-5ace-ad74-057e" type="selectionEntry" targetId="deca-5737-6234-23a1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dccd-49ec-f5dc-b276-min" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dccd-49ec-f5dc-b276-max" automatic="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Master Engineer" hidden="false" id="e00f-9aff-f426-a487">
+      <categoryLinks>
+        <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="3247-c6ac-61eb-0803" primary="true" name="Heroes"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Leader" id="fa23-baf0-ba1c-d576" hidden="false" type="rule" targetId="8712-d0f2-fe64-07bd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Master Engineer" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="03b1-156c-03d0-1b7e">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Master Engineer" id="f46f-a447-8475-447e" hidden="false">
+          <description> The Master Engineer may re-roll any fumbles with any blackpowder or wyrdstonepowered weapons he carries. The result of the re-roll must be accepted</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5729-ec7e-50e1-f34c-min" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5729-ec7e-50e1-f34c-max" automatic="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="60"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Experience" hidden="false" id="b9ec-83b1-c58a-db21" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="a81a-0cbb-0470-552e" automatic="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heroes Equipment" hidden="false" id="b2ab-cb27-9561-3e35" type="selectionEntryGroup" targetId="5f4a-4a82-5be0-c956"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skavenslaves" hidden="false" id="f9fe-bf20-a8aa-f66b">
+      <categoryLinks>
+        <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="e0a9-ba8c-732c-fb22" primary="true" name="Henchmen"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Skavenslaves" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="8360-a285-9f1f-2b85">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Experience" id="c424-b66d-a941-34db" hidden="false">
+          <description>Skavenslaves are little better than animals and do not gain experience</description>
+        </rule>
+        <rule name="All Races" id="ea2c-d0e2-7872-dbbe" hidden="false">
+          <description>Skaven slaves may be from any race including their fellow Skaven. The above profile represents the weakened state of all of them.</description>
+        </rule>
+        <rule name="Slaves" id="d2f1-6992-cdf4-d64d" hidden="false">
+          <description>Any enemy warrior who is captured may be added to a Skavenslave group. He will have the above profile and will have to be equipped the same as the rest of the group. Any equipment he carried when he was captured may be kept or sold by the warband.</description>
+        </rule>
+        <rule name="Easy come, easy go" id="35fc-e803-1e3d-a8fd" hidden="false">
+          <description>Skaven Slaves are often used as living experiments and their lifespans are mercifully short. After rolling for Injuries, roll a D3 and remove that amount of Skavenslaves from your warband. They haven’t survived their ordeal in Mordheim</description>
+        </rule>
+        <rule name="Life is cheap" id="a2c2-9f8d-e625-4345" hidden="false">
+          <description>Skaven slaves are worthless to the Warlock Engineers. Members of a Clan Skryre warband may shoot into a close combat that only contains enemies and skaven slaves. Randomise hits.</description>
+        </rule>
+        <rule name="Worthless" id="2a24-c767-0951-af50" hidden="false">
+          <description> A Warlock Engineer doesn’t expect much from slaves, and is therefore not unsettled if skaven slaves break or get cut down in battle. In fact, that’s what they’re there for! When testing to see if a Clan Skryre warband needs to take a Rout test, each skaven slave taken out of action only counts as half a model. Therefore, a band of 5 Skaven and 10 skaven slaves (15 models) would only have to take a test if 4 models fell (4 Skaven or 8 skaven slaves, or some combination thereof).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="6"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Free Dagger" hidden="false" id="bcc5-0d13-a1d1-42b3" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Heroes Equipment" id="5f4a-4a82-5be0-c956" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heroes Missile Weapons" id="45d5-85f9-57d5-9f4a" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Warplock Pistol - Brace" hidden="false" id="68cd-60c7-1942-89fd" type="selectionEntry" targetId="0532-a18e-65c3-d862"/>
+            <entryLink import="true" name="Warplock Pistol" hidden="false" id="2475-7ba0-34c5-55f4" type="selectionEntry" targetId="bc45-0261-3bd9-13bb"/>
+            <entryLink import="true" name="Jezzail (Clan Skryre Only)" hidden="false" id="5da6-c03a-a199-4ae4" type="selectionEntry" targetId="8604-4fe0-63f3-16b8"/>
+            <entryLink import="true" name="Poison Wind Globe (Clan Skryre Only)" hidden="false" id="a845-bd1b-0611-8a32" type="selectionEntry" targetId="0c3d-145c-26ff-92f0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heroes Armor" id="d993-2536-7b0f-424f" hidden="false" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor" hidden="false" id="f18a-5c2f-4496-1858" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Shield" hidden="false" id="4b11-3229-f9b5-7575" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
+            <entryLink import="true" name="Heavy Armor" hidden="false" id="684b-5c92-997c-8d2b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Gas Mask (Clan Skryre Only)" hidden="false" id="8862-1893-15ff-3b44" type="selectionEntry" targetId="6fcd-09df-29e5-e192"/>
+            <entryLink import="true" name="Helmet" hidden="false" id="041a-1176-18fb-19a3" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heroes Armor, %" id="0687-a137-e006-8a49" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="729d-9489-1f8f-1884" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Heavy Armour, %" hidden="false" id="069b-1433-6e47-8b43" type="selectionEntry" targetId="0fd7-ba59-1775-4a35"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="8f5f-5226-ab08-87ba" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Gas Mask, % (Clan Skryre Only)" hidden="false" id="fff8-ae98-2f55-a752" type="selectionEntry" targetId="87fd-c01e-3e5d-3ca0"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="23bc-2231-fae3-95c5" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heroes HtH Weapons" id="f191-5272-2ecf-7f61" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Dagger" hidden="false" id="f3c6-b99a-a664-7f2a" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
+            <entryLink import="true" name="Free Dagger" hidden="false" id="18e6-22f4-fa6c-ed51" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
+            <entryLink import="true" name="Flail" hidden="false" id="2b3f-f328-56ba-d38a" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
+            <entryLink import="true" name="Spear" hidden="false" id="8a22-8c46-a08a-6a2e" type="selectionEntry" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Halberd" hidden="false" id="a59a-8561-ef01-c96e" type="selectionEntry" targetId="3c52-9e92-25ec-1939"/>
+            <entryLink import="true" name="Sword" hidden="false" id="eee3-9326-f0c4-1c99" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
+            <entryLink import="true" name="DH Axe" hidden="false" id="ee27-85c6-e39c-b1e7" type="selectionEntry" targetId="4002-4e79-75d0-3065"/>
+            <entryLink import="true" name="DH Club/Hammer/Mace" hidden="false" id="bfac-05eb-fecc-fbb7" type="selectionEntry" targetId="c2e5-75e2-4a8e-2eb7"/>
+            <entryLink import="true" name="DH Sword" hidden="false" id="47e2-893f-eb3e-9c3b" type="selectionEntry" targetId="79aa-d8dd-5576-e3f4"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skryre Special Equipment" id="1b23-343e-7d43-b87e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Warp Blades (Clan Skryre Only)" hidden="false" id="67bb-a980-8c5e-4a09" type="selectionEntry" targetId="28fb-6552-759e-d09f"/>
+            <entryLink import="true" name="Insulation Robe" hidden="false" id="7bd5-6b6b-67fd-b585" type="selectionEntry" targetId="6808-efad-46be-03fe"/>
+            <entryLink import="true" name="Warpstone Tokens" hidden="false" id="653f-3a50-ff60-3a8c" type="selectionEntry" targetId="cb33-0eed-db98-93d1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="07f8-0f4b-ed2d-35e3" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead" collapsible="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Henchmen Equipment" id="f667-e579-1735-f3f1" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Henchmen Missile Weapons" id="9231-15a4-d809-a4a9" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Sling" hidden="false" id="6e98-a0c7-5290-4489" type="selectionEntry" targetId="87c7-49b5-f1e7-6662"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Henchmen Armor" id="c5f2-ab5b-67d6-fb17" hidden="false" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor" hidden="false" id="96bd-a7d2-eb72-abf3" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Shield" hidden="false" id="7bce-a1c8-5718-5f89" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
+            <entryLink import="true" name="Helmet" hidden="false" id="858b-9d22-39a4-3b0c" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
+            <entryLink import="true" name="Toughened Leathers" hidden="false" id="8081-a362-f8e9-c67a" type="selectionEntry" targetId="439f-1b4d-1579-14b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Henchmen HtH Weapons" id="aedc-1b2c-cb48-399f" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Dagger" hidden="false" id="66cf-1289-30f2-aa7f" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
+            <entryLink import="true" name="Free Dagger" hidden="false" id="f7e9-9fa1-3f2f-6b60" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
+            <entryLink import="true" name="Sword" hidden="false" id="d8a1-9087-2cfd-2920" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06"/>
+            <entryLink import="true" name="Spear" hidden="false" id="2ddf-1b49-0f58-8d3c" type="selectionEntry" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Club/Hammer/Mace/Staff" hidden="false" id="1d94-00c2-5a74-02f0" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
+            <entryLink import="true" name="Axe" hidden="false" id="b63f-9b45-b874-b790" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Henchmen Armor, %" id="5791-55d8-0dce-22c3" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Light Armor, %" hidden="false" id="e24b-eebb-56ad-9240" type="selectionEntry" targetId="7e46-dc45-605f-2af2"/>
+            <entryLink import="true" name="Shield, %" hidden="false" id="1236-8c3b-4e6f-7665" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
+            <entryLink import="true" name="Helmet, %" hidden="false" id="ae75-f07e-72a3-20b8" type="selectionEntry" targetId="c138-9c66-20d9-fc8e"/>
+            <entryLink import="true" name="Toughened Leathers, %" hidden="false" id="391e-32ea-8102-4fa3" type="selectionEntry" targetId="cc63-88f0-a14c-ee7d"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Equipment - All" hidden="false" id="423d-30c7-142e-f1b1" type="selectionEntryGroup" targetId="2247-1f56-bc59-0ead" collapsible="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Special Skills (Skaven)" id="1a95-48d6-9746-2983" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="6f2a-fd1a-9620-f659" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="c4c0-3758-0e22-949e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5e88-2116-87b1-0a6d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e9ba-6efc-89b0-f73c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="5b88-de9c-8cda-44bf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="748a-1d6c-909e-352c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="7353-df32-1d18-9e30" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="ae2b-33e1-afc2-e1a5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tail Fighting" hidden="false" id="8cf2-e389-2708-0db9" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="161a-4dea-e23a-6b1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="tail fighting" id="563e-049f-9c6d-5b78" hidden="false" page="0">
+              <description>The Skaven may wield a shield, knife or a sword with its tail. The model gains an extra attack with the appropriate weapon or a +1 bonus to its armour save.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infiltration" hidden="false" id="ad74-a15c-0a2e-0bbc" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="935e-ce97-e177-bfa7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Infiltration" id="5ebb-4736-73d3-acb7" hidden="false" page="0">
+              <description>A Skaven with this skill is always placed on the battlefield after the opposing warband and can be placed anywhere on the table as long as it is out of sight of the opposing warband and more than 12&quot; away from any enemy model. If both players have models which infiltrate, roll a D6 for each, and the lowest roll sets up first.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wall Runner" hidden="false" id="e28e-29a1-bc59-cf9b" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fe37-96ee-4244-af82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="wall runner" id="1289-0f0f-d668-6ed1" hidden="false" page="0">
+              <description>The Skaven does not need to take an Initiative test when climbing up walls and other sheer surfaces.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Black Hunger" hidden="false" id="6d60-382a-3cd6-bbdf" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="615b-2e2d-163b-6092" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="black hunger" id="dfe5-40c5-4f33-ab23" hidden="false" page="0">
+              <description>The Skaven Hero may declare at the beginning of his turn that he is using this skill. The Hero may add +1 attack and +D3&quot; to the total move to his profile for the duration of his own turn
+but will suffer D3 S3 hits with no armour save possible at the end of the turn.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
