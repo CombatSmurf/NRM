@@ -308,7 +308,7 @@
           <description>Slavehounds are animals and all animal rules apply to them, they never gain experiance.</description>
         </rule>
         <rule name="Beastmaster" id="a58c-b08d-6b92-0f93" hidden="false">
-          <description>Slavehounds are vicious creatures that are barely kept under control by their Beastmaster. As long as Beastmaster is not knocked down, stunned or out of action, Slavehounds may use his Leadership instead of their own for any Leadership test, provided that the Beastmaster is within 6&quot; of the Slavehound in question. But, since Beastmaster is the only authority they respect, they cannot use Leadership of warband Leader. Consequently, if the Beastmaster is unable to participate in a battle, then neither will the beasts. If the warband does not contain a Beastmaster, there is no one able to control Slavehounds, so they have to stay in warband&apos;s camp (and when feeding time comes, it has to be done from a safe distance). </description>
+          <description>Slavehounds are vicious creatures that are barely kept under control by their Beastmaster. As long as Beastmaster is not knocked down, stunned or out of action, Slavehounds may use his Leadership instead of their own for any Leadership test, provided that the Beastmaster is within 6&quot; of the Slavehound in question. But, since Beastmaster is the only authority they respect, they cannot use Leadership of warband Leader. Consequently, if the Beastmaster is unable to participate in a battle, then neither will the beasts. If the warband does not contain a Beastmaster, there is no one able to control Slavehounds, so they have to stay in warband&apos;s camp (and when feeding time comes, it has to be done from a safe distance).</description>
         </rule>
         <rule name="Pack Work" id="7d96-eba0-1c20-3368" hidden="false">
           <description>Slavehounds are trained to detect hiding slaves and show them to their masters. If a Slavehound knows about enemy model (has a line of sight, has unhidden it etc.), the Beastmaster and all other slavehounds of the same warband can declare charge on this model even if they do not see it. No Initiative roll is necessary</description>
@@ -1024,7 +1024,7 @@
       </costs>
       <rules>
         <rule name="Natural Stealth" id="adf7-c595-d6ec-a8d6" hidden="false">
-          <description>The first thing that Dark Elf scouts master is the art of moving without being seen or heard. If a Shade is Hidden, enemy models halve their Initiative value for determining if they can detect it or not. </description>
+          <description>The first thing that Dark Elf scouts master is the art of moving without being seen or heard. If a Shade is Hidden, enemy models halve their Initiative value for determining if they can detect it or not.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1410,7 +1410,7 @@
       <description>The Dark Elves have been ﬁghting the High Elves for many centuries. The wars between these two races have been very long and bloody affairs. Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</description>
     </rule>
     <rule name="Slavers" id="545c-9597-e3b0-1e02" hidden="false">
-      <description>In case of finding prisoners (roll of &quot;333&quot; during Exploration phase) Druchii may follow the rules for Skaven. </description>
+      <description>In case of finding prisoners (roll of &quot;333&quot; during Exploration phase) Druchii may follow the rules for Skaven.</description>
     </rule>
     <rule name="Fey Acuity" id="8480-7505-2fdd-589a" hidden="false">
       <description>An Elf&apos;s senses are far beyond those of other races. During the Exploration phase when checking for artifacts or wyrdstone at the end of the game, add +1 to the number of pieces found by a Dark Elf warband, as long as at least one hero was searching.</description>
