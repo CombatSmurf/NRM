@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Brethren" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -165,12 +165,12 @@
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Darksouls" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Beastmen" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="5" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3c3321d3-a734-5b7d-2aa0-548348ab9115" name="Darksoul" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+        <profile id="3c3321d3-a734-5b7d-2aa0-548348ab9115" name="Beastman" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
@@ -255,23 +255,17 @@
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">2</characteristic>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="d001f3dd-bb5b-ee1a-6072-5ea3707bf95c" name="Crazed" hidden="false">
-          <description>Darksouls have been driven insane by daemonic possession and know no fear.
-They automatically pass any Leadership tests they are required to take.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
@@ -324,7 +318,7 @@ They automatically pass any Leadership tests they are required to take.</descrip
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="1e6c-1f1c-6dc6-6226" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35"/>
+        <cost name="pts" typeId="points" value="45"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
@@ -833,6 +827,169 @@ They automatically pass any Leadership tests they are required to take.</descrip
       <costs>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="85f3-0503-8653-86cd" name="Darksouls" page="0" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="5" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d930-2207-7e01-2e5a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2ca4-e541-ba8b-f2eb" name="Darksoul" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="85f3-0503-8653-86cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b3f7-4863-24f8-4ab2" name="Crazed" hidden="false">
+          <description>Darksouls have been driven insane by daemonic possession and know no fear.
+They automatically pass any Leadership tests they are required to take.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0a67-2a25-1670-38be" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0661-6dc1-13f3-8f77" name="Serious Injuries" page="0" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc81-c083-4128-9a60" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="691e-97bd-2553-8874" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="961c-4dc2-d0c6-072c" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" name="Serious Injuries"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="878e-e645-4b0a-5ee6" name="Skills" page="0" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca42-a75d-f341-c822" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="343b-c023-37cd-8cf5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d81e-2d85-b6cb-ee64" hidden="false" collective="false" import="true" targetId="39deaab7-93cc-922b-d866-f7368e56495a" type="selectionEntryGroup" name="Skills"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="843b-e1a0-54e2-26f0" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry" name="Promoted"/>
+        <entryLink id="c7e1-e3d6-6a5e-64b2" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" name="Experience"/>
+        <entryLink import="true" name="Darksouls Equipment (Cult of the Possessed 1a)" hidden="false" id="aebf-ef4c-2298-3bc1" collective="false" targetId="59f0-a782-1370-5450" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="ad3e-d13f-dd41-041d" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
