@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Greenskins - Ork Mob (1a) Fixed" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Greenskins - Ork Mob (1a)" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0094-a0e7-9fc9-5aa2" name="Ork Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
   </publications>
