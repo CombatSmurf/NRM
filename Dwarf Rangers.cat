@@ -636,7 +636,7 @@ When a Runesmith advances and rolls a skill on the Hero Advance table, he may c
           </constraints>
         </entryLink>
         <entryLink id="7afb-8359-cc73-dae6" name="Dwarf Runes" hidden="false" collective="false" import="true" targetId="7466-d9e1-b2b9-172" type="selectionEntryGroup" collapsible="true"/>
-        <entryLink id="834e-a8ef-f946-ae7e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="834e-a8ef-f946-ae7e" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="60f2-92fb-df24-3f20" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="dbb0-2902-524a-2d84" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="f7c7-7c98-dea0-e3d" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
@@ -938,7 +938,7 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
       </selectionEntries>
       <entryLinks>
         <entryLink id="4db9-e6d9-965-36d8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
-        <entryLink id="5c5-aff9-6045-1b3e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="5c5-aff9-6045-1b3e" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="70ee-ae02-73ae-b49e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="64a3-ab99-66fa-456c" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8e51-125-6ce4-4d83" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
@@ -1321,7 +1321,7 @@ They are completely immune to all psychology and never need to test if fighting
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e9-5e39-f77c-6da1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="26ba-6535-3006-1d84" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="26ba-6535-3006-1d84" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="c258-5265-74d9-ad42" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="b2e3-7d01-f396-56d8" name="Dwarf Warrior Equipment (Rangers 1b)" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup" flatten="true"/>
         <entryLink import="true" name="Advancement (Hero)" hidden="false" id="b2e4-c082-45fb-2f6d" type="selectionEntry" targetId="c26e-414e-293-2621" collapsible="true">
@@ -1639,7 +1639,7 @@ They are completely immune to all psychology and never need to test if fighting
       </selectionEntries>
       <entryLinks>
         <entryLink id="a0d4-68ea-f13f-4da2" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
-        <entryLink id="601a-db49-7ceb-f5d2" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="601a-db49-7ceb-f5d2" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="8a4a-b552-ecd-35de" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
         <entryLink id="8303-4ce-71f3-8604" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
@@ -2080,7 +2080,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
       </selectionEntries>
       <entryLinks>
         <entryLink id="2391-62ae-5137-8def" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
-        <entryLink id="c50f-4324-c6ec-95cf" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="c50f-4324-c6ec-95cf" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="86c5-5c7-af29-1f8c" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
         <entryLink id="652e-d52c-ff72-81e6" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
@@ -2507,7 +2507,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
       </selectionEntries>
       <entryLinks>
         <entryLink id="1895-53be-6db9-2277" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
-        <entryLink id="b863-b777-b905-86f" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="b863-b777-b905-86f" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="7867-aa8e-9140-3235" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
         <entryLink id="f8db-abdf-8d24-b2b3" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>
@@ -2945,7 +2945,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
       </selectionEntries>
       <entryLinks>
         <entryLink id="8d19-fef0-90dc-ac05" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" collapsible="true"/>
-        <entryLink id="c699-7ccd-6628-7493" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink id="c699-7ccd-6628-7493" name="Charactaristics +/-" hidden="false" collective="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup" collapsible="true"/>
         <entryLink id="1c01-c9db-9e3a-ce60" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" collapsible="true"/>
         <entryLink id="5dd9-96d7-f864-292a" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true">
           <modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="15" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="16" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -27,6 +27,7 @@
         <infoLink id="636e-9890-a748-78ba" name="Fear" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
         <infoLink id="d1a8-0fef-600a-5994" name="Large Target" hidden="false" targetId="069e-ecc0-275d-765c" type="rule"/>
         <infoLink id="f53c-01e6-ceb9-68c6" name="Animals" hidden="false" targetId="daaa-38f1-8c4c-3140" type="rule"/>
+        <infoLink name="Scaly Skin" id="c7b7-5df9-0721-2a3f" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
@@ -184,6 +185,8 @@
         <infoLink id="1c92-11da-155d-8d78" name="Skaly Skin (Saurus)" hidden="false" targetId="ba1c-c742-5994-2f68" type="profile"/>
         <infoLink id="fa80-6cb5-f442-b209" hidden="false" targetId="f645-fb39-4a21-57ec" type="rule" name="Cold Blooded"/>
         <infoLink name="Saurus max" hidden="false" id="4498-6d21-c840-be0" type="profile" targetId="230e-2dbd-dff3-4544"/>
+        <infoLink name="Scaly Skin" id="1e84-a04e-9f39-b658" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
+        <infoLink name="Bite Attack" id="e0da-6481-922b-b759" hidden="false" type="rule" targetId="f4ca-4b69-3c9b-e27c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="16763088-15c1-4f72-fdfe-153003be4a24-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
@@ -647,6 +650,8 @@
         <infoLink id="9960-50e8-f380-2a00" hidden="false" targetId="ba1c-c742-5994-2f68" type="profile" name="Skaly Skin (Saurus)"/>
         <infoLink id="38ff-19ff-6d4f-e84f" hidden="false" targetId="f645-fb39-4a21-57ec" type="rule" name="Cold Blooded"/>
         <infoLink name="Saurus max" hidden="false" id="5774-656b-a060-5d9" type="profile" targetId="230e-2dbd-dff3-4544"/>
+        <infoLink name="Scaly Skin" id="c26b-6db6-f1c4-3d0f" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
+        <infoLink name="Bite Attack" id="638e-57e5-d035-d203" hidden="false" type="rule" targetId="f4ca-4b69-3c9b-e27c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="83acbe09-ec66-c45c-0f5b-1a9e0017016e-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
@@ -660,7 +665,7 @@
           <entryLinks>
             <entryLink id="c171b0c2-f16f-eb30-9160-efc35795a11b" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup" name="Strength Skills"/>
             <entryLink id="7dfe147c-aba4-13bc-bf11-383a8c4f97f3" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" name="Combat Skills"/>
-            <entryLink id="e741c476-895b-58bb-be34-06c08766be8e" hidden="false" collective="false" import="true" targetId="0d5ab763-c126-029a-3da9-203abeafdb53" type="selectionEntryGroup" name="Lizardmen Skills"/>
+            <entryLink id="e741c476-895b-58bb-be34-06c08766be8e" hidden="false" collective="false" import="true" targetId="69c4-dc4d-7f69-6db1" type="selectionEntryGroup" name="Lizardmen Special Skills"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -855,6 +860,7 @@
         <entryLink import="true" name="Serious Injuries" hidden="false" id="b029-77f7-cd36-e7a3" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Equipment - All" hidden="false" id="f7d3-63b0-8db7-70be" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Charactaristics +/-" hidden="false" id="c146-1988-610e-c239" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Sacred Markings" hidden="false" id="6efa-219e-6f06-a352" type="selectionEntryGroup" targetId="917c-b8a6-b7d2-c4ae" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="60"/>
@@ -970,6 +976,8 @@
         <infoLink id="81c7-9f93-e29e-1ebb" hidden="false" targetId="a139-901b-73c6-f54b" type="rule" name="Aquatic"/>
         <infoLink id="9678-7e7f-a020-8a64" hidden="false" targetId="5a93-cf11-1f61-567b" type="rule" name="Jungle born"/>
         <infoLink name="Skinks max" hidden="false" id="d31b-7863-98eb-4dce" type="profile" targetId="c3ee-de6a-9b28-cc86"/>
+        <infoLink name="Poisoned Weapons" id="dbce-d1db-f29a-135b" hidden="false" type="rule" targetId="0838-2e59-470f-c282"/>
+        <infoLink name="Scaly Skin" id="ad64-40ed-bc88-27f7" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="93700e68-f80c-ad1c-b5cd-06fd3c7e7537-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
@@ -1022,7 +1030,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3919-5c2-bdd-d861" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3919-5c2-bdd-d861" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1450,6 +1458,8 @@
         <infoLink id="fa43-36f9-f22d-062b" hidden="false" targetId="a139-901b-73c6-f54b" type="rule" name="Aquatic"/>
         <infoLink id="b7fc-def3-2a26-1bc8" hidden="false" targetId="5a93-cf11-1f61-567b" type="rule" name="Jungle born"/>
         <infoLink name="Skinks max" hidden="false" id="1332-2aca-cf14-930a" type="profile" targetId="c3ee-de6a-9b28-cc86"/>
+        <infoLink name="Poisoned Weapons" id="f0a9-9279-2383-baf9" hidden="false" type="rule" targetId="0838-2e59-470f-c282"/>
+        <infoLink name="Scaly Skin" id="915d-8cfb-2c59-3e84" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
@@ -1461,7 +1471,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b5f0447a-c61d-c902-a24d-424ad25be42a" hidden="false" collective="false" import="true" targetId="0d5ab763-c126-029a-3da9-203abeafdb53" type="selectionEntryGroup" name="Lizardmen Skills"/>
+            <entryLink id="b5f0447a-c61d-c902-a24d-424ad25be42a" hidden="false" collective="false" import="true" targetId="69c4-dc4d-7f69-6db1" type="selectionEntryGroup" name="Lizardmen Special Skills"/>
             <entryLink id="cfcc91f5-b518-78e5-d939-f7225a8c60fc" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup" name="Shooting Skills"/>
             <entryLink id="12b8-17e5-cbdd-1922" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" name="Speed Skills"/>
           </entryLinks>
@@ -1665,9 +1675,10 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="085b-e268-b735-7b46" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="085b-e268-b735-7b46" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Charactaristics +/-" hidden="false" id="fa45-a543-3e2a-613b" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink import="true" name="Equipment - All" hidden="false" id="5fdc-e24d-87d8-5a76" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Sacred Markings" hidden="false" id="3d4a-2db5-5b40-7dfd" type="selectionEntryGroup" targetId="917c-b8a6-b7d2-c4ae" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30"/>
@@ -1788,6 +1799,8 @@
         <infoLink id="2fb4-78af-a254-7082" hidden="false" targetId="a139-901b-73c6-f54b" type="rule" name="Aquatic"/>
         <infoLink id="7631-35df-3e0d-29ab" hidden="false" targetId="f645-fb39-4a21-57ec" type="rule" name="Cold Blooded"/>
         <infoLink name="Skinks max" hidden="false" id="457a-bd6-5ed2-a0db" type="profile" targetId="c3ee-de6a-9b28-cc86"/>
+        <infoLink name="Poisoned Weapons" id="d379-97cf-ffaf-b949" hidden="false" type="rule" targetId="0838-2e59-470f-c282"/>
+        <infoLink name="Scaly Skin" id="f7e2-11f8-c5cc-7e37" hidden="false" type="rule" targetId="54ac-e473-0418-e21c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
@@ -1800,7 +1813,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" name="Speed Skills"/>
-            <entryLink id="ca854aa3-83b2-c930-7f5f-feb0582be796" hidden="false" collective="false" import="true" targetId="0d5ab763-c126-029a-3da9-203abeafdb53" type="selectionEntryGroup" name="Lizardmen Skills"/>
+            <entryLink id="ca854aa3-83b2-c930-7f5f-feb0582be796" hidden="false" collective="false" import="true" targetId="69c4-dc4d-7f69-6db1" type="selectionEntryGroup" name="Lizardmen Special Skills"/>
             <entryLink id="be110a0b-bcd6-fba0-6d35-e38bcb0459a8" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" name="Academic Skills"/>
           </entryLinks>
           <costs>
@@ -1984,6 +1997,7 @@
         <entryLink import="true" name="Charactaristics +/-" hidden="false" id="f71c-a15d-8534-8a43" collective="false" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink import="true" name="Equipment - All" hidden="false" id="2c94-12aa-2acc-adb9" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" collapsible="true"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="4071-d0b8-53f6-1c59" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" collapsible="true"/>
+        <entryLink import="true" name="Sacred Markings" hidden="false" id="1faa-8ad1-0302-f4be" type="selectionEntryGroup" targetId="917c-b8a6-b7d2-c4ae" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="60"/>
@@ -2016,9 +2030,6 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
-  <infoLinks>
-    <infoLink id="bed8-1a06-cf6f-3ef5" hidden="false" targetId="0838-2e59-470f-c282" type="rule" name="Poisoned Weapons"/>
-  </infoLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="56ab-ddca-246b-e319" name="Lizardman Magic" hidden="false" collective="false" import="true">
       <constraints>
@@ -2152,123 +2163,9 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0d5ab763-c126-029a-3da9-203abeafdb53" name="Lizardmen Skills" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="883b093d-f3b4-b329-4dac-c84c87327028" name="Toughened Hide (Saurus)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="236eb936-df01-fc5d-4b4b-eac16f5ca456" name="Toughened Hide" page="0" hidden="false">
-              <description>Through years of battle the Saurus’ hide has become hardened and the Saurus will only be taken out of action on a 6+</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1ccce6a9-1bae-912a-13b2-964325f82e81" name="Infiltration (Skink)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="37eb59ce-22b3-32cb-5558-b4703f30a3f3" name="Infiltration" page="0" hidden="false">
-              <description>The Skink is a great hunter and is an expert at sneaking upon his prey unnoticed. The Hero may set up anywhere on the table but no closer than 12&quot; to an enemy and he must start the game in hiding.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1c3be89b-8f1f-3476-aa6d-d9efdd0727ad" name="Great Hunter (Skink)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="ce247c03-be98-b392-8994-714955f3f908" name="Great Hunter" page="0" hidden="false">
-              <description>The Skink Great Crest is adept at making the most of the cover available and imposes an additional -1 to hit the Skink if he is in cover, IE a -2 to hit penalty.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ffb317b3-d1ef-5712-3f2d-c1339786ff0d" name="Bellowing Battle Roar (Saurus)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="b337a7d9-8d6c-5356-fc3f-4f19ce3327ff" name="Bellowing Battle Roar" page="0" hidden="false">
-              <description>The Saurus’ roar is so deafening that enemy models in base contact suffer -1 to hit in the first round of combat against them.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6271-aa5c-3195-b5c7" name="Sacred Markings" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2c56-e8d4-a98c-1c7c" name="Oversized Jaws" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <rules>
-                <rule id="cbcf-1adc-47e2-64f1" name="Oversized Jaws" page="0" hidden="false">
-                  <description>The Saurus has been granted the addition of powerful neck muscles and oversized jaws, even greater than those of a normal Saurus. The Hero may make his bite attack with +1 Strength. (Saurus Only)</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="40"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1e07-e983-1cb0-7187" name="Poison Glands" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <rules>
-                <rule id="4b72-8531-68c9-5197" name="Poison Glands" page="0" hidden="false">
-                  <description>The Skink may choose to make any number of attacks with his teeth instead of his weapons; these attacks are treated just like a Saurus bite attack. These attacks at +1 save modifier, regardless of the Strength of the Skinks, in addition add +1 to the roll on the Injury table as well. (Skinks only)</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="40"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="98fc-15d5-3fae-6546" name="Mark of the Old Ones" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <rules>
-                <rule id="3710-c06b-beaf-d4bf" name="Mark of the Old Ones" page="0" hidden="false">
-                  <description>The Hero may change one of his failed dice rolls into a successful one; this mark may only be used once per battle and only on actions that the Hero is making himself. You may use this mark on a failed Rout test if you wish.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="50"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup id="9699-2122-d2a9-82a6" name="Saurus Equipment" hidden="false" collective="false" import="true" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Saurus Armor" id="64c4-51bc-abb6-c69a" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Saurus Armor" id="64c4-51bc-abb6-c69a" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Helmet" hidden="false" id="370c-25ae-13f3-13bd" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
               <modifiers>
@@ -2294,7 +2191,7 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Saurus Hand-to-Hand" id="404e-9869-4856-23c9" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Saurus Hand-to-Hand" id="404e-9869-4856-23c9" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2b66-f127-e862-e9b0" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
             <entryLink import="true" name="Dagger" hidden="false" id="e455-fd0a-8ed7-9e3c" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
@@ -2316,16 +2213,44 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-430c-00c2-9adc" name="Skinks Equipment" hidden="false" collective="false" import="true" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Skink Missile Weapons" id="518a-025a-be8e-3534" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Skink Missile Weapons" id="518a-025a-be8e-3534" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Shortbow" hidden="false" id="630d-e8c7-15c9-f76b" collective="false" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
             <entryLink import="true" name="Bolas" hidden="false" id="5d18-107c-b5de-ef5c" collective="false" targetId="5595-398a-3e24-de99" type="selectionEntry"/>
-            <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="6848-ccda-9d62-62e2" collective="false" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry"/>
+            <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="6848-ccda-9d62-62e2" collective="false" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Javelin" field="name"/>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="b001-71e4-a2eb-6b77" collective="false" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
             <entryLink import="true" name="Blowpipe" hidden="false" id="1e79-683c-ce02-681a" collective="false" targetId="b6b-2ea5-1f65-a84b" type="selectionEntry"/>
+            <entryLink import="true" name="Dark Venom" hidden="true" id="b08a-a7af-2fd0-acfb" type="selectionEntry" targetId="443d-dade-6b72-a76d">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" shared="true" includeChildSelections="false" childName="Heroes"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="20" field="points"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Black Lotus" hidden="true" id="4145-1889-c6a5-ab55" type="selectionEntry" targetId="e7a3-2c8a-19a7-75a9">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" shared="true" includeChildSelections="false" childName="Heroes"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Reptile Venom" hidden="false" id="c429-5ee7-14af-8197" type="selectionEntry" targetId="421b-b452-dfd8-52ab">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Skink Hand-to-Hand" id="60df-77ed-07be-0b19" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Skink Hand-to-Hand" id="60df-77ed-07be-0b19" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="3a49-0abe-8d2e-8ace" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
             <entryLink import="true" name="Dagger" hidden="false" id="22ca-5589-a850-0aa8" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
@@ -2347,7 +2272,7 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
             <entryLink import="true" name="Spear" hidden="false" id="7b2e-eb2d-ec84-7087" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Skink Armor" id="791d-e1cc-f62b-b00e" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Skink Armor" id="791d-e1cc-f62b-b00e" hidden="false" collective="false" import="true" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Helmet" hidden="true" id="fe9c-d2ef-5305-e6d7" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
               <modifiers>
@@ -2361,7 +2286,7 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
             </entryLink>
             <entryLink import="true" name="Buckler" hidden="false" id="78c0-a9da-3255-aab1" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry"/>
             <entryLink import="true" name="Shield, %" hidden="false" id="2f05-972d-b7d8-e55c" type="selectionEntry" targetId="bb4f-ffbc-f928-c76d"/>
-            <entryLink import="true" name="Helmet, %" hidden="false" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e">
+            <entryLink import="true" name="Helmet, %" hidden="true" id="0ba0-23ed-3861-127c" type="selectionEntry" targetId="c138-9c66-20d9-fc8e">
               <modifiers>
                 <modifier type="set" value="Bone Helmet, %" field="name"/>
                 <modifier type="set" value="false" field="hidden">
@@ -2388,19 +2313,17 @@ However add +1 to the Strength and +1 to the roll on the injury table if the mod
     <rule id="5a93-cf11-1f61-567b" name="Jungle born" hidden="false">
       <description>All Skinks can move through jungle terrain without penalty</description>
     </rule>
-    <rule id="d6ce0b17-744e-af8c-009b-906a2b08634d" name="Poison" hidden="false">
-      <description>The needles fired by a blowpipe are coated in a venom very similar in its effects to the Black Lotus (if you roll a 6 on the To Hit roll, the victim is automatically wounded). A blowpipe cannot cause critical hits. This weapon has a positive armour save modifier, so a model that normally has a save of 5+ will get a save of 4+ against a blowpipe dart. Even models that normally do not have an armour save will get a 6+ save to take into account protection offered by clothes, fur or the like.</description>
-    </rule>
     <rule id="0838-2e59-470f-c282" name="Poisoned Weapons" hidden="false">
       <description>Skinks are experts at extracting and refining poisons from poisonous frogs, spiders and snakes. Skink Heroes may buy Dark Venom at a cost of 20 pts and Black Lotus at a cost of 10 pts, both of these items are treated as a common item however the poison may only be used on missile weapons. Only Saurus warriors may buy Dark Venom or Black Lotus and use it on their close combat weapons, and they have to buy it as normal from the Trading chart. 
 
 Skink henchmen may buy low-strength Reptile Venom for their missile weapons at a cost of 5 pts per weapon. This poison is a common item. This adds +1 to the Strength of the weapon but does not grant the -1 save modifier. The poison only lasts for one battle and remember that all the henchmen in a group must be armed in the same manner.</description>
     </rule>
-    <rule id="f799-d264-0564-2130" name="Saurus" hidden="false"/>
     <rule id="54ac-e473-0418-e21c" name="Scaly Skin" hidden="false">
-      <description>All Lizardmen have a natural save thanks to their thick scales. Saurus have a 5+ save and Skinks have a 6+. This save cannot be modified beyond 6 due to Strength modifiers but any result of ‘no save’ on the injury chart will negate this 6+ save. Light Armour adds +1 to the save, as does the addition of a shield.</description>
+      <description>All Lizardmen have a natural save thanks to their thick scales. Kroxigor have a 4+, Saurus have a 5+ save and Skinks have a 6+. This save cannot be modified beyond 6 due to Strength modifiers but any result of ‘no save’ on the injury chart will negate this 6+ save. Light Armour adds +1 to the save, as does the addition of a shield.</description>
     </rule>
-    <rule id="c6fc-b276-4962-d374" name="Skink" hidden="false"/>
+    <rule name="Bite Attack" id="f4ca-4b69-3c9b-e27c" hidden="false">
+      <description>Saurus have a powerful bite attack, this bite attack uses the Saurus’ own Strength to wound and receive no penalty fornot using a weapon. The Bite attack always strikes last, regardless of who charged or which weapon is used. The Bite even attacks after Double-Handed Weapons.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="98f9-9566-cf45-d5c3" name="Scaly Skin (Skink)" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
@@ -2426,4 +2349,24 @@ Skink henchmen may buy low-strength Reptile Venom for their missile weapons at a
     <catalogueLink type="catalogue" name="Characters" id="5b93-ef46-ffa8-a19d" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="5a7a-5d3a-e176-db11" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Reptile Venom" hidden="true" id="421b-b452-dfd8-52ab">
+      <rules>
+        <rule name="Reptile Venom" id="8da3-a450-00b9-6c5f" hidden="false">
+          <description>Skink henchmen may buy low-strength Reptile Venom for their missile weapons at a cost of 5 pts per weapon. This poison is a common item. This adds +1 to the Strength of the weapon but does not grant the -1 save modifier. The poison only lasts for one battle and remember that all the henchmen in a group must be armed in the same manner.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true" includeChildSelections="false" childName="Henchmen"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

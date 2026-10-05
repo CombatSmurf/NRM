@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="36fc-7d97-ad53-330b" name="Pit Fighters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="36fc-7d97-ad53-330b" name="Pit Fighters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Characters" id="d12e-8d7c-6680-a9f2" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="common-data" id="1a95-66ba-576d-943c" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Javelins" hidden="false" id="fdb2-3a34-5945-b059" collective="false">
-      <profiles>
-        <profile name="Javelin" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="648b-2f82-f1-f1ec">
-          <characteristics>
-            <characteristic name="Range" id="cc72-a98b-e44b-e19f" hidden="false" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
-            <characteristic name="Str" id="af32-3b9c-faed-2edc" hidden="false" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">As User</characteristic>
-            <characteristic name="Special" id="7b0e-f344-7a89-abb1" hidden="false" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Thrown Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Thrown weapon" id="3a3b-f431-f40a-ea0b" hidden="false" targetId="1015-45da-ae71-d59b" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="10"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trident" hidden="false" id="d51e-c57f-b829-9ff4">
       <costs>
         <cost name="pts" typeId="points" value="15"/>
@@ -550,24 +532,6 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Trident or Javelins" id="9604-bad-de9b-16a1" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Javelins" hidden="false" id="3fc9-518b-343c-7dc1" collective="false">
-                  <profiles>
-                    <profile name="Javelin" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="dfd1-759-fbe8-b667">
-                      <characteristics>
-                        <characteristic name="Range" id="cc72-a98b-e44b-e19f" hidden="false" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
-                        <characteristic name="Str" id="af32-3b9c-faed-2edc" hidden="false" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">As User</characteristic>
-                        <characteristic name="Special" id="7b0e-f344-7a89-abb1" hidden="false" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Thrown Weapon</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Thrown weapon" id="9f07-46df-1705-ac49" hidden="false" targetId="1015-45da-ae71-d59b" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                    <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Trident" hidden="false" id="9c09-c4cc-6845-dfee">
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -596,6 +560,13 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7597-e7e2-9397-d655-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7597-e7e2-9397-d655-max" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Gladiators&apos; Javelins" hidden="false" id="641d-5487-4650-ed2c" type="selectionEntry" targetId="1254-705f-070d-9424">
+                  <modifiers>
+                    <modifier type="set" value="0" field="points"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Net or Bucler" id="359e-50a9-2acd-a3ee" hidden="false">
               <selectionEntries>
