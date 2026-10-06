@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="54" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="55" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -2308,38 +2308,6 @@ Not available to Skaven.</description>
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry name="Warhorse" id="7863-e620-5c6e-7eee" collective="false" hidden="false" import="true" page="0" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="80"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Warhorse" id="c93a-ec9a-2b99-b278" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Warhorse" id="d527-bbb3-1188-00f4" hidden="false" page="0">
-          <description>Only Humans can buy or use warhorses 
-You may mount one of your Heroes on a warhorse in the coming battles. Warhorses can only be used if you are back of the book.</description>
-        </rule>
-        <rule name="Rarity" id="60c1-05ae-ea80-e766" hidden="false">
-          <description>Rarity 11
-
-Only available to Humans.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
     <selectionEntry name="Wyrdstone" id="60f8-e6e7-c2ea-0dad" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -3686,9 +3654,9 @@ It can never be removed.</description>
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry name="Warhorse, %" id="5bf4-bbc9-deda-4c68" collective="false" hidden="false" import="true" page="0" type="upgrade">
+    <selectionEntry name="Warhorse, %%" id="5bf4-bbc9-deda-4c68" collective="false" hidden="false" import="true" page="0" type="upgrade">
       <costs>
-        <cost name="pts" typeId="points" value="40"/>
+        <cost name="pts" typeId="points" value="20"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <profiles>
@@ -4878,34 +4846,6 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry name="Horse" id="5561-fa3c-8343-ff2a" collective="false" hidden="false" import="true" page="0" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="40"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Horse" id="86cc-0367-8f95-50dc" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">1</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">0</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Rarity" id="da66-8475-4ae8-2389" hidden="false">
-          <description>Rarity 8
-
-Only available to Humans.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
     <selectionEntry name="Horse, %" id="598f-3a2d-c558-890d" collective="false" hidden="false" import="true" page="0" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -5047,37 +4987,6 @@ Only available to Humans.</description>
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry name="Warhorse, %" id="8aee-f3ba-1557-d68e" collective="false" hidden="false" import="true" page="0" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="40"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Warhorse" id="b03a-89f2-2f90-8aa1" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Rarity" id="faa0-fc42-07ea-2845" hidden="false">
-          <description>Rarity 11
-
-Only available to Humans.</description>
-        </rule>
-        <rule name="Battle Schooled" id="ea7f-d86b-c526-8508" hidden="false">
-          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
     <selectionEntry name="Nightmare" id="822c-bc67-8800-b113" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="95"/>
@@ -5108,6 +5017,611 @@ Only available to Humans.</description>
           <description>Rarity 11
 
 Vampires and Necromancers only.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Chaos Steed" id="5cad-5e89-bc52-4f75" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="90"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Chaos Steed" id="1ad4-2398-d292-b920" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="a6dc-39d7-1de6-8a12" hidden="false">
+          <description>Rarity 11
+
+Only available to Chaos. May not be ridden by The Possessed models.</description>
+        </rule>
+        <rule name="Battle Schooled" id="acc2-273d-277f-b920" hidden="false">
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Chaos Steed, %" id="be0e-401b-2917-cecc" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Chaos Steed" id="c15f-e0a5-d65a-d1eb" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="3f1a-b711-d51b-6f83" hidden="false">
+          <description>Rarity 11
+
+Only available to Chaos. May not be ridden by The Possessed models.</description>
+        </rule>
+        <rule name="Battle Schooled" id="66f7-768d-0c9e-3e53" hidden="false">
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Cold One" id="b8d4-2909-7b89-a83e" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Stupidity" id="d0d4-0d3f-1fe5-3f87" hidden="false" targetId="20f0-4428-0681-c9f9" type="rule"/>
+        <infoLink name="Fear" id="e2ac-7c17-da63-1907" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cold One" id="c069-b58a-58b8-3369" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="4b40-b4b8-806b-ebf5" hidden="false">
+          <description>Rarity 11
+
+Only available to Dark Elves.</description>
+        </rule>
+        <rule name="Scaly" id="40d3-2c5e-f4c8-00a6" hidden="false">
+          <description>Cold ones give an additional +1 armour save bonus (making it a +2 total).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Cold One, %" id="ddf6-530d-90a9-8f49" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Stupidity" id="85af-604e-21d4-b939" hidden="false" targetId="20f0-4428-0681-c9f9" type="rule"/>
+        <infoLink name="Fear" id="5453-37dc-22f3-a185" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cold One" id="5e37-03a5-dc1d-1ada" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="7768-f320-8842-8796" hidden="false">
+          <description>Rarity 11
+
+Only available to Dark Elves.</description>
+        </rule>
+        <rule name="Scaly" id="34ee-add5-6295-d8e1" hidden="false">
+          <description>Cold ones give an additional +1 armour save bonus (making it a +2 total).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Elven Steed" id="f4b6-171e-ad1c-fb4d" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="90"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Elven Steed" id="d935-367a-83fb-573b" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">9</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">0</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="ea43-925d-6e40-d111" hidden="false">
+          <description>Rarity 10
+
+Only available to Elves.</description>
+        </rule>
+        <rule name="Battle Schooled" id="547a-748d-1f39-64de" hidden="false">
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Elven Steed, %" id="4905-3720-4af8-b8c2" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Elven Steed" id="914d-c2ad-a6f3-3b11" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">9</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">0</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="0253-c082-445b-bf1c" hidden="false">
+          <description>Rarity 10
+
+Only available to Elves.</description>
+        </rule>
+        <rule name="Battle Schooled" id="3c81-6819-3cee-5b9e" hidden="false">
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Giant Spider" id="3996-c1f6-8607-9e7a" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Giant Spider" id="a72f-a128-45fe-6441" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3(4)</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="9eaa-cdca-5c52-08b5" hidden="false">
+          <description>Rarity 11 (Goblins Only)</description>
+        </rule>
+        <rule name="Poisoned Attack" id="2a2b-1ea8-097d-61e0" hidden="false">
+          <description>Giant Spider attacks are poisoned; attacks are considered as Strength 4, but this will not modify any armour saves.</description>
+        </rule>
+        <rule name="Wall Walk" id="78e3-ca36-9cca-5bdf" hidden="false">
+          <description>Giant Spiders (and their riders) may walk up and down walls without making Initiative tests.
+
+
+They may only jump up to 2&quot; across or down, but this does count as a diving charge.
+When a spider jumps, its rider must make an Initiative test; if this test is failed, something has gone wrong – roll on the Whoa
+Boy! Table.
+Note even if the rider has the Running Dismount skill, the maximum diving charge is only 2&quot;.</description>
+        </rule>
+        <rule name="No wolves" id="7bb5-bd1c-8f94-003f" hidden="false">
+          <description>Giant Spiders cannot be used in a warband that already contains Giant Wolves.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Giant Spider, %" id="1eba-df1d-cf1d-82cb" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Giant Spider" id="72b9-b52b-83bb-1eb0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3(4)</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="9160-2311-0d39-8e9a" hidden="false">
+          <description>Rarity 11 (Goblins Only)</description>
+        </rule>
+        <rule name="Poisoned Attack" id="7b7f-f405-f592-cd8b" hidden="false">
+          <description>Giant Spider attacks are poisoned; attacks are considered as Strength 4, but this will not modify any armour saves.</description>
+        </rule>
+        <rule name="Wall Walk" id="ad1e-fa8b-ceba-c714" hidden="false">
+          <description>Giant Spiders (and their riders) may walk up and down walls without making Initiative tests.
+
+
+They may only jump up to 2&quot; across or down, but this does count as a diving charge.
+When a spider jumps, its rider must make an Initiative test; if this test is failed, something has gone wrong – roll on the Whoa
+Boy! Table.
+Note even if the rider has the Running Dismount skill, the maximum diving charge is only 2&quot;.</description>
+        </rule>
+        <rule name="No wolves" id="de2c-8252-ef69-443d" hidden="false">
+          <description>Giant Spiders cannot be used in a warband that already contains Giant Wolves.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Giant Wolf" id="b573-23c4-1664-4f24" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="85"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Giant Wolf" id="e31a-82e6-14e6-0c91" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">9</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Giant Wolf" id="7141-c3ce-dfd4-4bf0" hidden="false" page="0">
+          <description>Only Goblins can buy or use Giant Wolves.</description>
+        </rule>
+        <rule name="Rarity" id="7ef1-e1ae-a8af-4bde" hidden="false">
+          <description>Rarity 10
+
+Only available to Goblins.</description>
+        </rule>
+        <rule name="No spiders" id="7096-e91b-a510-4fd1" hidden="false">
+          <description>Giant Wolves cannot be used in a warband that already contains Giant Spiders</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Giant Wolf, %" id="726f-a278-f8c4-93a8" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="42.5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Giant Wolf" id="ba9e-d485-57c5-73dc" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">9</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Giant Wolf" id="3153-b33f-2113-7efe" hidden="false" page="0">
+          <description>Only Goblins can buy or use Giant Wolves.</description>
+        </rule>
+        <rule name="Rarity" id="438a-6536-3ce2-d0ce" hidden="false">
+          <description>Rarity 10
+
+Only available to Goblins.</description>
+        </rule>
+        <rule name="No spiders" id="c7d6-d208-866e-7d52" hidden="false">
+          <description>Giant Wolves cannot be used in a warband that already contains Giant Spiders</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Mule" id="976a-e835-cca9-44dc" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Mule" id="d323-d2e1-a597-41ee" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">0</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="b95e-18fc-9341-742b" hidden="false">
+          <description>Rarity 7
+
+Available to any warband.</description>
+        </rule>
+        <rule name="Slow" id="b158-2779-81e8-8e11" hidden="false">
+          <description>Mules are not the fastest of mounts and only bolt 2D6&quot;.</description>
+        </rule>
+        <rule name="Stubborn" id="4cbe-40c9-41f5-80e5" hidden="false">
+          <description>If a warrior is riding a mule, or is in base contact with a mule, he must make a Leadership test each round or the mule will refuse to move.</description>
+        </rule>
+        <rule name="Non-combatant" id="f5c9-8a08-add6-4e19" hidden="false">
+          <description>Mules will not fight in combat and may not be used to charge into combat — they will simply refuse to move. If an enemy warrior charges a ridden mule, immediately roll on the Whoa Boy! Table. If an unridden mule is charged, it will bolt directly away from the charger.</description>
+        </rule>
+        <rule name="Ornery" id="bac6-eee7-b13c-5b26" hidden="false">
+          <description>With no leader or rider, a mule will wander in a random direction. Should any close combat occur within 6&quot;, it will automatically bolt directly away from the combat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Mule, %" id="eb53-bd37-b0e2-2ab5" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Mule" id="39f5-5ddd-7e1c-7ef4" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">0</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="8fcc-8e1c-1ec7-3ec0" hidden="false">
+          <description>Rarity 7
+
+Available to any warband.</description>
+        </rule>
+        <rule name="Slow" id="b767-d25c-23a2-1478" hidden="false">
+          <description>Mules are not the fastest of mounts and only bolt 2D6&quot;.</description>
+        </rule>
+        <rule name="Stubborn" id="172c-00e1-0ba8-2f21" hidden="false">
+          <description>If a warrior is riding a mule, or is in base contact with a mule, he must make a Leadership test each round or the mule will refuse to move.</description>
+        </rule>
+        <rule name="Non-combatant" id="9e08-a667-c4d3-06d5" hidden="false">
+          <description>Mules will not fight in combat and may not be used to charge into combat — they will simply refuse to move. If an enemy warrior charges a ridden mule, immediately roll on the Whoa Boy! Table. If an unridden mule is charged, it will bolt directly away from the charger.</description>
+        </rule>
+        <rule name="Ornery" id="84ab-87c4-ba9f-887e" hidden="false">
+          <description>With no leader or rider, a mule will wander in a random direction. Should any close combat occur within 6&quot;, it will automatically bolt directly away from the combat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Nightmare" id="b297-cdf5-bb4d-c39b" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="95"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Immune to Poison" id="f563-8777-e2cb-cb93" hidden="false" targetId="f654-2dea-4f11-5730" type="rule"/>
+        <infoLink name="Immune to Psychology" id="ab73-7f10-6f50-859b" hidden="false" targetId="114e-939e-220b-403" type="rule"/>
+        <infoLink name="May not Run" id="fe70-1e2a-bc72-74d7" hidden="false" targetId="8f9a-f7a4-45f0-6918" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Nightmare" id="68d3-5381-ae52-0e40" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">8</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="4c49-eaf2-0c49-bdf2" hidden="false">
+          <description>Rarity 11
+
+Vampires and Necromancers only.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Nightmare, %" id="70b5-56b8-d6b0-e13b" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="47.5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Immune to Poison" id="8f34-1231-8cb9-6d1c" hidden="false" targetId="f654-2dea-4f11-5730" type="rule"/>
+        <infoLink name="Immune to Psychology" id="fb3a-7e5e-9eab-a164" hidden="false" targetId="114e-939e-220b-403" type="rule"/>
+        <infoLink name="May not Run" id="7faf-6023-11f4-b64e" hidden="false" targetId="8f9a-f7a4-45f0-6918" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Nightmare" id="232f-6bd5-fcf6-8b14" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">8</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="99c4-53d3-160f-ba84" hidden="false">
+          <description>Rarity 11
+
+Vampires and Necromancers only.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="War Boar" id="7518-4e66-2c1a-46f4" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="90"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="War Boar" id="17ee-774b-577c-493d" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="War Boar" id="b82d-aa36-46c0-f645" hidden="false" page="0">
+          <description>Only Orcs can buy or use War Boars.</description>
+        </rule>
+        <rule name="Rarity" id="e84c-f470-7c56-621c" hidden="false">
+          <description>Rarity 11
+
+Only available to Orcs.</description>
+        </rule>
+        <rule name="Ferocious Charge" id="40a8-70cb-d2cc-216e" hidden="false">
+          <description>Orc war boars attack with
++2S when charging, due to their bulk. Note
+that this applies only to the boar, not the rider.</description>
+        </rule>
+        <rule name="Thick Skinned" id="c77f-560c-dc00-81ab" hidden="false">
+          <description>The thick skin and matted fur
+of the boar makes him very hard to wound.
+Boars confer an additional +1 bonus to the
+rider’s armour save (making +2 total).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="War Boar, %" id="7c8c-eb25-c008-2480" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="War Boar" id="71c4-619d-e189-2f50" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="War Boar" id="7a04-eec7-6ca3-25e8" hidden="false" page="0">
+          <description>Only Orcs can buy or use War Boars.</description>
+        </rule>
+        <rule name="Rarity" id="e796-2283-d69f-b1b1" hidden="false">
+          <description>Rarity 11
+
+Only available to Orcs.</description>
+        </rule>
+        <rule name="Ferocious Charge" id="4eb9-2254-811a-4797" hidden="false">
+          <description>Orc war boars attack with
++2S when charging, due to their bulk. Note
+that this applies only to the boar, not the rider.</description>
+        </rule>
+        <rule name="Thick Skinned" id="aa8f-4ddb-bd2b-a1f6" hidden="false">
+          <description>The thick skin and matted fur
+of the boar makes him very hard to wound.
+Boars confer an additional +1 bonus to the
+rider’s armour save (making +2 total).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Warhorse, %" id="1f4c-40bd-06d4-6cfe" collective="false" hidden="false" import="true" page="0" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="40"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Warhorse" id="2fad-b248-087e-4ef2" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="65d1-0c59-8a07-d9e2" hidden="false">
+          <description>Rarity 11
+
+Only available to Humans.</description>
+        </rule>
+        <rule name="Battle Schooled" id="d869-c102-091a-b139" hidden="false">
+          <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -5795,7 +6309,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Armor - All" id="975d-a3e5-9029-58d5" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Armor - All" id="975d-a3e5-9029-58d5" collapsible="true" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="cb13-71da-4b4e-deac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
@@ -5805,9 +6319,12 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink name="Helmet" id="c8d0-5bb7-3227-c9e9" collective="false" hidden="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
         <entryLink name="Light Armor" id="0bfd-0a4a-05f7-b45a" collective="false" hidden="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
         <entryLink name="Shield" id="913a-ac51-f072-18ec" collective="false" hidden="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
+        <entryLink name="Gromril Armour" id="8f45-62a4-c3ae-cb03" collective="false" hidden="false" import="true" targetId="4c6d-eb92-53a7-a6d3" type="selectionEntry"/>
+        <entryLink name="Barding" id="531c-a050-c858-b46d" collective="false" hidden="false" import="true" targetId="98cf-5b49-a433-c337" type="selectionEntry"/>
+        <entryLink name="Ithilmar Armour" id="d906-ee69-bbaf-52a5" collective="false" hidden="false" import="true" targetId="b0bd-108f-d18d-a2c7" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Hand to Hand Weapons - All" id="073c-d5ce-dcc0-b820" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Hand to Hand Weapons - All" id="073c-d5ce-dcc0-b820" collapsible="true" collective="false" hidden="false" import="true">
       <entryLinks>
         <entryLink name="Axe" id="f385-6a53-c7f1-32a8" hidden="false" import="true" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
         <entryLink name="Starblade" id="3980-9d46-74b2-8519" hidden="false" import="true" targetId="ec90-545c-e303-099b" type="selectionEntry"/>
@@ -5867,7 +6384,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Missile Weapons - All" id="1937-df4f-3c68-e0be" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Missile Weapons - All" id="1937-df4f-3c68-e0be" collapsible="true" collective="false" hidden="false" import="true">
       <entryLinks>
         <entryLink name="Bow" id="6a15-fa8c-68b0-9642" collective="false" hidden="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
         <entryLink name="Shortbow" id="ec95-3895-9311-cdac" collective="false" hidden="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
@@ -6156,7 +6673,7 @@ must retire from the warband.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Miscellaneous Equipment - All" id="a2cf-6f28-f7c2-275d" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Miscellaneous Equipment - All" id="a2cf-6f28-f7c2-275d" collapsible="true" collective="false" hidden="false" import="true">
       <entryLinks>
         <entryLink name="Holy (Unholy) Relic" id="7e51-38d3-c7f1-cf14" collective="false" hidden="false" import="true" targetId="f122-5313-bc4d-97fa" type="selectionEntry"/>
         <entryLink name="Black Lotus" id="4083-2644-8b47-fffd" collective="false" hidden="false" import="true" targetId="e7a3-2c8a-19a7-75a9" type="selectionEntry"/>
@@ -6170,7 +6687,6 @@ must retire from the warband.</description>
         <entryLink name="Halfling Cook Book" id="87af-41c8-3742-ae7d" collective="false" hidden="false" import="true" targetId="73cf-8a3c-c99a-61e0" type="selectionEntry"/>
         <entryLink name="Healing Herbs" id="7de5-57d9-a5e9-5207" collective="false" hidden="false" import="true" targetId="665c-ee59-d2f5-fba1" type="selectionEntry"/>
         <entryLink name="Holy Tome" id="325d-85d3-b400-7f02" collective="false" hidden="false" import="true" targetId="42a9-c5a8-7147-0e7a" type="selectionEntry"/>
-        <entryLink name="Horse" id="c505-f7e4-25d8-ba8f" collective="false" hidden="false" import="true" targetId="567a-3811-5a9d-d5fd" type="selectionEntry"/>
         <entryLink name="Hunting Arrows" id="234c-b894-36f6-a80a" collective="false" hidden="false" import="true" targetId="992a-7458-a3fa-52cb" type="selectionEntry"/>
         <entryLink name="Lantern" id="d2dc-57b3-e441-3de8" collective="false" hidden="false" import="true" targetId="36d4-45a8-631f-652a" type="selectionEntry"/>
         <entryLink name="Lucky Charm" id="60ae-a4c2-1143-3c1d" collective="false" hidden="false" import="true" targetId="bfc4-571c-be36-e56f" type="selectionEntry"/>
@@ -6183,22 +6699,22 @@ must retire from the warband.</description>
         <entryLink name="Tears of Shallaya" id="7985-bf3a-97c9-bc9a" collective="false" hidden="false" import="true" targetId="3600-0df6-b0d0-8014" type="selectionEntry"/>
         <entryLink name="Tome of Magic" id="72df-d764-ec5c-122e" collective="false" hidden="false" import="true" targetId="a93e-d30c-ea44-4cc5" type="selectionEntry"/>
         <entryLink name="Wardog" id="8f22-c52a-52af-4d00" collective="false" hidden="false" import="true" targetId="72d2-7ef9-066c-12e7" type="selectionEntry"/>
-        <entryLink name="Warhorse" id="284f-49fe-9a67-0203" collective="false" hidden="false" import="true" targetId="7863-e620-5c6e-7eee" type="selectionEntry"/>
         <entryLink name="Amulet of the Moon" id="d800-8e58-281e-c0f3" collective="false" hidden="false" import="true" targetId="d737-92c2-4586-5b26" type="selectionEntry"/>
         <entryLink name="Blessed Stag Hide" id="c882-93a3-281a-f6e6" hidden="false" import="true" targetId="aed9-7c38-1939-dd4d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Equipment - All" id="2247-1f56-bc59-0ead" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Equipment - All" id="2247-1f56-bc59-0ead" collapsible="true" collective="false" hidden="false" import="true">
       <entryLinks>
-        <entryLink name="Armor - All" id="5ba4-c93b-a512-6afa" collective="false" flatten="true" hidden="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup"/>
-        <entryLink name="Hand to Hand Weapons - All" id="7364-e39a-1a0b-a869" collective="false" flatten="true" hidden="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup">
+        <entryLink name="Armor - All" id="5ba4-c93b-a512-6afa" collapsible="true" collective="false" hidden="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup"/>
+        <entryLink name="Hand to Hand Weapons - All" id="7364-e39a-1a0b-a869" collapsible="true" collective="false" hidden="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup">
           <constraints>
             <constraint id="bdba-5e5e-ea11-ab49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
           </constraints>
         </entryLink>
-        <entryLink name="Missile Weapons - All" id="af8a-aa1a-1e8f-8701" collective="false" flatten="true" hidden="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup"/>
+        <entryLink name="Missile Weapons - All" id="af8a-aa1a-1e8f-8701" collapsible="true" collective="false" hidden="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup"/>
         <entryLink name="Miscellaneous Equipment - All" id="dc31-0d77-4ab1-91b9" collapsible="true" collective="false" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
-        <entryLink name="Armor, %" id="1560-d42a-7c19-609b" flatten="true" hidden="false" import="true" sortIndex="0" targetId="82d9-2ec1-0dae-09e0" type="selectionEntryGroup"/>
+        <entryLink name="Armor, %" id="1560-d42a-7c19-609b" collapsible="true" hidden="false" import="true" sortIndex="0" targetId="82d9-2ec1-0dae-09e0" type="selectionEntryGroup"/>
+        <entryLink name="Mounts" id="9098-4dfc-872a-5fc6" hidden="false" import="true" targetId="a570-6021-1e34-bf30" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Mutations" id="5541-f5c4-85e0-b399" collective="false" hidden="false" import="true">
@@ -6758,6 +7274,8 @@ Warriors without Ride may not use this skill.</description>
         <entryLink name="Heavy Armour, %" id="48bf-44ed-428a-1c60" hidden="false" import="true" targetId="0fd7-ba59-1775-4a35" type="selectionEntry"/>
         <entryLink name="Buckler, %" id="de1f-f3f7-9e94-a0ae" hidden="false" import="true" targetId="9d7a-b710-1718-fd19" type="selectionEntry"/>
         <entryLink name="Barding, %" id="9581-956c-4677-e83b" hidden="false" import="true" targetId="18cc-7c29-7f0c-f572" type="selectionEntry"/>
+        <entryLink name="Gromril Armour, %" id="3a6d-d067-ddb9-48db" collective="false" hidden="false" import="true" targetId="bbdb-668c-447f-4f04" type="selectionEntry"/>
+        <entryLink name="Ithilmar Armour, %" id="cf93-1781-6395-fa78" collective="false" hidden="false" import="true" targetId="a2d3-8e0e-6262-31ff" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor, Dwarf %" id="5787-938c-4e02-14b6" hidden="false">
@@ -6836,58 +7354,9 @@ It can never be removed.</description>
         <entryLink name="Heavy Armour, %" id="146f-c635-2826-0944" hidden="false" import="true" targetId="0fd7-ba59-1775-4a35" type="selectionEntry"/>
         <entryLink name="Buckler, %" id="3408-ad63-bab0-686c" hidden="false" import="true" targetId="9d7a-b710-1718-fd19" type="selectionEntry"/>
         <entryLink name="Barding, %" id="da12-0b72-06b0-e9ad" hidden="false" import="true" targetId="18cc-7c29-7f0c-f572" type="selectionEntry"/>
+        <entryLink name="Warhorse, %" id="dfd2-322d-bf2b-b647" hidden="false" import="true" targetId="1f4c-40bd-06d4-6cfe" type="selectionEntry"/>
+        <entryLink name="Kite Shield, % (Bret Knights)" id="88b2-128a-b825-f547" hidden="false" import="true" targetId="15cf-19f2-a121-f120" type="selectionEntry"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Kite Shield, % (Bret Knights)" id="7aff-27dd-871c-0385" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Vain" id="14b4-3aa3-2d2f-5b62" hidden="false" targetId="da88-e89f-22d3-6135" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Kite Shield" id="0bb7-daa1-44d5-7864" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
-              <characteristics>
-                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+2 / +1</characteristic>
-                <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Wall of Wood</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Warhorse, %" id="df9d-3f47-0b91-4b9e" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Warhorse" id="4d0d-8b2d-9a02-1a5d" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">8</characteristic>
-                <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
-                <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-                <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-                <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-                <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-                <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-                <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-                <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Warhorse" id="5dfd-8825-c32e-520e" hidden="false" page="0">
-              <description>Only Humans can buy or use warhorses 
-You may mount one of your Heroes on a warhorse in the coming battles. Warhorses can only be used if you are back of the book.</description>
-            </rule>
-            <rule name="Rarity" id="5a35-6c51-4f08-d18e" hidden="false">
-              <description>Rarity 11
-
-Only available to Humans.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Characteristic Decreases" id="9d72-8c8f-1eba-38dc" collective="false" hidden="false" import="true">
       <entryLinks>
@@ -8157,6 +8626,31 @@ in the close combat phase, she will score 1 automatic hit and then the opponent 
           </rules>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mounts" id="a570-6021-1e34-bf30" hidden="false">
+      <entryLinks>
+        <entryLink name="Chaos Steed" id="93b4-c955-4e7e-b493" hidden="false" import="true" targetId="84db-029f-cb8c-dae1" type="selectionEntry"/>
+        <entryLink name="Cold One, %" id="0e8f-32a7-926a-bc28" hidden="false" import="true" targetId="ddf6-530d-90a9-8f49" type="selectionEntry"/>
+        <entryLink name="Elven Steed, %" id="7b51-9cf4-50f5-17db" hidden="false" import="true" targetId="4905-3720-4af8-b8c2" type="selectionEntry"/>
+        <entryLink name="Giant Spider, %" id="1717-fbb5-a0ba-a328" hidden="false" import="true" targetId="1eba-df1d-cf1d-82cb" type="selectionEntry"/>
+        <entryLink name="Giant Wolf, %" id="2dcb-793a-59fd-ed07" hidden="false" import="true" targetId="726f-a278-f8c4-93a8" type="selectionEntry"/>
+        <entryLink name="Horse" id="3a75-399a-3f60-b26e" hidden="false" import="true" targetId="567a-3811-5a9d-d5fd" type="selectionEntry"/>
+        <entryLink name="Horse, %" id="d038-e44e-76af-541e" hidden="false" import="true" targetId="598f-3a2d-c558-890d" type="selectionEntry"/>
+        <entryLink name="Mule, %" id="d310-a66f-4aae-cf6e" hidden="false" import="true" targetId="eb53-bd37-b0e2-2ab5" type="selectionEntry"/>
+        <entryLink name="Nightmare" id="05ad-f52c-eb01-0eed" hidden="false" import="true" targetId="822c-bc67-8800-b113" type="selectionEntry"/>
+        <entryLink name="War Boar, %" id="20d0-6728-ec49-f826" hidden="false" import="true" targetId="7c8c-eb25-c008-2480" type="selectionEntry"/>
+        <entryLink name="Warhorse" id="63e6-e017-a94e-b97b" hidden="false" import="true" targetId="0abc-8f65-42b8-f0e8" type="selectionEntry"/>
+        <entryLink name="Warhorse, %%" id="f314-4217-69aa-d551" hidden="false" import="true" targetId="5bf4-bbc9-deda-4c68" type="selectionEntry"/>
+        <entryLink name="Nightmare, %" id="d244-4dc1-81d5-f956" hidden="false" import="true" targetId="70b5-56b8-d6b0-e13b" type="selectionEntry"/>
+        <entryLink name="Chaos Steed, %" id="0e1b-b1ea-fe3e-7a40" hidden="false" import="true" targetId="be0e-401b-2917-cecc" type="selectionEntry"/>
+        <entryLink name="Cold One" id="4ac3-be67-8145-d06f" hidden="false" import="true" targetId="91d4-ac3e-b644-d6e9" type="selectionEntry"/>
+        <entryLink name="Elven Steed" id="cc7d-dc80-737d-908c" hidden="false" import="true" targetId="5913-a81f-2c9a-6fc8" type="selectionEntry"/>
+        <entryLink name="Giant Spider" id="eaef-792a-0a18-4ba3" hidden="false" import="true" targetId="3996-c1f6-8607-9e7a" type="selectionEntry"/>
+        <entryLink name="Giant Wolf" id="31af-d085-3219-1780" hidden="false" import="true" targetId="fd12-5f3b-65ef-9583" type="selectionEntry"/>
+        <entryLink name="Mule" id="8e4b-1e42-d5a4-397f" hidden="false" import="true" targetId="ba1e-66e6-48fb-7278" type="selectionEntry"/>
+        <entryLink name="War Boar" id="cf2f-73bc-c032-c219" hidden="false" import="true" targetId="5192-9bcc-6246-fe1c" type="selectionEntry"/>
+        <entryLink name="Warhorse, %" id="66ee-11b4-bc0b-a2f7" hidden="false" import="true" targetId="1f4c-40bd-06d4-6cfe" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
