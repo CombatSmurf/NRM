@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="9bae-9ad5-7c63-2157" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="New Catalogue (link)" id="3dd3-2e93-24b8-5b30" type="catalogue"/>
@@ -1453,7 +1453,7 @@
             <entryLink name="Sword" id="5094-b82d-7103-f791" hidden="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
             <entryLink name="Halberd" id="02fd-4b37-6ed5-993b" hidden="false" import="true" targetId="3c52-9e92-25ec-1939" type="selectionEntry"/>
             <entryLink name="Spear" id="b9c8-7dc9-92d0-33fb" hidden="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
-            <entryLink name="Beastlash (Beastmaster only)" id="5bc8-93ab-b2b4-60be" hidden="true" import="true" targetId="e685-cad9-9e27-c01f" type="selectionEntry">
+            <entryLink name="Beastlash (Beastmaster only) [2a]" id="5bc8-93ab-b2b4-60be" hidden="true" import="true" targetId="c0a2-a5cc-f5fe-f458" type="selectionEntry">
               <modifiers>
                 <modifier field="hidden" type="set" value="false">
                   <conditions>
