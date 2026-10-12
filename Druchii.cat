@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="9bae-9ad5-7c63-2157" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="New Catalogue (link)" id="3dd3-2e93-24b8-5b30" type="catalogue"/>
@@ -1432,57 +1432,15 @@
           </constraints>
           <entryLinks>
             <entryLink name="Throwing Knives/Stars" id="9811-3365-97e0-3399" hidden="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Repeater Crossbow" id="7efa-e104-4f83-8ad3" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Repeater Crossbow" id="24fa-173b-eadd-4803" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Crossbow Pistol" id="1f2f-e685-fada-8726" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Crossbow Pistol" id="b919-caf1-c4d9-a3f6" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Shoot in hand-to-hand combat: A model armed with a crossbow pistol may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model’s Ballistic Skill to see whether it hits or not. This bonus attack is in addition to any close combat weapon attacks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Repeater Crossbow" id="3c17-4755-1623-40f1" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
+            <entryLink name="Crossbow Pistol" id="bfa7-7f19-b628-fae9" hidden="false" import="true" targetId="7e2c-4e29-d41c-2d9e" type="selectionEntry"/>
+            <entryLink name="Repeater Crossbow" id="5b34-917a-99d9-43d1" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
               <modifiers>
                 <modifier field="points" type="set" value="20"/>
+                <modifier field="name" type="set" value="Repeater Crossbow, %"/>
               </modifiers>
-              <profiles>
-                <profile name="Repeater Crossbow" id="c2a3-dc56-54b6-53c4" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink name="Repeater Crossbow" id="c7f6-13b0-4131-fcde" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="8528-6d7c-bcba-3fd7" collective="false" flatten="true" hidden="false" import="true">
           <constraints>
@@ -1576,42 +1534,14 @@
           <entryLinks>
             <entryLink name="Throwing Knives/Stars" id="134f-ce1f-df60-c411" hidden="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
             <entryLink name="Bow" id="afa5-ceba-3156-2678" hidden="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Repeater Crossbow" id="8453-dbb0-92d5-7257" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Repeater Crossbow" id="be77-87ec-a618-cc59" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Repeater Crossbow" id="961f-1683-65a4-7b95" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
+            <entryLink name="Repeater Crossbow" id="9f45-310d-ec46-b021" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
               <modifiers>
                 <modifier field="points" type="set" value="20"/>
+                <modifier field="name" type="set" value="Repeater Crossbow, %"/>
               </modifiers>
-              <profiles>
-                <profile name="Repeater Crossbow" id="8985-09e5-8bd8-0d4d" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink name="Repeater Crossbow" id="af7f-0897-a2a9-ede4" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="966d-b723-4a27-ec39" collective="false" flatten="true" hidden="false" import="true">
           <constraints>
@@ -1713,41 +1643,15 @@
             <constraint id="3bf8-f876-9dce-1047" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
             <constraint id="38a8-8a69-b36e-4731" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry name="Repeater Crossbow" id="4b6e-5e03-8c7a-95da" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Repeater Crossbow" id="9ee3-3750-c7ac-ece7" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Repeater Crossbow" id="790a-b2f0-708b-a3e1" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
+          <entryLinks>
+            <entryLink name="Repeater Crossbow" id="cd01-555c-d172-77f9" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
               <modifiers>
                 <modifier field="points" type="set" value="20"/>
+                <modifier field="name" type="set" value="Repeater Crossbow, %"/>
               </modifiers>
-              <profiles>
-                <profile name="Repeater Crossbow" id="4e03-620e-8f64-598c" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink name="Repeater Crossbow" id="0719-46b6-3b04-12da" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="49a5-fbd8-8f42-c4c0" collective="false" flatten="true" hidden="false" import="true">
           <constraints>
@@ -1784,6 +1688,7 @@
             <entryLink name="Buckler, %" id="86c2-89d2-b1ff-eeca" hidden="false" import="true" targetId="9d7a-b710-1718-fd19" type="selectionEntry"/>
             <entryLink name="Sea Dragon Cloak (2a)" id="0ade-56e1-6fac-3db8" hidden="false" import="true" targetId="38c0-7998-e1b4-c4c5" type="selectionEntry"/>
             <entryLink name="Sea Dragon Cloak (2a), %" id="4099-aad7-bea9-f17d" hidden="false" import="true" targetId="5bdc-f4c7-30da-b645" type="selectionEntry"/>
+            <entryLink name="Shield, %" id="a172-2178-c826-204b" hidden="false" import="true" targetId="bb4f-ffbc-f928-c76d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Extra Equipment" id="94ae-97c7-91a2-61f1" hidden="false">
