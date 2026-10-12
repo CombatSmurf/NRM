@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Dark Elves (1b)" id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="22" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Dark Elves (1b)" id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="23" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="ba6d-cbab-e4fa-7714" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="d8c5-4c55-770a-78dd" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -1251,38 +1251,14 @@ Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</descript
             <constraint id="6be6-fc82-f331-e2ae" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
             <constraint id="0356-7cff-a9a5-cba6" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry name="Repeater Crossbow" id="2026-2835-f405-d5cb" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Repeater Crossbow" id="6ec0-01fe-02ce-5a58" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Crossbow Pistol" id="5b0d-a3f9-7d8e-03a6" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Crossbow Pistol" id="7c8a-978a-2ef0-3404" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Shoot in hand-to-hand combat: A model armed with a crossbow pistol may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model’s Ballistic Skill to see whether it hits or not. This bonus attack is in addition to any close combat weapon attacks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink name="Repeater Crossbow" id="ed35-2b44-e3ab-017c" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
+              <modifiers>
+                <modifier field="points" type="set" value="35"/>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Crossbow Pistol" id="a6c3-bc49-f2fe-6cb3" hidden="false" import="true" targetId="7e2c-4e29-d41c-2d9e" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="81a8-a472-3028-be0c" collective="false" flatten="true" hidden="false" import="true">
           <constraints>
@@ -1329,6 +1305,7 @@ Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</descript
             <entryLink name="Barding" id="ea37-51bc-8663-b65e" hidden="false" import="true" targetId="98cf-5b49-a433-c337" type="selectionEntry"/>
             <entryLink name="Buckler" id="b7d5-dce3-1020-31c2" hidden="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry"/>
             <entryLink name="Buckler, %" id="c238-4e5c-eadc-d43f" hidden="false" import="true" targetId="9d7a-b710-1718-fd19" type="selectionEntry"/>
+            <entryLink name="Shield, %" id="e1d4-4f2d-5247-966e" hidden="false" import="true" targetId="bb4f-ffbc-f928-c76d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Special Equipment" id="e379-4bc5-506a-12d9" flatten="true" hidden="false">
@@ -1359,23 +1336,13 @@ Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</descript
             <constraint id="9a97-62ef-20cc-2d0d" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
             <constraint id="9bc9-5ca4-77bb-bd77" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry name="Repeater Crossbow" id="25d0-663d-fdea-180b" collective="false" hidden="false" import="true" page="0" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Repeater Crossbow" id="ded3-9827-a180-58a2" hidden="false" page="0" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
-                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
-                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire twice: A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink name="Repeater Crossbow" id="335b-4d11-54a0-a2f9" hidden="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry">
+              <modifiers>
+                <modifier field="points" type="set" value="35"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hand to Hand Weapons" id="fd78-06f0-acea-8a9b" collective="false" flatten="true" hidden="false" import="true">
           <constraints>
