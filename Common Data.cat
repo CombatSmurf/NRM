@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="56" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="57" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -4464,11 +4464,14 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry name="Beastlash (Beastmaster only)" id="e685-cad9-9e27-c01f" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Beastlash (Beastmaster only) [1b]" id="e685-cad9-9e27-c01f" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="10"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="+1 Enemy armour save" id="a87d-a490-58d6-ed35" hidden="false" targetId="98ac-2376-00c1-4f65" type="rule"/>
+      </infoLinks>
       <profiles>
         <profile name="Beastlash (Beastmaster only)" id="b592-c62f-0909-8fda" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
@@ -4478,23 +4481,17 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </profile>
       </profiles>
       <rules>
-        <rule name="Beastbane" id="3314-5cdd-5bce-f783" hidden="false">
-          <description>Beastbane: The Beastmaster wielding a
-Beastlash causes Fear in animals, any animal
-charged or wishing to charge a Beastmaster
-with one of these weapons must first take a
-Fear test as mentioned in the psychology
-section of the Mordheim rules.</description>
-        </rule>
         <rule name="Reach" id="6d8c-ce57-c52c-e129" hidden="false">
-          <description>Reach: A Beastlash may attack opponents up
-to 4&quot; away (see Sisters of Sigmar Steelwhip).</description>
+          <description>Reach: A Beastlash may attack opponents up to 4&quot; away (see Sisters of Sigmar Steelwhip in the Original MRB).</description>
         </rule>
         <rule name="Price Modifier" id="81ef-3e5b-0472-dbea" hidden="false">
           <description>+ 1d6</description>
         </rule>
         <rule name="Rarity" id="339a-0eb0-3c03-2665" hidden="false">
           <description>Rare 8 (Beastmaster only)</description>
+        </rule>
+        <rule name="Beastbane" id="7ecf-5b47-364a-5d26" hidden="false">
+          <description>Beastbane: The Beastmaster wielding a Beastlash causes Fear in animals, any animal charged or wishing to charge a Beastmaster with one of these weapons must first take a Fear test as mentioned in the psychology section of the Mordheim rules.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -5335,6 +5332,36 @@ Only available to Humans.</description>
         </rule>
         <rule name="Battle Schooled" id="d869-c102-091a-b139" hidden="false">
           <description>The mount has been specially trained to fight on a battlefield. The rider may re-roll any failed loss of control tests. Only one re-roll is allowed per test.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Beastlash (Beastmaster only) [2a]" id="c0a2-a5cc-f5fe-f458" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Cannot Be Parried" id="4def-4701-960b-6a03" hidden="false" targetId="08b7-8107-edae-ce86" type="rule"/>
+        <infoLink name="Whip Crack" id="6f5c-7150-cb80-55ed" hidden="false" targetId="7cd8-463b-1ea0-732e" type="rule"/>
+        <infoLink name="+1 Enemy armour save" id="3934-a572-22b4-e141" hidden="false" targetId="98ac-2376-00c1-4f65" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Beastlash (Beastmaster only)" id="56e9-7f18-7c39-6117" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Reach, Beastbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Beastbane" id="a51e-18dd-dd36-3e51" hidden="false">
+          <description>Beastbane: The Beastmaster wielding a Beastlash causes Fear in animals, any animal charged or wishing to charge a Beastmaster with one of these weapons must first take a Fear test as mentioned in the psychology section of the Mordheim rules.</description>
+        </rule>
+        <rule name="Price Modifier" id="f2ec-6f31-7f4b-3261" hidden="false">
+          <description>+ 1d6</description>
+        </rule>
+        <rule name="Rarity" id="6291-2f6e-9542-405f" hidden="false">
+          <description>Rare 8 (Beastmaster only)</description>
         </rule>
       </rules>
     </selectionEntry>
