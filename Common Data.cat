@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="59" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="60" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -5362,6 +5362,84 @@ Only available to Humans.</description>
         </rule>
         <rule name="Rarity" id="6291-2f6e-9542-405f" hidden="false">
           <description>Rare 8 (Beastmaster only)</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Elven Wine" id="b0ab-3c40-b990-ba9e" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="e56a-9bfd-26f2-5809" hidden="false">
+          <description>+3d6</description>
+        </rule>
+        <rule name="Elven Wine" id="d91f-2c9a-7b5d-3e35" hidden="false">
+          <description>High Elven wines are well known to be the best in the world, and some are even rumored to have magical qualities. A fine Elven Wine can cast out doubt and fear and leave a general feeling of well-being in a warrior. A Shadow Warrior Warband that drinks Elven Wine before a battle will be immune to Fear for the whole of the battle.</description>
+        </rule>
+        <rule name="Rarity" id="757b-398b-949c-9199" hidden="false">
+          <description>Rarity 10
+
+Shadow Warriors Only, one use only.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Elven Runestones" id="0971-9646-d304-41ff" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="6b90-4f7a-d03e-a370" hidden="false">
+          <description>+2d6</description>
+        </rule>
+        <rule name="Elven Runestones" id="fec4-bf29-a556-52bf" hidden="false">
+          <description>A Mage with Elven Runestones may use them to attempt to dispel a spell that has been successfully cast against himself or another member of his warband. To dispel such a spell, the mage must roll equal to or above the successful caster’s score. If he succeeds, the spell fails to work. If the roll fails, the spell works normally.</description>
+        </rule>
+        <rule name="Rarity" id="cb95-b318-e00a-e897" hidden="false">
+          <description>Rarity 11
+
+Shadow Weavers Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="Standard of Nagarythe" id="f455-3cb8-0e95-31ec" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="75"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="254d-1b7c-27a0-01ea" hidden="false">
+          <description>+3d6</description>
+        </rule>
+        <rule name="Standard of Nagarythe" id="19c8-6247-f6e3-2dfb" hidden="false">
+          <description>A Standard of Nagarythe can serve as a second rallying point (the Shadow Master is the first, represented by his Leader skill) for the unit. Any members of the Shadow Warrior warband within 12&quot; of their standard may re-roll any failed Leadership tests, should the standard be captured by the enemy (model holding the standard is taken Out of Action), all members of the warband will be subject to Hatred for the remainder of the game, and may not voluntarily Rout. Note that these effects do not affect any Hired Swords in the warband, only actual Shadow Warriors (including Shadow Warrior heroes) are affected. A model carrying a standard requires one hand free to do so, so no weapons, shields, etc, may be carried in this hand, and no double-handed weapons may be used while the standard is carried. A standard may be used in close combat as a makeshift spear (use the rules for a spear but with -1 on the to hit rolls). A standard may only ever be purchased when the warband is created and may never be added later to the warband.
+
+</description>
+        </rule>
+        <rule name="Rarity" id="4c62-c7f0-796b-1c40" hidden="false">
+          <description>Rarity 9
+
+Shadow Warriors Only</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry name="War Horn of Nagarythe " id="1d57-5aaa-2bdc-63a5" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Price Modifier" id="0e5a-32b3-ddda-2451" hidden="false">
+          <description>+1d6</description>
+        </rule>
+        <rule name="War Horn of Nagarythe" id="3a21-cb1c-71f1-433e" hidden="false">
+          <description>The rules for the War Horn of Nagarythe are the same as for a normal War Horn from Town Cryer issue 7 (except for Rarity and price, see above), and are restated here for your convenience: A War Horn of Nagarythe may be sounded once during the game at the start of any Shadow Warrior turn, Until the start of the next turn, all members of the warband gain a +1 to their Leadership (maximum Leadership 10). The War Horn may be used just before the warband takes a Rout test. (Shadow Warriors Only).</description>
+        </rule>
+        <rule name="Rarity" id="a46f-ceca-d774-8955" hidden="false">
+          <description>Rarity 6
+
+Shadow Warriors Only</description>
         </rule>
       </rules>
     </selectionEntry>
