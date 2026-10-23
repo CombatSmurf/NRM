@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="9bae-9ad5-7c63-2157" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="New Catalogue (link)" id="3dd3-2e93-24b8-5b30" type="catalogue"/>
@@ -1226,11 +1226,15 @@
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Gold" id="73c8-6497-e86a-27cf" collective="false" hidden="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
-        <entryLink name="Equipment - All" id="e380-6b73-fca2-24f0" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Gold" id="73c8-6497-e86a-27cf" collective="false" hidden="false" import="true" sortIndex="1" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink name="Equipment - All" id="e380-6b73-fca2-24f0" collective="false" hidden="false" import="true" sortIndex="3" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Corsairs Equipment" id="57c8-b947-d77d-523f" hidden="false" import="true" sortIndex="4" targetId="4735-6989-378a-a4aa" type="selectionEntryGroup"/>
+        <entryLink name="Druchii Heroes Equipment" id="81b9-aab1-8fe9-66e0" hidden="false" import="true" sortIndex="5" targetId="c7d0-3715-289e-2e0a" type="selectionEntryGroup"/>
+        <entryLink name="Witch Elves Equipment" id="361b-a9e0-c454-b19c" hidden="false" import="true" sortIndex="7" targetId="1a6f-373d-4ac6-ae65" type="selectionEntryGroup"/>
+        <entryLink name="Shades Equipment" id="ff32-9d48-fc14-cf94" hidden="false" import="true" sortIndex="6" targetId="e777-cdec-d011-cedc" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry name="Wyrdstone" id="c41b-cb57-1c5b-ed52" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Wyrdstone" id="c41b-cb57-1c5b-ed52" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="cd3f-e5da-8161-bb17" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="8d94-0b03-0bea-afa2" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -1186,6 +1186,13 @@ In close combat, the opponent may choose which to hit.
 The Gigantic Spider no longer has to check for stupidity if it is being ridden, as the Chieftain is directing its actions.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry name="Stash" id="9298-11cb-6b2f-1df1" hidden="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink name="Gold" id="9963-76db-ee7b-f09e" hidden="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink name="Equipment - All" id="e839-006e-11c7-b102" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Wyrdstone" id="22b1-c9f4-3989-0e87" hidden="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
