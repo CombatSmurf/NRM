@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="58" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="59" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -737,7 +737,7 @@ Wicked Edge: Darksteel weapons are set with sharp protrusions and serrated edge
     </selectionEntry>
     <selectionEntry name="Gold" id="deca-5737-6234-23a1" collective="false" hidden="false" import="true" page="0" type="upgrade">
       <costs>
-        <cost name="pts" typeId="points" value="1"/>
+        <cost name="pts" typeId="points" value="-1"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
@@ -5349,7 +5349,7 @@ Only available to Humans.</description>
         <profile name="Beastlash (Beastmaster only)" id="56e9-7f18-7c39-6117" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Reach, Beastbane</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Beastbane, Cannot Be Parried, Whip Crack</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6050,9 +6050,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armor - All" id="975d-a3e5-9029-58d5" collapsible="true" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="cb13-71da-4b4e-deac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
-      </constraints>
       <entryLinks>
         <entryLink name="Buckler" id="1ca4-6469-0b18-b91e" collective="false" hidden="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry"/>
         <entryLink name="Heavy Armor" id="8a38-70c6-bd83-db84" collective="false" hidden="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry"/>
@@ -6446,11 +6443,7 @@ must retire from the warband.</description>
     <selectionEntryGroup name="Equipment - All" id="2247-1f56-bc59-0ead" collapsible="true" collective="false" hidden="false" import="true">
       <entryLinks>
         <entryLink name="Armor - All" id="5ba4-c93b-a512-6afa" collapsible="true" collective="false" hidden="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup"/>
-        <entryLink name="Hand to Hand Weapons - All" id="7364-e39a-1a0b-a869" collapsible="true" collective="false" hidden="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup">
-          <constraints>
-            <constraint id="bdba-5e5e-ea11-ab49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
-          </constraints>
-        </entryLink>
+        <entryLink name="Hand to Hand Weapons - All" id="7364-e39a-1a0b-a869" collapsible="true" collective="false" hidden="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup"/>
         <entryLink name="Missile Weapons - All" id="af8a-aa1a-1e8f-8701" collapsible="true" collective="false" hidden="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup"/>
         <entryLink name="Miscellaneous Equipment - All" id="dc31-0d77-4ab1-91b9" collapsible="true" collective="false" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
         <entryLink name="Armor, %" id="1560-d42a-7c19-609b" collapsible="true" hidden="false" import="true" sortIndex="0" targetId="82d9-2ec1-0dae-09e0" type="selectionEntryGroup"/>
@@ -8391,250 +8384,6 @@ in the close combat phase, she will score 1 automatic hit and then the opponent 
         <entryLink name="War Boar" id="cf2f-73bc-c032-c219" hidden="false" import="true" targetId="5192-9bcc-6246-fe1c" type="selectionEntry"/>
         <entryLink name="Warhorse, %" id="66ee-11b4-bc0b-a2f7" hidden="false" import="true" targetId="1f4c-40bd-06d4-6cfe" type="selectionEntry"/>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Special Skills (Shadow Warrior)" id="285ebcd1-3b2e-4937-39bc-a88721067dca" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="10bd-675f-18ca-75c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="ecd8-61e1-f113-e6e9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-        <constraint id="111e-9e0d-78c9-aa84" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="bfea-9166-429d-c4e5" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="3d67-01e1-cdb3-668c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="bcfa-8675-d732-c123" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="7d0c-0225-3daa-e325" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="b67e-446e-42db-ff4d" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="Infiltration" id="a656b5c4-2707-e1ce-aa18-4bf4dff3a18c" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Infiltration" id="daa6a87d-c59f-799b-16a2-2779ae4e2703" hidden="false">
-              <description>As long as he has movement to reach them, the warrior may always roll to charge opponents he cannot see (instead of the normal 4&quot;).</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Sniper" id="6ece6f8b-5cff-ec07-649c-1d7f2dd9e63a" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Sniper" id="dfa2a5a9-2ce4-c381-21bc-e8f363fed87a" hidden="false">
-              <description>If Hidden, a warrior with this skill may shoot or cast spells and still remain Hidden.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Powerful Build" id="aaf9c1fa-e1d9-c3c3-8c8b-dfb48fca045e" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Powerful Build" id="b01c80e0-5c4d-b6ed-9bd6-4402a615feaf" hidden="false">
-              <description>A warrior with this skill may choose skills from the Strength skills table from now on. This skill may not be taken by Shadow Weavers. There may never be more than two Elves with this skill in the warband at any one time.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Hide In Shadows" id="07ec6706-8744-fb58-0144-d199f26edda9" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Hide In Shadows" id="5bd27bc6-7ab1-792a-0fb4-2c82d62d8bf8" hidden="false">
-              <description>An enemy warrior attempting to detect this warrior when he is Hidden must halve his Initiative before measuring the  distance.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Master of Runes" id="0b17f14a-915c-026a-f143-43ada5b9e2b5" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Master of Runes" id="bc279432-c686-85b4-90e5-115edb08fa40" hidden="false">
-              <description>When using Elven Runestones, the mage is +1 to his dispel roll. In addition, the mage can inscribe the  weapons and armour of one of his fellow
-warriors with Elven runes. One member of the Warband may reroll a single failed armour save or Parry roll once per battle. After a single battle, the runes lose their glamour and
-must be redone. This skill may only be taken by Shadow Weavers.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Shadow Warrior Magic" id="0398-256c-9a74-454d" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="273a-398b-5626-d8c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="569b-22b2-a919-2d7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-        <constraint id="3735-4a5d-630f-c18e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="f471-15f7-ba9f-e97b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="b4ee-614a-27be-8a81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="596e-cc04-2cde-05cd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="d164-a4a4-c96d-f9a7" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="7c3e-a3f7-47a1-c8ba" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="1 Pool of Shadow" id="2c03-8490-a0ac-ad0b" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="1 Pool of Shadow" id="8cd864b0-108a-4761-c750-71edb80943e4" hidden="false" page="0">
-              <description>Difficulty: 7
-This spell allows the mage and all within 6&quot; to Hide, exactly as if there were a wall or other obstruction between them and their enemies. They may Hide even after marching. This Hiding is distrupted if any enemy enters the area of affect. In addition, all affected count as being in cover against enemy shooting. This spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="2 The Living Shadows" id="d70e-fff4-80fb-87ef" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="2 The Living Shadows" id="22059751-d837-263c-d2bf-e76824485e40" hidden="false" page="0">
-              <description>Difficulty: 7
-The Shadow Weaver may cast this spell at any enemy model within 12&quot; of him and within 2&quot; of a wall. The target suffers a single Strngth 4 hit with no armour saves.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="3 Wings of Night" id="cf1b-1b88-c24e-8812" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="3 Wings of Night" id="e785a75a-cb8c-90cd-a11e-71c21c8b7d9d" hidden="false" page="0">
-              <description>Difficulty: 6
-This spell may only be cast if the Shadow Weaver is within 2&quot; of a wall. He is instatly moved up to 12&quot; to a place that is also within 2&quot; of a wall. If moved into contact with an enemy model, the Shadow Weaver counts as charging in the first round.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="4 Cloak of Darkness" id="c3bd-4f71-187c-6445" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="4 Cloak of Darkness" id="859764f0-0bd7-2dfc-619d-feeb61510398" hidden="false" page="0">
-              <description>Difficulty: 7
-The Shadow Weaver is effectively concealed from enemy sight. As long as he does not attack (cast spells, shoot, or engage in close combat) any enemy models, he may not be attacked. He may intercept as normal if the player controlling him wishes, but he does not have to do so (and if he does not, enemy warriors may charge past him of course). The spell lasts until the Shadow Weaver attacks an enemy model. Note that a model engaged in close comabat with an enemy warrior may never choose to not attack.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="5 Shadowbind" id="bc4b-2111-46a8-b000" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="5 Shadow Bind" id="ca48337a-218e-4489-ff5d-c11a04992eef" hidden="false" page="0">
-              <description>Difficulty: 9
-The Shadow Weaver may cast this spell at any enemy model within 24&quot; of him and 2&quot; of a wall. The target may not move unless it first passes a Strength test on 2D6 at the start of his turn (before the recovery phase). This spell lasts until the Shadow Weaver suffers a wound or attempts to cast another spell. If attacked while affected by this spell, treat the target exactly as if he were stunned.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="6 Shield of Shadow" id="13ce-f35b-2997-b489" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="6 Shield of Shadow" id="5c11d755-3fbf-1a65-9ea2-79e6e3e91506" hidden="false" page="0">
-              <description>Difficulty: 7
-The Shadow Weaver may cast this spell on himself or a member of his warband within 12&quot;. The target recieves an armour save of 5+ that is not modified by the attackers Strength. The spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Spells of the Djed&apos;hi" id="1d79-4fab-e0dc-d40c" hidden="false">
-      <constraints>
-        <constraint id="e2e6-ef10-ea73-be43" field="selections" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="1 - Divination of Shirath" id="98d5-9f09-54b0-764f" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="54cd-a802-20bd-70c7" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="1 - Divination of Shirath" id="1a49-1054-8f22-8e58" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Looking into the mists of the future, the Mage divines his best move.
-The Mage may re-roll all his failed dice rolls, though the second result stands.
-The effect lasts until the beginning of the Mage&apos;s next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="2 - Shimmering Shield" id="8bab-b7cb-cc78-cca3" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="df6d-9b2e-373d-ade3" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="2 - Shimmering Shield" id="8ccf-5f86-9b2b-9b12" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell acts as a shield to protect the Mage. It gives him an additional unmodified 5+ save against all attacks. The effect lasts until the beginning of the Mage’s next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 - Statue of Light" id="f529-8a3c-f683-63ad" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="c12e-85f5-6632-061b" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="3 - Statue of Light" id="c97f-015e-5d42-38e6" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Mage chooses a single enemy model he can see. That model may not move as long as the Mage remains both static and alive. The Mage and the target may cast spells normally, but fight in close combat at -2 WS (minimum of 1).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 - Fleeting Shadows" id="c070-72c6-4b97-c2df" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="e7ab-63fd-033b-0631" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="4 - Fleeting Shadows" id="857e-db7c-e08a-9981" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The first time the Mage is hit in close combat or shooting, the spell protects him and the hit is ignored. Move the Mage 2&quot; from his current position in a random direction (but not off a cliff, etc). This is where he really was all along. The spell remains in play until it saves the Mage from a hit, whereupon it is dispelled . It may not be cast again whilst it is in play.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 - Hunter&apos;s Fury" id="c4fb-124f-c528-95cc" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="a49a-e0b6-08fc-a81e" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="5 - Hunter&apos;s Fury" id="3ba4-01a8-5bdc-8987" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell summons D34- 1 arrows which the Mage can use to shoot against one enemy model follow ing the rules for normal shooting. The arrow&apos;s have a range of 36&quot;. Use the Mage’s own Ballistic Skill to determine whether he hits or not, but ignore movement, range and cover penalties. Each arrow causes one S3 hit</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 - Silent Guardian" id="a767-7eda-917a-fbb5" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="08b4-6f8f-3f48-9ed3" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <profiles>
-            <profile name="6 - Silent Guardian" id="76ab-2153-a933-7771" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell acts as an invisible guardian that will defend the Mage. If the Mage is attacked in close combat then the guardian will fight first with WS5, S3. The guardian w ill make 1 attack per turn against each enemy that attacks the Mage. The guardian will not leave the Mage’s side, and w ill only fight if the Mage himself is being attacked. The Guardian cannot be attacked in return and will only be dispelled if the Mage casts another spell or dies.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

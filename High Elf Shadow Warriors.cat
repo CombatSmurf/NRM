@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Shadow Warriors (1b)" id="a808d69a-88e2-9484-b24a-181ea44917e5" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Shadow Warriors (1b)" id="a808d69a-88e2-9484-b24a-181ea44917e5" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="2447-01ba-5309-c709" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="b2f3-0ef9-a020-d184" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -1164,8 +1164,8 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Gold" id="dad9014c-4be3-4cca-3345-5808f02cbcce" collective="false" hidden="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
-        <entryLink name="Miscellaneous Equipment - All" id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" collective="false" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
+        <entryLink name="Gold" id="dad9014c-4be3-4cca-3345-5808f02cbcce" collective="false" hidden="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink name="Equipment - All" id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry name="Wyrdstone" id="3c41-eda8-b9c5-2338" collective="false" hidden="false" import="true" type="upgrade">
@@ -1308,12 +1308,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
       <costs>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="1"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry name="Gold" id="b39ee84c-3f79-227e-4b39-8469fb19d56a" collective="false" hidden="false" import="true" page="0" type="upgrade">
-      <costs>
-        <cost name="pts" typeId="points" value="1"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry name="Promoted" id="0f2c78d6-e019-6b88-136a-9e00031645e5" collective="false" hidden="false" import="true" page="0" type="upgrade">
@@ -1609,8 +1603,94 @@ only applies when they are armed with normal swords or weeping blades, and not w
         <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Shadow Warrior Magic" id="f941a52c-a11a-fef5-dd80-d7a857d3789a" collective="false" hidden="false" import="true" targetId="0398-256c-9a74-454d" type="selectionEntryGroup"/>
+        <entryLink name="Shadow Warrior Magic" id="f941a52c-a11a-fef5-dd80-d7a857d3789a" collective="false" hidden="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Shadow Warrior Magic" id="5cce5525-3057-85be-427a-ceeac0d35c53" collective="false" hidden="false" import="true">
+      <constraints>
+        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="1 Pool of Shadow" id="e3386f70-58e5-97e7-0e9f-c791ea7912cf" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="1 Pool of Shadow" id="8cd864b0-108a-4761-c750-71edb80943e4" hidden="false" page="0">
+              <description>Difficulty: 7
+This spell allows the mage and all within 6&quot; to Hide, exactly as if there were a wall or other obstruction between them and their enemies. They may Hide even after marching. This Hiding is distrupted if any enemy enters the area of affect. In addition, all affected count as being in cover against enemy shooting. This spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="2 The Living Shadows" id="74ac1b53-6add-f799-a654-d212ab9f2303" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="2 The Living Shadows" id="22059751-d837-263c-d2bf-e76824485e40" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver may cast this spell at any enemy model within 12&quot; of him and within 2&quot; of a wall. The target suffers a single Strngth 4 hit with no armour saves.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="3 Wings of Night" id="717a7f44-f051-38a6-8a8e-3283bbb9e67f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="3 Wings of Night" id="e785a75a-cb8c-90cd-a11e-71c21c8b7d9d" hidden="false" page="0">
+              <description>Difficulty: 6
+This spell may only be cast if the Shadow Weaver is within 2&quot; of a wall. He is instatly moved up to 12&quot; to a place that is also within 2&quot; of a wall. If moved into contact with an enemy model, the Shadow Weaver counts as charging in the first round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="4 Cloak of Darkness" id="82dc048a-4d2e-6d19-96dd-11cae21d5e64" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="4 Cloak of Darkness" id="859764f0-0bd7-2dfc-619d-feeb61510398" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver is effectively concealed from enemy sight. As long as he does not attack (cast spells, shoot, or engage in close combat) any enemy models, he may not be attacked. He may intercept as normal if the player controlling him wishes, but he does not have to do so (and if he does not, enemy warriors may charge past him of course). The spell lasts until the Shadow Weaver attacks an enemy model. Note that a model engaged in close comabat with an enemy warrior may never choose to not attack.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="5 Shadowbind" id="fcd4912e-e220-e29e-a8d7-4bcf845015e2" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="5 Shadow Bind" id="ca48337a-218e-4489-ff5d-c11a04992eef" hidden="false" page="0">
+              <description>Difficulty: 9
+The Shadow Weaver may cast this spell at any enemy model within 24&quot; of him and 2&quot; of a wall. The target may not move unless it first passes a Strength test on 2D6 at the start of his turn (before the recovery phase). This spell lasts until the Shadow Weaver suffers a wound or attempts to cast another spell. If attacked while affected by this spell, treat the target exactly as if he were stunned.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="6 Shield of Shadow" id="959b63b6-8a79-4291-d753-9f2166e0c0f1" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="6 Shield of Shadow" id="5c11d755-3fbf-1a65-9ea2-79e6e3e91506" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver may cast this spell on himself or a member of his warband within 12&quot;. The target recieves an armour save of 5+ that is not modified by the attackers Strength. The spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Shooting Skills" id="52007ee0-cc99-b312-3650-cfab391e476c" collective="false" hidden="false" import="true">
       <constraints>
@@ -1816,6 +1896,77 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink name="Special Skills (Shadow Warrior)" id="e77d-869c-f8df-a640" collective="false" hidden="false" import="true" targetId="285ebcd1-3b2e-4937-39bc-a88721067dca" type="selectionEntryGroup"/>
           </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Special Skills (Shadow Warrior)" id="285ebcd1-3b2e-4937-39bc-a88721067dca" collective="false" hidden="false" import="true">
+      <constraints>
+        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="Infiltration" id="a656b5c4-2707-e1ce-aa18-4bf4dff3a18c" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Infiltration" id="daa6a87d-c59f-799b-16a2-2779ae4e2703" hidden="false">
+              <description>As long as he has movement to reach them, the warrior may always roll to charge opponents he cannot see (instead of the normal 4&quot;).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Sniper" id="6ece6f8b-5cff-ec07-649c-1d7f2dd9e63a" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Sniper" id="dfa2a5a9-2ce4-c381-21bc-e8f363fed87a" hidden="false">
+              <description>If Hidden, a warrior with this skill may shoot or cast spells and still remain Hidden.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Powerful Build" id="aaf9c1fa-e1d9-c3c3-8c8b-dfb48fca045e" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Powerful Build" id="b01c80e0-5c4d-b6ed-9bd6-4402a615feaf" hidden="false">
+              <description>A warrior with this skill may choose skills from the Strength skills table from now on. This skill may not be taken by Shadow Weavers. There may never be more than two Elves with this skill in the warband at any one time.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Hide In Shadows" id="07ec6706-8744-fb58-0144-d199f26edda9" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Hide In Shadows" id="5bd27bc6-7ab1-792a-0fb4-2c82d62d8bf8" hidden="false">
+              <description>An enemy warrior attempting to detect this warrior when he is Hidden must halve his Initiative before measuring the  distance.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Master of Runes" id="0b17f14a-915c-026a-f143-43ada5b9e2b5" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Master of Runes" id="bc279432-c686-85b4-90e5-115edb08fa40" hidden="false">
+              <description>When using Elven Runestones, the mage is +1 to his dispel roll. In addition, the mage can inscribe the  weapons and armour of one of his fellow
+warriors with Elven runes. One member of the Warband may reroll a single failed armour save or Parry roll once per battle. After a single battle, the runes lose their glamour and
+must be redone. This skill may only be taken by Shadow Weavers.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
