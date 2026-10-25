@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Druchii (2a)" id="69c8-4905-73e6-8644" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="9bae-9ad5-7c63-2157" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="3dd3-2e93-24b8-5b30" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -37,6 +37,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Serious Injuries" id="bcd6-16c7-6ca6-3c5f" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="706b-30b6-23dc-a4f0" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Beastmaster" id="52e2-bedb-65b3-d830" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -169,19 +170,6 @@
                 <modifier field="hidden" type="set" value="false"/>
               </modifiers>
             </entryLink>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Characteristics" id="88ff-e2d3-aecc-e27d" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="80f3-64f7-5cfb-ee26" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="0ae7-67d9-68a0-2d45" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="706b-30b6-23dc-a4f0" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry name="Equipment" id="f515-66f7-77b9-967d" collective="false" hidden="false" import="true" page="0" type="upgrade">
@@ -353,6 +341,7 @@
         <entryLink name="Promoted" id="9359-6dd5-5c99-33b0" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Experience" id="f33a-15f9-f4ec-911d" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Serious Injuries" id="6b4d-22a5-c22a-5ede" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="ca23-7856-2a83-2438" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Corsairs" id="e9a6-d1dc-f4ad-ccb5" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -495,19 +484,6 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="8f38-337f-aa4a-61d7" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="ce5e-6e26-e219-3b8a" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="8202-2ce0-744e-78ff" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="ca23-7856-2a83-2438" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Lordlings" id="1292-880f-5b5b-a617" collective="false" hidden="false" import="true" page="0" type="model">
@@ -528,6 +504,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Serious Injuries" id="b303-f26f-9169-dc8c" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="cece-ca0e-37f6-d62d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Lordlings" id="28f2-d8e8-0390-3eb3" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -670,19 +647,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="0479-8131-4a91-8795" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="0e66-6909-bb6b-7b90" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="f04d-f3a2-65b3-733c" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="cece-ca0e-37f6-d62d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Noble" id="df20-925d-7387-779d" collective="false" hidden="false" import="true" page="0" type="model">
@@ -704,6 +668,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Serious Injuries" id="ac2a-90c7-d538-c8af" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="edf7-7ab5-3d06-7dda" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="0281-1f08-3404-6812" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
@@ -829,19 +794,6 @@
             <entryLink name="Druchii Heroes Equipment" id="c36c-618b-feba-499a" collective="false" flatten="true" hidden="false" import="true" targetId="c7d0-3715-289e-2e0a" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="7e2f-9f08-029e-d35e" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="10bf-4274-e5b4-ad47" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="4f6a-21db-e6a4-db28" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="edf7-7ab5-3d06-7dda" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
         <selectionEntry name="Skills" id="e16b-ffbc-acdc-d0b6" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
           <constraints>
             <constraint id="2a8c-1a6d-f8aa-c422" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -881,6 +833,7 @@
         <entryLink name="Experience" id="cb4d-6a20-1c73-5bfc" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="8d6f-c6be-6cfc-8740" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Serious Injuries" id="3bb3-0c0d-7a39-07e7" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="a4f2-65b1-1236-4851" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Shades" id="7efa-70ca-df14-870b" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -1032,19 +985,6 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="0961-2eb0-aaef-cda6" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="37c9-8fe8-26f2-aa60" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="d699-0557-abae-6513" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="a4f2-65b1-1236-4851" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Sorceress" id="72a9-0afc-1b62-45ea" collective="false" hidden="false" import="true" page="0" type="model">
@@ -1066,6 +1006,7 @@
         </entryLink>
         <entryLink name="Dark Elf Magic (1b)" id="b264-0a38-a571-2679" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="839f-27e4-b140-dff7" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="2e13-a04c-56a1-abcf" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="cea0-021a-a501-d66d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Sorceress" id="bbc0-f268-1966-2e57" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -1203,19 +1144,6 @@
             <entryLink name="Dark Elf Special Skills" id="cf04-cc40-dcc9-cb86" collective="false" hidden="false" import="true" targetId="854e-a887-8123-443d" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="bf6f-7119-3c99-354e" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="829e-f1df-0602-bb08" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="5299-a99e-990d-bf02" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="cea0-021a-a501-d66d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Stash" id="8d72-48db-e177-51c4" collective="false" hidden="false" import="true" page="0" type="upgrade">
@@ -1259,6 +1187,7 @@
         <entryLink name="Promoted" id="9f74-157c-10c0-8769" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Experience" id="3032-8449-dfe1-977d" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Serious Injuries" id="7fec-29dd-c036-a963" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="8e7e-641c-80bb-8258" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Frenzy" id="ff18-f99c-b39b-a532" hidden="false" targetId="ce28-23a1-7b2a-7e6c" type="rule"/>
@@ -1408,19 +1337,6 @@
               </conditions>
             </modifier>
           </modifiers>
-        </selectionEntry>
-        <selectionEntry name="Characteristics" id="b04b-0561-0b89-d7ef" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="5989-c717-677d-3020" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="bcdb-a931-9717-72dc" automatic="true" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="8e7e-641c-80bb-8258" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
