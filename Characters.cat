@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Characters" id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Characters" id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="21" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="cd5b-a743-c9c8-fffa" importRootEntries="false" targetId="e020-c282-277b-b173" type="catalogue"/>
   </catalogueLinks>
@@ -20,6 +20,7 @@
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="8022-94e2-e3cf-5334" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="5546-d5b8-fecb-a601" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="7ab6-e090-7e0c-6c4e" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -189,19 +190,6 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="a350-296d-b625-fdb" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="44fd38ee-cf49-6b20-69b1-014f6828bab0" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
         <selectionEntry name="Skills" id="b7e2-91be-4a82-97d2" collective="false" hidden="false" import="true" page="0" type="upgrade">
           <constraints>
             <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -232,6 +220,7 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="faa8d372-77d4-33a4-1a08-49fe27633c52" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="fa7c-01d7-6689-5eea" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="5d8c-26be-9255-f106" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -441,19 +430,6 @@ In addition, a Human Scout may fire his Bow without giving away his position (
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="115a-5e8e-8970-77b0" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="e70b-553a-2014-f56d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="7771-f62d-26a3-f5fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="127d-dc0f-fbc4-d720" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Ogre Bodyguard (1a)" id="8fd5-ddfa-f4a1-717a" collective="false" hidden="false" import="true" page="0" type="model">
@@ -469,6 +445,7 @@ In addition, a Human Scout may fire his Bow without giving away his position (
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="56de-59ff-8284-7663" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="daaf-137e-b8fd-1608" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Ogre max" id="29bc-8bcb-b449-6939" hidden="false" targetId="2fa4-2362-07c1-3433" type="profile"/>
@@ -666,19 +643,6 @@ May be Hired: Any warband except Skaven may hire an Ogre Bodyguard.</description
             <entryLink name="Combat Skills" id="7dfe147c-aba4-13bc-bf11-383a8c4f97f3" collective="false" hidden="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="9c33-1c4b-8187-734d" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="36c9-5c65-719b-8f92" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="8b3c-1fdb-ad17-8298" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="6257-cb38-5c1c-a599" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Freelancer (1a)" id="8247-6af0-83c2-9f9e" collective="false" hidden="false" import="true" page="0" type="model">
@@ -694,6 +658,7 @@ May be Hired: Any warband except Skaven may hire an Ogre Bodyguard.</description
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="3ace7cec-b98a-8120-c6ce-caf458afb673" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="3be9-b5fd-e6ca-b5d1" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="9afd-9afa-5354-c714" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -890,19 +855,6 @@ When mounted, the Freelancer has an armour saving throw of 3+. On foot his save 
             <entryLink name="Combat Skills" id="4d1f-b533-2b3a-d0e1" collective="false" hidden="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="4c35-496c-a422-8e5d" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="6620-4290-c1ab-edc0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="d0d4-b031-0bd7-5ed5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="ad0a-bd1c-78b5-14b9" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Dwarf Troll Slayer (1a)" id="6b98-6247-bc98-d1b6" collective="false" hidden="false" import="true" page="0" type="model">
@@ -918,6 +870,7 @@ When mounted, the Freelancer has an armour saving throw of 3+. On foot his save 
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="2c761416-6f59-1a4f-2742-25e90f596c03" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="64ea-b552-d820-2773" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Dwarf max" id="2f84-a1cf-25da-3f86" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
@@ -1136,19 +1089,6 @@ He will suffer a -1 to hit penalty on that turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="7e1c-2f8e-ee13-f9c2" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="4af2-df76-7da1-bbb4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="a608-df31-63fe-7332" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="73b0-f567-ac30-44b1" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Warlock (1a)" id="e29e-c690-66b1-d53a" collective="false" hidden="false" import="true" page="0" type="model">
@@ -1164,6 +1104,7 @@ He will suffer a -1 to hit penalty on that turn.</description>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="a48b-1f85-c40d-83ce" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="3424-3110-b273-1e1c" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="7473-6c08-8938-e264" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -1322,19 +1263,6 @@ May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a 
             <entryLink name="Lesser Magic" id="1926-703b-ac3d-1b51" collective="false" hidden="false" import="true" targetId="c81b-0f96-fcce-222d" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="2996-5e5a-405a-418f" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="9c2b-feea-3e38-f943" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="eb10-91f9-6fa1-3d4c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="b663-09de-6c49-b352" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Dark Elf Assassin (2a)" id="04e4-f438-67a8-0fb5" collective="false" hidden="false" import="true" page="0" type="model">
@@ -1350,6 +1278,7 @@ May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a 
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="d868-f0f2-7403-e8fa" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="2c7f-6528-c4e1-3e04" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Elf max" id="8d63-16d3-018b-d3c5" hidden="false" targetId="2e71-7183-b262-5a4b" type="profile"/>
@@ -1564,22 +1493,9 @@ May be hired: Any evil warband may hire a Dark Elf Assassin.</description>
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="e996-81b5-804c-c82f" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="bb28-f492-7e47-d47a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="2387-bb3b-0ad4-3ca6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="a425-cc35-d7ad-3df0" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry name="Merchant, The (1a)" id="5a7d-3806-0782-7eaf" collective="false" hidden="false" import="true" type="model">
+    <selectionEntry name="Arabian Merchant (1a)" id="5a7d-3806-0782-7eaf" collective="false" hidden="false" import="true" type="model">
       <categoryLinks>
         <categoryLink name="Hired Swords" id="737b-0867-e694-08f0" hidden="false" primary="true" targetId="71f7-5ee6-ab09-7fd9"/>
       </categoryLinks>
@@ -1592,6 +1508,7 @@ May be hired: Any evil warband may hire a Dark Elf Assassin.</description>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="1392-d910-2c48-806e" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="8c2f-60f4-0689-7e56" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="48b6-7048-7102-a224" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -1943,19 +1860,6 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="c370-7c76-2ead-fa28" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="f1fe-63ff-b2fa-d602" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="1410-1bd8-e74c-ed70" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="1110-ee53-de0d-ec18" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Merchant Bodyguard (1a)" id="efa4-9e45-a19f-9039" collective="false" hidden="true" import="true" type="model">
@@ -1969,6 +1873,9 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink name="Charactaristics +/-" id="f35b-bd7a-a4be-cbef" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+      </entryLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
           <conditions>
@@ -2044,19 +1951,6 @@ The bodyguard will not charge unless the Merchant also charges and cannot interc
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="5852-c0b7-5573-cb2a" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="01d5-fcf3-92f0-2e36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="2e58-838b-cb22-4c90" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="467b-b13d-dec2-79cd" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Beasthunter (1a)" id="ca88-7b89-870f-7a71" collective="false" hidden="false" import="true" type="model">
@@ -2072,6 +1966,7 @@ The bodyguard will not charge unless the Merchant also charges and cannot interc
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="06c0-92e2-c509-454a" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="1058-8442-34fd-83be" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="9b96-2d16-628d-3642" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -2253,19 +2148,6 @@ He may be set up anywhere on the board that is hidden and outside of the enemy d
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="ab5d-12ea-3fae-82ce" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="59d6-b323-63e5-b438" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="502e-2c2a-af8f-f016" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="1058-8442-34fd-83be" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Highwayman (1a)" id="00a9-0cac-2412-f49c" collective="false" hidden="false" import="true" type="model">
@@ -2281,6 +2163,7 @@ He may be set up anywhere on the board that is hidden and outside of the enemy d
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="dac7-1955-0533-e11d" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="984b-de03-6d67-1f73" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="64dc-53d5-d7ba-6623" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -2612,19 +2495,6 @@ with a bow or crossbow (but not a crossbow pistol).</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="21f8-bc78-c51b-73a3" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="e357-f577-336f-01cc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="b560-0ee2-9674-c84d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="2049-5c83-b217-76e6" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Imperial Assassin (1a)" id="53ac-fab9-5b30-95a7" collective="false" hidden="false" import="true" type="model">
@@ -2640,6 +2510,7 @@ with a bow or crossbow (but not a crossbow pistol).</description>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="1706-0e75-1578-3e6f" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="c6c3-32d1-770c-4cc2" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="00cf-5b8c-4d96-8d27" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -2891,19 +2762,6 @@ As long as he is within 1&quot; of a wall or other linear obstacle (hedge fence,
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="afdc-115b-02b9-5a7b" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="d8b9-a03c-ef96-d2d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="9617-fbc4-73fc-9edf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="9ad4-52ea-365e-b3f8" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Tilean Marksman (1a)" id="469c-33d9-985a-6a0e" collective="false" hidden="false" import="true" type="model">
@@ -2919,6 +2777,7 @@ As long as he is within 1&quot; of a wall or other linear obstacle (hedge fence,
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="c8ee-d4b0-6765-b5f4" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="f39e-d9d0-8788-072f" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="d518-b776-3c38-b248" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -3103,19 +2962,6 @@ He ignores &apos;to hit&apos; modifiers for cover when shooting his crossbow.</d
             <entryLink name="Shooting Skills" id="8978-a560-6ec1-19ff" collective="false" hidden="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="780c-f5e1-9fb1-e1ff" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="0c48-f148-8616-358e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="4b4d-774e-a9ee-273b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="fedc-333a-8d76-7162" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Roadwarden (1a)" id="e962-3d2f-b035-ca9a" collective="false" hidden="false" import="true" type="model">
@@ -3131,6 +2977,7 @@ He ignores &apos;to hit&apos; modifiers for cover when shooting his crossbow.</d
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="ab76-1d87-b3e8-e7ad" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="c9f5-2b87-7969-a1c8" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="4b20-973c-f541-3450" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -3491,19 +3338,6 @@ with a bow or crossbow (but not a crossbow pistol).</description>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry name="Characteristics" id="5c2a-7cbd-f72a-17ab" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="8722-e3f8-f044-b2db" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="ff1c-107c-5c83-19b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="f665-6c0a-2441-169e" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -5108,6 +4942,7 @@ If the test fails, the sword disappears.</characteristic>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="d70a-9008-b149-b1f1" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="52ca-b8ec-8f96-3451" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="ce1f-2585-8904-05d7" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -5321,19 +5156,6 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
             <entryLink name="Academic Skills" id="0ff2-1a61-dff0-ea3e" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="25fe-4ff5-bfef-7ca6" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="823b-5c3a-83f1-2ea3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="153f-4cf9-17aa-5179" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="6047-70f4-94e4-3571" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Halfling Scout (1a)" id="3f4c-65dd-5a10-ec1d" collective="false" hidden="false" import="true" page="0" type="model">
@@ -5349,6 +5171,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="7afd-8fd4-0444-1155" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="2af9-3e44-4a1e-1ec0" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Halfling max" id="f54e-323e-a23c-9eb8" hidden="false" targetId="d117-3fc9-6dcf-59c0" type="profile"/>
@@ -5524,19 +5347,6 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
             <entryLink name="Shooting Skills" id="637d-3bfe-3184-8027" collective="false" hidden="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="4d8d-4d28-5ac4-5bb3" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="e45d-5cff-a545-19fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="1159-1a37-a43d-b9bd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="0b85-7a54-49fa-3607" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Cursed Hillman - Man (2a)" id="5d42-5eee-a4e5-ac12" collective="false" hidden="false" import="true" type="model">
@@ -5552,6 +5362,7 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Hal
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="3aff-70ae-1d18-85e1" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="5cee-8ca2-6a23-db1a" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="4387-de9b-4cf3-3ec7" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -5787,19 +5598,6 @@ he counts as having -1T in hand to hand combat.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="7c41-1bdf-15b1-7d89" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="1986-c420-b393-8cd0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="616e-56e8-531a-692c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="e2c2-9919-a107-3327" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Cursed Hillman - Werewolf (2a)" id="7674-6548-9646-0525" collective="false" hidden="true" import="true" type="model">
@@ -5813,6 +5611,9 @@ he counts as having -1T in hand to hand combat.</description>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink name="Charactaristics +/-" id="e60d-e364-7329-15bd" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+      </entryLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
           <conditions>
@@ -5840,21 +5641,6 @@ he counts as having -1T in hand to hand combat.</description>
           <description>While in wolf-form, he has a bonus Bite attack. This is resolved at -1S.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry name="Characteristics" id="3b3a-087c-c150-fd62" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="c2e7-c0ba-2ed3-31f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="ed46-57f1-cbc0-c227" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="62f6-64a3-eb63-5e0e" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Elf Ranger (1a)" id="2e56-af02-f465-84e7" collective="false" hidden="false" import="true" page="0" type="model">
       <categoryLinks>
@@ -5869,6 +5655,7 @@ he counts as having -1T in hand to hand combat.</description>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="6c5a-fec1-396a-72fc" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="8611-a06e-12f9-2179" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Elf max" id="021f-881d-de1b-ae4d" hidden="false" targetId="2e71-7183-b262-5a4b" type="profile"/>
@@ -6071,19 +5858,6 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Characteristics" id="6462-d341-4ccd-c987" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="fa25-0ffe-fb3d-b2ad" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="7065-a42f-87d5-19a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="fccd-68d8-c1f8-d7cd" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Goblin Lantern Bearer (2a)" id="0caa-18d8-a506-22bd" collective="false" hidden="false" import="true" page="0" type="model">
@@ -6099,6 +5873,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="031d-6b32-5f87-fed8" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Charactaristics +/-" id="8289-fabb-2aa1-ca97" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Goblin max" id="2bc2-410c-cb9f-d1d1" hidden="false" targetId="de0f-ab0b-13a4-cefc" type="profile"/>
@@ -6265,19 +6040,6 @@ May be Hired: Any warband except Dark Elves, Chaos Dwarves, Witch Hunters, Siste
           </costs>
           <entryLinks>
             <entryLink name="Speed Skills" id="4928-1a74-aad9-c225" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Characteristics" id="4ddf-cb9d-a091-1a4f" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="9ee0-8e36-2a97-8f87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="66ff-61fc-f818-1759" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="e189-82c3-33ac-df8d" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>

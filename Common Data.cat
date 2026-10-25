@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="64" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="65" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -6861,7 +6861,7 @@ for details.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Chaos Rituals" id="61c7-8179-00b5-1772" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Chaos Rituals" id="61c7-8179-00b5-1772" collective="false" flatten="true" hidden="false" import="true">
       <constraints>
         <constraint id="e287-19d3-4453-1942" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
       </constraints>
@@ -6970,7 +6970,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Prayers of Taal" id="3905-cd06-b0b9-95d3" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Prayers of Taal" id="3905-cd06-b0b9-95d3" collective="false" flatten="true" hidden="false" import="true">
       <constraints>
         <constraint id="1d51-a82d-487e-5420" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
@@ -7525,7 +7525,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="The Lady&apos;s Prayers" id="99c0-f4a2-47ef-3b6f" hidden="false">
+    <selectionEntryGroup name="The Lady&apos;s Prayers" id="99c0-f4a2-47ef-3b6f" flatten="true" hidden="false">
       <constraints>
         <constraint id="d78c-82ec-d848-850f" field="selections" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
@@ -7611,7 +7611,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Prayers of Sigmar" id="b0cd-811c-3ab0-b085" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Prayers of Sigmar" id="b0cd-811c-3ab0-b085" collective="false" flatten="true" hidden="false" import="true">
       <constraints>
         <constraint id="49b1-dcb4-0b0e-9492" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
       </constraints>
@@ -7835,7 +7835,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Prayers of Ulric" id="0372-1590-8541-6222" collapsible="true" hidden="false">
+    <selectionEntryGroup name="Prayers of Ulric" id="0372-1590-8541-6222" collapsible="true" flatten="true" hidden="false">
       <constraints>
         <constraint id="e5d2-0680-7cf7-0faf" field="selections" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
@@ -7945,8 +7945,8 @@ LD    7</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup name="Charactaristics +/-" id="7dfe-3e9e-2eb6-f2de" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink name="Characteristic Increases" id="16fa-3088-81a5-a2b3" collapsible="true" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Decreases" id="d99e-3a62-ed03-46bd" collapsible="true" hidden="false" import="true" targetId="9d72-8c8f-1eba-38dc" type="selectionEntryGroup"/>
+        <entryLink name="Characteristic Increases" id="16fa-3088-81a5-a2b3" collapsible="true" flatten="true" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Characteristic Decreases" id="d99e-3a62-ed03-46bd" flatten="true" hidden="false" import="true" targetId="9d72-8c8f-1eba-38dc" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Lesser Magic" id="c81b-0f96-fcce-222d" collective="false" hidden="false" import="true">
@@ -8131,7 +8131,7 @@ If the test fails, the sword disappears.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic of the Horned Rat" id="3442-f32d-5c5f-5f9d" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Magic of the Horned Rat" id="3442-f32d-5c5f-5f9d" collective="false" flatten="true" hidden="false" import="true">
       <selectionEntries>
         <selectionEntry name="2 - Children of the Horned Rat" id="d5fd-f58f-7615-9302" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
@@ -8249,7 +8249,7 @@ The target must re-roll any successful armor saves and to hit rolls during the S
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arabian Elemental Magic" id="4b29-e44a-35f8-a451" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Arabian Elemental Magic" id="4b29-e44a-35f8-a451" collective="false" flatten="true" hidden="false" import="true">
       <constraints>
         <constraint id="b3eb-7166-2507-b8ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
       </constraints>
@@ -8613,7 +8613,7 @@ in the close combat phase, she will score 1 automatic hit and then the opponent 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Sacred Markings" id="917c-b8a6-b7d2-c4ae" collapsible="true" hidden="false">
+    <selectionEntryGroup name="Sacred Markings" id="917c-b8a6-b7d2-c4ae" collapsible="true" flatten="true" hidden="false">
       <constraints>
         <constraint id="3eed-cab4-cb5e-962e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
       </constraints>
@@ -8678,7 +8678,7 @@ in the close combat phase, she will score 1 automatic hit and then the opponent 
         <entryLink name="Warhorse, %" id="66ee-11b4-bc0b-a2f7" hidden="false" import="true" targetId="1f4c-40bd-06d4-6cfe" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Shadow Warrior Magic" id="21e5-4547-ba42-43eb" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Shadow Warrior Magic" id="21e5-4547-ba42-43eb" collective="false" flatten="true" hidden="false" import="true">
       <constraints>
         <constraint id="7ec0-13c6-d35e-e638" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
         <constraint id="cf3d-17a2-20d4-14dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
@@ -8863,6 +8863,221 @@ This spell lasts until the Shaman suffers a wound.</characteristic>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">Range 12&quot;. Each of the two bolts causes D3 S3 hits; the bolts can either be fired both at the closest enemy target
 or split between the two closest enemy targets.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Beastmen Special Skills" id="ed84-0f32-7aed-af60" collective="false" hidden="false" import="true">
+      <selectionEntries>
+        <selectionEntry name="Shaggy Hide" id="01e9-5b8c-9660-7d42" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e8c9-018a-ca7b-4e2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Shaggy Hide" id="61d7-1538-a916-51a8" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+              <characteristics>
+                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+</characteristic>
+                <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">The Beastman’s massively shaggy hide acts as armor, deflecting sword strokes and protecting him from harm. The model gains a 6+ Armor Save that can be combined with other armor as normal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Mutant" id="ccd7-4fe3-8c27-13dc" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="0315-f343-dda5-4876" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Mutant" id="5ba6-5c6c-c401-c2e4" hidden="false">
+              <description>The Beastman may buy one mutation.
+
+See Mutants section on special rules.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Fearless" id="a3ee-7db1-85b1-3dbb" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="b77a-1b92-f960-40eb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Fearless" id="4e47-233a-9520-720c" hidden="false">
+              <description>Immune to fear and terror and All Alone test.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Horned One" id="92c7-2f73-ac25-a511" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="47ba-3c35-9a48-a1cf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Horned One" id="0d53-210e-6db9-d73d" hidden="false">
+              <description>The Beastman has mighty horns, and can make an additional Attack with its basic Strength on a turn it charges.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Bellowing Roar" id="2354-2781-9612-28d1" collective="false" hidden="true" import="true" type="upgrade">
+          <constraints>
+            <constraint id="f481-084a-9263-fbb3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="571f-6ba6-38b8-a862" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Bellowing Roar" id="bd6d-5166-0a86-2165" hidden="false">
+              <description>Only the Beastmen Chief may have this skill. He may re-roll any failed Rout tests.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Manhater" id="cf7c-bc23-5fa0-db0d" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="0857-fe58-5bd0-dece" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Manhater" id="e149-d327-4dbd-e9b2" hidden="false">
+              <description>Will be affected by the rules of hatred when fighting any Human warbands.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Amazon Rituals" id="2f8e-97f8-d549-60f8" collective="false" flatten="true" hidden="false" import="true">
+      <selectionEntries>
+        <selectionEntry name="1 Singing Wind" id="969a-26a6-b6c9-d6b7" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="1 Singing Wind" id="888d-61ae-8a0b-2f91" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess calls upon the power of Shaekal the Wind Goddess to enter the battlefield.
+
+The goddess appears in the form of singing motes and dancing lights that will entrance and ‘hold’ any model within 10&quot; until the start of the Amazon player’s next turn.
+The model cannot move, shoot, or cast spells, but may defend itself in hand-to-hand combat.
+Models affected by this ritual automatically go last in combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 Serpent’s Strength" id="e1af-8dbc-b539-0780" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="2 Serpent’s Strength" id="67d0-34b0-7e72-f7a5" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess begins the ritual by dancing wildly and screaming in an ancient tongue.
+
+All friendly models close to the Priestess will be charged with a frantic energy until the end of their next turn.
+During this time any model within 8&quot; of the Priestess (including herself) will add +1 to their Strength.
+The ritual cannot be cast if the Priestess is in close combat during her Shooting phase.
+The effects will continue after the ritual is cast if the Priestess enters combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 Wendala’s Maelstrom" id="93ae-af75-434b-a732" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="3 Wendala’s Maelstrom" id="dcf3-c27e-ba64-eb96" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess summons harsh tropical winds to protect the Amazons from enemy ranged attacks.
+
+The storm extends out from the Priestess 18&quot;.
+All attempts to shoot missile weapons by the enemy will be at -1 to hit.
+The ritual lasts up until the start of the Amazon player’s next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 Shield of Thorns" id="1253-2bb8-4e6c-662b" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="4 Shield of Thorns" id="20ae-3f07-cc02-10f3" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Moving her arms about in a weaving motion, the priestess calls upon the plants to protect her.
+
+The ritual produces a cocoon of thorns all about the Priestess, making her immune to ranged or magical attacks.
+Any models wishing to charge the Priestess can do so but the thorns negate any strikes by the Priestess and her enemies in the first round of combat.
+
+The Priestess cannot cast this ritual while in hand-to-hand combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 The Living Jungle" id="6159-5e46-82bf-d6f3" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="5 The Living Jungle" id="b760-83ef-5987-206c" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Drawing upon her will, the Priestess reaches out to the denizens of the jungle, seeking their aid.
+
+Pick one model within 12&quot;.
+The model is suddenly swarmed by a savage mix of snakes, spiders and insects, most of them poisonous.
+The afflicted model takes 1D6 Strength 2 hits with no armour saves allowed apart from Ward saves.
+You cannot use a dodge save against a swarm.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Siren’s Dreams" id="87a5-d49d-1e46-41a5" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="6 Siren’s Dreams" id="c3f0-d371-09ac-1aec" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess starts to sing with a wondrous voice and all the Amazons join in with her.
+
+The song is so beautiful and mesmerising that it momentarily distracts the Amazon’s enemies within 12&quot; such that all LeaDership tests for the opposing warband are made at -1 until the end of the opposing player’s next turn.
+
+Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
               </characteristics>
             </profile>
           </profiles>

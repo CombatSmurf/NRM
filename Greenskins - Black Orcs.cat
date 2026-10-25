@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Greenskins - Black Orcs (1b)" id="a831-b626-c36f-258b" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Greenskins - Black Orcs (1b)" id="a831-b626-c36f-258b" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="a1af-db13-3c15-7193" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="7528-d433-143a-d57e" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -41,7 +41,7 @@ The replacement will automatically acquire the &quot;Oi Behave!&quot; skill.</d
             <constraint id="93f6-e265-90fb-29d7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="20"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="a82b-d268-7580-b7b" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="a82b-d268-7580-b7b" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="660b-2a87-8e2-b8a0" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Black Orc Equipment" id="f6c7-ec2a-389f-a0ca" hidden="false" import="true" targetId="d166-e210-dcbf-69d5" type="selectionEntryGroup"/>
       </entryLinks>
@@ -224,7 +224,7 @@ If the slap fails to Knock Down, Stun or Out of Action the Henchman, then he a
             <constraint id="636d-2d7a-225f-8d2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="7c76-ca18-8582-5be1" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="7c76-ca18-8582-5be1" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="83a9-561d-831-8af8" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Black Orc Equipment" id="d687-c729-41-d1b9" hidden="false" import="true" targetId="d166-e210-dcbf-69d5" type="selectionEntryGroup"/>
       </entryLinks>
@@ -385,7 +385,7 @@ If the slap fails to Knock Down, Stun or Out of Action the Henchman, then he a
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="41e-fd2e-2120-79c3" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="6536-2352-dab-8490" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="6536-2352-dab-8490" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="b7ed-702f-4a6c-cbef" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Henchman Equipment" id="400b-16d-4d81-bba3" hidden="false" import="true" targetId="5aa6-5117-c4dd-71a4" type="selectionEntryGroup"/>
       </entryLinks>
@@ -587,7 +587,7 @@ This upgrade allows him to take the ‘Proven Warrior’ skill upgrade, thus mak
       <entryLinks>
         <entryLink name="Experience" id="ffe0-2ff2-ec18-54b1" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="13ec-200a-651b-32bc" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="ed46-6b66-5c25-932e" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="ed46-6b66-5c25-932e" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="33ff-c583-47f5-c25d" collective="false" hidden="true" import="true" targetId="4614-5b52-1b9a-2818" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -749,7 +749,7 @@ This upgrade allows him to take the ‘Proven Warrior’ skill upgrade, thus mak
       <entryLinks>
         <entryLink name="Experience" id="d11a-4773-b7d2-df87" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="954c-3edf-701a-c588" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="4b32-3e72-c591-4b6" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="4b32-3e72-c591-4b6" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="44bb-fde9-5fb7-e35f" collective="false" hidden="true" import="true" targetId="4614-5b52-1b9a-2818" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -941,7 +941,7 @@ Nuttaz are also too unstable for other Boyz and can never have the Leader abil
       <entryLinks>
         <entryLink name="Experience" id="8fd0-ffc5-6908-6957" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="3e53-9bda-1765-3291" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="2934-301c-c609-4f5c" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="2934-301c-c609-4f5c" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="7546-8021-1e58-8ce2" collective="false" hidden="true" import="true" targetId="4614-5b52-1b9a-2818" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">

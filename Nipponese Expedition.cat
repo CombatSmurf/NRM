@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Nipponese Expedition (2a)" id="3004-7532-bb3d-c234" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Nipponese Expedition (2a)" id="3004-7532-bb3d-c234" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="cf55-428c-0013-939e" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="a3f7-0cad-0f6d-3356" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -32,7 +32,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Nippon Noble Equipment" id="29b5-91d9-9281-3a97" collective="false" flatten="true" hidden="false" import="true" targetId="a4ca-993b-bf0b-f925" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="6dae-0c5d-e444-1cdc" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="6dae-0c5d-e444-1cdc" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="acc0-4bb5-e525-fe33" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="9d2e-b93f-dc4c-123f" collapsible="true" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -334,7 +334,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Shinobi Equipment" id="cd74-d2a8-98f0-08f0" collective="false" flatten="true" hidden="false" import="true" targetId="6f29-008e-4869-1a2a" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="415e-a228-0541-3524" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="415e-a228-0541-3524" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="a3ac-aadc-8c07-2a96" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="b54a-4ddb-d7d8-733f" collapsible="true" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
           <constraints>
@@ -677,7 +677,7 @@
       <entryLinks>
         <entryLink name="Experience" id="a419-664f-eec3-cc47" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="4bd6-e694-326e-094b" collapsible="true" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="e7c9-6b70-e26e-c946" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="e7c9-6b70-e26e-c946" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="de10-2638-4323-3504" collapsible="true" collective="false" hidden="true" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -1121,7 +1121,7 @@ The Duellist counts as using a shield in close combat.</description>
       <entryLinks>
         <entryLink name="Experience" id="c4e0-fc78-0855-411d" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="2a10-17a5-c506-f637" collapsible="true" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="8f4e-59c6-6f76-6ca7" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="8f4e-59c6-6f76-6ca7" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="8bae-2060-9aa5-fdd3" collapsible="true" collective="false" hidden="true" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -1577,7 +1577,7 @@ The Duellist counts as using a shield in close combat.</description>
       <entryLinks>
         <entryLink name="Experience" id="42ba-2866-8cd9-1196" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="2449-4e15-6ab3-b474" collapsible="true" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="a61e-8be1-6ed1-e616" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="a61e-8be1-6ed1-e616" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="9cd1-3c01-6fdc-3b9d" collapsible="true" collective="false" hidden="true" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -2013,7 +2013,7 @@ The Duellist counts as using a shield in close combat.</description>
             <constraint id="8d22-8476-9b9e-8b0e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="0133-695a-b90c-d643" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="0133-695a-b90c-d643" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="4516-f57d-ad7d-8d34" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="58f3-a826-d6f8-4bb5" collapsible="true" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -2386,7 +2386,7 @@ The Duellist counts as using a shield in close combat.</description>
           </constraints>
         </entryLink>
         <entryLink name="Nippon Noble Equipment" id="0905-273c-4eeb-a82c" collective="false" flatten="true" hidden="false" import="true" targetId="a4ca-993b-bf0b-f925" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="cb7c-2ab4-08dd-ba3a" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="cb7c-2ab4-08dd-ba3a" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="011a-122f-ac7b-51af" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="edc1-c140-9f19-1124" collapsible="true" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>

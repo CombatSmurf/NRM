@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Skaven - Clan Skryre (2b)" id="83a5-8a81-2a87-0b65" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Skaven - Clan Skryre (2b)" id="83a5-8a81-2a87-0b65" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="b388-2114-b2d5-7556" targetId="e020-c282-277b-b173" type="catalogue"/>
     <catalogueLink name="Characters" id="e564-86bc-714b-4511" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
@@ -15,6 +15,7 @@
       </costs>
       <entryLinks>
         <entryLink name="Henchmen Equipment" id="0501-5fc6-699a-5d76" hidden="false" import="true" targetId="f667-e579-1735-f3f1" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="90f5-35c7-f826-f994" collapsible="true" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Clanrats" id="7fc8-c6f4-32f7-c164" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -142,6 +143,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="1c6e-1f24-f732-b1ab" hidden="false" import="true" targetId="5f4a-4a82-5be0-c956" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="abc6-e941-85f9-cc86" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Engineers" id="6aa9-6069-4cb7-92b8" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -270,6 +272,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="f263-8ccb-aa70-e751" hidden="false" import="true" targetId="5f4a-4a82-5be0-c956" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="7169-5492-368f-db7b" collapsible="true" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Warlock Engineer" id="c3b5-2d9c-2f48-bcd7" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -393,6 +396,7 @@
       <entryLinks>
         <entryLink name="Experience" id="4b34-34ba-b028-827e" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Heroes Equipment" id="f948-5796-f277-62d1" hidden="false" import="true" targetId="5f4a-4a82-5be0-c956" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="7f3b-7ef5-b1a5-256b" collapsible="true" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Engineer Apprentices" id="ffd1-3465-b3b8-6459" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -655,6 +659,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="b2ab-cb27-9561-3e35" hidden="false" import="true" targetId="5f4a-4a82-5be0-c956" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="489d-8bdd-f4be-6cfd" collapsible="true" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="fa23-baf0-ba1c-d576" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>

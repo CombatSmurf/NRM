@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Shadow Warriors (1b)" id="a808d69a-88e2-9484-b24a-181ea44917e5" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Shadow Warriors (1b)" id="a808d69a-88e2-9484-b24a-181ea44917e5" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="2447-01ba-5309-c709" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="b2f3-0ef9-a020-d184" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -53,6 +53,7 @@ etc.).</description>
           </modifiers>
         </entryLink>
         <entryLink name="Serious Injuries" id="bc0d-a560-0c6b-e729" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="7eb1-a5dc-8702-0080" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="897a9a6b-fbef-690f-78d8-886616cbbe22" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
@@ -178,19 +179,6 @@ etc.).</description>
             <entryLink name="Shadow Warrior Equipment" id="8129-eb2d-8fae-85b5" flatten="true" hidden="false" import="true" targetId="652b-54a0-6ba6-1c64" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Charactaristics +/-" id="a9874b15-5410-29f0-f05c-e629500fc5f5" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="2" type="upgrade">
-          <constraints>
-            <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="4e184abe-fdce-287e-ab88-b98585f03810" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
         <selectionEntry name="Skills" id="27cd-081d-9718-4daf" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="4" type="upgrade">
           <constraints>
             <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -313,6 +301,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink name="Experience" id="faa8d372-77d4-33a4-1a08-49fe27633c52" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="d4fc-ee4c-7131-56a2" collective="false" hidden="false" import="true" sortIndex="1" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Serious Injuries" id="6de6-f114-1118-4f6a" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="b23f-1341-6b49-213e" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Shadow Novice" id="4bad-405a-d882-c183" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -455,19 +444,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Charactaristics +/-" id="534e-5e71-952c-cd36" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="3" type="upgrade">
-          <constraints>
-            <constraint id="b1d7-6dc4-f7fb-5eab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="5ff8-6fdf-68ef-eeb4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="b23f-1341-6b49-213e" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Shadow Walker" id="738f-d8a0-769e-b96f" collective="false" hidden="false" import="true" page="0" type="model">
@@ -488,6 +464,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
           </modifiers>
         </entryLink>
         <entryLink name="Serious Injuries" id="86ca-b2b4-f1f8-8e82" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="1520-0ccb-8477-d493" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Shadow Walker" id="47bd-dad8-e691-d959" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -717,19 +694,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Charactaristics +/-" id="245e-2571-c548-9f9a" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="2" type="upgrade">
-          <constraints>
-            <constraint id="47a2-60b3-424e-8f08" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="9b3f-8e04-1d27-f752" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="5b79-2328-d943-4624" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Shadow Warrior" id="a03c-9a18-57a0-f514" collective="false" hidden="false" import="true" page="0" type="model">
@@ -744,6 +708,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink name="Promoted" id="ead51f82-ca51-5519-9a8a-b462449cf11d" collapsible="true" collective="false" hidden="false" import="true" sortIndex="1" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Experience" id="3ace7cec-b98a-8120-c6ce-caf458afb673" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Serious Injuries" id="ecab-29e2-29d6-fb06" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="35d3-f776-9aff-71ce" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Shadow Warrior" id="01b9-b132-74d2-c829" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -886,19 +851,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Charactaristics +/-" id="eb7c-c714-fb4c-e605" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="3" type="upgrade">
-          <constraints>
-            <constraint id="dafe-77da-5d21-e354" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="5c2a-ab4f-c68e-6150" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="6e0f-4dc7-cc93-188b" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Shadow Weaver" id="7b83-f7e8-5658-234a" collective="false" hidden="false" import="true" page="0" type="model">
@@ -920,6 +872,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         </entryLink>
         <entryLink name="Shadow Warrior Magic" id="51057851-ce67-7a3a-f492-1de02a15ca3b" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="21e5-4547-ba42-43eb" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="2c68-5c1b-0288-f1c8" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="4cc8-3e29-2bd2-838b" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Shadow Weaver" id="c777-dfdc-29a0-44fe" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -1056,19 +1009,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <entryLink name="Speed Skills" id="bb755636-0b5c-95f0-6f44-ccb4319cb7f2" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink name="Academic Skills" id="746c7866-443b-ee53-12a4-b1406545ae82" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
             <entryLink name="Special Skills (Shadow Warrior)" id="1529e85b-c585-4f7d-cc4a-3579b5795572" collective="false" hidden="false" import="true" targetId="285ebcd1-3b2e-4937-39bc-a88721067dca" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Charactaristics +/-" id="8229-3ae8-b13d-43a8" collapsible="true" collective="false" hidden="false" import="true" page="0" sortIndex="3" type="upgrade">
-          <constraints>
-            <constraint id="79d0-8193-210e-17e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="fa21-6a63-6f40-9a2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Charactaristics +/-" id="b1fc-9b12-bea5-f216" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>

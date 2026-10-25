@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Bretonnian Knights (1b)" id="4ffc-66b0-fbc6-5a24" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Bretonnian Knights (1b)" id="4ffc-66b0-fbc6-5a24" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="50cf-9672-d3e1-ce76" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="43e2-4ab8-e495-a7f5" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -49,7 +49,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
             <constraint id="7cf5-69e8-273-f491" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="20"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="af0d-9fbd-845a-989" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="af0d-9fbd-845a-989" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="e2c-486-dfae-6261" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Knights Equipment" id="190e-1140-738-e4e6" hidden="false" import="true" targetId="3362-9fcd-f200-b7a" type="selectionEntryGroup"/>
       </entryLinks>
@@ -215,7 +215,7 @@ He will never panic and break from combat and so does not have to pass a Leade
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="ef04-b2a3-2474-5ec5" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="9adf-d393-f167-1980" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="9adf-d393-f167-1980" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="922d-8d74-1ae-92db" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Squires Equipment" id="fd4f-8bc8-478a-b634" hidden="false" import="true" targetId="9376-a570-b687-9a88" type="selectionEntryGroup"/>
       </entryLinks>
@@ -390,7 +390,7 @@ He will never panic and break from combat and so does not have to pass a Leade
             <constraint id="d351-f018-9464-7db9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="4985-a919-8e00-91c0" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="4985-a919-8e00-91c0" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="9d59-c2e3-1f3c-ee1c" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Knights Equipment" id="7329-8011-8fae-36d1" hidden="false" import="true" targetId="3362-9fcd-f200-b7a" type="selectionEntryGroup"/>
       </entryLinks>
@@ -552,7 +552,7 @@ He will never panic and break from combat and so does not have to pass a Leade
       <entryLinks>
         <entryLink name="Experience" id="3e38-132e-1803-d580" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="c815-c185-369-150d" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="784d-de72-2acd-adf7" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="784d-de72-2acd-adf7" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="bd7b-d1f7-1009-4f02" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -710,7 +710,7 @@ He will never panic and break from combat and so does not have to pass a Leade
       <entryLinks>
         <entryLink name="Experience" id="d1ce-558a-4297-f9ec" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="eb3a-7b93-4d8c-efac" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="9443-38a-5e5c-d91e" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="9443-38a-5e5c-d91e" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="b7ed-9bc1-6a7a-e51e" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">

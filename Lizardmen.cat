@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lizardmen (1b)" id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" authorContact="Twitter: @dabrown_us" authorName="David Brown" authorUrl="http://dabrown.us" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lizardmen (1b)" id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" authorContact="Twitter: @dabrown_us" authorName="David Brown" authorUrl="http://dabrown.us" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="5b93-ef46-ffa8-a19d" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="5a7a-5d3a-e176-db11" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -353,7 +353,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Charactaristics +/-" id="721b-1cd3-f6f2-11b6" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="721b-1cd3-f6f2-11b6" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Skaly Skin (Saurus)" id="1c92-11da-155d-8d78" hidden="false" targetId="ba1c-c742-5994-2f68" type="profile"/>
@@ -733,7 +733,7 @@
         </entryLink>
         <entryLink name="Serious Injuries" id="b029-77f7-cd36-e7a3" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Equipment - All" id="f7d3-63b0-8db7-70be" collapsible="true" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-        <entryLink name="Charactaristics +/-" id="c146-1988-610e-c239" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="c146-1988-610e-c239" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Sacred Markings" id="6efa-219e-6f06-a352" collapsible="true" hidden="false" import="true" targetId="917c-b8a6-b7d2-c4ae" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
@@ -1169,7 +1169,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Charactaristics +/-" id="a7ee-65fc-d143-a025" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="a7ee-65fc-d143-a025" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Equipment - All" id="cf30-8840-df7d-989b" collapsible="true" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -1558,7 +1558,7 @@
           </modifiers>
         </entryLink>
         <entryLink name="Serious Injuries" id="085b-e268-b735-7b46" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Charactaristics +/-" id="fa45-a543-3e2a-613b" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="fa45-a543-3e2a-613b" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Equipment - All" id="5fdc-e24d-87d8-5a76" collapsible="true" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
         <entryLink name="Sacred Markings" id="3d4a-2db5-5b40-7dfd" collapsible="true" hidden="false" import="true" targetId="917c-b8a6-b7d2-c4ae" type="selectionEntryGroup"/>
       </entryLinks>
@@ -1862,7 +1862,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Charactaristics +/-" id="f71c-a15d-8534-8a43" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="f71c-a15d-8534-8a43" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Equipment - All" id="2c94-12aa-2acc-adb9" collapsible="true" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="4071-d0b8-53f6-1c59" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Sacred Markings" id="1faa-8ad1-0302-f4be" collapsible="true" hidden="false" import="true" targetId="917c-b8a6-b7d2-c4ae" type="selectionEntryGroup"/>

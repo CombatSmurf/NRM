@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Reiklanders (1a)" id="ac1721e2-653d-e279-11e3-ca8ba77b0637" authorUrl="https://github.com/BSData/mordheim/issues" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Reiklanders (1a)" id="ac1721e2-653d-e279-11e3-ca8ba77b0637" authorUrl="https://github.com/BSData/mordheim/issues" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="7fb6-a462-e898-315c" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="b45e-ec45-4053-a2f7" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -35,7 +35,7 @@ All Marksmen therefore add +1 to their Ballistic Skill, whether they are recruit
           </constraints>
         </entryLink>
         <entryLink name="Merc Equipment" id="81b3-5e93-9437-895b" collective="false" flatten="true" hidden="false" import="true" targetId="298f-816d-e7b5-73cb" type="selectionEntryGroup"/>
-        <entryLink name="Charactaristics +/-" id="d5ef-c6f6-f1bf-5348" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="d5ef-c6f6-f1bf-5348" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="e4a3-d344-0cf3-0ad0" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
       </entryLinks>
       <modifiers>
@@ -346,7 +346,7 @@ All Marksmen therefore add +1 to their Ballistic Skill, whether they are recruit
             <constraint id="4fb4-7111-93a0-6d45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="20"/>
           </constraints>
         </entryLink>
-        <entryLink name="Charactaristics +/-" id="f263-eae8-e171-9995" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
+        <entryLink name="Charactaristics +/-" id="f263-eae8-e171-9995" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
           <modifiers>
             <modifier field="e821-3543-3a5e-49a4" type="increment" value="0"/>
           </modifiers>

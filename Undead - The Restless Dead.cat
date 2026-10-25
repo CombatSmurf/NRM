@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Restless Dead (1c)" id="5d51-e8c-6ba4-d00" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Restless Dead (1c)" id="5d51-e8c-6ba4-d00" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="957d-6548-1bd4-e271" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="ffa4-28fb-7947-b076" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -42,7 +42,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Undead Equipment" id="4822-9eff-9679-a86f" collective="false" hidden="false" import="true" sortIndex="3" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="fc4b-3aeb-c323-2d8a" collective="false" hidden="false" import="true" sortIndex="5" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="fc4b-3aeb-c323-2d8a" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="918f-9d0e-b454-50a" collective="false" hidden="false" import="true" sortIndex="8" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="1613-73b6-d492-7e71" hidden="false" import="true" sortIndex="2" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -367,7 +367,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <entryLinks>
-        <entryLink name="Characteristic Increases" id="2abc-70a1-2751-4c89" collective="false" hidden="false" import="true" sortIndex="2" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup">
+        <entryLink name="Charactaristics +/-" id="2abc-70a1-2751-4c89" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
           <constraints>
             <constraint id="c6a0-6d61-e686-3254" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="9"/>
           </constraints>
@@ -485,7 +485,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
           </constraints>
         </entryLink>
         <entryLink name="Undead Equipment" id="ee98-1bab-2e16-4d91" collective="false" hidden="false" import="true" sortIndex="3" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="6e8e-406a-c1ae-376b" collective="false" hidden="false" import="true" sortIndex="5" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="6e8e-406a-c1ae-376b" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="82fa-83bb-ea31-5ec6" collective="false" hidden="false" import="true" sortIndex="8" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="ae0d-a5e-d8c6-6c22" hidden="false" import="true" sortIndex="2" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -846,7 +846,7 @@ When a Necromancer searches for rare items, they roll 3D6 and pick the two high
           </constraints>
         </entryLink>
         <entryLink name="Undead Equipment" id="453-7267-11a-512a" collective="false" hidden="false" import="true" sortIndex="3" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="b348-42ee-cb9b-f546" collective="false" hidden="false" import="true" sortIndex="5" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="b348-42ee-cb9b-f546" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="94ba-230a-8144-562d" collective="false" hidden="false" import="true" sortIndex="8" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="1069-5ba4-9911-eef0" hidden="false" import="true" sortIndex="2" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -1497,7 +1497,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
       <entryLinks>
         <entryLink name="Experience" id="1546-7c8-9c3-56a2" collective="false" hidden="false" import="true" sortIndex="1" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="9b44-8854-b752-14b8" collective="false" hidden="false" import="true" sortIndex="2" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="84a0-9223-71a7-2d56" collective="false" hidden="false" import="true" sortIndex="7" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="84a0-9223-71a7-2d56" collapsible="true" collective="false" hidden="false" import="true" sortIndex="7" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="d25d-3c57-c967-bc1d" collective="false" hidden="true" import="true" sortIndex="10" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">

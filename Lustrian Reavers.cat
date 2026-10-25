@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lustrian Reavers (1c)" id="c182-5974-6237-14b7" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lustrian Reavers (1c)" id="c182-5974-6237-14b7" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="b575-f1b0-d25d-261d" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="1a14-b08e-6e3f-f6fd" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -51,7 +51,7 @@ They may hire an Ogre Bodyguard, Dwarf Trollslayer, Tilean Marksman or a Big G
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="fe18-ee81-c6ee-4b3f" collective="false" hidden="false" import="true" sortIndex="7" targetId="bba1-49a-dbfb-aa79" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="c8d-2d47-70d4-4212" collective="false" hidden="false" import="true" sortIndex="4" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="c8d-2d47-70d4-4212" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="ee3a-cc15-2383-853e" collective="false" hidden="false" import="true" sortIndex="12" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="9159-3d54-6694-5179" hidden="false" import="true" sortIndex="3" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -518,7 +518,7 @@ This ability can save the Conqueror only one time.</description>
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="c138-82a6-8422-ead9" collective="false" hidden="false" import="true" sortIndex="7" targetId="bba1-49a-dbfb-aa79" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="e4d1-9853-f958-a602" collective="false" hidden="false" import="true" sortIndex="4" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="e4d1-9853-f958-a602" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="a18c-396c-af4c-9406" collective="false" hidden="false" import="true" sortIndex="14" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="abf-ac44-5944-e195" hidden="false" import="true" sortIndex="3" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -1062,7 +1062,7 @@ This ability can save the Conqueror only one time.</description>
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="615e-e7da-868-4bcc" collective="false" hidden="false" import="true" sortIndex="7" targetId="bba1-49a-dbfb-aa79" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="4903-d1d0-8273-23d2" collective="false" hidden="false" import="true" sortIndex="4" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="4903-d1d0-8273-23d2" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="1ba6-85d1-3a42-a4dc" collective="false" hidden="false" import="true" sortIndex="13" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="6a99-b6c9-fef7-3374" hidden="false" import="true" sortIndex="3" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -1662,7 +1662,7 @@ The Hawk does not attack if the Beastmaster is engaged in hand-to-hand combat,�
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="4ef1-6b46-3938-bd4a" collective="false" hidden="false" import="true" sortIndex="8" targetId="bba1-49a-dbfb-aa79" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="26f5-9224-5457-c4f0" collective="false" hidden="false" import="true" sortIndex="4" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="26f5-9224-5457-c4f0" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="5705-12c9-6cc-f561" collective="false" hidden="false" import="true" sortIndex="13" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="d868-8223-523a-a0e2" hidden="false" import="true" sortIndex="3" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -2168,7 +2168,7 @@ If you make the Jungle Shadow a Wizard, remove the Light Armour from the equip
           </constraints>
         </entryLink>
         <entryLink name="Heroes Equipment" id="bcd4-b75c-1e89-ba91" collective="false" hidden="false" import="true" sortIndex="7" targetId="bba1-49a-dbfb-aa79" type="selectionEntryGroup"/>
-        <entryLink name="Characteristic Increases" id="3412-3a7-9d2-eb70" collective="false" hidden="false" import="true" sortIndex="4" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="3412-3a7-9d2-eb70" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="1948-3465-a260-fe73" collective="false" hidden="false" import="true" sortIndex="14" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Hero)" id="a550-32c7-260f-e2f" hidden="false" import="true" sortIndex="3" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
@@ -2680,7 +2680,7 @@ Remove the counters when the trap is sprung.</description>
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="5480-4b43-3516-4f87" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="abc2-5784-55bd-a1ef" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="abc2-5784-55bd-a1ef" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Prospect Equipment" id="d81d-1a8b-7012-350f" collective="false" hidden="false" import="true" targetId="a5df-3a7-5eec-8567" type="selectionEntryGroup"/>
         <entryLink name="Advancement (Henchmen)" id="57f3-c8eb-2dc2-acb9" hidden="false" import="true" targetId="583e-a0c5-873-acdc" type="selectionEntry">
           <modifiers>

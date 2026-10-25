@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="cd3f-e5da-8161-bb17" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="8d94-0b03-0bea-afa2" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -31,7 +31,7 @@
             <constraint id="3ee3-a3df-3a10-f271" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="17"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="1987-3e0b-3287-f1a2" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="1987-3e0b-3287-f1a2" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="93d1-c155-7a48-fe8b" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Hero Equipment" id="4c81-fe1b-207-103f" flatten="true" hidden="false" import="true" targetId="aa8c-67af-c03a-75c6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -202,7 +202,7 @@
             <constraint id="ffe0-17e4-344f-f57e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="6"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="37c1-7d35-9502-e0e4" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="37c1-7d35-9502-e0e4" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="a1f-98b2-4503-acc1" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Hero Equipment" id="2afb-555a-3637-a2d8" flatten="true" hidden="false" import="true" targetId="aa8c-67af-c03a-75c6" type="selectionEntryGroup"/>
         <entryLink name="Forest Goblin Magic" id="7838-3741-ff08-2f06" flatten="true" hidden="false" import="true" targetId="b21c-8103-66f7-21af" type="selectionEntryGroup"/>
@@ -371,7 +371,7 @@
             <constraint id="5973-b2ad-297a-1e7e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="6"/>
           </constraints>
         </entryLink>
-        <entryLink name="Characteristic Increases" id="aec3-7d75-fd20-f1f7" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="aec3-7d75-fd20-f1f7" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="1eb3-4e2-f633-dd77" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Hero Equipment" id="3763-ad0b-38c7-d4fb" hidden="false" import="true" targetId="aa8c-67af-c03a-75c6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -542,7 +542,7 @@
       <entryLinks>
         <entryLink name="Experience" id="ab4-8a57-5edf-80f8" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="a493-4417-3f57-577d" collapsible="true" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="f7dc-a422-590d-a3f5" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="f7dc-a422-590d-a3f5" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="8abe-f18d-7d4-739" collapsible="true" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -704,7 +704,7 @@
       <entryLinks>
         <entryLink name="Experience" id="cd53-767f-2b3e-2c07" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="ba99-b384-3117-82ef" collapsible="true" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="56a2-d534-5100-f17d" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="56a2-d534-5100-f17d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="111c-354f-fbd0-5a3d" collapsible="true" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -879,7 +879,7 @@ In addition, if they begin their turn within charge range of an enemy, they ar
       <entryLinks>
         <entryLink name="Experience" id="e60c-aebb-32ec-e3b8" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="8e15-2650-a218-ed22" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink name="Characteristic Increases" id="5ca-ed36-5280-b89e" collapsible="true" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="5ca-ed36-5280-b89e" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="7f7-ad56-f914-4bda" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
