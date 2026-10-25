@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Carnival of Chaos (1a)" id="3ca8-2429-2fa9-659e" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Carnival of Chaos (1a)" id="3ca8-2429-2fa9-659e" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="73d7-bde8-39b5-d5c8" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="69dd-ab66-7fb4-7418" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -31,7 +31,7 @@
         <entryLink name="Charactaristics +/-" id="29ef-9dd4-f5db-601d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="233e-f101-9ced-f9dd" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Carnival equipment" id="8cd4-edc2-cde9-f711" collective="false" hidden="false" import="true" targetId="5dbb-7aba-e47b-8ac7" type="selectionEntryGroup"/>
-        <entryLink name="Nurgle Rituals" id="ad5d-9ced-4629-5198" collective="false" hidden="false" import="true" targetId="9296-1a70-7097-c1f7" type="selectionEntryGroup"/>
+        <entryLink name="Nurgle Rituals" id="ad5d-9ced-4629-5198" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="9296-1a70-7097-c1f7" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="1c70-96fc-0449-280c" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -924,22 +924,6 @@ The Plague Cart automatically passes any Leadership-based test it is required to
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
-  <sharedRules>
-    <rule name="Nurgle’s Rot" id="c538-42db-ebae-8c58" hidden="false">
-      <description>(note: Nurgle’s Rot only affects the living, so Undead, Daemons and the Possessed are unaffected).
-
-Once a warrior has contracted the Rot, mark this on the warband roster.
-
-Rather than killing the victim immediately, the Rot can take some time to set in.
-From now on, before the start of each battle, the warrior must pass a Toughness test.
-
-If successful, his constitution has managed to stave off the Rot’s effects.
-
-If unsuccessful, the warrior loses one point of Toughness permanently (if he reaches zero, he has succumbed to the Rot and died, remove him from the roster).
-
-In addition, if a 6 is rolled for the Toughness test then he has unwittingly passed the Rot on to another member of the warband (randomly allocate a warband member and mark this on the roster).</description>
-    </rule>
-  </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry name="Not First Blessing" id="1858-1ccf-7e28-f6e5" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
@@ -1335,113 +1319,96 @@ In addition, if a 6 is rolled for the Toughness test then he has unwittingly pas
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Nurgle Rituals" id="9296-1a70-7097-c1f7" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Strength Skills (Brutes)" id="62c6-a99d-b082-9870" collective="false" hidden="false" import="true">
       <constraints>
-        <constraint id="bc50-f807-0282-0d4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="9c69-8e26-ca3a-6202" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry name="1 Daemonic Vigour" id="5a60-090e-da13-c8e8" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Mighty Blow" id="de21-f6e4-a928-07c6" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="aeb2-0e34-bc44-e37f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Daemonic Vigour" id="23b4-127f-43c8-8ced" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master imbues his Daemonic minions with supernatural power.
-
-Any Plague Bearers or Nurglings within 8&quot; of the Master increase their Daemonic Aura save from 5+ to 4+ until the beginning of their next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Mighty Blow" id="8488-de83-4de5-9ace" hidden="false" page="0">
+              <description>The warrior knows how to use his strength to maximum effect and has a +1 Strength bonus in close combat (excluding pistols). As his
+Strength is used for close combat weapons, the bonus applies to all such weapons.</description>
+            </rule>
+          </rules>
         </selectionEntry>
-        <selectionEntry name="2 Buboes" id="4090-ec9c-e707-e6f9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Pit Fighter" id="9098-86f8-a0c8-61f2" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="e1bf-9ef5-e422-1c91" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Buboes" id="230f-baa9-7b20-67bf" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master bestows the gift of pus-filled buboes upon his enemies.
-
-This spell has a range of 8&quot; and affects a single enemy warrior.
-The warrior must pass a Toughness test or lose a Wound. No Armour saves are allowed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Pit Fighter" id="2870-0946-08c6-c91a" hidden="false" page="0">
+              <description>The warrior has learned how to fight in enclosed spaces from his time in the dangerous fighting pits of the Empire. He is an expert at fighting in confined areas and adds +1 to his WS and +1 to his Attacks if he is fighting inside buildings or ruins.</description>
+            </rule>
+          </rules>
         </selectionEntry>
-        <selectionEntry name="3 Stench of Nurgle" id="b6ce-2385-df22-11a7" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Resilient" id="61e7-7a3a-7f48-9b8d" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="d418-40da-353a-9ca0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Stench of Nurgle" id="f2b4-2147-eaf6-4037" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master spews forth a foul, stinking mist that chokes his foes.
-
-This spell has a range of 6&quot; and affects all living creatures – friend or foe.
-Each enemy warrior in range must pass a Toughness test or lose an Attack until their next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Resilient" id="2c2a-698b-23de-2a7a" hidden="false" page="0">
+              <description>Deduct -1 Strength from all hits against him in close combat. This does not affect armour save modifiers</description>
+            </rule>
+          </rules>
         </selectionEntry>
-        <selectionEntry name="4 Pestilence" id="31e1-ef9e-1339-6052" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Fearsome" id="6923-b378-6fd1-ce80" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="ef54-a8f5-5d2a-093a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Pestilence" id="4e48-8220-4d41-360d" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master inflicts horrible diseases upon the unbelievers.
-
-All enemy models within 12&quot; of the Master suffer a Strength 3 hit.
-No Armour saves are allowed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Fearsome" id="9f9b-413e-40aa-d6bf" hidden="false" page="0">
+              <description>The model that he causes fear in opposing models</description>
+            </rule>
+          </rules>
         </selectionEntry>
-        <selectionEntry name="5 Scabrous Hide" id="fcc4-faf8-f45d-6723" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Strongman" id="cbce-065c-8af3-358a" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="17fa-c071-2110-2baa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+            <constraint id="cff3-da14-30aa-be2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Scabrous Hide" id="17ab-cbe9-d669-d616" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master’s skin becomes tough and leathery like that of his patron god.
-
-The Master has an armour save of 2+ which replaces any normal Armour save.
-The Scabrous Hide lasts until the beginning of his next Shooting phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Strongman" id="c29e-06b9-6384-fc46" hidden="false" page="0">
+              <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
+            </rule>
+          </rules>
         </selectionEntry>
-        <selectionEntry name="6 Nurgle’s Rot" id="568b-659e-fae9-634d" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Unstoppable Charge" id="ed1b-ea0d-a533-2716" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="9577-c395-e42b-a56c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Nurgle’s Rot" id="1c9f-b10e-fea9-7d4a" hidden="false" targetId="c538-42db-ebae-8c58" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Nurgle’s Rot" id="e7b2-b7c7-46f3-93d8" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master bestows the blessing of the Plague God upon his foe.
-
-All enemy models in base contact with the Master must immediately test against their Toughness or contract Nurgle’s Rot.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Unstoppable Charge" id="4b4a-4fdc-7962-ba50" hidden="false" page="0">
+              <description>When he charges, the warrior is almost impossible to halt. He adds +1 to his Weapon Skill when charging.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1646,99 +1613,6 @@ It gains +1 Wound and is immune to all poisons.</description>
               <description>The Tainted One is so disgusting that its flesh hangs in tatters from its body and its entrails are rotten and exposed.
 
 It causes Fear.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Strength Skills (Brutes)" id="62c6-a99d-b082-9870" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="9c69-8e26-ca3a-6202" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="Mighty Blow" id="de21-f6e4-a928-07c6" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="aeb2-0e34-bc44-e37f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Mighty Blow" id="8488-de83-4de5-9ace" hidden="false" page="0">
-              <description>The warrior knows how to use his strength to maximum effect and has a +1 Strength bonus in close combat (excluding pistols). As his
-Strength is used for close combat weapons, the bonus applies to all such weapons.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Pit Fighter" id="9098-86f8-a0c8-61f2" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="e1bf-9ef5-e422-1c91" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Pit Fighter" id="2870-0946-08c6-c91a" hidden="false" page="0">
-              <description>The warrior has learned how to fight in enclosed spaces from his time in the dangerous fighting pits of the Empire. He is an expert at fighting in confined areas and adds +1 to his WS and +1 to his Attacks if he is fighting inside buildings or ruins.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Resilient" id="61e7-7a3a-7f48-9b8d" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="d418-40da-353a-9ca0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Resilient" id="2c2a-698b-23de-2a7a" hidden="false" page="0">
-              <description>Deduct -1 Strength from all hits against him in close combat. This does not affect armour save modifiers</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Fearsome" id="6923-b378-6fd1-ce80" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="ef54-a8f5-5d2a-093a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Fearsome" id="9f9b-413e-40aa-d6bf" hidden="false" page="0">
-              <description>The model that he causes fear in opposing models</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Strongman" id="cbce-065c-8af3-358a" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="17fa-c071-2110-2baa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="cff3-da14-30aa-be2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Strongman" id="c29e-06b9-6384-fc46" hidden="false" page="0">
-              <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Unstoppable Charge" id="ed1b-ea0d-a533-2716" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="9577-c395-e42b-a56c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Unstoppable Charge" id="4b4a-4fdc-7962-ba50" hidden="false" page="0">
-              <description>When he charges, the warrior is almost impossible to halt. He adds +1 to his Weapon Skill when charging.</description>
             </rule>
           </rules>
         </selectionEntry>

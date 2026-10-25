@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Amazons Mordheim (1b)" id="7f2c-337f-3ebd-2263" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Amazons Mordheim (1b)" id="7f2c-337f-3ebd-2263" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="0e0e-c62d-8529-8edb" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
     <catalogueLink name="Characters" id="4245-2ce6-7a07-decb" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
@@ -38,7 +38,7 @@ For this reason, the Amazons may not have any Hired Swords or Dramatis Personae 
             <constraint id="244d-d680-c950-4a6f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="20"/>
           </constraints>
         </entryLink>
-        <entryLink name="Amazon Rituals" id="15b8-4e3c-3da6-f14a" collective="false" hidden="false" import="true" targetId="08ef-ac10-72a4-bd74" type="selectionEntryGroup"/>
+        <entryLink name="Amazon Rituals" id="15b8-4e3c-3da6-f14a" collective="false" hidden="false" import="true" sortIndex="1" targetId="2f8e-97f8-d549-60f8" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="177b-2228-e118-2bcf" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="932b-a2b0-1e83-5487" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Heroines Equipment" id="d7e2-8407-2bf7-9b51" collective="false" hidden="false" import="true" targetId="6a1d-73e3-ec6e-3158" type="selectionEntryGroup"/>
@@ -879,121 +879,6 @@ This restores all wounds he has previously lost during the game.</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Amazon Rituals" id="08ef-ac10-72a4-bd74" collective="false" hidden="false" import="true">
-      <selectionEntries>
-        <selectionEntry name="1 Singing Wind" id="74f8-2020-ca54-5ff1" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="1 Singing Wind" id="a9ce-8a5c-2d3d-d2da" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess calls upon the power of Shaekal the Wind Goddess to enter the battlefield.
-
-The goddess appears in the form of singing motes and dancing lights that will entrance and ‘hold’ any model within 10&quot; until the start of the Amazon player’s next turn.
-The model cannot move, shoot, or cast spells, but may defend itself in hand-to-hand combat.
-Models affected by this ritual automatically go last in combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="2 Serpent’s Strength" id="ba86-cead-dba7-9433" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="2 Serpent’s Strength" id="d2e5-a3c9-9db2-855e" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess begins the ritual by dancing wildly and screaming in an ancient tongue.
-
-All friendly models close to the Priestess will be charged with a frantic energy until the end of their next turn.
-During this time any model within 8&quot; of the Priestess (including herself) will add +1 to their Strength.
-The ritual cannot be cast if the Priestess is in close combat during her Shooting phase.
-The effects will continue after the ritual is cast if the Priestess enters combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 Wendala’s Maelstrom" id="69f1-5b60-ec26-2968" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="3 Wendala’s Maelstrom" id="3dd0-2622-62ce-9ae5" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess summons harsh tropical winds to protect the Amazons from enemy ranged attacks.
-
-The storm extends out from the Priestess 18&quot;.
-All attempts to shoot missile weapons by the enemy will be at -1 to hit.
-The ritual lasts up until the start of the Amazon player’s next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 Shield of Thorns" id="96a4-543e-958d-99f5" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="4 Shield of Thorns" id="1980-bf66-c095-8d43" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Moving her arms about in a weaving motion, the priestess calls upon the plants to protect her.
-
-The ritual produces a cocoon of thorns all about the Priestess, making her immune to ranged or magical attacks.
-Any models wishing to charge the Priestess can do so but the thorns negate any strikes by the Priestess and her enemies in the first round of combat.
-
-The Priestess cannot cast this ritual while in hand-to-hand combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 The Living Jungle" id="bb76-fe4c-14f7-6b8a" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="5 The Living Jungle" id="34b5-cbc1-edc8-5181" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Drawing upon her will, the Priestess reaches out to the denizens of the jungle, seeking their aid.
-
-Pick one model within 12&quot;.
-The model is suddenly swarmed by a savage mix of snakes, spiders and insects, most of them poisonous.
-The afflicted model takes 1D6 Strength 2 hits with no armour saves allowed apart from Ward saves.
-You cannot use a dodge save against a swarm.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 Siren’s Dreams" id="5f9b-9316-a324-117a" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="6 Siren’s Dreams" id="cd13-d05c-1816-8975" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess starts to sing with a wondrous voice and all the Amazons join in with her.
-
-The song is so beautiful and mesmerising that it momentarily distracts the Amazon’s enemies within 12&quot; such that all LeaDership tests for the opposing warband are made at -1 until the end of the opposing player’s next turn.
-
-Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Hand-to-hand Weapons" id="70ca-51c1-ad22-175d" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="c327-d47-d94-185e" field="selections" scope="parent" shared="true" type="max" value="2"/>

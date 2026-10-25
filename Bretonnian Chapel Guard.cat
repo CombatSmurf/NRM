@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Bretonnian Chapel Guard (1c)" id="16d6-0792-5df8-ebd3" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Bretonnian Chapel Guard (1c)" id="16d6-0792-5df8-ebd3" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="6ddb-5114-bff8-090b" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="0c24-6a04-8946-7b42" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -357,6 +357,7 @@
         <entryLink name="Serious Injuries" id="a088-090a-7203-36f7" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Bowmens Equipment" id="e972-4392-7150-a471" flatten="true" hidden="false" import="true" sortIndex="2" targetId="af05-4b00-c026-8785" type="selectionEntryGroup"/>
         <entryLink name="Pilgrims Equipment" id="08db-d145-0e87-c617" hidden="false" import="true" sortIndex="1" targetId="6e0c-c739-08b0-bed6" type="selectionEntryGroup"/>
+        <entryLink name="Promoted" id="53f3-bcf4-a20c-4912" hidden="false" import="true" sortIndex="7" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="d041-7c60-88eb-7fe0" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -475,10 +476,9 @@
         </rule>
       </rules>
       <selectionEntries>
-        <selectionEntry name="Skills" id="f280-1994-e57a-6bdc" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
+        <selectionEntry name="Skills" id="f280-1994-e57a-6bdc" collapsible="true" collective="false" hidden="true" import="true" sortIndex="3" type="upgrade">
           <constraints>
-            <constraint id="4b81-ae13-d2e6-7f07" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="f9d7-4648-aaa1-523f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="f9d7-4648-aaa1-523f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -491,6 +491,13 @@
             <entryLink name="Academic Skills" id="f197-92b0-718c-705c" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
             <entryLink name="Speed Skills" id="5b5c-0b1a-a1fe-28de" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
           </entryLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="534a-6ec6-5d82-da7f" childName="Promoted" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -987,7 +994,15 @@
                 <entryLink name="Flail" id="5b66-24e2-6443-5151" hidden="false" import="true" targetId="fea6-684b-02c4-6c62" type="selectionEntry"/>
                 <entryLink name="Free Dagger" id="dbb9-464a-9fae-8763" hidden="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
                 <entryLink name="Club/Hammer/Mace/Staff" id="8a84-29a5-9021-e318" hidden="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry"/>
-                <entryLink name="Lance" id="48df-4a4a-629a-5c55" hidden="false" import="true" targetId="5223-13a6-14ec-f372" type="selectionEntry"/>
+                <entryLink name="Lance" id="48df-4a4a-629a-5c55" hidden="false" import="true" targetId="5223-13a6-14ec-f372" type="selectionEntry">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="a0c3-247a-aca2-5104" childName="Questing Knight" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink name="Morning Star" id="bd63-9fd4-f14d-a6f9" hidden="false" import="true" targetId="d5f3-1906-da91-4e8f" type="selectionEntry"/>
                 <entryLink name="Spear" id="e392-6971-5662-b4a9" hidden="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
                 <entryLink name="Sword" id="7032-463d-8843-62d3" hidden="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>

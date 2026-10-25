@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Skaven - Clan Eshin (1a)" id="facb1142-7463-7676-00c0-d78150e13a50" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Skaven - Clan Eshin (1a)" id="facb1142-7463-7676-00c0-d78150e13a50" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="5f49-5e43-31bb-2dc9" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="d740-4aa0-8972-00a5" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -378,6 +378,7 @@
           </constraints>
         </entryLink>
         <entryLink name="Charactaristics +/-" id="1e24-59aa-d9f1-7ee7" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Magic of the Horned Rat" id="c6c891af-4aff-4d59-760e-68ab30e7249f" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="3442-f32d-5c5f-5f9d" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Eshin Sorcerer" id="66b0-7c60-4801-0da9" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -526,19 +527,6 @@
             <entryLink name="Speed Skills" id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink name="Special Skills (Skaven)" id="ca854aa3-83b2-c930-7f5f-feb0582be796" collective="false" hidden="false" import="true" targetId="0d5ab763-c126-029a-3da9-203abeafdb53" type="selectionEntryGroup"/>
             <entryLink name="Academic Skills" id="be110a0b-bcd6-fba0-6d35-e38bcb0459a8" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Magic" id="1ba2be4c-22b8-c8fa-bd6d-f7adf12edd83" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="minSelections-min" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="minSelections-max" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Magic of the Horned Rat" id="c6c891af-4aff-4d59-760e-68ab30e7249f" collective="false" flatten="true" hidden="false" import="true" targetId="3442-f32d-5c5f-5f9d" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>

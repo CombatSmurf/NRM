@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Ostlanders (1a)" id="05ad-b0d8-77a8-2572" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Ostlanders (1a)" id="05ad-b0d8-77a8-2572" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="daba-b352-5675-6954" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="cf6e-84f4-a2ec-df80" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -207,14 +207,10 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
       </infoLinks>
       <modifiers>
         <modifier field="2767-607e-ca81-463a" type="set" value="1">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="8bc4-67ec-2912-2d68" childName="Priest of Morr" field="selections" scope="roster" shared="true" type="atLeast" value="1"/>
-                <condition childId="fcbb-50c3-5314-955a" childName="Priest of Taal" field="selections" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="roster" shared="true" type="equalTo" value="1"/>
+            <condition childId="fcbb-50c3-5314-955a" childName="Priest of Taal" field="selections" scope="roster" shared="true" type="equalTo" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -375,11 +371,19 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink name="Ostlander Equipment" id="5f91-abcd-9746-3af9" collective="false" hidden="false" import="true" targetId="88aa-cad7-c98a-a301" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="0b48-be4c-0898-5e1d" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="454e-aacc-8c53-77b9" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Prayers of Taal" id="80f9-2f16-7149-92f6" collective="false" hidden="false" import="true" targetId="3905-cd06-b0b9-95d3" type="selectionEntryGroup"/>
+        <entryLink name="Prayers of Taal" id="80f9-2f16-7149-92f6" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="3905-cd06-b0b9-95d3" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="5d54-d08e-19df-974e" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="c120-fff2-17cb-d772" type="set" value="0">
+          <conditions>
+            <condition childId="cd66-a353-13f7-ee30" childName="Blood Brothers" field="selections" scope="parent" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Priest of Taal" id="a8db-6af2-abff-dbfb" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -1191,114 +1195,6 @@ Ogres only gain advances at half the rate of everyone else (ie, they must accrue
               </conditions>
             </modifier>
           </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Priest of Morr" id="8bc4-67ec-2912-2d68" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Heroes" id="5db9-62eb-d637-1835" hidden="false" primary="true" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="7eb5-fae3-a137-546c" field="selections" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Experience" id="da56-ae0f-e502-1fdd" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
-          <constraints>
-            <constraint id="e0a2-568e-c820-d115" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Charactaristics +/-" id="bdc3-cb71-ad66-c632" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
-          <modifiers>
-            <modifier field="e821-3543-3a5e-49a4" type="increment" value="0"/>
-          </modifiers>
-        </entryLink>
-        <entryLink name="Serious Injuries" id="377b-6895-d092-4930" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Funerary Rites" id="bd04-769e-35e5-42f1" flatten="true" hidden="false" import="true" targetId="b730-8274-0015-35b8" type="selectionEntryGroup"/>
-      </entryLinks>
-      <modifiers>
-        <modifier field="7eb5-fae3-a137-546c" type="set" value="0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="cd66-a353-13f7-ee30" childName="Blood Brothers" field="selections" scope="roster" shared="true" type="atLeast" value="2"/>
-                <condition childId="fcbb-50c3-5314-955a" childName="Priest of Taal" field="selections" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile name="Priest of Morr" id="5a2f-2463-4f6a-ba3b" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Loner" id="60c6-ce2a-6756-d927" hidden="false">
-          <description>Few people care to spend any length of time in the company of a priest of Morr - even when it is their duty to do so.
-
-
-As such, a priest of Morr is used to being alone and probably prefers it that way. 
-
-
-Priests of Morr do not suffer from the All Alone rules.</description>
-        </rule>
-        <rule name="Funerary Rites" id="ed14-1b43-3317-885b" hidden="false">
-          <description>Priests of Morr are not wizards by any means, however, they do have numerous Funerary Rites, which they may perform.
-
-
-As such, priests of Morr may choose a Funerary Rite listed below, using the rules for Magic on page 56 of the Mordheim hook.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry name="Skills" id="c3f3-4b22-ca0b-9f20" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="fcb6-1acd-0aae-653c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="4700-e358-f69a-5efd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Academic Skills" id="48ef-3c51-02ca-116f" collapsible="true" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-            <entryLink name="Speed Skills" id="9c94-c248-3d77-7f84" collapsible="true" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Equipment" id="7220-9901-debb-7c8b" flatten="true" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Priest of Morr Equipment" id="a853-5483-10c4-6038" flatten="true" hidden="false">
-              <entryLinks>
-                <entryLink name="Miscellaneous Equipment - All" id="31cd-87bf-7e58-b083" collapsible="true" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Priest of Morr HtH Weapons" id="6141-d0c8-c349-6f50" hidden="false">
-                  <constraints>
-                    <constraint id="0912-13ea-7b6b-886e" field="selections" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink name="Scythe" id="dfb2-3588-99fb-ac79" hidden="false" import="true" targetId="5487-85f6-ae5f-dac1" type="selectionEntry"/>
-                    <entryLink name="Free Dagger" id="6882-ab41-5f33-197b" hidden="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>

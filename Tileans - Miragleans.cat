@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Tileans - Miragleans (1b)" id="6805-ff0e-9061-8cb6" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Tileans - Miragleans (1b)" id="6805-ff0e-9061-8cb6" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="e87b-f686-aa1d-8236" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
     <catalogueLink name="Characters" id="4d83-0ffa-21f6-5655" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
@@ -274,6 +274,14 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
       <infoLinks>
         <infoLink name="Human max" id="93b0-6f13-fb33-9aba" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="e674-2f92-5d6f-5e62" type="set" value="0">
+          <conditions>
+            <condition childId="937a-92bd-5a6b-8087" childName="Champion" field="selections" scope="parent" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Youngbloods" id="17b0-8438-f96c-0afb" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -1924,6 +1932,14 @@ The Duellist counts as using a shield in close combat.</description>
       <infoLinks>
         <infoLink name="Human max" id="fa68-5180-ee50-a4a6" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="194a-0eb6-7fda-0dc7" type="set" value="1">
+          <conditions>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
+            <condition childId="bcda-4fbd-5e04-64f3" childName="Youngbloods" field="selections" scope="parent" shared="true" type="equalTo" value="2"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Champion" id="7ab0-2098-e4f3-638c" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>

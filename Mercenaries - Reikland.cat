@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Reiklanders (1a)" id="ac1721e2-653d-e279-11e3-ca8ba77b0637" authorUrl="https://github.com/BSData/mordheim/issues" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Reiklanders (1a)" id="ac1721e2-653d-e279-11e3-ca8ba77b0637" authorUrl="https://github.com/BSData/mordheim/issues" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="7fb6-a462-e898-315c" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="b45e-ec45-4053-a2f7" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -41,8 +41,8 @@ All Marksmen therefore add +1 to their Ballistic Skill, whether they are recruit
       <modifiers>
         <modifier field="35dd-3560-691a-9ffd" type="set" value="1">
           <conditions>
-            <condition childId="dc9f-eb20-7d04-5e21" childName="Youngblood" field="selections" scope="parent" shared="true" type="atLeast" value="2"/>
-            <condition childId="3159-ea39-496c-6cc2" childName="Priest of Morr" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+            <condition childId="dc9f-eb20-7d04-5e21" childName="Youngblood" field="selections" scope="parent" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -483,206 +483,6 @@ All Marksmen therefore add +1 to their Ballistic Skill, whether they are recruit
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry name="Priest of Morr" id="3159-ea39-496c-6cc2" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Heroes" id="2d7a-ae5c-1561-3546" hidden="false" primary="true" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="506a-ff5c-e823-f6f1" field="selections" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Experience" id="da40-5d0f-3083-fb22" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
-          <constraints>
-            <constraint id="8797-6470-61e2-1f59" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Charactaristics +/-" id="d884-a0a3-c392-d5d0" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
-          <modifiers>
-            <modifier field="e821-3543-3a5e-49a4" type="increment" value="0"/>
-          </modifiers>
-        </entryLink>
-        <entryLink name="Serious Injuries" id="918d-94f9-bf24-b045" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Funerary Rites" id="2dd2-34b4-4c3c-8521" flatten="true" hidden="false" import="true" targetId="b730-8274-0015-35b8" type="selectionEntryGroup"/>
-      </entryLinks>
-      <modifiers>
-        <modifier field="506a-ff5c-e823-f6f1" type="set" value="0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="27fe-783c-445d-2d4f" childName="Champion" field="selections" scope="roster" shared="true" type="atLeast" value="2"/>
-                <condition childId="dc9f-eb20-7d04-5e21" childName="Youngblood" field="selections" scope="roster" shared="true" type="atLeast" value="2"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile name="Priest of Morr" id="fa02-af9b-7c02-c9ea" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="7dee-74f8-7707-ce64" childName="-1 M" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="c4db-7b50-a4f9-cd5f" childName="+1 M" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="e234eaea-a02a-2fb7-3e1f-605392aabb89" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="27d8-c790-a4c1-b9cc" childName="+1 LD" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="bf393c37-9d10-fc85-c147-62b1c01a89fe" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="37c4-dcb1-8949-d4eb" childName="+1 A" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="a6fd52b0-be0a-655e-6314-87b392c9c90e" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="da26-8381-781a-6149" childName="+1 I" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="7918-b440-5d63-bd5e" childName="+1 W" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="54f4796b-dedb-c296-8b1a-ff7f8043293a" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="6fe1-7bba-3ca0-06b7" childName="+1 T" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="9368-3616-516f-5178" childName="+1 S" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="5a83-274a-bba8-f498" childName="+1 BS" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="d5aca8ba-0204-b324-b976-c2b536e09924" position="1" type="increment" value="1">
-              <repeats>
-                <repeat childId="7418-394e-fe13-2a96" childName="+1 WS" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="e234eaea-a02a-2fb7-3e1f-605392aabb89" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="a519-13dc-1b04-e39e" childName="-1 LD" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="bf393c37-9d10-fc85-c147-62b1c01a89fe" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="9faf-d3bf-a2ba-411e" childName="-1 A" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="a6fd52b0-be0a-655e-6314-87b392c9c90e" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="7531-eebe-fabf-7cf5" childName="-1 I" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="9209-0067-18d2-b78c" childName="-1 W" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="54f4796b-dedb-c296-8b1a-ff7f8043293a" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="ca62-64c2-488a-f17c" childName="-1 T" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="8e57-5d0b-5279-b4ab" childName="-1 S" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="0e79-80b9-77e3-fcc9" childName="-1 BS" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="d5aca8ba-0204-b324-b976-c2b536e09924" position="1" type="decrement" value="1">
-              <repeats>
-                <repeat childId="ae44-58f4-4440-5777" childName="-1 WS" field="selections" repeats="1" roundUp="false" scope="self" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Loner" id="5037-f2ef-ab12-0024" hidden="false">
-          <description>Few people care to spend any length of time in the company of a priest of Morr - even when it is their duty to do so.
-
-
-As such, a priest of Morr is used to being alone and probably prefers it that way. 
-
-
-Priests of Morr do not suffer from the All Alone rules.</description>
-        </rule>
-        <rule name="Funerary Rites" id="0248-3639-9cc8-21d8" hidden="false">
-          <description>Priests of Morr are not wizards by any means, however, they do have numerous Funerary Rites, which they may perform.
-
-
-As such, priests of Morr may choose a Funerary Rite listed below, using the rules for Magic on page 56 of the Mordheim hook.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry name="Skills" id="b39b-693e-9e36-9ec0" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="1873-4d99-b646-8ce7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="2ab8-9c7a-0626-6a62" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Academic Skills" id="8ec5-f629-8f29-4a7a" collapsible="true" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-            <entryLink name="Speed Skills" id="d606-4d86-0971-b8fe" collapsible="true" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Equipment" id="854e-7411-fbbc-faed" flatten="true" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Priest of Morr Equipment" id="38c0-40dd-e1e6-6c4f" flatten="true" hidden="false">
-              <entryLinks>
-                <entryLink name="Miscellaneous Equipment - All" id="8028-aaef-2258-2230" collapsible="true" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Priest of Morr HtH Weapons" id="7b41-2937-d163-3431" hidden="false">
-                  <constraints>
-                    <constraint id="801b-f609-0ac3-db49" field="selections" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink name="Scythe" id="0039-a265-06db-7b57" hidden="false" import="true" targetId="5487-85f6-ae5f-dac1" type="selectionEntry"/>
-                    <entryLink name="Free Dagger" id="d864-a255-bb45-117d" hidden="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
     <selectionEntry name="Stash" id="1760-d505-2a59-afaa" collective="false" hidden="false" import="true" page="0" type="upgrade">
       <categoryLinks>
         <categoryLink name="Stash" id="a8d0-164e-0093-cc01" hidden="false" primary="true" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48"/>
@@ -1037,8 +837,8 @@ As such, priests of Morr may choose a Funerary Rite listed below, using the rul
       <modifiers>
         <modifier field="92a6-1abc-2257-3c27" type="set" value="1">
           <conditions>
-            <condition childId="27fe-783c-445d-2d4f" childName="Champion" field="selections" includeChildSelections="false" scope="force" shared="true" type="atLeast" value="2"/>
-            <condition childId="3159-ea39-496c-6cc2" childName="Priest of Morr" field="selections" includeChildSelections="false" scope="force" shared="true" type="atLeast" value="1"/>
+            <condition childId="27fe-783c-445d-2d4f" childName="Champion" field="selections" includeChildSelections="false" scope="force" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" includeChildSelections="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
         </modifier>
       </modifiers>
