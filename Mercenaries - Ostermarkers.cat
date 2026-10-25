@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Ostermarkers (1b)" id="c315-31da-1718-4dde" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Ostermarkers (1b)" id="c315-31da-1718-4dde" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="b523-d389-07f7-5ea2" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="e039-e5f7-4eb0-5a7f" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -523,6 +523,14 @@
       <infoLinks>
         <infoLink name="Human max" id="92e9-ecdf-f3f5-ab9a" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="a21e-512f-8607-88ae" type="set" value="1">
+          <conditions>
+            <condition childId="4ae7-3d8a-9972-8917" childName="Youngbloods" field="selections" scope="parent" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Champion" id="9389-3088-81d3-7602" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -896,6 +904,14 @@
       <infoLinks>
         <infoLink name="Human max" id="3344-fe83-3ccb-21bb" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="4e49-bd8f-76b5-a91a" type="set" value="1">
+          <conditions>
+            <condition childId="ca25-26c0-9ddd-a721" childName="Champion" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="2"/>
+            <condition childId="6170-c29a-ecc2-24c0" childName="Priest of Morr (1b)" field="selections" scope="parent" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Youngbloods" id="c671-753e-89e5-e41c" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -2379,114 +2395,6 @@ Note that this only applies when they are armed with normal swords, and not wit
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry name="Priest of Morr" id="0c0c-bb21-a34d-f110" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Heroes" id="1d15-5a5f-4089-937e" hidden="false" primary="true" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="7ff0-fb7f-55d4-a6e6" field="selections" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Experience" id="148e-abb4-6549-03b6" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
-          <constraints>
-            <constraint id="84f1-7cc2-fc26-6b80" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Charactaristics +/-" id="c021-5cbd-b6ee-fd9c" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
-          <modifiers>
-            <modifier field="e821-3543-3a5e-49a4" type="increment" value="0"/>
-          </modifiers>
-        </entryLink>
-        <entryLink name="Serious Injuries" id="377f-cf7e-0b94-5881" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Funerary Rites" id="6357-0edc-70e5-fd7c" flatten="true" hidden="false" import="true" targetId="b730-8274-0015-35b8" type="selectionEntryGroup"/>
-      </entryLinks>
-      <modifiers>
-        <modifier field="7ff0-fb7f-55d4-a6e6" type="set" value="0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="ca25-26c0-9ddd-a721" childName="Champion" field="selections" scope="roster" shared="true" type="atLeast" value="2"/>
-                <condition childId="4ae7-3d8a-9972-8917" childName="Youngbloods" field="selections" scope="roster" shared="true" type="atLeast" value="2"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile name="Priest of Morr" id="b374-002a-44c5-3edd" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Funerary Rites" id="864b-f7fe-790d-d1ab" hidden="false">
-          <description>Priests of Morr are not wizards by any means, however, they do have numerous Funerary Rites, which they may perform.
-
-
-As such, priests of Morr may choose a Funerary Rite listed below, using the rules for Magic on page 56 of the Mordheim hook.</description>
-        </rule>
-        <rule name="Loner" id="044a-ec1e-db14-221c" hidden="false">
-          <description>Few people care to spend any length of time in the company of a priest of Morr - even when it is their duty to do so.
-
-
-As such, a priest of Morr is used to being alone and probably prefers it that way. 
-
-
-Priests of Morr do not suffer from the All Alone rules.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry name="Skills" id="5996-d9ad-9187-29c5" collapsible="true" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <constraints>
-            <constraint id="0deb-b24f-f522-5a54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="5ab9-9ad8-9d94-94e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Academic Skills" id="ffc0-b26e-3910-7065" collapsible="true" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-            <entryLink name="Speed Skills" id="1b85-541b-8916-3cb8" collapsible="true" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Equipment" id="5f90-ae92-db4b-53ef" flatten="true" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Priest of Morr Equipment" id="0870-092d-dc1a-8e73" flatten="true" hidden="false">
-              <entryLinks>
-                <entryLink name="Miscellaneous Equipment - All" id="9df7-8261-c130-cc6f" collapsible="true" hidden="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Priest of Morr HtH Weapons" id="d27c-f2d3-42a2-0fd8" hidden="false">
-                  <constraints>
-                    <constraint id="294a-2da9-67be-8b2f" field="selections" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink name="Scythe" id="d8ac-7b05-1271-0cf0" hidden="false" import="true" targetId="5487-85f6-ae5f-dac1" type="selectionEntry"/>
-                    <entryLink name="Free Dagger" id="803c-ac09-4902-5e7c" hidden="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>

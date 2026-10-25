@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Greenskins - Forest Goblins (1b)" id="c07d-10eb-1eaf-ab77" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="cd3f-e5da-8161-bb17" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="8d94-0b03-0bea-afa2" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -205,7 +205,7 @@
         <entryLink name="Charactaristics +/-" id="37c1-7d35-9502-e0e4" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="a1f-98b2-4503-acc1" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Hero Equipment" id="2afb-555a-3637-a2d8" flatten="true" hidden="false" import="true" targetId="aa8c-67af-c03a-75c6" type="selectionEntryGroup"/>
-        <entryLink name="Forest Goblin Magic" id="7838-3741-ff08-2f06" flatten="true" hidden="false" import="true" targetId="b21c-8103-66f7-21af" type="selectionEntryGroup"/>
+        <entryLink name="Forest Goblin Magic" id="7838-3741-ff08-2f06" flatten="true" hidden="false" import="true" sortIndex="1" targetId="b21c-8103-66f7-21af" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Goblin max" id="d444-4aca-a763-94a1" hidden="false" targetId="de0f-ab0b-13a4-cefc" type="profile"/>

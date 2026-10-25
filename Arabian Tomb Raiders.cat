@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Arabian Tomb Raiders (1b)" id="15c7-6ea-37ea-739d" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Arabian Tomb Raiders (1b)" id="15c7-6ea-37ea-739d" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="b80c-d8ab-a18d-bc37" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
     <catalogueLink name="Characters" id="62c6-d413-e160-a0ad" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
@@ -201,7 +201,7 @@ Therefore Arab Heroes hate all Undead.</description>
         <entryLink name="Charactaristics +/-" id="aaf5-dc47-9205-a55e" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="3cc7-c55b-6209-bbf6" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Warrior Equipment" id="9d8b-bb22-f8da-7208" hidden="false" import="true" targetId="7514-894c-6f35-8354" type="selectionEntryGroup"/>
-        <entryLink name="Arabian Elemental Magic" id="df5e-f0b9-561f-66a7" hidden="false" import="true" targetId="c2fa-8e79-9007-770c" type="selectionEntryGroup"/>
+        <entryLink name="Arabian Elemental Magic" id="df5e-f0b9-561f-66a7" hidden="false" import="true" sortIndex="1" targetId="4b29-e44a-35f8-a451" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="fca0-61e5-9570-9e41" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -1287,117 +1287,6 @@ The model can hide in open ground.
 Cannot be used inside buildings.</description>
             </rule>
           </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Arabian Elemental Magic" id="c2fa-8e79-9007-770c" hidden="false">
-      <selectionEntries>
-        <selectionEntry name="1 Riding the Wind" id="b7cb-3703-f8e9-5836" hidden="false" import="true" type="upgrade">
-          <profiles>
-            <profile name="Riding the Wind" id="688c-4c57-b82f-b91b" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Invoking the Element of the Air, the caster rises up on a warm breeze, only to set down again on another part of the battlefield.
-
-
-This spell is cast at the beginning of the caster’s Movement phase.
-The caster may move up to 12+D6&quot; anywhere on the battlefield, ignoring any intervening terrain; this counts as the caster’s movement for that turn.
-This spell may not be used to move the caster into base contact with an enemy warrior, but the caster may shoot as normal (with a -1 penalty for having moved).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="2 Skin of Stone" id="c2db-6531-7b79-2bd3" hidden="false" import="true" type="upgrade">
-          <profiles>
-            <profile name="Skin of Stone" id="9f36-e3da-47ad-6f3a" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the Element of the Earth, the caster is able to make a warrior’s skin become as hard as stone.
-
-
-This spell may be cast on any friendly warrior within 6&quot;.
-The target gains +2 to his armor save but suffers a -1 penalty to Initiative.
-
-
-The spell may be maintained each turn, providing the affected warrior remains within 6&quot; of the caster and the caster can pass a Difficulty test.
-
-
-If the caster is more than 6&quot; away from the affected warrior in the Recovery phase, the spell cannot be maintained and wears off.
-
-
-Only one warrior may be affected by a Stone Skin spell at any one time, although the caster is free to cast other spells while maintaining the Stone Skin.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 Burning Hand" id="78c0-bf5d-64b0-12f0" hidden="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink name="Fire Damage" id="f8a2-3bfa-ebe9-b014" hidden="false" targetId="640a-9b4c-8a93-59b2" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Burning Hand" id="b02b-a393-54cf-aa12" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">By invoking the Element of Fire, one of the caster’s hands becomes burning hot which he can use to smite his enemies.
-
-
-This spell is cast at the beginning of the Combat phase.
-The caster may sacrifice all of his normal attacks to make one hand-to-hand attack at Strength 5 causing 2 wounds.
-If the enemy warrior is successfully hit, he is set on fire on a roll of 4+.
-This spell lasts for one round only.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 Quicksand" id="1bb2-7306-8ca8-e1c0" hidden="false" import="true" type="upgrade">
-          <profiles>
-            <profile name="Quicksand" id="d17f-bf11-7d01-ca17" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">By invoking the Element of Water, water rises from the very rocks and sand and turns the ground to quicksand.
-
-
-This spell is cast at any warrior within 6&quot;.
-The water floods the area for 3&quot; around the targeted warrior.
-The effect lasts until the beginning of the caster’s next Recovery phase.
-
-
-All warriors within the quicksand must pass a Strength test or be unable to move.
-Warriors in combat cannot attack but may defend themselves.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 Storm of Magic" id="826a-b769-64e3-5fb4" hidden="false" import="true" type="upgrade">
-          <profiles>
-            <profile name="Storm of Magic" id="44d-7513-c466-de33" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">By breaching the very fabric of reality, the caster is able to summon a bolt of pure magical energy.
-
-
-The caster may target any warrior within 12&quot;.
-If the spell is successfully cast, the target is struck by a bolt of energy and takes one S5 hit. 
-
-
-Armor saves may be taken as normal.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 Blessing of the Elements" id="cbb1-bc59-b101-ef05" hidden="false" import="true" type="upgrade">
-          <profiles>
-            <profile name="Blessing of the Elements" id="c3d6-1494-cbc8-51aa" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The caster calls on the elements of the desert and draws upon the fortune they can bestow.
-
-
-In the post battle sequence the player may re-roll any one dice or modify one dice by +1/-1.
-If the caster was taken out of action this spell my not be cast.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

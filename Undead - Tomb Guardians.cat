@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Tomb Guardians (1b)" id="7d2b-89ab-a974-f328" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Tomb Guardians (1b)" id="7d2b-89ab-a974-f328" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="ee44-b23c-907a-0eae" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="fb47-f724-6553-d4ce" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -338,15 +338,15 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <entryLinks>
-        <entryLink name="Experience" id="a9d4-84e9-2892-9632" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink name="Experience" id="a9d4-84e9-2892-9632" collapsible="true" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
           <constraints>
             <constraint id="2258-f70a-7bd2-731" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
           </constraints>
         </entryLink>
-        <entryLink name="Liche Equipment" id="9033-924-61a9-dfc2" collective="false" hidden="false" import="true" targetId="3823-e59c-2737-1845" type="selectionEntryGroup"/>
+        <entryLink name="Liche Equipment" id="9033-924-61a9-dfc2" collective="false" flatten="true" hidden="false" import="true" targetId="3823-e59c-2737-1845" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="65ab-7fa7-e729-d3c8" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-        <entryLink name="Serious Injuries" id="3351-9dee-1e95-633d" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Advancement (Hero)" id="cd2a-1756-4cd4-78ca" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
+        <entryLink name="Serious Injuries" id="3351-9dee-1e95-633d" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Advancement (Hero)" id="cd2a-1756-4cd4-78ca" collapsible="true" hidden="false" import="true" targetId="c26e-414e-293-2621" type="selectionEntry">
           <modifiers>
             <modifier field="f983-fe4b-65c8-b54f" type="increment" value="1">
               <conditions>
@@ -521,7 +521,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Mortuary Cult Scrolls" id="8482-2c44-6a52-96cc" hidden="false" import="true" targetId="fa44-d04d-67dc-4803" type="selectionEntryGroup"/>
+        <entryLink name="Mortuary Cult Scrolls" id="8482-2c44-6a52-96cc" hidden="false" import="true" sortIndex="1" targetId="fa44-d04d-67dc-4803" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Liche &amp; Accolyte (Mummy) max" id="264-c4f8-d89d-b108" hidden="false" targetId="8bc-2e8-d672-82d4" type="profile"/>
@@ -640,7 +640,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Extra Equipment" id="cfab-e3db-d15f-4b93" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Extra Equipment" id="cfab-e3db-d15f-4b93" collapsible="true" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="cf68-cc8b-5632-f8d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
             <constraint id="8eef-15ae-1389-4063" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -653,7 +653,7 @@ A hit from a fire-based attack will cause double the normal number of wounds o
             <entryLink name="Equipment - All" id="f96f-89e-9945-fcb8" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Skills" id="9cb4-6281-9d49-336f" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Skills" id="9cb4-6281-9d49-336f" collapsible="true" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="51f0-ec5f-5b8f-ab79" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="1f8c-4eee-9ebe-a558" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -2346,139 +2346,6 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
 A charioteer without this skill cannot charge.</description>
             </rule>
           </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Mortuary Cult Scrolls" id="fa44-d04d-67dc-4803" hidden="false">
-      <selectionEntries>
-        <selectionEntry name="1 - Menkare’s scroll of Urgency" id="2459-f47f-3b08-efab" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="37c6-d9ee-e3c7-c136" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="c22e-d17b-6779-2fd3" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Menkare’s scroll of Urgency" id="340a-8694-f111-a177" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="f63b-6ed4-3107-a054" hidden="false" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" id="bc28-eab3-3129-60ce" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest reaches out to urge an Undead warrior forward.
-
-
-A single Skeleton Soldier within 6&quot; may immediately move again up to its maximum Movement distance, ie, 4&quot;.
-
-
-If this takes the model into base contact with an enemy model, it counts as charging.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="2 - Horrebe’s Curse of the Mummy" id="2ca0-ab56-4342-15b6" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="cee8-3e70-5a04-7bfe" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="5187-2b2a-ae49-f375" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Horrebe’s Curse of the Mummy" id="c70d-9e8e-44ea-32e5" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="eb90-fcaa-f542-6840" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" id="adbe-bbf8-df0-aaf7" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest amplifies the curse that all mummies bear, and focuses it against a single enemy model.
-
-
-The target must be in base-to-base contact with a Mummy and within 18&quot; of the Liche Priest.
-
-
-If the spell is cast successfully, the enemy model has a -1 penalty on all to hit, and to wound rolls, and on all armor saves.
-
-
-This lasts until the start of next the Tomb Guardian Shooting phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 - Tawosret’s Scroll of Tomb Dust" id="b614-7a1a-edf8-2cd6" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="2c60-9ec7-6e80-882" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="d3c0-704b-ad6-4d30" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Tawosret’s Scroll of Tomb Dust" id="f9d5-924c-d1e3-9250" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="d1c7-f4c4-1def-1a0d" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" id="b52f-7fb2-8fc5-81ff" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest can command the sand around him to assault a single warrior within 12&quot;.
-
-
-The warrior is automatically knocked down as he chokes on the sand. 
-
-
-This spell only affects a living model.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 - Neferre’s Scroll of Quaking Horror" id="2fc-5699-922f-3b46" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="1557-948f-3d32-2050" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="1226-2411-336-bf9d" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Neferre’s Scroll of Quaking Horror" id="e6c5-6c33-7b31-17a1" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="9ec8-5da1-adad-45db" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" id="b17f-3b93-c78a-b7ac" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest selects a warrior within 12&quot; who is beset by terrible, haunting visions of his own death.
-
-
-The model must pass a Leadership test or flee 2D6&quot; directly away from the Liche Priest.
-
-
-The warrior will continue to flee in each Movement phase until he makes a successful Rally test in the Recovery phase.
-
-
-This spell has no effect on Undead models or models that are immune to psychology.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 - Merneptah’s Scroll of the Scarab Song" id="7f23-11bd-be33-a0b6" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="3b09-cd1d-6be1-7a9f" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="c4f3-475b-8f7b-31c9" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Merneptah’s Scroll of the Scarab Song" id="d5ed-d834-cb96-2bd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="7724-20f7-a4de-6502" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" id="5fcb-937a-b068-66e1" hidden="false" typeId="0592-3510-8508-7263">With a short, rasping chant, the Liche Priest summons a swarm of scarabs, which burrow up through the ground, and all over an enemy warrior.
-
-
-A single model within 8&quot; of the Liche Priest suffers 2D6 Strength 1 hits.
-
-
-In addition, that model may not be shot at for the rest of the Tomb Guards Shooting phase, nor may he fight or be fought in hand-to-hand combat.
-
-
-If the model is already in hand-to-hand combat, move him 1&quot; away from the combat as he staggers about in agony.
-
-
-Unless he suffers an actual injury the warrior counts as having just stood up in the next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 - Djedre’s summoning of the Vengeful Dead" id="d3cf-f86c-d0da-f4f2" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" id="47ca-dd2-a58b-cc19" hidden="false" typeId="points" value="0"/>
-            <cost name="Warband Rating" id="2a0c-cd11-cb47-3ee8" hidden="false" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Djedre’s summoning of the Vengeful Dead" id="4e9-c62e-e4ea-56b1" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" id="e505-57da-6b51-7475" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" id="60ac-7eca-68e5-9b21" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest may re-animate a Skeleton Soldier that went out of action during the last turn.
-
-
-Place the model anywhere within 6&quot; of the Liche Priest, but not straight into hand-to-hand combat with an enemy model.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

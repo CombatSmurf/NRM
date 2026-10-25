@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Horned Hunters (1b)" id="e37c-460d-d517-b3b7" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Horned Hunters (1b)" id="e37c-460d-d517-b3b7" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="e51a-5629-e216-644a" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="7967-e3fc-376d-c824" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -34,7 +34,7 @@ Horned Hunter warbands move through any difficult terrain they encounter withou
         <entryLink name="Hero Equipment" id="85c4-958c-7683-2191" collective="false" hidden="false" import="true" targetId="16f1-5b1d-9134-9d68" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="bf94-b417-7244-6854" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="f712-5d88-af0f-8d6c" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink name="Prayers of Taal" id="8f8a-c106-6a94-dc98" collective="false" hidden="false" import="true" targetId="3905-cd06-b0b9-95d3" type="selectionEntryGroup"/>
+        <entryLink name="Prayers of Taal" id="8f8a-c106-6a94-dc98" collective="false" hidden="false" import="true" sortIndex="1" targetId="3905-cd06-b0b9-95d3" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Human max" id="7921-d040-2512-9d2a" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
@@ -513,7 +513,7 @@ Horned Hunter warbands move through any difficult terrain they encounter withou
             <entryLink name="Shooting Skills" id="d20d-1a99-c175-5fc5" collective="false" hidden="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
             <entryLink name="Speed Skills" id="f1ba-490b-df06-1b54" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink name="Strength Skills" id="d84a-909f-f4c1-4f21" collective="false" hidden="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink name="Special Skills (Horned Hunters)" id="957b-8b52-1ea3-dfa7" collective="false" hidden="false" import="true" targetId="2136-1cc6-8734-52c9" type="selectionEntryGroup"/>
+            <entryLink name="Special Skills (Horned Hunters)" id="957b-8b52-1ea3-dfa7" collective="false" hidden="false" import="true" targetId="354c-4cf9-92ae-9eb3" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1435,93 +1435,6 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <entryLinks>
             <entryLink name="Special Skills (Horned Hunters)" id="bf53-89fb-d664-2b76" collective="false" hidden="false" import="true" targetId="354c-4cf9-92ae-9eb3" type="selectionEntryGroup"/>
           </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Special Skills (Horned Hunters)" id="2136-1cc6-8734-52c9" hidden="false">
-      <selectionEntries>
-        <selectionEntry name="Master Trapper" id="6d8e-2758-2b8f-3902" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="a88f-bb57-81e1-4fda" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Master Trapper" id="4eb1-c850-ede2-dfce" hidden="false">
-              <description>This huntsman is a masterful trap setter.
-
-
-Trip wire range has been extended by this warrior to reach 4&quot;.
-Traps set by a master trapper are triggered by a score of 2+.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Infiltration" id="6142-e47f-797-f4fa" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="c200-7ea4-cdf9-8718" field="selections" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="16bf-b2b3-d851-b4ea" field="selections" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Infiltration" id="8e13-7d27-e1e6-52d3" hidden="false">
-              <description>A warrior with this skill is always placed on the battlefield after the opposing warband and can be placed anywhere on the table as long as it is out of sight of the opposing warband and more than 12&quot; away from any enemy model.
-
-
-If both players have models which infiltrate, roll a D6 for each, and the lowest roll sets up first.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Foul Odour" id="2a25-aaa-3e18-a1c9" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="a59-464f-1fde-23ff" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Foul Odour" id="910f-2661-4cdb-ce3d" hidden="false">
-              <description>Worshippers of Taal are one and all prodigious drinkers and none too hygienic!
-This warrior rises head and shoulders above the rest.
-
-
-After a lifetime of drinking, liquor has little effect on him any more... not that this stops him from consuming massive quantities!
-
-
-His unwashed clothes and sweat reek of alcohol and all living enemies (not Undead or Possessed) are at -1 to hit him in close combat.
-In addition, the warrior cannot carry any open flames (torch, lantern, etc.) and fire attacks made against him are resolved at +1 Strength as his beer soaked clothing burns readily.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Animal Friendship" id="235f-5ee7-edd1-8b2a" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="7b3a-568f-cb9e-ef5" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Animal Friendship" id="ffa6-1687-254-6042" hidden="false">
-              <description>Having grown up amidst the animals of the forest this warrior exudes a certain charm to all ‘normal’ animals (warhorses, warhounds, etc.).
-Animals will never attack him and up to two wardogs (see Mordheim book, page 54) that the warrior owns do not count against the maximum number of models in the Warband.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Pathfinder" id="65ca-1371-200b-1a87" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="1584-2745-9fdd-9894" field="selections" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="d157-1d73-c611-b8b5" field="selections" scope="roster" shared="true" type="max" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Pathfinder" id="a555-d8a1-3210-edf8" hidden="false">
-              <description>Taal has gifted this hunter with an uncanny ability to find paths through unexplored territories.
-Roll one additional D6 during the exploration phase.
-A warband may only contain one pathfinder.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Hide in Shadows" id="5889-7edd-7a0c-2991" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="4e88-885d-9166-785b" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <rules>
-            <rule name="Hide in Shadows" id="8bb4-978d-854b-e069" hidden="false">
-              <description>The hunter has learned to crouch unseen in any cover they can find.
-
-
-Enemy models must halve their Initiative when attempting to find this warrior when e is Hidden.</description>
-            </rule>
-          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="65" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="66" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -323,10 +323,10 @@
 result as knocked down instead. This save is not modified by the opponent’s Strength.</description>
     </rule>
     <rule name="Cavalry bonus" id="ef77-8d02-8707-afc4" hidden="false" page="0">
-      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;cavalry weapon&apos; receives a +1 Strength bonus when he charges. This bonus only applies for that turn.</description>
+      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;cavalry weapon&apos; receives a Strength bonus when he charges. This bonus only applies for that turn.</description>
     </rule>
     <rule name="Cavalry Weapon" id="033a-b64b-4bfc-e285" hidden="false" page="0">
-      <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
+      <description>A warrior must own a warhorse to use, as it can only be used whilst he is on horseback.</description>
     </rule>
     <rule name="Concussion" id="f08e-fc7a-fca1-6a49" hidden="false" page="0">
       <description>Hammers and other bludgeoning weapons are excellent to use for striking your enemy senseless. When using a hammer, club or mace, a roll of 2-4 is treated as stunned when rolling to see the extent of a model’s injuries.</description>
@@ -618,6 +618,20 @@ SPECIAL RULES
 Critical Damage: Darksteel weapons inflict serious damage on their opponents. When rolling on the critical hit chart, a Darksteel weapon will add +1 to the result.
 
 Wicked Edge: Darksteel weapons are set with sharp protrusions and serrated edges which inflict serious damage on an opponent. A roll of 2-4 on the injury table is a stunned result.</description>
+    </rule>
+    <rule name="Nurgle’s Rot" id="c538-42db-ebae-8c58" hidden="false">
+      <description>(note: Nurgle’s Rot only affects the living, so Undead, Daemons and the Possessed are unaffected).
+
+Once a warrior has contracted the Rot, mark this on the warband roster.
+
+Rather than killing the victim immediately, the Rot can take some time to set in.
+From now on, before the start of each battle, the warrior must pass a Toughness test.
+
+If successful, his constitution has managed to stave off the Rot’s effects.
+
+If unsuccessful, the warrior loses one point of Toughness permanently (if he reaches zero, he has succumbed to the Rot and died, remove him from the roster).
+
+In addition, if a 6 is rolled for the Toughness test then he has unwittingly passed the Rot on to another member of the warband (randomly allocate a warband member and mark this on the roster).</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -1364,8 +1378,8 @@ ignores the special rules for Animosity.</description>
       <profiles>
         <profile name="Spear" id="ceaa-14c3-f1cc-3f4f" hidden="false" page="0" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
-            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As User / +1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1 Strength</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3811,7 +3825,7 @@ Only available to Humans.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Vain" id="3f06-94ce-f695-a1dc" hidden="false" targetId="da88-e89f-22d3-6135" type="rule"/>
+        <infoLink name="Wall of Wood" id="e3df-6aa2-f616-2014" hidden="false" targetId="dc0f-9178-3465-87f2" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Kite Shield" id="9cf8-1ddc-e558-f8e0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
@@ -3828,7 +3842,7 @@ Only available to Humans.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Vain" id="e4e2-ca3e-ac24-73cc" hidden="false" targetId="da88-e89f-22d3-6135" type="rule"/>
+        <infoLink name="Wall of Wood" id="db22-f63a-dbbd-9840" hidden="false" targetId="dc0f-9178-3465-87f2" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Kite Shield" id="b68f-9042-9dbd-d3af" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
@@ -5922,15 +5936,15 @@ This counts as an academic skill.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Characteristic Increases" id="7879-46ac-5598-aa00" collective="false" hidden="false" import="true">
       <entryLinks>
-        <entryLink name="+1 A" id="e729-1311-0466-eeca" collective="false" hidden="false" import="true" targetId="37c4-dcb1-8949-d4eb" type="selectionEntry"/>
-        <entryLink name="+1 BS" id="cbda-2a04-5608-f22f" collective="false" hidden="false" import="true" targetId="5a83-274a-bba8-f498" type="selectionEntry"/>
-        <entryLink name="+1 I" id="cbb8-3519-a47d-d25d" collective="false" hidden="false" import="true" targetId="da26-8381-781a-6149" type="selectionEntry"/>
-        <entryLink name="+1 LD" id="0aa3-1315-c36e-b714" collective="false" hidden="false" import="true" targetId="27d8-c790-a4c1-b9cc" type="selectionEntry"/>
-        <entryLink name="+1 M" id="8940-05b3-71ef-5ef1" collective="false" hidden="false" import="true" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry"/>
-        <entryLink name="+1 S" id="f821-c7fb-88d7-c1e3" collective="false" hidden="false" import="true" targetId="9368-3616-516f-5178" type="selectionEntry"/>
-        <entryLink name="+1 T" id="cd8f-b6e3-91ef-9fac" collective="false" hidden="false" import="true" targetId="6fe1-7bba-3ca0-06b7" type="selectionEntry"/>
-        <entryLink name="+1 W" id="d109-cdfc-3b3c-73e8" collective="false" hidden="false" import="true" targetId="7918-b440-5d63-bd5e" type="selectionEntry"/>
-        <entryLink name="+1 WS" id="1d4b-f425-6e4c-b130" collective="false" hidden="false" import="true" targetId="7418-394e-fe13-2a96" type="selectionEntry"/>
+        <entryLink name="+1 A" id="e729-1311-0466-eeca" collective="false" hidden="false" import="true" sortIndex="8" targetId="37c4-dcb1-8949-d4eb" type="selectionEntry"/>
+        <entryLink name="+1 BS" id="cbda-2a04-5608-f22f" collective="false" hidden="false" import="true" sortIndex="3" targetId="5a83-274a-bba8-f498" type="selectionEntry"/>
+        <entryLink name="+1 I" id="cbb8-3519-a47d-d25d" collective="false" hidden="false" import="true" sortIndex="7" targetId="da26-8381-781a-6149" type="selectionEntry"/>
+        <entryLink name="+1 LD" id="0aa3-1315-c36e-b714" collective="false" hidden="false" import="true" sortIndex="9" targetId="27d8-c790-a4c1-b9cc" type="selectionEntry"/>
+        <entryLink name="+1 M" id="8940-05b3-71ef-5ef1" collective="false" hidden="false" import="true" sortIndex="1" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry"/>
+        <entryLink name="+1 S" id="f821-c7fb-88d7-c1e3" collective="false" hidden="false" import="true" sortIndex="4" targetId="9368-3616-516f-5178" type="selectionEntry"/>
+        <entryLink name="+1 T" id="cd8f-b6e3-91ef-9fac" collective="false" hidden="false" import="true" sortIndex="5" targetId="6fe1-7bba-3ca0-06b7" type="selectionEntry"/>
+        <entryLink name="+1 W" id="d109-cdfc-3b3c-73e8" collective="false" hidden="false" import="true" sortIndex="6" targetId="7918-b440-5d63-bd5e" type="selectionEntry"/>
+        <entryLink name="+1 WS" id="1d4b-f425-6e4c-b130" collective="false" hidden="false" import="true" sortIndex="2" targetId="7418-394e-fe13-2a96" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Combat Skills" id="ee2c-89e3-489b-d0cb" collapsible="true" collective="false" hidden="false" import="true">
@@ -6375,7 +6389,15 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink name="Squigg Prodder" id="fa1e-6785-187c-d9ab" hidden="false" import="true" targetId="5dcd-265b-9fef-751d" type="selectionEntry"/>
         <entryLink name="Sun Gauntlet" id="c79d-559b-e6fb-38d3" hidden="false" import="true" targetId="0ade-8ef6-1f30-29d0" type="selectionEntry"/>
         <entryLink name="Sword" id="3072-fc5f-5fad-3fd0" hidden="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
-        <entryLink name="Lance" id="5689-da8e-145f-700f" hidden="false" import="true" targetId="5223-13a6-14ec-f372" type="selectionEntry"/>
+        <entryLink name="Lance" id="5689-da8e-145f-700f" hidden="false" import="true" targetId="5223-13a6-14ec-f372" type="selectionEntry">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="self" childName="self" field="selections" scope="self" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink name="Katar" id="c079-22f0-c0c9-f734" hidden="false" import="true" targetId="f3e5-d54b-f731-7afd" type="selectionEntry"/>
         <entryLink name="Gnoblar Fighter" id="827d-2a83-8b2d-0c6e" hidden="false" import="true" targetId="79b7-5cfb-549c-c973" type="selectionEntry"/>
         <entryLink name="Free Dagger" id="d59a-37af-64b9-b43b" hidden="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
@@ -7386,15 +7408,15 @@ It can never be removed.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Characteristic Decreases" id="9d72-8c8f-1eba-38dc" collective="false" hidden="false" import="true">
       <entryLinks>
-        <entryLink name="-1 A" id="88f7-4286-98e4-08be" hidden="false" import="true" targetId="9faf-d3bf-a2ba-411e" type="selectionEntry"/>
-        <entryLink name="-1 WS" id="fa25-6f50-6ed1-12f8" hidden="false" import="true" targetId="ae44-58f4-4440-5777" type="selectionEntry"/>
-        <entryLink name="-1 BS" id="744d-27ad-6047-b822" hidden="false" import="true" targetId="0e79-80b9-77e3-fcc9" type="selectionEntry"/>
-        <entryLink name="-1 S" id="e01f-8640-4d4a-55ed" hidden="false" import="true" targetId="8e57-5d0b-5279-b4ab" type="selectionEntry"/>
-        <entryLink name="-1 T" id="fe36-bfa6-96ef-56da" hidden="false" import="true" targetId="ca62-64c2-488a-f17c" type="selectionEntry"/>
-        <entryLink name="-1 A" id="8f4b-d22d-b55a-24ac" hidden="false" import="true" targetId="9faf-d3bf-a2ba-411e" type="selectionEntry"/>
-        <entryLink name="-1 LD" id="c93a-97fc-5540-6f87" hidden="false" import="true" targetId="a519-13dc-1b04-e39e" type="selectionEntry"/>
-        <entryLink name="-1 I" id="5f27-a6d5-7866-68a6" hidden="false" import="true" targetId="7531-eebe-fabf-7cf5" type="selectionEntry"/>
-        <entryLink name="-1 M" id="0fe3-f930-4514-381d" hidden="false" import="true" targetId="7dee-74f8-7707-ce64" type="selectionEntry"/>
+        <entryLink name="-1 W" id="88f7-4286-98e4-08be" hidden="false" import="true" sortIndex="6" targetId="9209-0067-18d2-b78c" type="selectionEntry"/>
+        <entryLink name="-1 WS" id="fa25-6f50-6ed1-12f8" hidden="false" import="true" sortIndex="2" targetId="ae44-58f4-4440-5777" type="selectionEntry"/>
+        <entryLink name="-1 BS" id="744d-27ad-6047-b822" hidden="false" import="true" sortIndex="3" targetId="0e79-80b9-77e3-fcc9" type="selectionEntry"/>
+        <entryLink name="-1 S" id="e01f-8640-4d4a-55ed" hidden="false" import="true" sortIndex="4" targetId="8e57-5d0b-5279-b4ab" type="selectionEntry"/>
+        <entryLink name="-1 T" id="fe36-bfa6-96ef-56da" hidden="false" import="true" sortIndex="5" targetId="ca62-64c2-488a-f17c" type="selectionEntry"/>
+        <entryLink name="-1 A" id="8f4b-d22d-b55a-24ac" hidden="false" import="true" sortIndex="8" targetId="9faf-d3bf-a2ba-411e" type="selectionEntry"/>
+        <entryLink name="-1 LD" id="c93a-97fc-5540-6f87" hidden="false" import="true" sortIndex="9" targetId="a519-13dc-1b04-e39e" type="selectionEntry"/>
+        <entryLink name="-1 I" id="5f27-a6d5-7866-68a6" hidden="false" import="true" sortIndex="7" targetId="7531-eebe-fabf-7cf5" type="selectionEntry"/>
+        <entryLink name="-1 M" id="0fe3-f930-4514-381d" hidden="false" import="true" sortIndex="1" targetId="7dee-74f8-7707-ce64" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Special Skills (Bret Knights)" id="db89-0a20-1ffe-a960" collapsible="true" hidden="false">
@@ -7506,7 +7528,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry name="Question Vow (Questing Knight Only)" id="d50d-5952-d1f8-4835" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Questing Vow (Questing Knight Only)" id="d50d-5952-d1f8-4835" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="9be5-c425-e5d2-8019" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7530,7 +7552,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
         <constraint id="d78c-82ec-d848-850f" field="selections" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry name=" 5 - Elixir of Life" id="8e14-1670-c045-fd84" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="5 - Elixir of Life" id="8e14-1670-c045-fd84" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="e856-0346-84bd-5517" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7543,7 +7565,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name=" 4 - Lady’s Scorn" id="43c0-fe94-71e6-753c" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="4 - Lady’s Scorn" id="43c0-fe94-71e6-753c" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="69de-5aa4-f558-070c" field="selections" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="6caf-60d1-1710-8a2a" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -7750,7 +7772,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Funerary Rites" id="b730-8274-0015-35b8" hidden="false">
+    <selectionEntryGroup name="Funerary Rites" id="b730-8274-0015-35b8" flatten="true" hidden="false">
       <constraints>
         <constraint id="df06-3bca-c6df-5b98" field="selections" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
@@ -9078,6 +9100,778 @@ You cannot use a dodge save against a swarm.</characteristic>
 The song is so beautiful and mesmerising that it momentarily distracts the Amazon’s enemies within 12&quot; such that all LeaDership tests for the opposing warband are made at -1 until the end of the opposing player’s next turn.
 
 Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mortuary Cult Scrolls" id="fa44-d04d-67dc-4803" flatten="true" hidden="false">
+      <selectionEntries>
+        <selectionEntry name="1 - Menkare’s scroll of Urgency" id="2459-f47f-3b08-efab" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="37c6-d9ee-e3c7-c136" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="c22e-d17b-6779-2fd3" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Menkare’s scroll of Urgency" id="340a-8694-f111-a177" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="f63b-6ed4-3107-a054" hidden="false" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" id="bc28-eab3-3129-60ce" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest reaches out to urge an Undead warrior forward.
+
+
+A single Skeleton Soldier within 6&quot; may immediately move again up to its maximum Movement distance, ie, 4&quot;.
+
+
+If this takes the model into base contact with an enemy model, it counts as charging.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 - Horrebe’s Curse of the Mummy" id="2ca0-ab56-4342-15b6" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="cee8-3e70-5a04-7bfe" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="5187-2b2a-ae49-f375" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Horrebe’s Curse of the Mummy" id="c70d-9e8e-44ea-32e5" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="eb90-fcaa-f542-6840" hidden="false" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" id="adbe-bbf8-df0-aaf7" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest amplifies the curse that all mummies bear, and focuses it against a single enemy model.
+
+
+The target must be in base-to-base contact with a Mummy and within 18&quot; of the Liche Priest.
+
+
+If the spell is cast successfully, the enemy model has a -1 penalty on all to hit, and to wound rolls, and on all armor saves.
+
+
+This lasts until the start of next the Tomb Guardian Shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 - Tawosret’s Scroll of Tomb Dust" id="b614-7a1a-edf8-2cd6" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="2c60-9ec7-6e80-882" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="d3c0-704b-ad6-4d30" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Tawosret’s Scroll of Tomb Dust" id="f9d5-924c-d1e3-9250" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="d1c7-f4c4-1def-1a0d" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" id="b52f-7fb2-8fc5-81ff" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest can command the sand around him to assault a single warrior within 12&quot;.
+
+
+The warrior is automatically knocked down as he chokes on the sand. 
+
+
+This spell only affects a living model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 - Neferre’s Scroll of Quaking Horror" id="2fc-5699-922f-3b46" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="1557-948f-3d32-2050" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="1226-2411-336-bf9d" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Neferre’s Scroll of Quaking Horror" id="e6c5-6c33-7b31-17a1" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="9ec8-5da1-adad-45db" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" id="b17f-3b93-c78a-b7ac" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest selects a warrior within 12&quot; who is beset by terrible, haunting visions of his own death.
+
+
+The model must pass a Leadership test or flee 2D6&quot; directly away from the Liche Priest.
+
+
+The warrior will continue to flee in each Movement phase until he makes a successful Rally test in the Recovery phase.
+
+
+This spell has no effect on Undead models or models that are immune to psychology.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 - Merneptah’s Scroll of the Scarab Song" id="7f23-11bd-be33-a0b6" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="3b09-cd1d-6be1-7a9f" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="c4f3-475b-8f7b-31c9" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Merneptah’s Scroll of the Scarab Song" id="d5ed-d834-cb96-2bd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="7724-20f7-a4de-6502" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" id="5fcb-937a-b068-66e1" hidden="false" typeId="0592-3510-8508-7263">With a short, rasping chant, the Liche Priest summons a swarm of scarabs, which burrow up through the ground, and all over an enemy warrior.
+
+
+A single model within 8&quot; of the Liche Priest suffers 2D6 Strength 1 hits.
+
+
+In addition, that model may not be shot at for the rest of the Tomb Guards Shooting phase, nor may he fight or be fought in hand-to-hand combat.
+
+
+If the model is already in hand-to-hand combat, move him 1&quot; away from the combat as he staggers about in agony.
+
+
+Unless he suffers an actual injury the warrior counts as having just stood up in the next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 - Djedre’s summoning of the Vengeful Dead" id="d3cf-f86c-d0da-f4f2" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" id="47ca-dd2-a58b-cc19" hidden="false" typeId="points" value="0"/>
+            <cost name="Warband Rating" id="2a0c-cd11-cb47-3ee8" hidden="false" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Djedre’s summoning of the Vengeful Dead" id="4e9-c62e-e4ea-56b1" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" id="e505-57da-6b51-7475" hidden="false" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" id="60ac-7eca-68e5-9b21" hidden="false" typeId="0592-3510-8508-7263">The Liche Priest may re-animate a Skeleton Soldier that went out of action during the last turn.
+
+
+Place the model anywhere within 6&quot; of the Liche Priest, but not straight into hand-to-hand combat with an enemy model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Necromancy (The Restless Dead)" id="5733-c579-44bb-5e7b" collective="false" flatten="true" hidden="false" import="true">
+      <selectionEntries>
+        <selectionEntry name="1 Spell of Awakening" id="b1be-b873-2c67-ff64" collective="false" hidden="false" import="true" page="0" type="model">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Spell of Awakening" id="537-4a7a-791d-66e4" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorcerer summons calls the soul of a slain Hero back to his body and enslaves him with corrupt magic.
+
+
+If an enemy Hero is killed (i.e. your opponent rolls 11-15 on the serious injury chart after the battle), then the sorcerer may raise him to fight as a Zombie in his servitude.
+
+
+The dead Hero retains his characteristics and all his weapons and armor but may not use any equipment or skills.
+
+
+He may no longer run, counts as a Henchmen group on his own and does not gain additional experience.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 Lifestealer" id="13d4-e6e-519-f658" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Lifestealer" id="a99c-a245-5f62-57d9" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorcerer sucks out the very essence of life from his victim, stealing its vigour for himself.
+
+
+Choose a single model within 6”.
+The target suffers a wound, (no saves allowed) and the sorcerer gains an extra wound for the duration of the battle.
+
+
+This may take the Wounds of a Necromancer above their original maximum value, but a Liche may only restore lost wounds.
+
+
+This spell will not affect the Possessed or any Undead models.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 Reanimation" id="7cad-32c3-ee2-5030" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Reanimation" id="caab-299d-8d1d-5981" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">At the spoken command of the Sorcerer, the dead rise to fight again.
+
+
+One Zombie that went out of action during the last hand to hand combat phase immediately returns to battle.
+Place the model within 6” of the sorcerer.
+
+
+The model cannot be placed straight into hand to hand combat with an enemy model.
+
+
+This spell can be used on Grave Guards and Wights to restore 1 lost wound (should they have more than one).
+
+
+This cannot be used to bring Scarecrows, Grave Guards, Wights and Skeletons back to life if they are taken out of action the way Zombies can.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 Spell of Doom" id="54e8-fff2-2fe1-b493" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Spell of Doom" id="1730-36df-1f61-f121" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorcerer whispers to the sleeping dead to rise up from the ground and seize his enemies.
+
+
+Chose one enemy model within 12”.
+The model must immediately roll equal to or less than his Strength on a D6 or the dead emerging from the earth will rend him with supernatural power.
+
+
+If he fails, you may roll on the Injury table to see what happens to the unfortunate warrior.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 Call of Vanhel" id="60e0-20d4-75d2-848b" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Call of Vanhel" id="9827-cdbc-c193-d4e4" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorcerer summons the world of the dead to invigorate his Undead servants.
+
+
+A single Zombie, Skeleton, Wight or Grave Guard within 6” of the caster may immediately move again up to its maximum movement distance.
+If this moves them into base contact with an enemy model then it counts as charging.
+
+
+The targeted Zombie, Skeleton, Wight or Grave Guard will automatically pass Initiative tests needed to be made during this extra movement.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Deathly Visage" id="f045-9a84-f5f2-50d4" collective="false" hidden="true" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="2a11-b1d-7b9f-3988" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Deathly Visage" id="aa21-51e4-bc0-522d" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Sorcerer calls upon the power of Necromancy to reveal the moment of his enemies’ death.
+
+
+The Necromancer causes fear in his enemies for the duration of the battle and is likewise immune to fear.
+
+
+This spell is the one exception to the Apprentice rule that Necromancers must usually follow when in a Liche warband.
+A Necromancer may choose this spell if the Liche has the spell Living Horror.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Living Horror" id="70-4cef-8490-c2d" collective="false" hidden="true" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="3b23-c32a-2340-cec6" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Living Horror" id="477d-a496-5516-bdde" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The ghostlights around the Liche intensify as he torments the mind of his enemy forcing him to experience the sensation during the very moment of his death over and over.
+
+
+You may choose one model within 8” of the Liche and roll D6+3.
+If this score is equal to or greater than the Leadership of the target model, then that model suffers a Wound, no armour saves allowed.
+If this wounds the target and they still have Wounds remaining, then that target may not move, shoot or cast spells during their next turn unless they pass a Leadership test.
+
+
+This spell will not affect the Possessed, Undead, or any model that is immune to fear.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Necromancy" id="5b051df2-86a2-4480-25d1-a99dcbed79b0" collective="false" flatten="true" hidden="false" import="true">
+      <constraints>
+        <constraint id="4f5a-69fe-0d42-3672" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+        <constraint id="ab64-e920-385c-04b3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="91f7-bcb8-5e9c-1037" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="b661-83de-833e-143a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="6389-4baf-dd78-d90f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="0f74-387a-c990-ab07" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="8d32-8588-94cf-eeca" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="c1fc-9542-950e-49ef" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="1 Life Stealer" id="0c3ddff7-96d2-9cfb-74c5-b7171d3e7088" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="1 Life Stealer" id="a725-5766-c812-77e7" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Chose a model within 6&quot; inches.
+It suffers a wound with no save, and the caster gains an extra wound for the duration of the battle.
+Can take it above maxiumums.
+Can not be cast on undead or  possessed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 Re-animatiom" id="d1f76c6a-5d40-475e-b3d7-c1f561cadb2b" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="2 Re-animatiom" id="c8e2-c6c8-4e71-000b" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">One Zombie that went out of action on the lasts hand to hand or shooting phase imediatly returns to battle.
+Place the model within 6&quot; of the necromancer. It can not be placed in direct hand to hand combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 Death Vision" id="f92e62c0-8650-3149-1d9c-cb6745a3af63" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="3 Death Vision" id="64e9-fdd8-fe9b-5303" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The necromancer causes fear for the duration of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 Spell of Doom" id="7cd61a42-3f3a-76c4-976c-213a477b3dc9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="4 Spell of Doom" id="e90f-4ee8-2417-8cdd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Chose 1 model within 12&quot; of the caster.
+They must test strength.
+If they fail they get an imediate check on the injury table.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 Call of Vanhel" id="2431affd-9208-e7c0-f831-f188f49fc5e9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="5 Call of Vanhel" id="2272-424e-97ea-2239" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">One direwolf or zombie within 6&quot; of the necromacer can move for free.
+If they move into base to base contact with an enemy, it counts as having charged.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Spell Of Awakening" id="490cd705-4fd2-9c5b-56aa-e2fadb325281" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="6 Spell Of Awakening" id="4842-91a3-1fe4-7ff7" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">If a enemey hero is killed in battle, (an 11-16 on the serious injury chart) the necromancer may raise him as a zombie.
+
+He is a henchmen that retains all equpiment and characteristics, but can not be armed with anything else, has no skills and can gain no more experience.
+He is a normal zombie in all other respects.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Vampire Skills" id="439b-2632-4a3a-f098" hidden="false">
+      <constraints>
+        <constraint id="a2a7-3fef-c03b-89b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="Transfixing Glare" id="8a42-43b6-c325-e3f0" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="0d30-d3e5-4c71-a994" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <rules>
+            <rule name="Transfixing Glare" id="4fcc-44c6-bb5b-643e" hidden="false">
+              <description>The Vampire is able to hypnotize a victim using his glowing red eyes, the victim will remain passive and wait for the Vampire to close. The Glare may be used on any living model in base contact that is not Immune to Psychology. The victim must pass a Leadership test on 2D6 or be transfixed. A transfixed model may not attack in close combat and is treated as being knocked Down for purpose of being attacked. Roll for the Glare at the start of the combat</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Giant Wolf Form" id="6b9f-3d8a-33bd-95ca" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="eb1f-cd57-ad86-bf60" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <rules>
+            <rule name="Giant Wolf Form" id="a0e6-0e10-5c53-1508" hidden="false">
+              <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
+regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase. 
+
+
+
+Profile
+9  M
+4  WS
+0  BS
+4  S
+3  T
+*  W
+*  I
+2  A
+*  Id
+
+*Use the same characteristics as the Vampire.
+
+
+Whilst in Wolf form the Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Bat Form" id="29a6-5a21-bb83-246d" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="b95d-e8e8-872d-4b45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <rules>
+            <rule name="Bat Form" id="ebd9-0713-1345-b6b7" hidden="false">
+              <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
+regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase.
+
+
+Profile
+8  M
+3  WS
+0  BS
+3  S
+2  T
+*  W
+*  I
+1  A
+*  Id
+
+
+*Use the same characteristics as the Vampire.
+
+Whilst in Bat form the Vampire may fly and ignores movement penalties, he cannot run as such but may move double distance and a charge move is also doubled. The Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Ratswam Form" id="bd82-9ab1-8072-ebab" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="2510-341e-4266-80be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <rules>
+            <rule name="Ratswarm Form" id="ed33-8f99-3734-73de" hidden="false">
+              <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
+regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase.
+
+
+Profile
+6  M
+3  WS
+0  BS
+3  S
+3  T
+*  W
+*   I
+4   A
+*  Id
+
+
+*Use the same characteristics as the Vampire.
+
+While in Ratswarm form the Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon. The Vampire should be represented by a Ratswarm base but treat the Vampire as being the size of a single rat for moving through alleys or similar small spaces. The Vampire may move through small holes and gaps that would allow a single rat-sized creature to pass through and can thus move through walls as most have a small holes in them.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Mist Form" id="872c-885d-2b6b-bec8" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="b1a3-a045-d50d-d32f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <rules>
+            <rule name="Mist Form" id="f1ec-799f-4bc7-229a" hidden="false">
+              <description>A Vampire’s human form is only one of many and a few can transform into a thin mist in the recovery phase. While in this state the Vampire has a move of 2D6&quot; per turn. He may not attack in close combat, shoot with a missile weapon or cast spells and he gains no protection from armour. All to hit rolls against the Vampire need a natural ‘6’ to hit and all to wound rolls need a natural ‘6’. Note that this may not be modified by any bonuses as it represents the protection of a non-physical form. The Vampire may reduce the injury roll by -2. If the Vampire is knocked down he immediately reverts to his physical form. The Vampire may change back to Vampire form in any subsequent recovery phase by choice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Lizardman Magic" id="56ab-ddca-246b-e319" collective="false" flatten="true" hidden="false" import="true">
+      <constraints>
+        <constraint id="3290-4ecf-d203-272d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="2f9f-ad3b-6d0f-b3f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="2df7-8ed2-6ed3-ad8f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="bfae-2c75-97cf-a179" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="40f2-fcd5-15b4-1d01" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="41e5-0f00-6d22-be96" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="54a2-6c26-9787-bc68" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="61be-abfa-f2c3-0109" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="2 - Sotec&apos;s Blessing" id="acff8691-a0bb-bafb-238e-cc6d8b71239b" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e178-aa33-642c-105d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Sotec&apos;s Blessing" id="1c8b-d18e-4ca9-9cc6" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell may be cast on a single model within 6&quot; of the Skink Priest or on himself.
+Roll a D6 to determine the blessing. 
+The effects remain in play until the Priest or the model is Stunned or taken Out of Action.
+Only a single model may be affected by the blessing at any given time.
+
+D6 Effect
+   1-2 - +1 BS or +1 to hit in close combat.
+   3-4 - Toughness +1.
+   5-6 - Movement and Initiative +1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 - Tinci&apos;s Rage" id="92ab0dec-43fe-a9a0-c798-6b79b935c56e" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="ea6e-99f0-4ad0-efb7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Tinci&apos;s Rage" id="af45-b57b-033b-7ec3" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">A single Lizardman within 6&quot; of the Skink Priest or himself, is overtaken by rage and follows the rules for Frenzy, in addition he gains +1 Strength.
+This spell remains in play until the Skink Priest or the model is Stunned or is taken Out of Action.
+At the beginning of the turn the Skink priest must pass a Leadership roll in order to keep the spell going.
+Only a single model may be affected by the blessing at any given time, but the Skink Priest can choose to release the spell at the beginning of his turn if he wish to attempt to recast it on another model later in the shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 - The Old One&apos;s Protection" id="8b126bd4-6ed6-c4c7-8a03-7d3446dd7edc" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="bf58-a133-3590-78a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="The Old One&apos;s Protection" id="9f04-a31e-ac06-dbbc" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Skink Priest and any Lizardmen within 4&quot; of him gain a save of 4+ against the effects of spells or prayers.
+This spell remains in play until the Skink Priest is taken Out of Action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 - Huanchi&apos;s Stealth" id="6f96adf2-e1c3-6b3e-0b1a-c0d05a44c2e8" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="f87d-752f-e92f-ec69" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Huanchi&apos;s Stealth" id="3ce5-ccb0-0dcc-84bc" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell affects all Skinks within 6&quot; of the Skink Priest, including himself, and allows any model that is in cover to immediately to go into hiding.
+A model may go into hiding even if they ran in the movement phase or has already shot with a missile weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 - Itzl&apos;s Speed" id="78223607-c19f-170b-baac-31fc3b30572a" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="bb0d-8103-95c5-1920" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Itzl&apos;s Speed" id="96e8-1682-33c0-b0bd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">A single Lizardman model within 6&quot; of the Skink Priest or himself, may make an additional sprint of movement and move up to 4&quot;.
+This counts, as running and a model may not move if he has already fired with a missile weapon.
+He may not charge with this extra move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="1 - Chotec&apos;s Wrath" id="0258ef21-24e5-08f9-2e4e-c75fa0ff828d" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="8d14-78ef-6a8d-e3a9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Chotec&apos;s Wrath" id="6f3c-9d91-f823-36d9" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">A lightning bolt shoots from the sky above and strikes the closest enemy model within 10&quot; of the Skink Priest, causing a single Strength 5 hit.
+However add +1 to the Strength and +1 to the roll on the injury table if the model is wearing armour like light armour, heavy armour, Ithilmar armour or Gromril armour.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Nurgle Rituals" id="9296-1a70-7097-c1f7" collective="false" flatten="true" hidden="false" import="true">
+      <constraints>
+        <constraint id="bc50-f807-0282-0d4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="1 Daemonic Vigour" id="5a60-090e-da13-c8e8" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Daemonic Vigour" id="23b4-127f-43c8-8ced" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master imbues his Daemonic minions with supernatural power.
+
+Any Plague Bearers or Nurglings within 8&quot; of the Master increase their Daemonic Aura save from 5+ to 4+ until the beginning of their next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 Buboes" id="4090-ec9c-e707-e6f9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Buboes" id="230f-baa9-7b20-67bf" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master bestows the gift of pus-filled buboes upon his enemies.
+
+This spell has a range of 8&quot; and affects a single enemy warrior.
+The warrior must pass a Toughness test or lose a Wound. No Armour saves are allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 Stench of Nurgle" id="b6ce-2385-df22-11a7" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Stench of Nurgle" id="f2b4-2147-eaf6-4037" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master spews forth a foul, stinking mist that chokes his foes.
+
+This spell has a range of 6&quot; and affects all living creatures – friend or foe.
+Each enemy warrior in range must pass a Toughness test or lose an Attack until their next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 Pestilence" id="31e1-ef9e-1339-6052" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Pestilence" id="4e48-8220-4d41-360d" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master inflicts horrible diseases upon the unbelievers.
+
+All enemy models within 12&quot; of the Master suffer a Strength 3 hit.
+No Armour saves are allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 Scabrous Hide" id="fcc4-faf8-f45d-6723" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Scabrous Hide" id="17ab-cbe9-d669-d616" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master’s skin becomes tough and leathery like that of his patron god.
+
+The Master has an armour save of 2+ which replaces any normal Armour save.
+The Scabrous Hide lasts until the beginning of his next Shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Nurgle’s Rot" id="568b-659e-fae9-634d" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Nurgle’s Rot" id="1c9f-b10e-fea9-7d4a" hidden="false" targetId="c538-42db-ebae-8c58" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Nurgle’s Rot" id="e7b2-b7c7-46f3-93d8" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Master bestows the blessing of the Plague God upon his foe.
+
+All enemy models in base contact with the Master must immediately test against their Toughness or contract Nurgle’s Rot.</characteristic>
               </characteristics>
             </profile>
           </profiles>

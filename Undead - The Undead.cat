@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Undead (1a)" id="0b05773f-a863-7a25-f872-588b804e2c75" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Undead (1a)" id="0b05773f-a863-7a25-f872-588b804e2c75" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="1629-8024-5674-4aaf" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="ec79-58d6-8d6c-fc0d" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -17,7 +17,7 @@
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <entryLinks>
-        <entryLink name="Equipment - All" id="ce82-b295-f8a4-3e4c" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Equipment - All" id="ce82-b295-f8a4-3e4c" flatten="true" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
         <entryLink name="Skills" id="bdde-63c0-92ca-e438" collapsible="true" hidden="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="8714-0d98-9062-64c2" collapsible="true" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup">
           <constraints>
@@ -616,9 +616,9 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
       </costs>
       <entryLinks>
         <entryLink name="Experience" id="5456-4828-3d7b-c8d1" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink name="Equipment (Undead 1a)" id="fa7c-23f7-3509-b031" flatten="true" hidden="false" import="true" sortIndex="1" targetId="e584-2fa3-4591-889a" type="selectionEntryGroup"/>
+        <entryLink name="Equipment (Undead 1a)" id="fa7c-23f7-3509-b031" flatten="true" hidden="false" import="true" sortIndex="2" targetId="e584-2fa3-4591-889a" type="selectionEntryGroup"/>
         <entryLink name="Charactaristics +/-" id="b656-18f4-e80a-d82d" collapsible="true" collective="false" hidden="false" import="true" sortIndex="6" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-        <entryLink name="Necromancy" id="b6fc-7839-95ef-b16f" flatten="true" hidden="false" import="true" sortIndex="2" targetId="5b051df2-86a2-4480-25d1-a99dcbed79b0" type="selectionEntryGroup"/>
+        <entryLink name="Necromancy" id="b6fc-7839-95ef-b16f" flatten="true" hidden="false" import="true" sortIndex="1" targetId="5b051df2-86a2-4480-25d1-a99dcbed79b0" type="selectionEntryGroup"/>
       </entryLinks>
       <profiles>
         <profile name="Necromancer" id="c0b2-1c78-efce-1d7f" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -803,6 +803,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <infoLink name="Immune to Poison" id="db655720-13b0-00a1-1ab2-c2c866ff30b5" hidden="false" targetId="f654-2dea-4f11-5730" type="rule"/>
         <infoLink name="No Pain" id="d9bea97d-375a-4777-1d8a-da61d1009c15" hidden="false" targetId="54c4-5d87-e5c5-f0dc" type="rule"/>
         <infoLink name="Immune to Psychology" id="fc6920ab-6f9d-082d-e53e-d39db9682250" hidden="false" targetId="114e-939e-220b-403" type="rule"/>
+        <infoLink name="Vampire max" id="ccdc-a83a-8b00-f39b" hidden="false" targetId="e701-ef69-46fa-2ff9" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="Vampire" id="7dad-65be-18b4-277e" hidden="false" page="0" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -978,240 +979,6 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Necromancy" id="5b051df2-86a2-4480-25d1-a99dcbed79b0" collective="false" flatten="true" hidden="false" import="true" sortIndex="2">
-      <constraints>
-        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="1 Life Stealer" id="0c3ddff7-96d2-9cfb-74c5-b7171d3e7088" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="1 Life Stealer" id="a725-5766-c812-77e7" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">10</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Chose a model within 6&quot; inches.
-It suffers a wound with no save, and the caster gains an extra wound for the duration of the battle.
-Can take it above maxiumums.
-Can not be cast on undead or  possessed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="2 Re-animatiom" id="d1f76c6a-5d40-475e-b3d7-c1f561cadb2b" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="2 Re-animatiom" id="c8e2-c6c8-4e71-000b" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">One Zombie that went out of action on the lasts hand to hand or shooting phase imediatly returns to battle.
-Place the model within 6&quot; of the necromancer. It can not be placed in direct hand to hand combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 Death Vision" id="f92e62c0-8650-3149-1d9c-cb6745a3af63" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="3 Death Vision" id="64e9-fdd8-fe9b-5303" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The necromancer causes fear for the duration of the battle.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 Spell of Doom" id="7cd61a42-3f3a-76c4-976c-213a477b3dc9" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="4 Spell of Doom" id="e90f-4ee8-2417-8cdd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Chose 1 model within 12&quot; of the caster.
-They must test strength.
-If they fail they get an imediate check on the injury table.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 Call of Vanhel" id="2431affd-9208-e7c0-f831-f188f49fc5e9" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="5 Call of Vanhel" id="2272-424e-97ea-2239" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">One direwolf or zombie within 6&quot; of the necromacer can move for free.
-If they move into base to base contact with an enemy, it counts as having charged.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 Spell Of Awakening" id="490cd705-4fd2-9c5b-56aa-e2fadb325281" collective="false" hidden="false" import="true" page="0" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="6 Spell Of Awakening" id="4842-91a3-1fe4-7ff7" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">If a enemey hero is killed in battle, (an 11-16 on the serious injury chart) the necromancer may raise him as a zombie.
-
-He is a henchmen that retains all equpiment and characteristics, but can not be armed with anything else, has no skills and can gain no more experience.
-He is a normal zombie in all other respects.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Skills" id="39deaab7-93cc-922b-d866-f7368e56495a" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
-      <constraints>
-        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
-        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
-        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Vampire Skills" id="439b-2632-4a3a-f098" hidden="false">
-          <constraints>
-            <constraint id="a2a7-3fef-c03b-89b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry name="Transfixing Glare" id="8a42-43b6-c325-e3f0" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="0d30-d3e5-4c71-a994" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <rules>
-                <rule name="Transfixing Glare" id="4fcc-44c6-bb5b-643e" hidden="false">
-                  <description>The Vampire is able to hypnotize a victim using his glowing red eyes, the victim will remain passive and wait for the Vampire to close. The Glare may be used on any living model in base contact that is not Immune to Psychology. The victim must pass a Leadership test on 2D6 or be transfixed. A transfixed model may not attack in close combat and is treated as being knocked Down for purpose of being attacked. Roll for the Glare at the start of the combat</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry name="Giant Wolf Form" id="6b9f-3d8a-33bd-95ca" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="eb1f-cd57-ad86-bf60" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <rules>
-                <rule name="Giant Wolf Form" id="a0e6-0e10-5c53-1508" hidden="false">
-                  <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
-regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase. 
-
-
-
-Profile
-9  M
-4  WS
-0  BS
-4  S
-3  T
-*  W
-*  I
-2  A
-*  Id
-
-*Use the same characteristics as the Vampire.
-
-
-Whilst in Wolf form the Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry name="Bat Form" id="29a6-5a21-bb83-246d" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="b95d-e8e8-872d-4b45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <rules>
-                <rule name="Bat Form" id="ebd9-0713-1345-b6b7" hidden="false">
-                  <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
-regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase.
-
-
-Profile
-8  M
-3  WS
-0  BS
-3  S
-2  T
-*  W
-*  I
-1  A
-*  Id
-
-
-*Use the same characteristics as the Vampire.
-
-Whilst in Bat form the Vampire may fly and ignores movement penalties, he cannot run as such but may move double distance and a charge move is also doubled. The Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry name="Ratswam Form" id="bd82-9ab1-8072-ebab" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="2510-341e-4266-80be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <rules>
-                <rule name="Ratswarm Form" id="ed33-8f99-3734-73de" hidden="false">
-                  <description>Some Vampires hold a sway over nature and they can transform into animals such as a wolf, a swarm of rats or a giant bat. A Vampire can change form in the recovery phase
-regardless of whether the Vampire is Knocked Down or Stunned but he suffers all penalties for standing up for example. The Vampire may change back to Vampire form at the start of any subsequent recovery phase.
-
-
-Profile
-6  M
-3  WS
-0  BS
-3  S
-3  T
-*  W
-*   I
-4   A
-*  Id
-
-
-*Use the same characteristics as the Vampire.
-
-While in Ratswarm form the Vampire may not use weapons and does not receive any protection from armour. He cannot shoot with a missile weapon or cast spells but can attack in close combat without a penalty for fighting without a weapon. The Vampire should be represented by a Ratswarm base but treat the Vampire as being the size of a single rat for moving through alleys or similar small spaces. The Vampire may move through small holes and gaps that would allow a single rat-sized creature to pass through and can thus move through walls as most have a small holes in them.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry name="Mist Form" id="872c-885d-2b6b-bec8" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="b1a3-a045-d50d-d32f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <rules>
-                <rule name="Mist Form" id="f1ec-799f-4bc7-229a" hidden="false">
-                  <description>A Vampire’s human form is only one of many and a few can transform into a thin mist in the recovery phase. While in this state the Vampire has a move of 2D6&quot; per turn. He may not attack in close combat, shoot with a missile weapon or cast spells and he gains no protection from armour. All to hit rolls against the Vampire need a natural ‘6’ to hit and all to wound rolls need a natural ‘6’. Note that this may not be modified by any bonuses as it represents the protection of a non-physical form. The Vampire may reduce the injury roll by -2. If the Vampire is knocked down he immediately reverts to his physical form. The Vampire may change back to Vampire form in any subsequent recovery phase by choice.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Equipment (Undead 1a)" id="e584-2fa3-4591-889a" collective="false" hidden="false" import="true" sortIndex="1">
       <constraints>
         <constraint id="9547-cfa7-da7b-36e5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>

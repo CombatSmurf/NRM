@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lizardmen (1b)" id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" authorContact="Twitter: @dabrown_us" authorName="David Brown" authorUrl="http://dabrown.us" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lizardmen (1b)" id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" authorContact="Twitter: @dabrown_us" authorName="David Brown" authorUrl="http://dabrown.us" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="19" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="5b93-ef46-ffa8-a19d" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="5a7a-5d3a-e176-db11" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -1866,6 +1866,7 @@
         <entryLink name="Equipment - All" id="2c94-12aa-2acc-adb9" collapsible="true" collective="false" hidden="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="4071-d0b8-53f6-1c59" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Sacred Markings" id="1faa-8ad1-0302-f4be" collapsible="true" hidden="false" import="true" targetId="917c-b8a6-b7d2-c4ae" type="selectionEntryGroup"/>
+        <entryLink name="Lizardman Magic" id="3726-fb3a-3288-3d9d" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="56ab-ddca-246b-e319" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="bb8f-8d65-b8c1-20ff" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
@@ -2000,25 +2001,7 @@
             <entryLink name="Academic Skills" id="be110a0b-bcd6-fba0-6d35-e38bcb0459a8" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry name="Magic" id="3977-b7c9-0dd6-5d44" collapsible="true" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Lizardman Magic" id="3726-fb3a-3288-3d9d" collective="false" hidden="false" import="true" targetId="56ab-ddca-246b-e319" type="selectionEntryGroup"/>
-          </entryLinks>
-          <rules>
-            <rule name="Magic" id="4b14-2c81-36e3-c587" hidden="false">
-              <description>Lizardmen Spells work like the Prayers of Sigmar and may be used even if the Skink Priest is wearing armour.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry name="Equipment" id="52c2-88c3-e4ff-ae84" collective="false" hidden="false" import="true" page="0" type="upgrade">
+        <selectionEntry name="Equipment" id="52c2-88c3-e4ff-ae84" collective="false" hidden="false" import="true" page="0" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="147d-1535-9d51-4b6f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
             <constraint id="d766-12e3-a3dc-4592" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -2122,138 +2105,6 @@ Skink henchmen may buy low-strength Reptile Venom for their missile weapons at a
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Lizardman Magic" id="56ab-ddca-246b-e319" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="2 - Sotec&apos;s Blessing" id="acff8691-a0bb-bafb-238e-cc6d8b71239b" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Sotec&apos;s Blessing" id="1c8b-d18e-4ca9-9cc6" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">This spell may be cast on a single model within 6&quot; of the Skink Priest or on himself.
-Roll a D6 to determine the blessing. 
-The effects remain in play until the Priest or the model is Stunned or taken Out of Action.
-Only a single model may be affected by the blessing at any given time.
-
-D6 Effect
-   1-2 - +1 BS or +1 to hit in close combat.
-   3-4 - Toughness +1.
-   5-6 - Movement and Initiative +1.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="5 - Tinci&apos;s Rage" id="92ab0dec-43fe-a9a0-c798-6b79b935c56e" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Tinci&apos;s Rage" id="af45-b57b-033b-7ec3" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">A single Lizardman within 6&quot; of the Skink Priest or himself, is overtaken by rage and follows the rules for Frenzy, in addition he gains +1 Strength.
-This spell remains in play until the Skink Priest or the model is Stunned or is taken Out of Action.
-At the beginning of the turn the Skink priest must pass a Leadership roll in order to keep the spell going.
-Only a single model may be affected by the blessing at any given time, but the Skink Priest can choose to release the spell at the beginning of his turn if he wish to attempt to recast it on another model later in the shooting phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="4 - The Old One&apos;s Protection" id="8b126bd4-6ed6-c4c7-8a03-7d3446dd7edc" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="The Old One&apos;s Protection" id="9f04-a31e-ac06-dbbc" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The Skink Priest and any Lizardmen within 4&quot; of him gain a save of 4+ against the effects of spells or prayers.
-This spell remains in play until the Skink Priest is taken Out of Action.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="3 - Huanchi&apos;s Stealth" id="6f96adf2-e1c3-6b3e-0b1a-c0d05a44c2e8" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Huanchi&apos;s Stealth" id="3ce5-ccb0-0dcc-84bc" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The spell affects all Skinks within 6&quot; of the Skink Priest, including himself, and allows any model that is in cover to immediately to go into hiding.
-A model may go into hiding even if they ran in the movement phase or has already shot with a missile weapon.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="6 - Itzl&apos;s Speed" id="78223607-c19f-170b-baac-31fc3b30572a" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Itzl&apos;s Speed" id="96e8-1682-33c0-b0bd" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">A single Lizardman model within 6&quot; of the Skink Priest or himself, may make an additional sprint of movement and move up to 4&quot;.
-This counts, as running and a model may not move if he has already fired with a missile weapon.
-He may not charge with this extra move.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="1 - Chotec&apos;s Wrath" id="0258ef21-24e5-08f9-2e4e-c75fa0ff828d" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Chotec&apos;s Wrath" id="6f3c-9d91-f823-36d9" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">A lightning bolt shoots from the sky above and strikes the closest enemy model within 10&quot; of the Skink Priest, causing a single Strength 5 hit.
-However add +1 to the Strength and +1 to the roll on the injury table if the model is wearing armour like light armour, heavy armour, Ithilmar armour or Gromril armour.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Saurus Equipment" id="9699-2122-d2a9-82a6" collective="false" flatten="true" hidden="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Saurus Armor" id="64c4-51bc-abb6-c69a" collective="false" flatten="true" hidden="false" import="true">

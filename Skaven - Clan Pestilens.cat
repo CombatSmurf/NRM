@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Skaven - Clan Pestilens (1b)" id="6518-bc7b-3999-c73f" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Skaven - Clan Pestilens (1b)" id="6518-bc7b-3999-c73f" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="a51c-7bff-7225-0300" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="fc6c-f49e-edf0-5099" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -503,7 +503,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Magic of the Horned Rat" id="ff6e-c8e6-d5b0-a7b3" collapsible="true" hidden="false" import="true" targetId="3442-f32d-5c5f-5f9d" type="selectionEntryGroup"/>
+        <entryLink name="Magic of the Horned Rat" id="ff6e-c8e6-d5b0-a7b3" collapsible="true" flatten="true" hidden="false" import="true" sortIndex="1" targetId="3442-f32d-5c5f-5f9d" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Skaven Pestilens max" id="faca-37ee-7c7e-5d68" hidden="false" targetId="cff3-c5b9-2870-42ea" type="profile"/>
