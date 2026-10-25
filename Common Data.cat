@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="61" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="62" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -5441,9 +5441,233 @@ Shadow Warriors Only</description>
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry name="Repeater Handgun" id="ebce-a8f4-d0d9-a59d" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Repeater Handgun" id="a2b8-151a-51d3-7c08" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Save Modifier. Handguns are even better at penetrating armour than their Strength 4 suggests. A warrior wounded by a handgun must take its armour save with a -2 modifier.
+
+Move or fire: You may not move and fire a handgun in the same turn, other than to pivot on the spot to face your target or stand up.
+
+Fire Thrice: The Repeater Handgun may fire up to three shots; if more than one shot is made the to hit roll is at -1.
+Resolve each shot individually, you may choose to shot later shots at a different target, but they must be within 3&quot; of the previous target.
+Ordinary targeting restrictions apply to shots as per Mordheim rulebook.
+
+Experimental: The Repeater Handgun is always subject to the optional Blackpowder Weapons rules from the Mordheim rulebook, even if they are not normally used in your campaign.
+On any result other than “BOOM!”, the weapon has jammed or run out of loaded barrels and must be reloaded.
+
+Slow Reload: To reload a Repeater Handgun takes a long time and a bit of focus.
+The warrior must do nothing (no moving, no shooting, no fighting in close combat, etc.) for a complete turn in order to reload the weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Double Barrelled Handgun" id="6650-275b-baed-ebb2" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Double Barrelled Handgun" id="eee6-114b-dc5f-2c65" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare shot: A handgun takes a complete turn to reload, so you may only fire it every other turn.
+
+Move or fire: You may not move and fire a handgun in the same turn, other than to pivot on the spot to face your target or stand up.
+
+Save Modifier. Handguns are even better at penetrating armour than their Strength 4 suggests. A warrior wounded by a handgun must take its armour save with a -2 modifier.
+
+Double-barrelled: A double-barrelled weapon is a tricky piece of engineering, but it’s a wonderful piece
+for combat.
+When firing such a weapon, the bearer must declare whether he is firing one or both barrels.
+If firing a single barrel, treat the shot as you would a normal weapon.
+However when firing both barrels, the method changes slightly:
+To hit – roll a single dice as you would normally.
+This allows for a narrow field of fire emanating from the weapon.
+To wound – roll for each shot individually, as each shot can wound on it’s own.
+Treat each shot that inflicts Critical Hits separately.
+Reloading: After firing both barrels, place 2 tokens on the model. In your next shooting phase remove 1 token to represent one barrel having been reloaded.
+Token removal should be the last thing done in your shooting phase and you cannot shoot in the same phase as your reload.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hand-Held Mortar" id="de96-e47c-df45-6e98" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="70"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Hand-Held Mortar" id="0c50-1598-0a0b-9404" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare shot: A Hand-Held Mortar takes a complete turn to reload, so you may only fire it every other turn.
+
+Move or fire: You may not move and fire a Hand-Held Mortar in the same turn, other than to pivot on the spot to face your target or stand up.
+
+Save Modifier. Hand-Held Mortars are even better at penetrating armour than their Strength 4 suggests. A warrior wounded by a Hand-Held Mortar must take its armour save with a -2 modifier.
+
+Scatter: If the warrior misses his roll to hit, the shot will land 2D6” in a random direction (determined using a Warhammer directional die, using the “clockface method” of scattering, or whatever other method the players can agree to).
+
+Experimental: The Hand-Held Mortar is always subject to the optional Blackpowder Weapons rules from the Mordheim rulebook, even if they are not normally used in your campaign.
+On any result other than “BOOM!”, the weapon has jammed and must be reloaded.
+
+Explosive Radius: After determining the final landing spot, the explosion created by the bomb will cover a small area.
+The target and any models within 1 ½” of him each take a single S4 hit from the blast.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hersten-Wenkler Pigeon Bombs" id="4ddd-f1e9-af37-edb3" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Hersten-Wenkler Pigeon Bombs" id="bc5d-3bd5-32df-0321" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">Unlimited</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Move or fire: You may not move and &quot;fire&quot; a Pigeon Bomb in the same turn, other than to pivot on the spot to face your target or stand up.
+
+Explosive Radius: After determining the final landing spot, the explosion created by the bomb will cover a small area.
+The target and any models within 1 ½” of him each take a single S4 hit from the blast.
+
+Tempermental: When launching a pigeon bomb, do not use the BS of the warrior. Instead, roll a D6: on a 5-6, the a pigeon bomb hits its target; on a 2-4 the fuse wasn’t cut properly and the pigeon explodes harmlessly in the air before reaching its target; on a result of 1, something has gone disastrously wrong and the pigeon explodes in the hero’s hands… he and everyone within 1 ½” takes a S4 hit.
+
+Pigeon Roost: Once a Hero buys pigeon bombs, he has enough for the full game, and his supply gets replenished at the start of each new game.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Repeater Pistol" id="02f4-2e05-b6a9-73b6" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Repeater Pistol" id="2153-cc3e-bb6e-fe85" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">6</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Save modifier: Pistols are even better at penetrating armour than their Strength value of 4 suggests.
+A model wounded by a pistol must take its armour save with a -2 modifier.
+
+Fire Thrice: The Repeater Pistol may fire up to three shots; if more than one shot is made the to hit roll is at -1.
+Resolve each shot individually, you may choose to shot later shots at a different target, but they must be within 3&quot; of the previous target.
+Ordinary targeting restrictions apply to shots as per Mordheim rulebook.
+
+Experimental: The Repeater Pistol is always subject to the optional Blackpowder Weapons rules from the Mordheim rulebook, even if they are not normally used in your campaign.
+On any result other than “BOOM!”, the weapon has jammed or run out of loaded barrels and must be reloaded.
+
+Quick Reload: The basic design of the pistol and number of barrels allows quick reloading, the pistol will always be able to fire at least one shot.
+After shooting more than one shot in a single turn the model must spend a complete shooting phase without shooting and without being in combat, before firing multiple shots (see Fire Thrice, above) may be taken again.
+
+Not a Club: The Repeater Pistol may be used as a normal pistol in the first round of combat.
+After that it doesn&apos;t count as an additional hand weapon as it is far too delicate to risk in such a crude fashion.
+Its owner will not willingly discard it in a fight and so must fight on without the use of an additional hand weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="aaaaaa" id="db40-ad61-ffdb-bab0" hidden="false" import="true" type="upgrade"/>
+    <selectionEntry name="Double Barreled Duelling Pistol" id="1018-1754-b429-8376" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Double Barrelled Duelling Pistols" id="5155-1a5c-674c-a729" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">9</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Accuracy: A duelling pistol is built for accuracy as a skilled duellist is able to hit a coin from twenty paces.
+All shots and close combat attacks from a duelling pistol have a +1 bonus to hit.
+
+Prepare shot: A duelling pistol takes a complete turn to reload, so your model may only fire every other turn.
+If he has a brace of duelling pistols he may fire every turn.
+
+Save modifier: Duelling pistols are even better at penetrating armour than their Strength 4 suggests.
+A warrior wounded by a duelling pistol must make his armour save with a -2 modifier.
+
+Hand-to-hand: Duelling pistols can be used in hand-to-hand combat as well as for shooting.
+A model armed with a duelling pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier.
+This bonus attack can be used only once per combat. If you are firing a brace of duelling pistols, your model can fight with 2 Attacks in the first turn of close combat.
+These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried.
+Successful hits are resolved at Strength 4 and with a -2 save modifier, regardless of the firer’s Strength.
+
+Double-barrelled: A double-barrelled weapon is a tricky piece of engineering, but it’s a wonderful piece
+for combat.
+When firing such a weapon, the bearer must declare whether he is firing one or both barrels.
+If firing a single barrel, treat the shot as you would a normal weapon.
+However when firing both barrels, the method changes slightly:
+To hit – roll a single dice as you would normally.
+This allows for a narrow field of fire emanating from the weapon.
+To wound – roll for each shot individually, as each shot can wound on it’s own.
+Treat each shot that inflicts Critical Hits separately.
+Reloading: After firing both barrels, place 2 tokens on the model. In your next shooting phase remove 1 token to represent one barrel having been reloaded.
+Token removal should be the last thing done in your shooting phase and you cannot shoot in the same phase as your reload.
+Firing a Brace: If you fire both guns and barrels at the same time, place 4 tokens down, 2 each of different
+colours (one for each pistol in the brace).
+Remove one token of each colour every turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Double Barreled Duelling Pistol (Brace)" id="cdfe-e44a-5651-37eb" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="points" value="65"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Double Barrelled Duelling Pistols" id="acb6-3280-c963-d72c" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">9</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Accuracy: A duelling pistol is built for accuracy as a skilled duellist is able to hit a coin from twenty paces.
+All shots and close combat attacks from a duelling pistol have a +1 bonus to hit.
+
+Prepare shot: A duelling pistol takes a complete turn to reload, so your model may only fire every other turn.
+If he has a brace of duelling pistols he may fire every turn.
+
+Save modifier: Duelling pistols are even better at penetrating armour than their Strength 4 suggests.
+A warrior wounded by a duelling pistol must make his armour save with a -2 modifier.
+
+Hand-to-hand: Duelling pistols can be used in hand-to-hand combat as well as for shooting.
+A model armed with a duelling pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier.
+This bonus attack can be used only once per combat. If you are firing a brace of duelling pistols, your model can fight with 2 Attacks in the first turn of close combat.
+These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried.
+Successful hits are resolved at Strength 4 and with a -2 save modifier, regardless of the firer’s Strength.
+
+Double-barrelled: A double-barrelled weapon is a tricky piece of engineering, but it’s a wonderful piece
+for combat.
+When firing such a weapon, the bearer must declare whether he is firing one or both barrels.
+If firing a single barrel, treat the shot as you would a normal weapon.
+However when firing both barrels, the method changes slightly:
+To hit – roll a single dice as you would normally.
+This allows for a narrow field of fire emanating from the weapon.
+To wound – roll for each shot individually, as each shot can wound on it’s own.
+Treat each shot that inflicts Critical Hits separately.
+Reloading: After firing both barrels, place 2 tokens on the model. In your next shooting phase remove 1 token to represent one barrel having been reloaded.
+Token removal should be the last thing done in your shooting phase and you cannot shoot in the same phase as your reload.
+Firing a Brace: If you fire both guns and barrels at the same time, place 4 tokens down, 2 each of different
+colours (one for each pistol in the brace).
+Remove one token of each colour every turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Academic Skills" id="df9d-8724-d362-9d7c" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Academic Skills" id="df9d-8724-d362-9d7c" collapsible="true" collective="false" hidden="false" import="true">
       <selectionEntries>
         <selectionEntry name="Sorcery" id="16fb-4c1b-9994-5db5" collective="false" hidden="false" import="true" page="0" type="upgrade">
           <constraints>
@@ -5709,7 +5933,7 @@ This counts as an academic skill.</description>
         <entryLink name="+1 WS" id="1d4b-f425-6e4c-b130" collective="false" hidden="false" import="true" targetId="7418-394e-fe13-2a96" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Combat Skills" id="ee2c-89e3-489b-d0cb" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Combat Skills" id="ee2c-89e3-489b-d0cb" collapsible="true" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="b43e-f5a8-b370-a340" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
@@ -5801,7 +6025,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Shooting Skills" id="0073-d2d6-15c0-45b1" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Shooting Skills" id="0073-d2d6-15c0-45b1" collapsible="true" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="430e-dad9-a668-235c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
       </constraints>
@@ -5921,7 +6145,7 @@ with a bow or crossbow (but not a crossbow pistol).</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Speed Skills" id="e134-0fdf-67a2-4684" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Speed Skills" id="e134-0fdf-67a2-4684" collapsible="true" collective="false" hidden="false" import="true">
       <selectionEntries>
         <selectionEntry name="Scale Sheer Surfaces" id="a222-24de-c97b-05e5" collective="false" hidden="false" import="true" page="0" type="upgrade">
           <constraints>
@@ -6026,7 +6250,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Strength Skills" id="e5ac-cd5b-9057-e096" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Strength Skills" id="e5ac-cd5b-9057-e096" collapsible="true" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="eb1d-d235-c34f-c0c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
       </constraints>
@@ -6229,9 +6453,6 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Serious Injuries" id="313b-a816-0a89-926c" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="9d3f-3246-67fd-9817" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry name="Leg Wound" id="9927-6360-269c-7050" collective="false" hidden="false" import="true" page="0" type="upgrade">
           <costs>
@@ -6418,7 +6639,7 @@ must retire from the warband.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Skills" id="70b9-9a07-4088-7598" collective="false" hidden="false" import="true">
+    <selectionEntryGroup name="Skills" id="70b9-9a07-4088-7598" collapsible="true" collective="false" hidden="false" import="true">
       <constraints>
         <constraint id="4884-6328-6974-bafb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
         <constraint id="08b8-7efb-cf23-0534" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -6891,7 +7112,7 @@ No armour saves allowed.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Cavalry Skills" id="9614-2638-4e92-128d" hidden="false">
+    <selectionEntryGroup name="Cavalry Skills" id="9614-2638-4e92-128d" collapsible="true" hidden="false">
       <selectionEntries>
         <selectionEntry name="Ride" id="f95d-1030-4a88-6824" hidden="false" import="true" type="upgrade">
           <constraints>
@@ -7180,7 +7401,7 @@ It can never be removed.</description>
         <entryLink name="-1 M" id="0fe3-f930-4514-381d" hidden="false" import="true" targetId="7dee-74f8-7707-ce64" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Special Skills (Bret Knights)" id="db89-0a20-1ffe-a960" hidden="false">
+    <selectionEntryGroup name="Special Skills (Bret Knights)" id="db89-0a20-1ffe-a960" collapsible="true" hidden="false">
       <selectionEntries>
         <selectionEntry name="Virtue of Purity" id="252d-98f8-e8bc-1b4c" hidden="false" import="true" type="upgrade">
           <constraints>
@@ -7257,7 +7478,7 @@ Roll the dice each time you wish to charge and before moving the model.</descrip
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Special Skills (Chapel Guard)" id="4787-729b-99dc-f5f6" hidden="false">
+    <selectionEntryGroup name="Special Skills (Chapel Guard)" id="4787-729b-99dc-f5f6" collapsible="true" hidden="false">
       <selectionEntries>
         <selectionEntry name="Untiring" id="de7f-e4a0-1fb5-dc44" hidden="false" import="true" type="upgrade">
           <constraints>
@@ -7618,7 +7839,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Prayers of Ulric" id="0372-1590-8541-6222" hidden="false">
+    <selectionEntryGroup name="Prayers of Ulric" id="0372-1590-8541-6222" collapsible="true" hidden="false">
       <constraints>
         <constraint id="e5d2-0680-7cf7-0faf" field="selections" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
@@ -7860,7 +8081,7 @@ If the test fails, the sword disappears.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Dark Elf Special Skills" id="854e-a887-8123-443d" hidden="false">
+    <selectionEntryGroup name="Dark Elf Special Skills" id="854e-a887-8123-443d" collapsible="true" hidden="false">
       <selectionEntries>
         <selectionEntry name="Fury of Khaine" id="afe4-25ae-b093-73d9" hidden="false" import="true" type="upgrade">
           <constraints>
@@ -8460,6 +8681,197 @@ in the close combat phase, she will score 1 automatic hit and then the opponent 
         <entryLink name="War Boar" id="cf2f-73bc-c032-c219" hidden="false" import="true" targetId="5192-9bcc-6246-fe1c" type="selectionEntry"/>
         <entryLink name="Warhorse, %" id="66ee-11b4-bc0b-a2f7" hidden="false" import="true" targetId="1f4c-40bd-06d4-6cfe" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Shadow Warrior Magic" id="21e5-4547-ba42-43eb" collective="false" hidden="false" import="true">
+      <constraints>
+        <constraint id="7ec0-13c6-d35e-e638" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="cf3d-17a2-20d4-14dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="71b1-d159-b6b3-1a55" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="43af-094b-bb4d-fe04" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="b8ef-ece9-8f8d-2f22" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="81cd-11ba-af8e-e883" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="b220-a6de-d5ee-d358" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="654d-cae4-ee53-69d9" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="1 Pool of Shadow" id="5fdc-0102-c3f9-cb72" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="1 Pool of Shadow" id="8cd864b0-108a-4761-c750-71edb80943e4" hidden="false" page="0">
+              <description>Difficulty: 7
+This spell allows the mage and all within 6&quot; to Hide, exactly as if there were a wall or other obstruction between them and their enemies. They may Hide even after marching. This Hiding is distrupted if any enemy enters the area of affect. In addition, all affected count as being in cover against enemy shooting. This spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="2 The Living Shadows" id="450e-52df-06df-8cff" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="2 The Living Shadows" id="22059751-d837-263c-d2bf-e76824485e40" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver may cast this spell at any enemy model within 12&quot; of him and within 2&quot; of a wall. The target suffers a single Strngth 4 hit with no armour saves.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="3 Wings of Night" id="aa67-384d-4e27-fb23" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="3 Wings of Night" id="e785a75a-cb8c-90cd-a11e-71c21c8b7d9d" hidden="false" page="0">
+              <description>Difficulty: 6
+This spell may only be cast if the Shadow Weaver is within 2&quot; of a wall. He is instatly moved up to 12&quot; to a place that is also within 2&quot; of a wall. If moved into contact with an enemy model, the Shadow Weaver counts as charging in the first round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="4 Cloak of Darkness" id="20af-0e4b-f2b1-34c4" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="4 Cloak of Darkness" id="859764f0-0bd7-2dfc-619d-feeb61510398" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver is effectively concealed from enemy sight. As long as he does not attack (cast spells, shoot, or engage in close combat) any enemy models, he may not be attacked. He may intercept as normal if the player controlling him wishes, but he does not have to do so (and if he does not, enemy warriors may charge past him of course). The spell lasts until the Shadow Weaver attacks an enemy model. Note that a model engaged in close comabat with an enemy warrior may never choose to not attack.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="5 Shadowbind" id="e0dc-f89e-1c10-ebbe" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="5 Shadow Bind" id="ca48337a-218e-4489-ff5d-c11a04992eef" hidden="false" page="0">
+              <description>Difficulty: 9
+The Shadow Weaver may cast this spell at any enemy model within 24&quot; of him and 2&quot; of a wall. The target may not move unless it first passes a Strength test on 2D6 at the start of his turn (before the recovery phase). This spell lasts until the Shadow Weaver suffers a wound or attempts to cast another spell. If attacked while affected by this spell, treat the target exactly as if he were stunned.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="6 Shield of Shadow" id="d606-226b-8d83-cb99" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="6 Shield of Shadow" id="5c11d755-3fbf-1a65-9ea2-79e6e3e91506" hidden="false" page="0">
+              <description>Difficulty: 7
+The Shadow Weaver may cast this spell on himself or a member of his warband within 12&quot;. The target recieves an armour save of 5+ that is not modified by the attackers Strength. The spell lasts until the start of the Shadow Weaver&apos;s next turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Waaagg magic" id="5cce5525-3057-85be-427a-ceeac0d35c53" collective="false" flatten="true" hidden="false" import="true">
+      <constraints>
+        <constraint id="3f3b-eef8-d1e2-fbd5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="bf58-cc7a-c305-a87d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+        <constraint id="afb6-341a-6db3-a5ab" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
+        <constraint id="c907-ee1f-a645-a400" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
+        <constraint id="d369-82e7-6a9c-4cec" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="1ecb-21e2-3402-b5f7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="8726-458c-c2d0-86a1" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
+        <constraint id="7db9-9ec8-6c21-1c1e" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="1 Led’z go" id="e3386f70-58e5-97e7-0e9f-c791ea7912cf" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="1 Led’z go" id="82a2-a63b-5269-7608" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Any Orc or Goblin within 4&quot; of the Shaman will automatically strike first in hand-to-hand combat regardless of other circumstances.
+The spell only lasts until the caster is knocked down, stunned or taken out of action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="2 Oi! Gerroff!" id="74ac1b53-6add-f799-a654-d212ab9f2303" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="2 Oi! Gerroff!" id="0d25-d337-0871-b28b" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Range 8&quot;. Moves any enemy model within range D6&quot; directly away from the Shaman.
+If the target collides with another model or a building, both suffer 1 S3 hit.
+Note: Very handy for dropping people from high buildings with.
+May not be cast on models in hand-to-hand combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="3 Zzap!" id="717a7f44-f051-38a6-8a8e-3283bbb9e67f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="3 Zzap!" id="f15e-5635-7f61-24b8" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Range 12&quot;. Causes D3 S4 hits on the closest enemy target, with no armour saves allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="4 Fooled Ya!" id="82dc048a-4d2e-6d19-96dd-11cae21d5e64" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="4 Fooled Ya!" id="06b1-5c1d-a3ea-fe85" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">No enemy may charge the Shaman during their next turn.
+If the Shaman is engaged in hand-to-hand combat he may immediately move 4&quot; away.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="5 Clubba" id="fcd4912e-e220-e29e-a8d7-4bcf845015e2" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="5 Clubba" id="7bb5-5833-fcb6-f9ee" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The ectoplasmic club counts as a normal club with +2 Strength bonus and gives the Shaman +1 attack as well.
+This spell lasts until the Shaman suffers a wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="6 Fire of Gork" id="959b63b6-8a79-4291-d753-9f2166e0c0f1" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="6 Fire of Gork" id="579e-6d28-d35e-f02b" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Range 12&quot;. Each of the two bolts causes D3 S3 hits; the bolts can either be fired both at the closest enemy target
+or split between the two closest enemy targets.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
