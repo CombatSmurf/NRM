@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="63" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="64" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -6640,10 +6640,6 @@ must retire from the warband.</description>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Skills" id="70b9-9a07-4088-7598" collapsible="true" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="4884-6328-6974-bafb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
-        <constraint id="08b8-7efb-cf23-0534" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry name="Academic Skills" id="955a-d5d9-dfa2-b7ed" collapsible="true" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
