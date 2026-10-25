@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Gunnery School of Nuln (1b)" id="9fda-1198-8b84-972e" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Gunnery School of Nuln (1b)" id="9fda-1198-8b84-972e" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink name="common-data" id="5d7f-3a2f-8c44-04da" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
-    <catalogueLink name="Characters" id="87b8-f346-a8d2-ee87" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
+    <catalogueLink name="common-data" id="5d7f-3a2f-8c44-04da" importRootEntries="false" targetId="e020-c282-277b-b173" type="catalogue"/>
+    <catalogueLink name="Characters" id="87b8-f346-a8d2-ee87" importRootEntries="false" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
   </catalogueLinks>
   <publications>
     <publication name="Gunnery School Of Nuln Rules" id="79c4-b7d0-8643-3ab1" publisher="https://broheim.net/downloads/warbands/supplement/nemesiscrown/Gunnery%20School%20Of%20Nuln.pdf" publisherUrl="https://broheim.net/downloads/warbands/supplement/nemesiscrown/Gunnery%20School%20Of%20Nuln.pdf" shortName="Broheim Rules (1b)"/>

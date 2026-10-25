@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Bretonnian Knights (1b)" id="4ffc-66b0-fbc6-5a24" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Bretonnian Knights (1b)" id="4ffc-66b0-fbc6-5a24" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="50cf-9672-d3e1-ce76" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="43e2-4ab8-e495-a7f5" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -553,7 +553,7 @@ He will never panic and break from combat and so does not have to pass a Leade
         <entryLink name="Experience" id="3e38-132e-1803-d580" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="c815-c185-369-150d" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Characteristic Increases" id="784d-de72-2acd-adf7" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink name="Skills" id="bd7b-d1f7-1009-4f02" collective="false" hidden="true" import="true" targetId="e018-3f11-c082-1817" type="selectionEntryGroup">
+        <entryLink name="Skills" id="bd7b-d1f7-1009-4f02" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
@@ -711,7 +711,7 @@ He will never panic and break from combat and so does not have to pass a Leade
         <entryLink name="Experience" id="d1ce-558a-4297-f9ec" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
         <entryLink name="Promoted" id="eb3a-7b93-4d8c-efac" collective="false" hidden="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
         <entryLink name="Characteristic Increases" id="9443-38a-5e5c-d91e" collective="false" hidden="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink name="Skills" id="b7ed-9bc1-6a7a-e51e" collective="false" hidden="true" import="true" targetId="e018-3f11-c082-1817" type="selectionEntryGroup">
+        <entryLink name="Skills" id="b7ed-9bc1-6a7a-e51e" collective="false" hidden="true" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
@@ -1427,86 +1427,6 @@ The Knight may add +D3&quot; to his move when charging.
 Roll the dice each time you wish to charge and before moving the model.</description>
             </rule>
           </rules>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Skills" id="e018-3f11-c082-1817" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="ed1d-e6b9-9d0a-993b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
-        <constraint id="715b-548-aee8-cc26" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="Academic Skills" id="90a0-b3b-ea8b-bc1c" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="bf16-ff7f-a2b-3482" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Academic Skills" id="7bae-69b4-f619-acbd" collective="false" hidden="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Combat Skills" id="5797-806c-5b07-2426" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="660-8da4-bb59-cc2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Combat Skills" id="3e3d-75be-58a8-3850" collective="false" hidden="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Shooting Skills" id="6216-3f44-52fc-45eb" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="6243-9077-c623-b2e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Shooting Skills" id="640d-59c4-e1ed-ad4f" collective="false" hidden="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Speed Skills" id="bc2e-c87d-15f6-560d" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="2755-dddf-4072-6e96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Speed Skills" id="587a-8883-a33a-dd0b" collective="false" hidden="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Strength Skills" id="1c3f-e6f4-9bef-9cb8" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="f47a-9b84-5173-f707" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Strength Skills" id="bf4b-44c2-86d-dfcc" collective="false" hidden="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry name="Special Skills (Bretonnian Knights)" id="b0fb-f549-9521-aa2f" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="3e0a-2316-6ea5-5364" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Special Skills (Bretonnian Knights)" id="d005-41b-5b68-68c8" collective="false" hidden="false" import="true" targetId="11ac-59f2-9e9-d01f" type="selectionEntryGroup"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

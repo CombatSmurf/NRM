@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="62" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="63" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -141,19 +141,6 @@
         <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">4</characteristic>
         <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
         <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">5</characteristic>
-        <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Black Orc max" id="cba-5063-4209-b18a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
-        <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">7</characteristic>
-        <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">6</characteristic>
-        <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">5</characteristic>
-        <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">6</characteristic>
-        <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">3</characteristic>
-        <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
-        <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
         <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
       </characteristics>
     </profile>
@@ -311,6 +298,19 @@
         <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
         <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
         <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Black Orc Max" id="a9fb-1c25-4ed8-01f7" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+        <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">7</characteristic>
+        <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">6</characteristic>
+        <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">5</characteristic>
+        <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">6</characteristic>
+        <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">3</characteristic>
+        <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+        <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
+        <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
