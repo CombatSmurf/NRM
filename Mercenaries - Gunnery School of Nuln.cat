@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mercenaries - Gunnery School of Nuln (1b)" id="8b88-5035-83ba-dc17" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="20" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries - Gunnery School of Nuln (1b)" id="8b88-5035-83ba-dc17" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="20" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink name="common-data" id="5126-8759-20f0-302a" targetId="e020-c282-277b-b173" type="catalogue"/>
-    <catalogueLink name="Characters" id="4fc2-2c31-864d-4ac1" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
+    <catalogueLink name="common-data" id="5126-8759-20f0-302a" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
+    <catalogueLink name="Characters" id="4fc2-2c31-864d-4ac1" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
   </catalogueLinks>
   <rules>
     <rule name="Impeccable Care" id="ef80-ab94-e3af-09ac" hidden="false">
