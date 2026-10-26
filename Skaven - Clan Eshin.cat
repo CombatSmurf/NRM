@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Skaven - Clan Eshin (1a)" id="facb1142-7463-7676-00c0-d78150e13a50" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Skaven - Clan Eshin (1a)" id="facb1142-7463-7676-00c0-d78150e13a50" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="5f49-5e43-31bb-2dc9" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="d740-4aa0-8972-00a5" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -1134,6 +1134,23 @@
             <modifier field="hidden" type="set" value="false">
               <conditions>
                 <condition childId="534a-6ec6-5d82-da7f" childName="Promoted" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry name="Unit Group" id="60f2-2952-cb5f-b772" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1260-659e-e405-647a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="534a-6ec6-5d82-da7f" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="1260-659e-e405-647a" type="set" value="0">
+              <conditions>
+                <condition childId="534a-6ec6-5d82-da7f" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
