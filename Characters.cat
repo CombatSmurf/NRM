@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Characters" id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="22" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Characters" id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="23" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="common-data" id="cd5b-a743-c9c8-fffa" importRootEntries="false" targetId="e020-c282-277b-b173" type="catalogue"/>
   </catalogueLinks>
@@ -6044,12 +6044,12 @@ May be Hired: Any warband except Dark Elves, Chaos Dwarves, Witch Hunters, Siste
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry name="Priest of Morr (1b)" id="6170-c29a-ecc2-24c0" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Priest of Morr (1b)" id="6170-c29a-ecc2-24c0" hidden="true" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink name="Heroes" id="3233-2124-7f48-c0b8" hidden="false" primary="true" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94"/>
       </categoryLinks>
       <constraints>
-        <constraint id="594a-81fd-56ac-69e8" field="selections" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="594a-81fd-56ac-69e8" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="points" value="35"/>
@@ -6069,6 +6069,58 @@ May be Hired: Any warband except Dark Elves, Chaos Dwarves, Witch Hunters, Siste
         <entryLink name="Serious Injuries" id="bef7-8542-06ce-6b79" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink name="Funerary Rites" id="a439-d448-cbcc-aaa9" flatten="true" hidden="false" import="true" sortIndex="1" targetId="b730-8274-0015-35b8" type="selectionEntryGroup"/>
       </entryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="49df-928f-1fa4-ff5b" childName="Mercenaries - Averlanders (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="8b88-5035-83ba-dc17" childName="Mercenaries - Gunnery School of Nuln (1b)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="d7899d8b-a172-7e27-aec7-b9c51cb475c1" childName="Mercenaries - Marienburgers (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="51919a76-f868-1581-224f-24394fbb0d64" childName="Mercenaries - Middenheimers (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="c315-31da-1718-4dde" childName="Mercenaries - Ostermarkers (1b)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="05ad-b0d8-77a8-2572" childName="Mercenaries - Ostlanders (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac1721e2-653d-e279-11e3-ca8ba77b0637" childName="Mercenaries - Reiklanders (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="6805-ff0e-9061-8cb6" childName="Mercenaries - Tileans - Miragleans (1b)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ad3d-5780-c6dc-852" childName="Mercenaries - Tileans - Remasens (1b)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="4da7-a3e6-31d6-ec66" childName="Mercenaries - Tileans - Trantios (1b)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Priest of Morr" id="b2b6-96e0-dc37-121b" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
