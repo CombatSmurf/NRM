@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Cult of the Possessed (1a)" id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Cult of the Possessed (1a)" id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Characters" id="5412-0cd9-b867-d106" importRootEntries="true" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" type="catalogue"/>
     <catalogueLink name="common-data" id="be50-6807-abf5-5167" importRootEntries="true" targetId="e020-c282-277b-b173" type="catalogue"/>
@@ -464,10 +464,15 @@
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <entryLinks>
-        <entryLink name="Mutations" id="03bc18eb-b2f9-0970-4923-373b705031de" collective="false" flatten="true" hidden="false" import="true" sortIndex="2" targetId="e111af6a-dde1-6dcc-d658-bf4f2f4751c0" type="selectionEntryGroup"/>
+        <entryLink name="Mutations (Possessed 1a)" id="03bc18eb-b2f9-0970-4923-373b705031de" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="123a-97ca-fab2-371b" type="selectionEntryGroup">
+          <constraints>
+            <constraint id="5f24-c128-8ebe-bb30" field="selections" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
         <entryLink name="Charactaristics +/-" id="8584-00a0-8c07-2381" collapsible="true" collective="false" hidden="false" import="true" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
-        <entryLink name="Cultist Equipment (Cult of the Possessed 1a)" id="cad9-c0e5-ebab-7090" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="fa8b-00bb-09ae-3591" type="selectionEntryGroup"/>
+        <entryLink name="Cultist Equipment (Cult of the Possessed 1a)" id="cad9-c0e5-ebab-7090" collective="false" flatten="true" hidden="false" import="true" sortIndex="3" targetId="fa8b-00bb-09ae-3591" type="selectionEntryGroup"/>
         <entryLink name="Experience" id="07c4-ec7b-36b3-1567" collective="false" hidden="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
+        <entryLink name="Mutations, Double Cost (Possessed 1a)" id="68dc-8866-7fc4-fe4b" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="9aba-72bf-02a1-541f" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Mutations" id="85617e80-1596-7087-fabf-904cf9b11af3" hidden="false" targetId="75a2f07b-eab8-01aa-de76-d15f38bfb34e" type="rule"/>
@@ -613,9 +618,14 @@
             <constraint id="baa1-dcb8-0789-d796" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="8"/>
           </constraints>
         </entryLink>
-        <entryLink name="Mutations" id="80518ca1-2f6b-5e42-d9f5-26006149540d" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="e111af6a-dde1-6dcc-d658-bf4f2f4751c0" type="selectionEntryGroup"/>
-        <entryLink name="Charactaristics +/-" id="3fc0-48d6-7d73-4b9e" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
+        <entryLink name="Mutations (Possessed 1a)" id="80518ca1-2f6b-5e42-d9f5-26006149540d" collective="false" flatten="true" hidden="false" import="true" sortIndex="1" targetId="123a-97ca-fab2-371b" type="selectionEntryGroup"/>
+        <entryLink name="Charactaristics +/-" id="3fc0-48d6-7d73-4b9e" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="7dfe-3e9e-2eb6-f2de" type="selectionEntryGroup"/>
         <entryLink name="Serious Injuries" id="9833-38f3-f849-5343" collapsible="true" collective="false" hidden="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
+        <entryLink name="Mutations Double Cost (Possessed 1a)" id="bc45-4484-22cc-02df" collapsible="true" collective="false" displayGroup="Mutations Double Cost (Possessed 1a)" hidden="false" import="true" sortIndex="2" targetId="9aba-72bf-02a1-541f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier field="name" type="set" value="Mutations Double Cost (Possessed 1a)"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Mutations" id="c6a4d5fa-343c-3dba-da8e-93c2e602551f" hidden="false" targetId="75a2f07b-eab8-01aa-de76-d15f38bfb34e" type="rule"/>
@@ -947,7 +957,7 @@ They automatically pass any Leadership tests they are required to take.</descrip
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Cultist Equipment (Cult of the Possessed 1a)" id="fa8b-00bb-09ae-3591" collective="false" hidden="false" import="true" sortIndex="1">
       <entryLinks>
-        <entryLink name="Equipment - All" id="66c22b80-dbbb-9f33-28bd-101f588861d6" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Equipment - All" id="66c22b80-dbbb-9f33-28bd-101f588861d6" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="1f7d-6a68-ad19-bc66" flatten="true" hidden="false" sortIndex="1">
@@ -973,278 +983,27 @@ They automatically pass any Leadership tests they are required to take.</descrip
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" id="3fb8-a8f2-d29f-f151" collective="false" flatten="true" hidden="false" import="true" sortIndex="2">
+        <selectionEntryGroup name="Armor, %" id="3fb8-a8f2-d29f-f151" collective="false" flatten="true" hidden="false" import="true" sortIndex="2">
           <entryLinks>
             <entryLink name="Light Armor, %" id="8722-69c3-6fd1-051f" hidden="false" import="true" targetId="7e46-dc45-605f-2af2" type="selectionEntry"/>
             <entryLink name="Heavy Armour, %" id="37d1-31fe-c7c5-35e2" hidden="false" import="true" targetId="0fd7-ba59-1775-4a35" type="selectionEntry"/>
             <entryLink name="Helmet, %" id="29d2-e39c-bbd8-f99d" hidden="false" import="true" targetId="c138-9c66-20d9-fc8e" type="selectionEntry"/>
             <entryLink name="Shield, %" id="db2f-5d25-605a-9de5" hidden="false" import="true" targetId="bb4f-ffbc-f928-c76d" type="selectionEntry"/>
-            <entryLink name="Heavy Armor" id="1952-b59d-b7bc-ff91" hidden="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry"/>
-            <entryLink name="Light Armor" id="5b69-5023-9863-09eb" hidden="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
-            <entryLink name="Helmet" id="7056-c05b-5fac-89ac" hidden="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
-            <entryLink name="Shield" id="d84f-908f-5ebf-b2c7" hidden="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor" id="92d6-002c-34da-86c3" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+          <entryLinks>
+            <entryLink name="Heavy Armor" id="74ee-3de9-6106-3252" hidden="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry"/>
+            <entryLink name="Light Armor" id="a61f-a047-b070-d4c2" hidden="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
+            <entryLink name="Helmet" id="d50f-0b63-e803-ba24" hidden="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
+            <entryLink name="Shield" id="7549-dea0-63d2-158a" hidden="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Mutations" id="e111af6a-dde1-6dcc-d658-bf4f2f4751c0" collective="false" hidden="false" import="true" sortIndex="4">
-      <constraints>
-        <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-        <constraint id="minInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="min" value="0"/>
-        <constraint id="maxInForce" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
-        <constraint id="minInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="min" value="0"/>
-        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
-        <constraint id="minPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-        <constraint id="maxPoints" field="points" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="-1"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry name="Daemon Soul" id="0573d7f2-b2b9-00a6-6bf9-5d24bad2c363" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Daemon Soul" id="c8d2c935-1378-2dff-0047-17dbc4a672d5" hidden="false">
-              <description>Model has a 4+ save against the effects of spells or prayers.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="8dde8e1e-9f4f-9e79-d657-e5247b3a9178" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="20">
-                  <repeats>
-                    <repeat childId="8dde8e1e-9f4f-9e79-d657-e5247b3a9178" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="0573d7f2-b2b9-00a6-6bf9-5d24bad2c363" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Great Claw" id="a412bb9b-8870-68e8-1a78-7eece89b75f3" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="100"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Great Claw" id="e7478647-7ac7-fe6e-6b14-077e2b2c12f9" hidden="false">
-              <description>He may carry no weapons in this arm, but gains an extra attack in hand-to-hand combat with a +1 Strength bonus.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="cc94611c-ceaf-3170-050c-eb162e358d16" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="50">
-                  <repeats>
-                    <repeat childId="cc94611c-ceaf-3170-050c-eb162e358d16" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="a412bb9b-8870-68e8-1a78-7eece89b75f3" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Tentacle" id="acefb5b3-e3a4-a00f-8940-3525404c31ee" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="70"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Tentacle" id="f18a9f4b-dcf9-cba7-011c-a2cfe1b61abe" hidden="false">
-              <description>May grapple his opponent in close combat to reduce his attacks by -1, down to a minimum of 1. The mutant may decide which attack his opponent loses.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="24e4e88d-6f73-6aa1-9174-c9a37cd832bf" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="35">
-                  <repeats>
-                    <repeat childId="24e4e88d-6f73-6aa1-9174-c9a37cd832bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="acefb5b3-e3a4-a00f-8940-3525404c31ee" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Cloven Hoofs" id="881b1129-2a5e-8549-9d97-1bb77c2997cf" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="80"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="+1 M" id="6297d54b-6834-0b76-33ef-e8a1e34c9505" collective="false" hidden="false" import="true" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry"/>
-          </entryLinks>
-          <rules>
-            <rule name="Cloven Hoofs" id="b0b142da-379d-9146-1583-39438907d691" hidden="false">
-              <description>Gain +1 Movement</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="9ff71aa7-4d03-a237-4eba-13fcf834f6cf" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="40">
-                  <repeats>
-                    <repeat childId="9ff71aa7-4d03-a237-4eba-13fcf834f6cf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="881b1129-2a5e-8549-9d97-1bb77c2997cf" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Blackblood" id="bc9a00f5-f67a-d480-cf6a-3b84090eb3fd" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="60"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="BlackBlood" id="a9a369c7-50d9-03e6-602f-9e2d4cc87a93" hidden="false">
-              <description>If the model loses a wound in close combat, anyone in base contact with the model suffers a Strength 3 hit (no critical hits) from the spurting corrosive blood.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="b3c3fa94-6e59-8469-1bf1-24280d1ff9bc" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="30">
-                  <repeats>
-                    <repeat childId="b3c3fa94-6e59-8469-1bf1-24280d1ff9bc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="bc9a00f5-f67a-d480-cf6a-3b84090eb3fd" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Spines" id="5af78c33-7ca0-9880-6da5-eff247bc5de5" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="70"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Spines" id="bd85a204-0692-6d2b-25a3-1f84c5e11470" hidden="false">
-              <description>Any model in base contact with the mutant suffers an automatic Strength 1 hit at the beginning of each close combat phase. Spines will never cause critical hits.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="e6db8828-f3ef-96e2-60f4-43eb9169dd83" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="35">
-                  <repeats>
-                    <repeat childId="e6db8828-f3ef-96e2-60f4-43eb9169dd83" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="5af78c33-7ca0-9880-6da5-eff247bc5de5" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Scorpion Tail" id="8807cd84-31f4-7031-3c0b-8cfca60a9588" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="80"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Scorpion Tail" id="909490af-c54c-7964-7d37-d4b056bff4dc" hidden="false">
-              <description>The mutant has a long barbed tail with a venomed tip, allowing him to make an extra Strength 5 attack in each hand-to-hand combat phase. If the model hit by the tail is immune to poison, the Strength of the hit is reduced to 2.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="afe5a0bd-60da-56a3-7c3a-a934a61ff1ac" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="40">
-                  <repeats>
-                    <repeat childId="afe5a0bd-60da-56a3-7c3a-a934a61ff1ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="8807cd84-31f4-7031-3c0b-8cfca60a9588" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Extra Arm" id="7bb5efcf-16c7-2f2c-1a39-9f085a7eb491" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="80"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Extra Arm" id="82d66311-d137-22f0-1abe-2c905a813304" hidden="false">
-              <description>The mutant may use any single-handed weapon in the extra arm, giving him +1 attack when fighting in hand-to-hand combat. Alternatively, he may carry a shield or a buckler in the extra arm. If a Possessed chooses to do this, he gains an extra attack but still cannot carry a weapon.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="627673ef-3a95-004b-8363-2b80c00daf61" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="40">
-                  <repeats>
-                    <repeat childId="627673ef-3a95-004b-8363-2b80c00daf61" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="7bb5efcf-16c7-2f2c-1a39-9f085a7eb491" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Hideous" id="1a2568eb-7c1e-e059-9c2f-972cbf7f0366" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="80"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Fear" id="30e22f9b-ae76-d2f5-794c-311e6bbd3ca0" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
-          </infoLinks>
-          <rules>
-            <rule name="Hideous" id="45db67dc-c909-24f2-930d-a48b13a8ba48" hidden="false">
-              <description>The mutant causes fear. 
-for details.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry name="First Mutation Discount" id="6c981c2f-0d02-792f-ed93-5ff630bc6c38" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="40">
-                  <repeats>
-                    <repeat childId="6c981c2f-0d02-792f-ed93-5ff630bc6c38" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="1a2568eb-7c1e-e059-9c2f-972cbf7f0366" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Darksouls Equipment (Cult of the Possessed 1a)" id="59f0-a782-1370-5450" collective="false" hidden="false" import="true" sortIndex="2">
       <entryLinks>
-        <entryLink name="Equipment - All" id="0235-f763-7e0c-0adf" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink name="Equipment - All" id="0235-f763-7e0c-0adf" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Darksouls HtH Weapons" id="ca8e-6ef1-dde8-c161" flatten="true" hidden="false" sortIndex="1">
@@ -1263,16 +1022,20 @@ for details.</description>
             <entryLink name="Sword" id="1997-3ac3-f6da-d4a9" hidden="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armor" id="8ef2-8cd5-df21-dc20" collective="false" flatten="true" hidden="false" import="true" sortIndex="2">
+        <selectionEntryGroup name="Armor" id="8b8f-daec-d88e-3ff7" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
           <entryLinks>
-            <entryLink name="Light Armor, %" id="ba5e-fb80-633a-43e9" hidden="false" import="true" targetId="7e46-dc45-605f-2af2" type="selectionEntry"/>
-            <entryLink name="Heavy Armour, %" id="2b4a-3fe8-7a83-0783" hidden="false" import="true" targetId="0fd7-ba59-1775-4a35" type="selectionEntry"/>
-            <entryLink name="Helmet, %" id="63aa-91fa-d416-ae23" hidden="false" import="true" targetId="c138-9c66-20d9-fc8e" type="selectionEntry"/>
-            <entryLink name="Shield, %" id="2f20-fc71-0eef-165d" hidden="false" import="true" targetId="bb4f-ffbc-f928-c76d" type="selectionEntry"/>
-            <entryLink name="Heavy Armor" id="4bc3-b73f-b2a8-0c9e" hidden="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry"/>
-            <entryLink name="Light Armor" id="4fd7-41bf-88df-91a2" hidden="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
-            <entryLink name="Helmet" id="6bb0-d13c-5bf4-debb" hidden="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
-            <entryLink name="Shield" id="6299-ac64-2a3b-369b" hidden="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
+            <entryLink name="Heavy Armor" id="7155-5436-df0c-e1ae" hidden="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry"/>
+            <entryLink name="Light Armor" id="1830-24cf-7b47-4447" hidden="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
+            <entryLink name="Helmet" id="78b7-f0b0-a05f-698d" hidden="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
+            <entryLink name="Shield" id="8159-c00a-f73c-0205" hidden="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor, %" id="3d08-7c23-176e-9c96" collective="false" flatten="true" hidden="false" import="true" sortIndex="2">
+          <entryLinks>
+            <entryLink name="Light Armor, %" id="4b74-d452-8226-dfa4" hidden="false" import="true" targetId="7e46-dc45-605f-2af2" type="selectionEntry"/>
+            <entryLink name="Heavy Armour, %" id="e6e5-cf94-7554-051f" hidden="false" import="true" targetId="0fd7-ba59-1775-4a35" type="selectionEntry"/>
+            <entryLink name="Helmet, %" id="ae41-c972-a259-81f9" hidden="false" import="true" targetId="c138-9c66-20d9-fc8e" type="selectionEntry"/>
+            <entryLink name="Shield, %" id="1ac9-827d-de6a-7a6a" hidden="false" import="true" targetId="bb4f-ffbc-f928-c76d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
