@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="66" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="common-data" id="e020-c282-277b-b173" battleScribeVersion="2.03" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" library="true" revision="67" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Human max" id="d9c2-4427-8e2b-586a" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
       <characteristics>
@@ -5592,7 +5592,6 @@ Its owner will not willingly discard it in a fight and so must fight on without 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="aaaaaa" id="db40-ad61-ffdb-bab0" hidden="false" import="true" type="upgrade"/>
     <selectionEntry name="Double Barreled Duelling Pistol" id="1018-1754-b429-8376" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="35"/>
@@ -6765,10 +6764,7 @@ must retire from the warband.</description>
         <entryLink name="Mounts" id="9098-4dfc-872a-5fc6" hidden="false" import="true" targetId="a570-6021-1e34-bf30" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Mutations" id="5541-f5c4-85e0-b399" collective="false" hidden="false" import="true">
-      <constraints>
-        <constraint id="7d97-52b6-3a7f-50a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="0"/>
-      </constraints>
+    <selectionEntryGroup name="Mutations (Beastmen 1a)" id="5541-f5c4-85e0-b399" collective="false" hidden="false" import="true">
       <selectionEntries>
         <selectionEntry name="Daemon Soul" id="7d6d-e545-dd9e-0978" collective="false" hidden="false" import="true" type="upgrade">
           <costs>
@@ -6811,8 +6807,8 @@ must retire from the warband.</description>
           <entryLinks>
             <entryLink name="+1 M" id="8fa4-43c6-4eaf-55b0" collective="false" hidden="false" import="true" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry">
               <constraints>
-                <constraint id="9486-0f39-fdcf-b1f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="3dae-093a-37ce-9e6d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="9486-0f39-fdcf-b1f9-min" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="9486-0f39-fdcf-b1f9-max" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -6822,7 +6818,7 @@ must retire from the warband.</description>
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry name="BlackBlood" id="2aa6-ff97-ab54-193f" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Blackblood" id="2aa6-ff97-ab54-193f" collective="false" hidden="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="30"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
@@ -9875,6 +9871,670 @@ All enemy models in base contact with the Master must immediately test against t
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mutations (Possessed 1a)" id="123a-97ca-fab2-371b" collective="false" hidden="false" import="true">
+      <constraints>
+        <constraint id="5692-4f56-8530-ad9f" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="Tentacle" id="2092-08a7-0dc1-d6fd" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="8a76-ae67-c21c-5016" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Tentacle" id="cb4a-6738-3f5c-3025" hidden="false">
+              <description>May grapple his opponent in close combat to reduce his attacks by -1, down to a minimum of 1. The mutant may decide which attack his opponent loses.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Tentacles" id="5a11-b2b3-75c4-eae6" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Blackblood" id="4b7d-f536-0e08-f6dc" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="c65c-37f7-9645-eaaa" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="30"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Blackblood" id="89b4-4fa2-e43c-3376" hidden="false">
+              <description>If the model loses a wound in close combat, anyone in base contact with the model suffers a Strength 3 hit (no critical hits) from the spurting corrosive blood.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Blackblood" id="a33c-26c5-9d99-22a5" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Cloven Hoofs" id="e5b8-a94d-07bc-1410" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="d991-100c-b552-026b" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Cloven Hoofs" id="3efa-585c-67ff-1e8d" hidden="false">
+              <description>Gain +1 Movement</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Cloven Hoofs" id="c706-446c-6bb9-7f8a" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Daemon Soul" id="854e-4766-cca5-0c68" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="fc9e-be48-27f5-b05e" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Daemon Soul" id="21f0-7961-8dad-6b20" hidden="false">
+              <description>Model has a 4+ save against the effects of spells or prayers.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Daemon Souls" id="19b8-2b6f-ed9b-1eb3" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Extra Arm" id="e8b9-44ca-4684-a938" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="5b12-c978-442b-69c3" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Extra Arm" id="59b3-ee91-72e6-94aa" hidden="false">
+              <description>The mutant may use any single-handed weapon in the extra arm, giving him +1 attack when fighting in hand-to-hand combat. Alternatively, he may carry a shield or a buckler in the extra arm. If a Possessed chooses to do this, he gains an extra attack but still cannot carry a weapon.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Extra Arms" id="2088-6070-120b-de72" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Great Claw" id="d0a5-5f1f-01d1-515e" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="69ae-b27a-27a1-c385" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Great Claw" id="1a06-5159-91ba-e5b9" hidden="false">
+              <description>He may carry no weapons in this arm, but gains an extra attack in hand-to-hand combat with a +1 Strength bonus.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Great Claws" id="ca23-1675-f216-ba93" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="100"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Hideous" id="10b6-690d-c6d8-1017" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e77f-a6b4-a413-7cf0" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Fear" id="468d-41bc-2b5b-b302" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="8e1f-9f66-0eda-f1bb" childName="Possessed" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Hideous" id="c31a-7996-35ef-2a33" hidden="false">
+              <description>The mutant causes fear. 
+for details.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Scorpion Tail" id="947c-33bf-714c-f47b" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="bab0-2888-a361-ab98" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Scorpion Tail" id="b3d7-85cc-4aa5-a1bc" hidden="false">
+              <description>The mutant has a long barbed tail with a venomed tip, allowing him to make an extra Strength 5 attack in each hand-to-hand combat phase. If the model hit by the tail is immune to poison, the Strength of the hit is reduced to 2.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Scorpion Tails" id="1123-211f-4c76-04b4" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Spines" id="c2b2-09bf-d7df-b6c2" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="afcd-c3eb-b230-8b81" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Spines" id="ee7f-eba6-151e-952e" hidden="false">
+              <description>Any model in base contact with the mutant suffers an automatic Strength 1 hit at the beginning of each close combat phase. Spines will never cause critical hits.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Spines" id="adbf-f51b-70fc-b928" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mutations, Double Cost (Possessed 1a)" id="9aba-72bf-02a1-541f" collective="false" hidden="false" import="true">
+      <entryLinks>
+        <entryLink name="+1 M" id="622a-2ae6-8f8f-0364" collective="false" hidden="false" import="true" targetId="c4db-7b50-a4f9-cd5f" type="selectionEntry">
+          <constraints>
+            <constraint id="30aa-2883-72af-8762-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="30aa-2883-72af-8762-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="0"/>
+          </constraints>
+          <modifiers>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="1">
+              <conditions>
+                <condition childId="e5b8-a94d-07bc-1410" childName="Cloven Hoofs" field="selections" includeChildSelections="false" scope="parent" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="1">
+              <conditions>
+                <condition childId="e5b8-a94d-07bc-1410" childName="Cloven Hoofs" field="selections" includeChildSelections="false" scope="parent" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="2">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildForces="false" includeChildSelections="true" scope="parent" shared="true" traverseAssociationGroup="false" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="2">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildForces="false" includeChildSelections="true" scope="parent" shared="true" traverseAssociationGroup="false" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="3">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="3">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="4">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="3"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="4">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="3"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="5">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="4"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="5">
+              <conditions>
+                <condition childId="c706-446c-6bb9-7f8a" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="4"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="1">
+              <conditions>
+                <condition childId="6435-5654-e961-f27f" childName="Cloven Hoofs" field="selections" includeChildSelections="false" scope="parent" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="1">
+              <conditions>
+                <condition childId="6435-5654-e961-f27f" childName="Cloven Hoofs" field="selections" includeChildSelections="false" scope="parent" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="2">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildForces="false" includeChildSelections="true" scope="parent" shared="true" traverseAssociationGroup="false" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="2">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildForces="false" includeChildSelections="true" scope="parent" shared="true" traverseAssociationGroup="false" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="3">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="3">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="4">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="3"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="4">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="3"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-min" type="set" value="5">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="4"/>
+              </conditions>
+            </modifier>
+            <modifier field="30aa-2883-72af-8762-max" type="set" value="5">
+              <conditions>
+                <condition childId="3485-50ae-6129-9d48" childName="Additional Cloven Hoofs" field="selections" includeChildSelections="true" scope="parent" shared="true" type="equalTo" value="4"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry name="Tentacle" id="d42a-ece3-ef09-9042" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="f914-6280-f5a0-89ff" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="70"/>
+          </modifiers>
+          <rules>
+            <rule name="Tentacle" id="e628-f370-1a05-c297" hidden="false">
+              <description>May grapple his opponent in close combat to reduce his attacks by -1, down to a minimum of 1. The mutant may decide which attack his opponent loses.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Tentacles" id="1cbd-7266-02ed-861a" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Blackblood" id="3abf-16b5-2312-aed2" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="29e3-5251-affa-b0e8" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="30"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="60"/>
+          </modifiers>
+          <rules>
+            <rule name="Blackblood" id="01c8-0293-69e7-2cc4" hidden="false">
+              <description>If the model loses a wound in close combat, anyone in base contact with the model suffers a Strength 3 hit (no critical hits) from the spurting corrosive blood.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Blackblood" id="7af5-adf4-3ce7-b122" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Cloven Hoofs" id="6435-5654-e961-f27f" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="c951-5183-3013-e68a" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="80"/>
+          </modifiers>
+          <rules>
+            <rule name="Cloven Hoofs" id="19bc-3d65-3ec8-024b" hidden="false">
+              <description>Gain +1 Movement</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Cloven Hoofs" id="3485-50ae-6129-9d48" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Daemon Soul" id="ed89-5bd2-65ef-9628" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="d396-48c1-6bbc-40c6" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="40"/>
+          </modifiers>
+          <rules>
+            <rule name="Daemon Soul" id="987a-e5fd-4fb4-67b5" hidden="false">
+              <description>Model has a 4+ save against the effects of spells or prayers.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Daemon Souls" id="1ede-296a-788f-93f3" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Extra Arm" id="4b7a-444d-a906-93eb" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="a531-36ab-174a-2e8a" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="80"/>
+          </modifiers>
+          <rules>
+            <rule name="Extra Arm" id="1306-3c68-fc65-dd67" hidden="false">
+              <description>The mutant may use any single-handed weapon in the extra arm, giving him +1 attack when fighting in hand-to-hand combat. Alternatively, he may carry a shield or a buckler in the extra arm. If a Possessed chooses to do this, he gains an extra attack but still cannot carry a weapon.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Extra Arms" id="4809-7492-c828-f33d" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Great Claw" id="b4c9-fe1f-2164-8559" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="c919-00a3-1ba5-460c" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="100"/>
+          </modifiers>
+          <rules>
+            <rule name="Great Claw" id="124a-f729-7597-83bb" hidden="false">
+              <description>He may carry no weapons in this arm, but gains an extra attack in hand-to-hand combat with a +1 Strength bonus.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Great Claws" id="a584-60c6-8abc-9414" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="100"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Hideous" id="991c-b337-dac6-345f" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="76bf-1e14-3712-f489" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Fear" id="e317-904d-0ffa-a5e2" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="8e1f-9f66-0eda-f1bb" childName="Possessed" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="points" type="set" value="80"/>
+          </modifiers>
+          <rules>
+            <rule name="Hideous" id="ffc8-5498-d11f-a9d0" hidden="false">
+              <description>The mutant causes fear. 
+for details.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry name="Scorpion Tail" id="8e08-1361-d8e5-485f" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="a5da-5e3a-2c6f-9b83" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="80">
+              <conditions>
+                <condition childId="any" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Scorpion Tail" id="d771-1225-6d28-d56c" hidden="false">
+              <description>The mutant has a long barbed tail with a venomed tip, allowing him to make an extra Strength 5 attack in each hand-to-hand combat phase. If the model hit by the tail is immune to poison, the Strength of the hit is reduced to 2.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Scorpion Tails" id="d338-2e9f-b206-dae8" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Spines" id="9690-ce86-49aa-01c7" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1330-7177-90bd-f04f" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="points" type="set" value="70"/>
+          </modifiers>
+          <rules>
+            <rule name="Spines" id="0d9d-f584-e3c8-6cb0" hidden="false">
+              <description>Any model in base contact with the mutant suffers an automatic Strength 1 hit at the beginning of each close combat phase. Spines will never cause critical hits.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry name="Additional Spines" id="cdb9-6853-0e4b-a07a" collective="false" hidden="true" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" childName="Cult of the Possessed (1a)" field="selections" scope="primary-catalogue" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
